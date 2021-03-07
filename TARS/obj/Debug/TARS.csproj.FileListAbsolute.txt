@@ -1,0 +1,13 @@
+C:\Users\Simulador\source\repos\TARS\TARS\bin\Debug\TARS.exe.config
+C:\Users\Simulador\source\repos\TARS\TARS\bin\Debug\TARS.exe
+C:\Users\Simulador\source\repos\TARS\TARS\bin\Debug\TARS.pdb
+C:\Users\Simulador\source\repos\TARS\TARS\bin\Debug\CantStopServer.dll
+C:\Users\Simulador\source\repos\TARS\TARS\bin\Debug\CantStopServer.xml
+C:\Users\Simulador\source\repos\TARS\TARS\obj\Debug\TARS.csprojAssemblyReference.cache
+C:\Users\Simulador\source\repos\TARS\TARS\obj\Debug\TARS.Properties.Resources.resources
+C:\Users\Simulador\source\repos\TARS\TARS\obj\Debug\TARS.csproj.GenerateResource.cache
+C:\Users\Simulador\source\repos\TARS\TARS\obj\Debug\TARS.csproj.CoreCompileInputs.cache
+C:\Users\Simulador\source\repos\TARS\TARS\obj\Debug\TARS.csproj.CopyComplete
+C:\Users\Simulador\source\repos\TARS\TARS\obj\Debug\TARS.exe
+C:\Users\Simulador\source\repos\TARS\TARS\obj\Debug\TARS.pdb
+C:\Users\Simulador\source\repos\TARS\TARS\obj\Debug\TARS.Lobby.resources
