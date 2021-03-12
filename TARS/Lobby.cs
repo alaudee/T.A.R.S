@@ -16,6 +16,7 @@ namespace TARS
         public Lobby()
         {
             InitializeComponent();
+            lbl_versao.Text = "Versão: " + Jogo.Versao;
         }
 
         private void btn_Listarpartidas_Click(object sender, EventArgs e)
@@ -61,6 +62,23 @@ namespace TARS
             txt_nomejogador.Text = "";
             txt_senha.Text = "";
             MessageBox.Show("Você entrou na partida: " + p.nome);
+
+          
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nomepartida = txt_nomepartida.Text;
+            string senhapartida = txt_senhapartida.Text;
+            Jogo.CriarPartida(nomepartida, senhapartida);
+            txt_nomepartida.Text = "";
+            txt_senhapartida.Text = "";
+            MessageBox.Show("Você criou uma partida!");
+        }
+
+        private void lbl_versao_Click(object sender, EventArgs e)
+        {
+  
 
         }
     }

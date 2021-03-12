@@ -38,6 +38,12 @@ namespace TARS
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_senha = new System.Windows.Forms.TextBox();
+            this.btn_criarpartida = new System.Windows.Forms.Button();
+            this.txt_senhapartida = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_nomepartida = new System.Windows.Forms.TextBox();
+            this.lbl_versao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_partidas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +59,7 @@ namespace TARS
             // 
             // btn_listarjogadores
             // 
-            this.btn_listarjogadores.Location = new System.Drawing.Point(635, 13);
+            this.btn_listarjogadores.Location = new System.Drawing.Point(619, 12);
             this.btn_listarjogadores.Name = "btn_listarjogadores";
             this.btn_listarjogadores.Size = new System.Drawing.Size(125, 70);
             this.btn_listarjogadores.TabIndex = 2;
@@ -63,7 +69,7 @@ namespace TARS
             // 
             // txt_jogadores
             // 
-            this.txt_jogadores.Location = new System.Drawing.Point(766, 14);
+            this.txt_jogadores.Location = new System.Drawing.Point(750, 12);
             this.txt_jogadores.Multiline = true;
             this.txt_jogadores.Name = "txt_jogadores";
             this.txt_jogadores.Size = new System.Drawing.Size(174, 289);
@@ -71,7 +77,7 @@ namespace TARS
             // 
             // btn_entrarpartida
             // 
-            this.btn_entrarpartida.Location = new System.Drawing.Point(140, 377);
+            this.btn_entrarpartida.Location = new System.Drawing.Point(619, 322);
             this.btn_entrarpartida.Name = "btn_entrarpartida";
             this.btn_entrarpartida.Size = new System.Drawing.Size(125, 70);
             this.btn_entrarpartida.TabIndex = 4;
@@ -87,7 +93,7 @@ namespace TARS
             this.dgv_partidas.MultiSelect = false;
             this.dgv_partidas.Name = "dgv_partidas";
             this.dgv_partidas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_partidas.Size = new System.Drawing.Size(486, 310);
+            this.dgv_partidas.Size = new System.Drawing.Size(470, 310);
             this.dgv_partidas.TabIndex = 5;
             // 
             // txt_nomejogador
@@ -119,14 +125,72 @@ namespace TARS
             // 
             this.txt_senha.Location = new System.Drawing.Point(395, 351);
             this.txt_senha.Name = "txt_senha";
-            this.txt_senha.Size = new System.Drawing.Size(234, 20);
+            this.txt_senha.Size = new System.Drawing.Size(218, 20);
             this.txt_senha.TabIndex = 9;
+            // 
+            // btn_criarpartida
+            // 
+            this.btn_criarpartida.Location = new System.Drawing.Point(619, 398);
+            this.btn_criarpartida.Name = "btn_criarpartida";
+            this.btn_criarpartida.Size = new System.Drawing.Size(125, 70);
+            this.btn_criarpartida.TabIndex = 10;
+            this.btn_criarpartida.Text = "Criar Partida";
+            this.btn_criarpartida.UseVisualStyleBackColor = true;
+            this.btn_criarpartida.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txt_senhapartida
+            // 
+            this.txt_senhapartida.Location = new System.Drawing.Point(395, 420);
+            this.txt_senhapartida.Name = "txt_senhapartida";
+            this.txt_senhapartida.Size = new System.Drawing.Size(218, 20);
+            this.txt_senhapartida.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(392, 398);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Digite a senha da partida:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(140, 398);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(125, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Digite o nome da partida:";
+            // 
+            // txt_nomepartida
+            // 
+            this.txt_nomepartida.Location = new System.Drawing.Point(140, 420);
+            this.txt_nomepartida.Name = "txt_nomepartida";
+            this.txt_nomepartida.Size = new System.Drawing.Size(232, 20);
+            this.txt_nomepartida.TabIndex = 11;
+            // 
+            // lbl_versao
+            // 
+            this.lbl_versao.AutoSize = true;
+            this.lbl_versao.Location = new System.Drawing.Point(872, 530);
+            this.lbl_versao.Name = "lbl_versao";
+            this.lbl_versao.Size = new System.Drawing.Size(35, 13);
+            this.lbl_versao.TabIndex = 15;
+            this.lbl_versao.Text = "label5";
+            this.lbl_versao.Click += new System.EventHandler(this.lbl_versao_Click);
             // 
             // Lobby
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(945, 552);
+            this.Controls.Add(this.lbl_versao);
+            this.Controls.Add(this.txt_senhapartida);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txt_nomepartida);
+            this.Controls.Add(this.btn_criarpartida);
             this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -155,6 +219,12 @@ namespace TARS
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_senha;
+        private System.Windows.Forms.Button btn_criarpartida;
+        private System.Windows.Forms.TextBox txt_senhapartida;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_nomepartida;
+        private System.Windows.Forms.Label lbl_versao;
     }
 }
 

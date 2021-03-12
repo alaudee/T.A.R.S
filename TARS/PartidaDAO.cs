@@ -8,7 +8,6 @@ namespace TARS
 {
     class PartidaDAO
     {
-        
-        
+
     }
 }
