@@ -29,6 +29,7 @@ namespace TARS
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lobby));
             this.btn_listarpartidas = new System.Windows.Forms.Button();
             this.btn_listarjogadores = new System.Windows.Forms.Button();
             this.txt_jogadores = new System.Windows.Forms.TextBox();
@@ -74,6 +75,7 @@ namespace TARS
             this.txt_jogadores.Name = "txt_jogadores";
             this.txt_jogadores.Size = new System.Drawing.Size(174, 289);
             this.txt_jogadores.TabIndex = 3;
+            this.txt_jogadores.TextChanged += new System.EventHandler(this.txt_jogadores_TextChanged);
             // 
             // btn_entrarpartida
             // 
@@ -95,6 +97,7 @@ namespace TARS
             this.dgv_partidas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_partidas.Size = new System.Drawing.Size(470, 310);
             this.dgv_partidas.TabIndex = 5;
+            this.dgv_partidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_partidas_CellContentClick);
             // 
             // txt_nomejogador
             // 
@@ -106,6 +109,7 @@ namespace TARS
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(140, 329);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 13);
@@ -115,6 +119,7 @@ namespace TARS
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(392, 329);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 13);
@@ -148,6 +153,7 @@ namespace TARS
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(392, 398);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 13);
@@ -157,6 +163,7 @@ namespace TARS
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(140, 398);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 13);
@@ -173,6 +180,7 @@ namespace TARS
             // lbl_versao
             // 
             this.lbl_versao.AutoSize = true;
+            this.lbl_versao.BackColor = System.Drawing.Color.Transparent;
             this.lbl_versao.Location = new System.Drawing.Point(872, 530);
             this.lbl_versao.Name = "lbl_versao";
             this.lbl_versao.Size = new System.Drawing.Size(35, 13);
@@ -184,6 +192,8 @@ namespace TARS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(945, 552);
             this.Controls.Add(this.lbl_versao);
             this.Controls.Add(this.txt_senhapartida);
@@ -200,6 +210,7 @@ namespace TARS
             this.Controls.Add(this.txt_jogadores);
             this.Controls.Add(this.btn_listarjogadores);
             this.Controls.Add(this.btn_listarpartidas);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Lobby";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_partidas)).EndInit();

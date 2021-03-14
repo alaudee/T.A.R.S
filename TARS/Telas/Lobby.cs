@@ -81,5 +81,15 @@ namespace TARS
   
 
         }
+
+        private void dgv_partidas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txt_jogadores_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

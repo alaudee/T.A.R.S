@@ -24,3 +24,7 @@ C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.csproj.CoreCompileInputs.
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.csproj.CopyComplete
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.exe
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.pdb
+C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Menu.resources
+C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Telas.CriarPartida.resources
+C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Telas.EntrarPartida.resources
+C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Tabuleiro.resources

@@ -49,24 +49,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lobby.cs">
+    <Compile Include="Telas\CriarPartida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lobby.Designer.cs">
+    <Compile Include="Telas\CriarPartida.Designer.cs">
+      <DependentUpon>CriarPartida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\EntrarPartida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\EntrarPartida.Designer.cs">
+      <DependentUpon>EntrarPartida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Lobby.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Lobby.Designer.cs">
       <DependentUpon>Lobby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Partida.cs" />
     <Compile Include="PartidaDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tabuleiro.cs">
+    <Compile Include="Telas\Tabuleiro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tabuleiro.Designer.cs">
+    <Compile Include="Telas\Tabuleiro.Designer.cs">
       <DependentUpon>Tabuleiro.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Lobby.resx">
+    <EmbeddedResource Include="Telas\CriarPartida.resx">
+      <DependentUpon>CriarPartida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\EntrarPartida.resx">
+      <DependentUpon>EntrarPartida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Lobby.resx">
       <DependentUpon>Lobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -77,6 +104,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\Tabuleiro.resx">
+      <DependentUpon>Tabuleiro.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
