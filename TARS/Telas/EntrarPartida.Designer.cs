@@ -29,7 +29,6 @@ namespace TARS.Telas
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_jogadores = new System.Windows.Forms.TextBox();
             this.btn_entrarpartida = new System.Windows.Forms.Button();
             this.txt_senha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,17 +36,9 @@ namespace TARS.Telas
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.dgv_jogadores = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_jogadores)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txt_jogadores
-            // 
-            this.txt_jogadores.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txt_jogadores.Location = new System.Drawing.Point(12, 33);
-            this.txt_jogadores.Multiline = true;
-            this.txt_jogadores.Name = "txt_jogadores";
-            this.txt_jogadores.Size = new System.Drawing.Size(174, 135);
-            this.txt_jogadores.TabIndex = 5;
-            this.txt_jogadores.TextChanged += new System.EventHandler(this.txt_jogadores_TextChanged);
             // 
             // btn_entrarpartida
             // 
@@ -83,6 +74,7 @@ namespace TARS.Telas
             this.txt_nomejogador.Name = "txt_nomejogador";
             this.txt_nomejogador.Size = new System.Drawing.Size(232, 20);
             this.txt_nomejogador.TabIndex = 10;
+            this.txt_nomejogador.TextChanged += new System.EventHandler(this.txt_nomejogador_TextChanged);
             // 
             // btn_cancelar
             // 
@@ -116,32 +108,40 @@ namespace TARS.Telas
             this.label3.TabIndex = 15;
             this.label3.Text = "Jogadores:";
             // 
+            // dgv_jogadores
+            // 
+            this.dgv_jogadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_jogadores.Location = new System.Drawing.Point(6, 33);
+            this.dgv_jogadores.Name = "dgv_jogadores";
+            this.dgv_jogadores.Size = new System.Drawing.Size(180, 150);
+            this.dgv_jogadores.TabIndex = 16;
+            this.dgv_jogadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // EntrarPartida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(436, 181);
+            this.Controls.Add(this.dgv_jogadores);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_nomejogador);
-            this.Controls.Add(this.txt_jogadores);
             this.Controls.Add(this.btn_entrarpartida);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "EntrarPartida";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EntrarPartida";
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_jogadores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txt_jogadores;
         private System.Windows.Forms.Button btn_entrarpartida;
         private System.Windows.Forms.TextBox txt_senha;
         private System.Windows.Forms.Label label2;
@@ -149,5 +149,6 @@ namespace TARS.Telas
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dgv_jogadores;
     }
 }

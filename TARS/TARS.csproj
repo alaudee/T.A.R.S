@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Jogadores.cs" />
     <Compile Include="Telas\CriarPartida.cs">
       <SubType>Form</SubType>
     </Compile>

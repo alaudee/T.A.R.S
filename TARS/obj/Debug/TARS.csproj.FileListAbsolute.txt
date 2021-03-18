@@ -28,3 +28,20 @@ C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Menu.resources
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Telas.CriarPartida.resources
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Telas.EntrarPartida.resources
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Tabuleiro.resources
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\bin\Debug\TARS.exe.config
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\bin\Debug\TARS.exe
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\bin\Debug\TARS.pdb
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\bin\Debug\CantStopServer.dll
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\bin\Debug\CantStopServer.xml
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.csprojAssemblyReference.cache
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.Telas.CriarPartida.resources
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.Telas.EntrarPartida.resources
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.Lobby.resources
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.Menu.resources
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.Properties.Resources.resources
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.Tabuleiro.resources
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.csproj.GenerateResource.cache
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.csproj.CoreCompileInputs.cache
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.csproj.CopyComplete
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.exe
+C:\Users\otavi\OneDrive\Área de Trabalho\PI\T.A.R.S\TARS\obj\Debug\TARS.pdb
