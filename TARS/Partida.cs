@@ -14,6 +14,5 @@ namespace TARS
         public string status { get; set; }
         public string senha { get; set; }
 
-
     }
 }
