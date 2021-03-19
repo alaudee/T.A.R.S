@@ -45,3 +45,20 @@ C:\Users\chris\Desktop\T.A.R.S\TARS\obj\Debug\TARS.csproj.CoreCompileInputs.cach
 C:\Users\chris\Desktop\T.A.R.S\TARS\obj\Debug\TARS.csproj.CopyComplete
 C:\Users\chris\Desktop\T.A.R.S\TARS\obj\Debug\TARS.exe
 C:\Users\chris\Desktop\T.A.R.S\TARS\obj\Debug\TARS.pdb
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\bin\Debug\TARS.exe.config
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\bin\Debug\TARS.exe
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\bin\Debug\TARS.pdb
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\bin\Debug\CantStopServer.dll
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\bin\Debug\CantStopServer.xml
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.csprojAssemblyReference.cache
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.Telas.CriarPartida.resources
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.Telas.EntrarPartida.resources
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.Lobby.resources
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.Menu.resources
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.Properties.Resources.resources
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.Tabuleiro.resources
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.csproj.GenerateResource.cache
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.csproj.CoreCompileInputs.cache
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.csproj.CopyComplete
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.exe
+C:\Users\Simulador\Desktop\Nova pasta (2)\T.A.R.S\TARS\obj\Debug\TARS.pdb
