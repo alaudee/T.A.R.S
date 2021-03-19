@@ -35,6 +35,9 @@ namespace TARS.Telas
                 jogadores.Add(j);
             }
             dgv_jogadores.DataSource = jogadores;
+            dgv_jogadores.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            txt_senha.PasswordChar = '*';
         }
 
         
@@ -74,6 +77,16 @@ namespace TARS.Telas
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgv_jogadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txt_senha_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

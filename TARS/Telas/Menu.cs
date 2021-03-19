@@ -35,6 +35,7 @@ namespace TARS
             }
             dgv_partidas.DataSource = partidas;
             dgv_partidas.Columns[4].Visible = false;
+            dgv_partidas.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
         }
 

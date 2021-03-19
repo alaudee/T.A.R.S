@@ -16,6 +16,7 @@ namespace TARS.Telas
         public CriarPartida()
         {
             InitializeComponent();
+            txt_senhapartida.PasswordChar = '*';
         }
 
         private void btn_criarpartida_Click(object sender, EventArgs e)
