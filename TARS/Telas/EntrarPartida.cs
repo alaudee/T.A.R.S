@@ -16,12 +16,28 @@ namespace TARS.Telas
     {
         public int idpartida { get; set; }
 
+        List<Jogador> jogadores = new List<Jogador>();
         public EntrarPartida(int idpartida)
         {
             InitializeComponent();
-            txt_jogadores.Text = Jogo.ListarJogadores(idpartida);
             this.idpartida = idpartida;
+
+            string retorno = Jogo.ListarJogadores(idpartida);
+            retorno = retorno.Replace("\r", " ");
+            string[] linha = retorno.Split('\n');
+            for (int i = 0; i < linha.Length - 1; i++)
+            {
+                Jogador j = new Jogador();
+                string[] itens = linha[i].Split(',');
+                j.Id = Convert.ToInt32(itens[0]);
+                j.Nomejogador = itens[1];
+                j.corjogador = itens[2];
+                jogadores.Add(j);
+            }
+            dgv_jogadores.DataSource = jogadores;
         }
+
+        
 
         private void txt_jogadores_TextChanged(object sender, EventArgs e)
         {
@@ -33,6 +49,7 @@ namespace TARS.Telas
             string nomejogador = txt_nomejogador.Text;
             string senha = txt_senha.Text;
             string validadorEntrarPartida = Jogo.EntrarPartida(idpartida, nomejogador, senha);
+            int linhas = dgv_jogadores.Rows.Count;
 
             if (validadorEntrarPartida[0] == 'E')
             {
@@ -45,8 +62,9 @@ namespace TARS.Telas
                 txt_nomejogador.Text = "";
                 txt_senha.Text = "";
                 MessageBox.Show("Você entrou na partida");
-                Tabuleiro tabuleiro = new Tabuleiro();
+                Tabuleiro tabuleiro = new Tabuleiro(validadorEntrarPartida);
                 Menu menu = new Menu();
+
                 this.Close();
                 tabuleiro.Show();
             }

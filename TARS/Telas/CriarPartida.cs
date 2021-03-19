@@ -22,11 +22,20 @@ namespace TARS.Telas
         {
             string nomepartida = txt_nomepartida.Text;
             string senhapartida = txt_senhapartida.Text;
-            Jogo.CriarPartida(nomepartida, senhapartida);
-            txt_nomepartida.Text = "";
-            txt_senhapartida.Text = "";
-            MessageBox.Show("Você criou uma partida!");
-            this.Close();
+            string validadorCriarPartida = Jogo.CriarPartida(nomepartida, senhapartida);
+            if (validadorCriarPartida[0] == 'E')
+            {
+                txt_nomepartida.Text = "";
+                txt_senhapartida.Text = "";
+                MessageBox.Show(validadorCriarPartida);
+            }
+           
+            else
+            {
+                MessageBox.Show("Você criou uma partida!");
+                this.Close();
+            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

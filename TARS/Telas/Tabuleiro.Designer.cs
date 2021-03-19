@@ -30,7 +30,18 @@ namespace TARS
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tabuleiro));
+            this.btn_iniciarpartida = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btn_iniciarpartida
+            // 
+            this.btn_iniciarpartida.Location = new System.Drawing.Point(12, 12);
+            this.btn_iniciarpartida.Name = "btn_iniciarpartida";
+            this.btn_iniciarpartida.Size = new System.Drawing.Size(119, 58);
+            this.btn_iniciarpartida.TabIndex = 0;
+            this.btn_iniciarpartida.Text = "Iniciar Partida";
+            this.btn_iniciarpartida.UseVisualStyleBackColor = true;
+            this.btn_iniciarpartida.Click += new System.EventHandler(this.btn_iniciarpartida_Click);
             // 
             // Tabuleiro
             // 
@@ -39,6 +50,7 @@ namespace TARS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(981, 604);
+            this.Controls.Add(this.btn_iniciarpartida);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tabuleiro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -48,5 +60,7 @@ namespace TARS
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn_iniciarpartida;
     }
 }
