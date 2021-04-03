@@ -36,7 +36,6 @@ namespace TARS.Telas
             }
             dgv_jogadores.DataSource = jogadores;
             dgv_jogadores.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
             txt_senha.PasswordChar = '*';
         }
 
@@ -52,7 +51,6 @@ namespace TARS.Telas
             string nomejogador = txt_nomejogador.Text;
             string senha = txt_senha.Text;
             string validadorEntrarPartida = Jogo.EntrarPartida(idpartida, nomejogador, senha);
-            int linhas = dgv_jogadores.Rows.Count;
 
             if (validadorEntrarPartida[0] == 'E')
             {
@@ -66,9 +64,7 @@ namespace TARS.Telas
                 txt_senha.Text = "";
                 MessageBox.Show("Você entrou na partida");
                 Tabuleiro tabuleiro = new Tabuleiro(validadorEntrarPartida);
-                Menu menu = new Menu();
-
-                this.Close();
+                DialogResult = DialogResult.OK;
                 tabuleiro.Show();
             }
 

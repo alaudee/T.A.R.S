@@ -8,8 +8,9 @@ using CantStopServer;
 
 namespace TARS
 {
-    class PartidaDAO
+    class Dado
     {
-      
+        public char NumeroDado { get; set; }
+        public char ValorDado { get; set; }
     }
 }
