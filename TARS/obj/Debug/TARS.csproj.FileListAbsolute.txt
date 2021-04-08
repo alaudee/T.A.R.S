@@ -36,7 +36,6 @@ C:\Users\chris\Desktop\T.A.R.S\TARS\bin\Debug\CantStopServer.xml
 C:\Users\chris\Desktop\T.A.R.S\TARS\obj\Debug\TARS.csprojAssemblyReference.cache
 C:\Users\chris\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Telas.CriarPartida.resources
 C:\Users\chris\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Telas.EntrarPartida.resources
-C:\Users\chris\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Lobby.resources
 C:\Users\chris\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Menu.resources
 C:\Users\chris\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Properties.Resources.resources
 C:\Users\chris\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Tabuleiro.resources

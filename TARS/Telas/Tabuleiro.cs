@@ -77,8 +77,10 @@ namespace TARS
             }
             dgv_dados.DataSource = ListaDados;
             dgv_dados.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+        }
 
-
+        private void dgv_dados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

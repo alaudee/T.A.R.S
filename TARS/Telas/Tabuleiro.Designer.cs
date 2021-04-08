@@ -111,6 +111,7 @@ namespace TARS
             this.dgv_dados.RowHeadersVisible = false;
             this.dgv_dados.Size = new System.Drawing.Size(172, 129);
             this.dgv_dados.TabIndex = 7;
+            this.dgv_dados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_dados_CellContentClick);
             // 
             // Tabuleiro
             // 
