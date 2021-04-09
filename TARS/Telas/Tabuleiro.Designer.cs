@@ -36,6 +36,7 @@ namespace TARS
             this.lbl_corjogador = new System.Windows.Forms.Label();
             this.lbl_rolarDado = new System.Windows.Forms.Button();
             this.dgv_dados = new System.Windows.Forms.DataGridView();
+            this.bnt_verificarvez = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_dados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,6 +113,19 @@ namespace TARS
             this.dgv_dados.Size = new System.Drawing.Size(172, 129);
             this.dgv_dados.TabIndex = 7;
             // 
+            // bnt_verificarvez
+            // 
+            this.bnt_verificarvez.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.bnt_verificarvez.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_verificarvez.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnt_verificarvez.Location = new System.Drawing.Point(148, 12);
+            this.bnt_verificarvez.Name = "bnt_verificarvez";
+            this.bnt_verificarvez.Size = new System.Drawing.Size(119, 58);
+            this.bnt_verificarvez.TabIndex = 8;
+            this.bnt_verificarvez.Text = "Verificar Vez";
+            this.bnt_verificarvez.UseVisualStyleBackColor = false;
+            this.bnt_verificarvez.Click += new System.EventHandler(this.bnt_verificarvez_Click);
+            // 
             // Tabuleiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,6 +134,7 @@ namespace TARS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(981, 604);
+            this.Controls.Add(this.bnt_verificarvez);
             this.Controls.Add(this.dgv_dados);
             this.Controls.Add(this.lbl_rolarDado);
             this.Controls.Add(this.lbl_corjogador);
@@ -144,5 +159,6 @@ namespace TARS
         private System.Windows.Forms.Label lbl_corjogador;
         private System.Windows.Forms.Button lbl_rolarDado;
         private System.Windows.Forms.DataGridView dgv_dados;
+        private System.Windows.Forms.Button bnt_verificarvez;
     }
 }

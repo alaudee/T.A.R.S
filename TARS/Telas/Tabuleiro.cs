@@ -16,11 +16,13 @@ namespace TARS
         public  string Infojogador { get; set; }
         public int IDJogador { get; set; }
         public string SenhaJogador { get; set; }
+        public int IdPartida { get; set; }
 
-        public Tabuleiro(string infojogador)
+        public Tabuleiro(string infojogador, int idpartida) //coloquei mais um parametro no construtor para pegar o idpartida
         {
             InitializeComponent();
             this.Infojogador = infojogador;
+            this.IdPartida = idpartida;
 
             string[] linha = Infojogador.Split(',');
             string idjogador = linha[0];
@@ -80,6 +82,19 @@ namespace TARS
 
 
 
+        }
+
+        private void bnt_verificarvez_Click(object sender, EventArgs e)
+        {
+            string teste = Jogo.VerificarVez(IdPartida);
+            string[] linha = teste.Split(',');
+            string jogadorvez = linha[1];
+            int comparar = Convert.ToInt32(jogadorvez);
+
+            if (comparar == IDJogador)
+                MessageBox.Show("É a sua vez de jogar!", jogadorvez);
+            else
+                MessageBox.Show("Não é a sua vez de jogar!", jogadorvez);
         }
     }
 }

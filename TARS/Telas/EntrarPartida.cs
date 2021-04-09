@@ -63,7 +63,7 @@ namespace TARS.Telas
                 txt_nomejogador.Text = "";
                 txt_senha.Text = "";
                 MessageBox.Show("Você entrou na partida");
-                Tabuleiro tabuleiro = new Tabuleiro(validadorEntrarPartida);
+                Tabuleiro tabuleiro = new Tabuleiro(validadorEntrarPartida, idpartida);
                 DialogResult = DialogResult.OK;
                 tabuleiro.Show();
             }
