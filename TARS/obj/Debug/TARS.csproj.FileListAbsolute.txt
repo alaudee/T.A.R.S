@@ -110,3 +110,19 @@ C:\Users\Otavio Rodrigues\Desktop\Trabalho 1\T.A.R.S\TARS\obj\Debug\TARS.csproj.
 C:\Users\Otavio Rodrigues\Desktop\Trabalho 1\T.A.R.S\TARS\obj\Debug\TARS.csproj.CopyComplete
 C:\Users\Otavio Rodrigues\Desktop\Trabalho 1\T.A.R.S\TARS\obj\Debug\TARS.exe
 C:\Users\Otavio Rodrigues\Desktop\Trabalho 1\T.A.R.S\TARS\obj\Debug\TARS.pdb
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\bin\Debug\TARS.exe.config
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\bin\Debug\TARS.exe
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\bin\Debug\TARS.pdb
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\bin\Debug\CantStopServer.dll
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\bin\Debug\CantStopServer.xml
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\obj\Debug\TARS.csprojAssemblyReference.cache
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\obj\Debug\TARS.Telas.CriarPartida.resources
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\obj\Debug\TARS.Telas.EntrarPartida.resources
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\obj\Debug\TARS.Menu.resources
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\obj\Debug\TARS.Properties.Resources.resources
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\obj\Debug\TARS.Tabuleiro.resources
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\obj\Debug\TARS.csproj.GenerateResource.cache
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\obj\Debug\TARS.csproj.CoreCompileInputs.cache
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\obj\Debug\TARS.csproj.CopyComplete
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\obj\Debug\TARS.exe
+C:\Users\Otavio\Desktop\Work 1\T.A.R.S\TARS\obj\Debug\TARS.pdb

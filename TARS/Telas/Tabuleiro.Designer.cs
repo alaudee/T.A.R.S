@@ -37,6 +37,12 @@ namespace TARS
             this.lbl_rolarDado = new System.Windows.Forms.Button();
             this.dgv_dados = new System.Windows.Forms.DataGridView();
             this.bnt_verificarvez = new System.Windows.Forms.Button();
+            this.bnt_exibirTabuleiro = new System.Windows.Forms.Button();
+            this.lbl_valorDado = new System.Windows.Forms.Label();
+            this.txt_valorDado = new System.Windows.Forms.TextBox();
+            this.btn_escolha = new System.Windows.Forms.Button();
+            this.btn_mover = new System.Windows.Forms.Button();
+            this.btn_valorDado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_dados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,6 +118,8 @@ namespace TARS
             this.dgv_dados.RowHeadersVisible = false;
             this.dgv_dados.Size = new System.Drawing.Size(172, 129);
             this.dgv_dados.TabIndex = 7;
+            this.dgv_dados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_dados_CellClick);
+            this.dgv_dados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_dados_CellContentClick);
             // 
             // bnt_verificarvez
             // 
@@ -126,6 +134,70 @@ namespace TARS
             this.bnt_verificarvez.UseVisualStyleBackColor = false;
             this.bnt_verificarvez.Click += new System.EventHandler(this.bnt_verificarvez_Click);
             // 
+            // bnt_exibirTabuleiro
+            // 
+            this.bnt_exibirTabuleiro.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.bnt_exibirTabuleiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_exibirTabuleiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnt_exibirTabuleiro.Location = new System.Drawing.Point(148, 106);
+            this.bnt_exibirTabuleiro.Name = "bnt_exibirTabuleiro";
+            this.bnt_exibirTabuleiro.Size = new System.Drawing.Size(119, 58);
+            this.bnt_exibirTabuleiro.TabIndex = 9;
+            this.bnt_exibirTabuleiro.Text = "Exibir tabuleiro";
+            this.bnt_exibirTabuleiro.UseVisualStyleBackColor = false;
+            this.bnt_exibirTabuleiro.Click += new System.EventHandler(this.bnt_exibirTabuleiro_Click);
+            // 
+            // lbl_valorDado
+            // 
+            this.lbl_valorDado.AutoSize = true;
+            this.lbl_valorDado.Location = new System.Drawing.Point(12, 366);
+            this.lbl_valorDado.Name = "lbl_valorDado";
+            this.lbl_valorDado.Size = new System.Drawing.Size(79, 13);
+            this.lbl_valorDado.TabIndex = 12;
+            this.lbl_valorDado.Text = "Valor do dado1";
+            // 
+            // txt_valorDado
+            // 
+            this.txt_valorDado.Location = new System.Drawing.Point(97, 363);
+            this.txt_valorDado.Name = "txt_valorDado";
+            this.txt_valorDado.Size = new System.Drawing.Size(100, 20);
+            this.txt_valorDado.TabIndex = 13;
+            // 
+            // btn_escolha
+            // 
+            this.btn_escolha.Location = new System.Drawing.Point(203, 361);
+            this.btn_escolha.Name = "btn_escolha";
+            this.btn_escolha.Size = new System.Drawing.Size(75, 23);
+            this.btn_escolha.TabIndex = 14;
+            this.btn_escolha.Text = "Escolher";
+            this.btn_escolha.UseVisualStyleBackColor = true;
+            this.btn_escolha.Click += new System.EventHandler(this.btn_escolha_Click);
+            // 
+            // btn_mover
+            // 
+            this.btn_mover.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_mover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mover.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mover.Location = new System.Drawing.Point(285, 12);
+            this.btn_mover.Name = "btn_mover";
+            this.btn_mover.Size = new System.Drawing.Size(119, 58);
+            this.btn_mover.TabIndex = 15;
+            this.btn_mover.Text = "Mover";
+            this.btn_mover.UseVisualStyleBackColor = false;
+            // 
+            // btn_valorDado
+            // 
+            this.btn_valorDado.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_valorDado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_valorDado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_valorDado.Location = new System.Drawing.Point(86, 408);
+            this.btn_valorDado.Name = "btn_valorDado";
+            this.btn_valorDado.Size = new System.Drawing.Size(119, 58);
+            this.btn_valorDado.TabIndex = 16;
+            this.btn_valorDado.Text = "Valor Dados";
+            this.btn_valorDado.UseVisualStyleBackColor = false;
+            this.btn_valorDado.Click += new System.EventHandler(this.btn_valorDado_Click);
+            // 
             // Tabuleiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,6 +206,12 @@ namespace TARS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(981, 604);
+            this.Controls.Add(this.btn_valorDado);
+            this.Controls.Add(this.btn_mover);
+            this.Controls.Add(this.btn_escolha);
+            this.Controls.Add(this.txt_valorDado);
+            this.Controls.Add(this.lbl_valorDado);
+            this.Controls.Add(this.bnt_exibirTabuleiro);
             this.Controls.Add(this.bnt_verificarvez);
             this.Controls.Add(this.dgv_dados);
             this.Controls.Add(this.lbl_rolarDado);
@@ -160,5 +238,11 @@ namespace TARS
         private System.Windows.Forms.Button lbl_rolarDado;
         private System.Windows.Forms.DataGridView dgv_dados;
         private System.Windows.Forms.Button bnt_verificarvez;
+        private System.Windows.Forms.Button bnt_exibirTabuleiro;
+        private System.Windows.Forms.Label lbl_valorDado;
+        private System.Windows.Forms.TextBox txt_valorDado;
+        private System.Windows.Forms.Button btn_escolha;
+        private System.Windows.Forms.Button btn_mover;
+        private System.Windows.Forms.Button btn_valorDado;
     }
 }

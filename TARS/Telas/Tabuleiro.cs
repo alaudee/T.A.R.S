@@ -18,6 +18,8 @@ namespace TARS
         public string SenhaJogador { get; set; }
         public int IdPartida { get; set; }
 
+        string nova;
+
         public Tabuleiro(string infojogador, int idpartida) //coloquei mais um parametro no construtor para pegar o idpartida
         {
             InitializeComponent();
@@ -95,6 +97,43 @@ namespace TARS
                 MessageBox.Show("É a sua vez de jogar!", jogadorvez);
             else
                 MessageBox.Show("Não é a sua vez de jogar!", jogadorvez);
+        }
+
+        private void bnt_exibirTabuleiro_Click(object sender, EventArgs e)
+        {
+            string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
+            //label1.Text = tabuleiro;
+
+          
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_dados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgv_dados_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(dgv_dados.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            {
+                dgv_dados.CurrentRow.Selected = true;
+                txt_valorDado.Text = dgv_dados.Rows[e.RowIndex].Cells["ValorDado"].FormattedValue.ToString();
+            }
+        }
+
+        private void btn_escolha_Click(object sender, EventArgs e)
+        {
+            nova += txt_valorDado.Text;
+        }
+
+        private void btn_valorDado_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(nova);
         }
     }
 }
