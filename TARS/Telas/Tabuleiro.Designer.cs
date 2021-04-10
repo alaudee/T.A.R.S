@@ -35,15 +35,18 @@ namespace TARS
             this.lbl_senhajogador = new System.Windows.Forms.Label();
             this.lbl_corjogador = new System.Windows.Forms.Label();
             this.lbl_rolarDado = new System.Windows.Forms.Button();
-            this.dgv_dados = new System.Windows.Forms.DataGridView();
             this.bnt_verificarvez = new System.Windows.Forms.Button();
             this.bnt_exibirTabuleiro = new System.Windows.Forms.Button();
-            this.lbl_valorDado = new System.Windows.Forms.Label();
-            this.txt_valorDado = new System.Windows.Forms.TextBox();
-            this.btn_escolha = new System.Windows.Forms.Button();
             this.btn_mover = new System.Windows.Forms.Button();
-            this.btn_valorDado = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_dados)).BeginInit();
+            this.pcb_dado1 = new System.Windows.Forms.PictureBox();
+            this.pcb_dado2 = new System.Windows.Forms.PictureBox();
+            this.pcb_dado3 = new System.Windows.Forms.PictureBox();
+            this.pcb_dado4 = new System.Windows.Forms.PictureBox();
+            this.lbl_statuspart = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_dado4)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_iniciarpartida
@@ -102,25 +105,6 @@ namespace TARS
             this.lbl_rolarDado.UseVisualStyleBackColor = false;
             this.lbl_rolarDado.Click += new System.EventHandler(this.lbl_rolarDado_Click);
             // 
-            // dgv_dados
-            // 
-            this.dgv_dados.AllowUserToAddRows = false;
-            this.dgv_dados.AllowUserToDeleteRows = false;
-            this.dgv_dados.AllowUserToResizeColumns = false;
-            this.dgv_dados.AllowUserToResizeRows = false;
-            this.dgv_dados.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_dados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_dados.Location = new System.Drawing.Point(12, 199);
-            this.dgv_dados.MultiSelect = false;
-            this.dgv_dados.Name = "dgv_dados";
-            this.dgv_dados.ReadOnly = true;
-            this.dgv_dados.RowHeadersVisible = false;
-            this.dgv_dados.Size = new System.Drawing.Size(172, 129);
-            this.dgv_dados.TabIndex = 7;
-            this.dgv_dados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_dados_CellClick);
-            this.dgv_dados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_dados_CellContentClick);
-            // 
             // bnt_verificarvez
             // 
             this.bnt_verificarvez.BackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -147,32 +131,6 @@ namespace TARS
             this.bnt_exibirTabuleiro.UseVisualStyleBackColor = false;
             this.bnt_exibirTabuleiro.Click += new System.EventHandler(this.bnt_exibirTabuleiro_Click);
             // 
-            // lbl_valorDado
-            // 
-            this.lbl_valorDado.AutoSize = true;
-            this.lbl_valorDado.Location = new System.Drawing.Point(12, 366);
-            this.lbl_valorDado.Name = "lbl_valorDado";
-            this.lbl_valorDado.Size = new System.Drawing.Size(79, 13);
-            this.lbl_valorDado.TabIndex = 12;
-            this.lbl_valorDado.Text = "Valor do dado1";
-            // 
-            // txt_valorDado
-            // 
-            this.txt_valorDado.Location = new System.Drawing.Point(97, 363);
-            this.txt_valorDado.Name = "txt_valorDado";
-            this.txt_valorDado.Size = new System.Drawing.Size(100, 20);
-            this.txt_valorDado.TabIndex = 13;
-            // 
-            // btn_escolha
-            // 
-            this.btn_escolha.Location = new System.Drawing.Point(203, 361);
-            this.btn_escolha.Name = "btn_escolha";
-            this.btn_escolha.Size = new System.Drawing.Size(75, 23);
-            this.btn_escolha.TabIndex = 14;
-            this.btn_escolha.Text = "Escolher";
-            this.btn_escolha.UseVisualStyleBackColor = true;
-            this.btn_escolha.Click += new System.EventHandler(this.btn_escolha_Click);
-            // 
             // btn_mover
             // 
             this.btn_mover.BackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -185,18 +143,52 @@ namespace TARS
             this.btn_mover.Text = "Mover";
             this.btn_mover.UseVisualStyleBackColor = false;
             // 
-            // btn_valorDado
+            // pcb_dado1
             // 
-            this.btn_valorDado.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_valorDado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_valorDado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_valorDado.Location = new System.Drawing.Point(86, 408);
-            this.btn_valorDado.Name = "btn_valorDado";
-            this.btn_valorDado.Size = new System.Drawing.Size(119, 58);
-            this.btn_valorDado.TabIndex = 16;
-            this.btn_valorDado.Text = "Valor Dados";
-            this.btn_valorDado.UseVisualStyleBackColor = false;
-            this.btn_valorDado.Click += new System.EventHandler(this.btn_valorDado_Click);
+            this.pcb_dado1.Location = new System.Drawing.Point(12, 225);
+            this.pcb_dado1.Name = "pcb_dado1";
+            this.pcb_dado1.Size = new System.Drawing.Size(77, 68);
+            this.pcb_dado1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb_dado1.TabIndex = 17;
+            this.pcb_dado1.TabStop = false;
+            // 
+            // pcb_dado2
+            // 
+            this.pcb_dado2.Location = new System.Drawing.Point(95, 225);
+            this.pcb_dado2.Name = "pcb_dado2";
+            this.pcb_dado2.Size = new System.Drawing.Size(77, 68);
+            this.pcb_dado2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb_dado2.TabIndex = 18;
+            this.pcb_dado2.TabStop = false;
+            // 
+            // pcb_dado3
+            // 
+            this.pcb_dado3.Location = new System.Drawing.Point(12, 308);
+            this.pcb_dado3.Name = "pcb_dado3";
+            this.pcb_dado3.Size = new System.Drawing.Size(77, 68);
+            this.pcb_dado3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb_dado3.TabIndex = 19;
+            this.pcb_dado3.TabStop = false;
+            // 
+            // pcb_dado4
+            // 
+            this.pcb_dado4.Location = new System.Drawing.Point(96, 308);
+            this.pcb_dado4.Name = "pcb_dado4";
+            this.pcb_dado4.Size = new System.Drawing.Size(77, 68);
+            this.pcb_dado4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb_dado4.TabIndex = 20;
+            this.pcb_dado4.TabStop = false;
+            // 
+            // lbl_statuspart
+            // 
+            this.lbl_statuspart.AutoSize = true;
+            this.lbl_statuspart.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_statuspart.ForeColor = System.Drawing.Color.Red;
+            this.lbl_statuspart.Location = new System.Drawing.Point(745, 12);
+            this.lbl_statuspart.Name = "lbl_statuspart";
+            this.lbl_statuspart.Size = new System.Drawing.Size(224, 29);
+            this.lbl_statuspart.TabIndex = 21;
+            this.lbl_statuspart.Text = "Partida não iniciada";
             // 
             // Tabuleiro
             // 
@@ -206,14 +198,14 @@ namespace TARS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(981, 604);
-            this.Controls.Add(this.btn_valorDado);
+            this.Controls.Add(this.lbl_statuspart);
+            this.Controls.Add(this.pcb_dado4);
+            this.Controls.Add(this.pcb_dado3);
+            this.Controls.Add(this.pcb_dado2);
+            this.Controls.Add(this.pcb_dado1);
             this.Controls.Add(this.btn_mover);
-            this.Controls.Add(this.btn_escolha);
-            this.Controls.Add(this.txt_valorDado);
-            this.Controls.Add(this.lbl_valorDado);
             this.Controls.Add(this.bnt_exibirTabuleiro);
             this.Controls.Add(this.bnt_verificarvez);
-            this.Controls.Add(this.dgv_dados);
             this.Controls.Add(this.lbl_rolarDado);
             this.Controls.Add(this.lbl_corjogador);
             this.Controls.Add(this.lbl_senhajogador);
@@ -223,7 +215,10 @@ namespace TARS
             this.Name = "Tabuleiro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tabuleiro";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_dados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_dado4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,13 +231,13 @@ namespace TARS
         private System.Windows.Forms.Label lbl_senhajogador;
         private System.Windows.Forms.Label lbl_corjogador;
         private System.Windows.Forms.Button lbl_rolarDado;
-        private System.Windows.Forms.DataGridView dgv_dados;
         private System.Windows.Forms.Button bnt_verificarvez;
         private System.Windows.Forms.Button bnt_exibirTabuleiro;
-        private System.Windows.Forms.Label lbl_valorDado;
-        private System.Windows.Forms.TextBox txt_valorDado;
-        private System.Windows.Forms.Button btn_escolha;
         private System.Windows.Forms.Button btn_mover;
-        private System.Windows.Forms.Button btn_valorDado;
+        private System.Windows.Forms.PictureBox pcb_dado1;
+        private System.Windows.Forms.PictureBox pcb_dado2;
+        private System.Windows.Forms.PictureBox pcb_dado3;
+        private System.Windows.Forms.PictureBox pcb_dado4;
+        private System.Windows.Forms.Label lbl_statuspart;
     }
 }

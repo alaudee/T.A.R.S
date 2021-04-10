@@ -18,8 +18,6 @@ namespace TARS
         public string SenhaJogador { get; set; }
         public int IdPartida { get; set; }
 
-        string nova;
-
         public Tabuleiro(string infojogador, int idpartida) //coloquei mais um parametro no construtor para pegar o idpartida
         {
             InitializeComponent();
@@ -37,19 +35,19 @@ namespace TARS
             SenhaJogador = senhajog;
 
         }
-
-
         private void btn_iniciarpartida_Click(object sender, EventArgs e) 
         {
             string retorno = Jogo.IniciarPartida(IDJogador, SenhaJogador);
             MessageBox.Show("Iniciada a partida");
+            lbl_statuspart.Text = "Partida iniciada";
+            lbl_statuspart.ForeColor = System.Drawing.Color.Green;
         }
 
         private void lbl_rolarDado_Click(object sender, EventArgs e)
         {
+
             string dados = Jogo.RolarDados(IDJogador, SenhaJogador);
-            dados = dados.Replace("\r", "");
-            dados = dados.Replace("\n", "");
+            dados = dados.Replace("\r\n", "");
             char[] dado = new char[4];
             char[] valordado = new char[4];
             int contador = 0;
@@ -77,12 +75,13 @@ namespace TARS
                 Dado d = new Dado();
                 d.NumeroDado = dado[i];
                 d.ValorDado = valordado[i];
+                d.PopularImagens(d.ValorDado);
                 ListaDados.Add(d);
             }
-            dgv_dados.DataSource = ListaDados;
-            dgv_dados.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-
+            pcb_dado1.Image = ListaDados[0].FaceDado;
+            pcb_dado2.Image = ListaDados[1].FaceDado;
+            pcb_dado3.Image = ListaDados[2].FaceDado;
+            pcb_dado4.Image = ListaDados[3].FaceDado;
 
         }
 
@@ -117,23 +116,5 @@ namespace TARS
 
         }
 
-        private void dgv_dados_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if(dgv_dados.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
-            {
-                dgv_dados.CurrentRow.Selected = true;
-                txt_valorDado.Text = dgv_dados.Rows[e.RowIndex].Cells["ValorDado"].FormattedValue.ToString();
-            }
-        }
-
-        private void btn_escolha_Click(object sender, EventArgs e)
-        {
-            nova += txt_valorDado.Text;
-        }
-
-        private void btn_valorDado_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(nova);
-        }
     }
 }

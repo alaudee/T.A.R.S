@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,5 +13,26 @@ namespace TARS
     {
         public char NumeroDado { get; set; }
         public char ValorDado { get; set; }
+        public Image FaceDado { get; set; }
+
+
+        public void PopularImagens(char valordado)
+        {
+            if (this.ValorDado == '1')
+                 this.FaceDado = TARS.Properties.Resources.dado1; 
+            else if (this.ValorDado == '2')
+                 this.FaceDado = TARS.Properties.Resources.dado2;
+            else if (this.ValorDado == '3')
+                 this.FaceDado = TARS.Properties.Resources.dado3;
+            else if (this.ValorDado == '4')
+                 this.FaceDado = TARS.Properties.Resources.dado4;
+            else if (this.ValorDado == '5')
+                 this.FaceDado = TARS.Properties.Resources.dado5;
+            else 
+                 this.FaceDado = TARS.Properties.Resources.dado6;
+        }
+        
+
+
     }
 }
