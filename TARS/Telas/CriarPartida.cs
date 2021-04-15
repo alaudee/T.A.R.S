@@ -13,10 +13,13 @@ namespace TARS.Telas
 {
     public partial class CriarPartida : Form
     {
-        public CriarPartida()
+        DataGridView atualizar = new DataGridView();
+
+        public CriarPartida(DataGridView partidas)
         {
             InitializeComponent();
             txt_senhapartida.PasswordChar = '*';
+            this.atualizar = partidas;
         }
 
         private void btn_criarpartida_Click(object sender, EventArgs e)
@@ -35,6 +38,23 @@ namespace TARS.Telas
             {
                 MessageBox.Show("Você criou uma partida!");
                 this.Close();
+
+                string retorno = Jogo.ListarPartidas("T");
+                retorno = retorno.Replace("\r", " ");
+                string[] linha = retorno.Split('\n');
+                List<Partida> partidas = new List<Partida>();
+                for (int i = 0; i < linha.Length - 1; i++)
+                {
+                    Partida p = new Partida();
+                    string[] itens = linha[i].Split(',');
+                    p.id = Convert.ToInt32(itens[0]);
+                    p.nome = itens[1];
+                    p.data = itens[2];
+                    p.status = itens[3];
+                    partidas.Add(p);
+                }
+                atualizar.DataSource = partidas;
+                atualizar.Columns[4].Visible = false;
             }
             
         }

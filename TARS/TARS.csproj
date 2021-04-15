@@ -95,6 +95,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Telas\Tabuleiro.resx">
       <DependentUpon>Tabuleiro.cs</DependentUpon>
@@ -111,6 +112,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Imagens\dado1.jpg" />
+    <Content Include="Imagens\dado2.jpg" />
+    <Content Include="Imagens\dado3.jpg" />
+    <Content Include="Imagens\dado4.jpg" />
+    <Content Include="Imagens\dado5.jpg" />
+    <Content Include="Imagens\dado6.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
