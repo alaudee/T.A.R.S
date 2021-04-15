@@ -83,6 +83,16 @@ namespace TARS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dado21 {
+            get {
+                object obj = ResourceManager.GetObject("dado21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dado3 {
             get {
                 object obj = ResourceManager.GetObject("dado3", resourceCulture);

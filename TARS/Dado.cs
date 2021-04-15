@@ -31,8 +31,41 @@ namespace TARS
             else 
                  this.FaceDado = TARS.Properties.Resources.dado6;
         }
-        
 
+        public int[] FormarDuplasSomaDados(char[] valordado)
+        {
+            int[] trilha = new int[6];
+
+            trilha[0] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[1]);
+
+            trilha[1] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[2]);
+
+            trilha[2] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[3]);
+
+            trilha[3] = (int)Char.GetNumericValue(valordado[1]) + (int)Char.GetNumericValue(valordado[2]);
+
+            trilha[4] = (int)Char.GetNumericValue(valordado[1]) + (int)Char.GetNumericValue(valordado[3]);
+
+            trilha[5] = (int)Char.GetNumericValue(valordado[2]) + (int)Char.GetNumericValue(valordado[3]);
+
+            return trilha;
+        }
+
+        public string[] PrintarEscolhas(int[] trilhas)
+        {
+            string[] escolhas = new string[3];
+            int cont = 0;
+            string[] stringtrilhas = new string[3];
+            for (int i = 0; i < trilhas.Length; i += 2)
+            {
+                if (cont < 3)
+                {
+                    stringtrilhas[cont] = trilhas[i] + " e " + trilhas[i + 1];
+                }
+                cont++;
+            }
+            return stringtrilhas;
+        }
 
     }
 }

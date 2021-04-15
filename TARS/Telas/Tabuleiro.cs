@@ -18,11 +18,19 @@ namespace TARS
         public string SenhaJogador { get; set; }
         public int IdPartida { get; set; }
 
+        char[] valordado = new char[4];
+
         public Tabuleiro(string infojogador, int idpartida) //coloquei mais um parametro no construtor para pegar o idpartida
         {
             InitializeComponent();
             this.Infojogador = infojogador;
             this.IdPartida = idpartida;
+
+            btn_rolarDado.Enabled = false;
+            btn_verificarvez.Enabled = false;
+
+            gb_jogadas.Visible = false;
+            btn_mover.Visible = false;
 
             string[] linha = Infojogador.Split(',');
             string idjogador = linha[0];
@@ -41,17 +49,20 @@ namespace TARS
             MessageBox.Show("Iniciada a partida");
             lbl_statuspart.Text = "Partida iniciada";
             lbl_statuspart.ForeColor = System.Drawing.Color.Green;
+            btn_rolarDado.Enabled = true;
+            btn_verificarvez.Enabled = true;
+
         }
 
         private void lbl_rolarDado_Click(object sender, EventArgs e)
         {
-
+            
             string dados = Jogo.RolarDados(IDJogador, SenhaJogador);
             dados = dados.Replace("\r\n", "");
-            char[] dado = new char[4];
-            char[] valordado = new char[4];
             int contador = 0;
             int contvalor = 0;
+
+            char[] dado = new char[4];
 
             for (int i = 0; i < dados.Length; i++)
             {
@@ -69,6 +80,7 @@ namespace TARS
             }
 
             List<Dado> ListaDados  = new List<Dado>();
+            
 
             for (int i = 0; i < 4; i++)
             {
@@ -78,10 +90,20 @@ namespace TARS
                 d.PopularImagens(d.ValorDado);
                 ListaDados.Add(d);
             }
+
             pcb_dado1.Image = ListaDados[0].FaceDado;
             pcb_dado2.Image = ListaDados[1].FaceDado;
             pcb_dado3.Image = ListaDados[2].FaceDado;
             pcb_dado4.Image = ListaDados[3].FaceDado;
+
+            Dado de = new Dado();
+            int[] trilhas = de.FormarDuplasSomaDados(valordado);
+            string[] stringteste = de.PrintarEscolhas(trilhas);
+            gb_jogadas.Visible = true;
+            btn_mover.Visible = true;
+            rdb_jogada1.Text = stringteste[0]; // trilhas [0] e[1]
+            rdb_jogada2.Text = stringteste[1]; // trilhas [2] e[3]
+            rdb_jogada3.Text = stringteste[2]; // trilhas [4] e[5]
 
         }
 
@@ -101,9 +123,9 @@ namespace TARS
         private void bnt_exibirTabuleiro_Click(object sender, EventArgs e)
         {
             string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
-            //label1.Text = tabuleiro;
+            MessageBox.Show(tabuleiro);
 
-          
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -116,5 +138,9 @@ namespace TARS
 
         }
 
+        private void btn_mover_Click(object sender, EventArgs e)
+        {
+            Jogo.Mover(IDJogador, SenhaJogador, "1234", "A3");
+        }
     }
 }
