@@ -19,6 +19,8 @@ namespace TARS
         public int IdPartida { get; set; }
 
         char[] valordado = new char[4];
+        char[] numerodado = new char[4];
+        string dadoescolha;
 
         string op_dado;
 
@@ -130,6 +132,7 @@ namespace TARS
             {
                 Dado d = new Dado();
                 d.NumeroDado = dado[i];
+                numerodado[i] = dado[i];
                 d.ValorDado = valordado[i];
                 d.PopularImagens(d.ValorDado);
                 ListaDados.Add(d);
@@ -141,13 +144,12 @@ namespace TARS
             pcb_dado4.Image = ListaDados[3].FaceDado;
 
             Dado de = new Dado();
-            int[] trilhas = de.FormarDuplasSomaDados(valordado);
-            string[] stringteste = de.PrintarEscolhas(trilhas);
+            int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
             gb_jogadas.Visible = true;
             btn_mover.Visible = true;
-            rdb_jogada1.Text = stringteste[0]; // trilhas [0] e[1]
-            rdb_jogada2.Text = stringteste[1]; // trilhas [2] e[3]
-            rdb_jogada3.Text = stringteste[2]; // trilhas [4] e[5]
+            rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
+            rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
+            rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
         }
 
         private void bnt_verificarvez_Click(object sender, EventArgs e)
@@ -182,24 +184,41 @@ namespace TARS
         private void rdb_jogada1_CheckedChanged(object sender, EventArgs e)
         {
             op_dado = rdb_jogada1.Text;
+
+            dadoescolha = "";
+            dadoescolha = numerodado[0].ToString();
+            dadoescolha += numerodado[1].ToString();
+            dadoescolha += numerodado[2].ToString();
+            dadoescolha += numerodado[3].ToString();
         }
 
         private void rdb_jogada2_CheckedChanged(object sender, EventArgs e)
         {
             op_dado = rdb_jogada2.Text;
+            dadoescolha = "";
+            dadoescolha = numerodado[0].ToString();
+            dadoescolha += numerodado[2].ToString();
+            dadoescolha += numerodado[1].ToString();
+            dadoescolha += numerodado[3].ToString();
         }
 
         private void rdb_jogada3_CheckedChanged(object sender, EventArgs e)
         {
             op_dado = rdb_jogada3.Text;
+            dadoescolha = "";
+            dadoescolha = numerodado[0].ToString();
+            dadoescolha += numerodado[3].ToString();
+            dadoescolha += numerodado[1].ToString();
+            dadoescolha += numerodado[2].ToString();
         }
 
         private void btn_mover_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(tratarTextoEscolhaRadio(op_dado));
-            //Jogo.Mover(IDJogador, SenhaJogador, dadoEscolha, tratarTextoEscolhaRadio(op_dado));
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(dadoescolha);
+        }
     }
 }

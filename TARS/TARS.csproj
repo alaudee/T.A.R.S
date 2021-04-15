@@ -113,7 +113,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Imagens\dado1.jpg" />
     <Content Include="Imagens\dado2.jpg" />
