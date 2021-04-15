@@ -214,11 +214,12 @@ namespace TARS
 
         private void btn_mover_Click(object sender, EventArgs e)
         {
+            Jogo.Mover(IDJogador, SenhaJogador, dadoescolha, tratarTextoEscolhaRadio(op_dado));
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(dadoescolha);
+            MessageBox.Show($"{dadoescolha} e {tratarTextoEscolhaRadio(op_dado)}");
         }
     }
 }
