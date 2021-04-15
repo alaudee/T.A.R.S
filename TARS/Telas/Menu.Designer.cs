@@ -37,7 +37,6 @@ namespace TARS
             this.btn_entrarpartida = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
             this.dgv_partidas = new System.Windows.Forms.DataGridView();
-            this.btn_atualizar = new System.Windows.Forms.Button();
             this.lbl_versao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_partidas)).BeginInit();
             this.SuspendLayout();
@@ -133,20 +132,6 @@ namespace TARS
             this.dgv_partidas.TabIndex = 4;
             this.dgv_partidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // btn_atualizar
-            // 
-            this.btn_atualizar.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_atualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_atualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_atualizar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_atualizar.Location = new System.Drawing.Point(733, 97);
-            this.btn_atualizar.Name = "btn_atualizar";
-            this.btn_atualizar.Size = new System.Drawing.Size(73, 25);
-            this.btn_atualizar.TabIndex = 5;
-            this.btn_atualizar.Text = "atualizar";
-            this.btn_atualizar.UseVisualStyleBackColor = false;
-            this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
-            // 
             // lbl_versao
             // 
             this.lbl_versao.AutoSize = true;
@@ -167,7 +152,6 @@ namespace TARS
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(900, 588);
             this.Controls.Add(this.lbl_versao);
-            this.Controls.Add(this.btn_atualizar);
             this.Controls.Add(this.dgv_partidas);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_entrarpartida);
@@ -190,7 +174,6 @@ namespace TARS
         private System.Windows.Forms.Button btn_entrarpartida;
         private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.DataGridView dgv_partidas;
-        private System.Windows.Forms.Button btn_atualizar;
         private System.Windows.Forms.Label lbl_versao;
     }
 }
