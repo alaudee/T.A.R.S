@@ -32,7 +32,7 @@ namespace TARS
                  this.FaceDado = TARS.Properties.Resources.dado6;
         }
 
-        public int[] FormarDuplasSomaDados(char[] valordado)
+        public static int[] FormarDuplasSomaDados(char[] valordado)
         {
             int[] trilha = new int[6];
 
@@ -51,21 +51,7 @@ namespace TARS
             return trilha;
         }
 
-        public string[] PrintarEscolhas(int[] trilhas)
-        {
-            string[] escolhas = new string[3];
-            int cont = 0;
-            string[] stringtrilhas = new string[3];
-            for (int i = 0; i < trilhas.Length; i += 2)
-            {
-                if (cont < 3)
-                {
-                    stringtrilhas[cont] = trilhas[i] + " e " + trilhas[i + 1];
-                }
-                cont++;
-            }
-            return stringtrilhas;
-        }
+       
 
     }
 }
