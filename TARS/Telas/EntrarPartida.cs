@@ -17,6 +17,7 @@ namespace TARS.Telas
         public int idpartida { get; set; }
 
         List<Jogador> jogadores = new List<Jogador>();
+
         public EntrarPartida(int idpartida)
         {
             InitializeComponent();
@@ -38,8 +39,6 @@ namespace TARS.Telas
             dgv_jogadores.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             txt_senha.PasswordChar = '*';
         }
-
-        
 
         private void txt_jogadores_TextChanged(object sender, EventArgs e)
         {
@@ -63,7 +62,7 @@ namespace TARS.Telas
                 txt_nomejogador.Text = "";
                 txt_senha.Text = "";
                 MessageBox.Show("Você entrou na partida");
-                Tabuleiro tabuleiro = new Tabuleiro(validadorEntrarPartida);
+                Tabuleiro tabuleiro = new Tabuleiro(validadorEntrarPartida, idpartida);
                 DialogResult = DialogResult.OK;
                 tabuleiro.Show();
             }
