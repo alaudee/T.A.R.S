@@ -147,6 +147,7 @@ namespace TARS
             int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
             gb_jogadas.Visible = true;
             btn_mover.Visible = true;
+            btn_parar.Visible = true;
             rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
             rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
             rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
@@ -220,6 +221,11 @@ namespace TARS
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"{dadoescolha} e {tratarTextoEscolhaRadio(op_dado)}");
+        }
+
+        private void btn_parar_Click(object sender, EventArgs e)
+        {
+            string parar = Jogo.Parar(IDJogador, SenhaJogador);
         }
     }
 }

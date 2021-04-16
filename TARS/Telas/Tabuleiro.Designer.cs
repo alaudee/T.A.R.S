@@ -47,7 +47,7 @@ namespace TARS
             this.rdb_jogada3 = new System.Windows.Forms.RadioButton();
             this.rdb_jogada2 = new System.Windows.Forms.RadioButton();
             this.rdb_jogada1 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_parar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).BeginInit();
@@ -246,18 +246,19 @@ namespace TARS
             this.rdb_jogada1.UseVisualStyleBackColor = true;
             this.rdb_jogada1.CheckedChanged += new System.EventHandler(this.rdb_jogada1_CheckedChanged);
             // 
-            // button1
+            // btn_parar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(148, 489);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 58);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Prova";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_parar.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_parar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_parar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_parar.Location = new System.Drawing.Point(148, 489);
+            this.btn_parar.Name = "btn_parar";
+            this.btn_parar.Size = new System.Drawing.Size(119, 58);
+            this.btn_parar.TabIndex = 24;
+            this.btn_parar.Text = "Parar";
+            this.btn_parar.UseVisualStyleBackColor = false;
+            this.btn_parar.Visible = false;
+            this.btn_parar.Click += new System.EventHandler(this.btn_parar_Click);
             // 
             // Tabuleiro
             // 
@@ -267,7 +268,7 @@ namespace TARS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(981, 604);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_parar);
             this.Controls.Add(this.gb_jogadas);
             this.Controls.Add(this.lbl_statuspart);
             this.Controls.Add(this.pcb_dado4);
@@ -316,6 +317,6 @@ namespace TARS
         private System.Windows.Forms.RadioButton rdb_jogada3;
         private System.Windows.Forms.RadioButton rdb_jogada2;
         private System.Windows.Forms.RadioButton rdb_jogada1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_parar;
     }
 }
