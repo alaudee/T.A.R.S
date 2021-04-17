@@ -138,7 +138,7 @@ namespace TARS
         private void bnt_exibirTabuleiro_Click(object sender, EventArgs e)
         {
             string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
-            MessageBox.Show(tabuleiro);
+            dgv_teste.DataSource = TabuleiroP.LimparExibirTabuleiro(tabuleiro);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -186,8 +186,7 @@ namespace TARS
         {
             Jogo.Mover(IDJogador, SenhaJogador, dadoescolha, Dado.tratarTextoEscolhaRadio(op_dado));
             string retornotab = Jogo.ExibirTabuleiro(IdPartida);
-            TabuleiroP.Adicionar2Movimentos(retornotab, dtb_tabuleiro);
-            dgv_teste.DataSource = dtb_tabuleiro;
+            dgv_teste.DataSource = TabuleiroP.AdicionarMovimentos(retornotab);
 
         }
 
