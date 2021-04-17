@@ -48,11 +48,35 @@ namespace TARS
             this.rdb_jogada2 = new System.Windows.Forms.RadioButton();
             this.rdb_jogada1 = new System.Windows.Forms.RadioButton();
             this.btn_parar = new System.Windows.Forms.Button();
+            this.dgv_teste = new System.Windows.Forms.DataGridView();
+            this.pcb_t51 = new System.Windows.Forms.PictureBox();
+            this.pcb_t21 = new System.Windows.Forms.PictureBox();
+            this.pcb_t41 = new System.Windows.Forms.PictureBox();
+            this.pcb_t31 = new System.Windows.Forms.PictureBox();
+            this.pcb_t61 = new System.Windows.Forms.PictureBox();
+            this.pcb_t71 = new System.Windows.Forms.PictureBox();
+            this.pcb_81 = new System.Windows.Forms.PictureBox();
+            this.pcb_t91 = new System.Windows.Forms.PictureBox();
+            this.pcb_t101 = new System.Windows.Forms.PictureBox();
+            this.pcb_t111 = new System.Windows.Forms.PictureBox();
+            this.pcb_t121 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado4)).BeginInit();
             this.gb_jogadas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_teste)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t61)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t71)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_81)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t91)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t101)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t111)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t121)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_iniciarpartida
@@ -260,6 +284,113 @@ namespace TARS
             this.btn_parar.Visible = false;
             this.btn_parar.Click += new System.EventHandler(this.btn_parar_Click);
             // 
+            // dgv_teste
+            // 
+            this.dgv_teste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_teste.Location = new System.Drawing.Point(292, 12);
+            this.dgv_teste.Name = "dgv_teste";
+            this.dgv_teste.Size = new System.Drawing.Size(240, 150);
+            this.dgv_teste.TabIndex = 25;
+            // 
+            // pcb_t51
+            // 
+            this.pcb_t51.Location = new System.Drawing.Point(595, 479);
+            this.pcb_t51.Name = "pcb_t51";
+            this.pcb_t51.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t51.TabIndex = 26;
+            this.pcb_t51.TabStop = false;
+            this.pcb_t51.Visible = false;
+            // 
+            // pcb_t21
+            // 
+            this.pcb_t21.Location = new System.Drawing.Point(462, 339);
+            this.pcb_t21.Name = "pcb_t21";
+            this.pcb_t21.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t21.TabIndex = 27;
+            this.pcb_t21.TabStop = false;
+            this.pcb_t21.Visible = false;
+            // 
+            // pcb_t41
+            // 
+            this.pcb_t41.Location = new System.Drawing.Point(550, 437);
+            this.pcb_t41.Name = "pcb_t41";
+            this.pcb_t41.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t41.TabIndex = 28;
+            this.pcb_t41.TabStop = false;
+            this.pcb_t41.Visible = false;
+            // 
+            // pcb_t31
+            // 
+            this.pcb_t31.Location = new System.Drawing.Point(505, 384);
+            this.pcb_t31.Name = "pcb_t31";
+            this.pcb_t31.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t31.TabIndex = 29;
+            this.pcb_t31.TabStop = false;
+            this.pcb_t31.Visible = false;
+            // 
+            // pcb_t61
+            // 
+            this.pcb_t61.Location = new System.Drawing.Point(633, 520);
+            this.pcb_t61.Name = "pcb_t61";
+            this.pcb_t61.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t61.TabIndex = 30;
+            this.pcb_t61.TabStop = false;
+            this.pcb_t61.Visible = false;
+            // 
+            // pcb_t71
+            // 
+            this.pcb_t71.Location = new System.Drawing.Point(671, 553);
+            this.pcb_t71.Name = "pcb_t71";
+            this.pcb_t71.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t71.TabIndex = 31;
+            this.pcb_t71.TabStop = false;
+            this.pcb_t71.Visible = false;
+            // 
+            // pcb_81
+            // 
+            this.pcb_81.Location = new System.Drawing.Point(709, 520);
+            this.pcb_81.Name = "pcb_81";
+            this.pcb_81.Size = new System.Drawing.Size(27, 27);
+            this.pcb_81.TabIndex = 32;
+            this.pcb_81.TabStop = false;
+            this.pcb_81.Visible = false;
+            // 
+            // pcb_t91
+            // 
+            this.pcb_t91.Location = new System.Drawing.Point(750, 479);
+            this.pcb_t91.Name = "pcb_t91";
+            this.pcb_t91.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t91.TabIndex = 33;
+            this.pcb_t91.TabStop = false;
+            this.pcb_t91.Visible = false;
+            // 
+            // pcb_t101
+            // 
+            this.pcb_t101.Location = new System.Drawing.Point(792, 437);
+            this.pcb_t101.Name = "pcb_t101";
+            this.pcb_t101.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t101.TabIndex = 34;
+            this.pcb_t101.TabStop = false;
+            this.pcb_t101.Visible = false;
+            // 
+            // pcb_t111
+            // 
+            this.pcb_t111.Location = new System.Drawing.Point(839, 384);
+            this.pcb_t111.Name = "pcb_t111";
+            this.pcb_t111.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t111.TabIndex = 35;
+            this.pcb_t111.TabStop = false;
+            this.pcb_t111.Visible = false;
+            // 
+            // pcb_t121
+            // 
+            this.pcb_t121.Location = new System.Drawing.Point(886, 339);
+            this.pcb_t121.Name = "pcb_t121";
+            this.pcb_t121.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t121.TabIndex = 36;
+            this.pcb_t121.TabStop = false;
+            this.pcb_t121.Visible = false;
+            // 
             // Tabuleiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,6 +399,18 @@ namespace TARS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(981, 604);
+            this.Controls.Add(this.pcb_t121);
+            this.Controls.Add(this.pcb_t111);
+            this.Controls.Add(this.pcb_t101);
+            this.Controls.Add(this.pcb_t91);
+            this.Controls.Add(this.pcb_81);
+            this.Controls.Add(this.pcb_t71);
+            this.Controls.Add(this.pcb_t61);
+            this.Controls.Add(this.pcb_t31);
+            this.Controls.Add(this.pcb_t41);
+            this.Controls.Add(this.pcb_t21);
+            this.Controls.Add(this.pcb_t51);
+            this.Controls.Add(this.dgv_teste);
             this.Controls.Add(this.btn_parar);
             this.Controls.Add(this.gb_jogadas);
             this.Controls.Add(this.lbl_statuspart);
@@ -293,6 +436,18 @@ namespace TARS
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado4)).EndInit();
             this.gb_jogadas.ResumeLayout(false);
             this.gb_jogadas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_teste)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t61)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t71)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_81)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t91)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t101)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t111)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t121)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,5 +473,17 @@ namespace TARS
         private System.Windows.Forms.RadioButton rdb_jogada2;
         private System.Windows.Forms.RadioButton rdb_jogada1;
         private System.Windows.Forms.Button btn_parar;
+        private System.Windows.Forms.DataGridView dgv_teste;
+        private System.Windows.Forms.PictureBox pcb_t51;
+        private System.Windows.Forms.PictureBox pcb_t21;
+        private System.Windows.Forms.PictureBox pcb_t41;
+        private System.Windows.Forms.PictureBox pcb_t31;
+        private System.Windows.Forms.PictureBox pcb_t61;
+        private System.Windows.Forms.PictureBox pcb_t71;
+        private System.Windows.Forms.PictureBox pcb_81;
+        private System.Windows.Forms.PictureBox pcb_t91;
+        private System.Windows.Forms.PictureBox pcb_t101;
+        private System.Windows.Forms.PictureBox pcb_t111;
+        private System.Windows.Forms.PictureBox pcb_t121;
     }
 }

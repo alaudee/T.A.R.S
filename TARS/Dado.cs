@@ -51,7 +51,47 @@ namespace TARS
             return trilha;
         }
 
-       
+        public static string converteHexadecimal(string caso)
+        {
+            string[] valores = caso.Split(',');
+
+            string res = "";
+
+            for (int i = 0; i < valores.Length; i++)
+            {
+                if (int.Parse(valores[i]) == 10)
+                {
+                    valores[i] = "A";
+                }
+                else if (int.Parse(valores[i]) == 11)
+                {
+                    valores[i] = "B";
+                }
+                else if (int.Parse(valores[i]) == 12)
+                {
+                    valores[i] = "C";
+                }
+            }
+
+            foreach (string num in valores)
+            {
+                res += num;
+            }
+
+            return res;
+        }
+        public static string tratarTextoEscolhaRadio(string valores_dado)
+        {
+            string res = valores_dado;
+
+            res = res.Replace(" ", "");
+            res = res.Replace("e", ",");
+
+            string final = converteHexadecimal(res);
+
+            return final;
+        }
+
 
     }
 }

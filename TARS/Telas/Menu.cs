@@ -48,6 +48,7 @@ namespace TARS
         {
             CriarPartida criarpartida = new CriarPartida(dgv_partidas);
             criarpartida.ShowDialog();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)

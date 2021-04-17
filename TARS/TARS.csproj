@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Jogador.cs" />
+    <Compile Include="TabuleiroP.cs" />
     <Compile Include="Telas\CriarPartida.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +121,7 @@
     <Content Include="Imagens\dado4.jpg" />
     <Content Include="Imagens\dado5.jpg" />
     <Content Include="Imagens\dado6.jpg" />
+    <Content Include="Imagens\dot.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

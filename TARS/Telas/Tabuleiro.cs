@@ -24,47 +24,7 @@ namespace TARS
 
         string op_dado;
 
-        public string converteHexadecimal(string caso)
-        {
-            string[] valores = caso.Split(',');
-
-            string res = "";
-
-            for (int i = 0; i < valores.Length; i++)
-            {
-                if (int.Parse(valores[i]) == 10)
-                {
-                    valores[i] = "A";
-                }
-                else if (int.Parse(valores[i]) == 11)
-                {
-                    valores[i] = "B";
-                }
-                else if (int.Parse(valores[i]) == 12)
-                {
-                    valores[i] = "C";
-                }
-            }
-
-            foreach (string num in valores)
-            {
-                res += num;
-            }
-
-            return res;
-        }
-
-        public string tratarTextoEscolhaRadio(string valores_dado)
-        {
-            string res = valores_dado;
-
-            res = res.Replace(" ", "");
-            res = res.Replace("e", ",");
-
-            string final = converteHexadecimal(res);
-
-            return final;
-        }
+        DataTable dtb_tabuleiro;
 
         public Tabuleiro(string infojogador, int idpartida) //coloquei mais um parametro no construtor para pegar o idpartida
         {
@@ -88,6 +48,8 @@ namespace TARS
             IDJogador = Convert.ToInt32(idjogador);
             SenhaJogador = senhajog;
 
+            dtb_tabuleiro = TabuleiroP.CriarDataTable();
+
         }
 
         private void btn_iniciarpartida_Click(object sender, EventArgs e) 
@@ -102,55 +64,62 @@ namespace TARS
 
         private void lbl_rolarDado_Click(object sender, EventArgs e)
         {
-            
-            string dados = Jogo.RolarDados(IDJogador, SenhaJogador);
-            dados = dados.Replace("\r\n", "");
-            int contador = 0;
-            int contvalor = 0;
-
-            char[] dado = new char[4];
-
-            for (int i = 0; i < dados.Length; i++)
+            try 
             {
-                if (i % 2 == 0)
+                string dados = Jogo.RolarDados(IDJogador, SenhaJogador);
+                dados = dados.Replace("\r\n", "");
+                int contador = 0;
+                int contvalor = 0;
+
+                char[] dado = new char[4];
+
+                for (int i = 0; i < dados.Length; i++)
                 {
-                    dado[contador] = dados[i];
-                    contador++;
-                }
-                else
-                {
-                    valordado[contvalor] = dados[i];
-                    contvalor++;
+                    if (i % 2 == 0)
+                    {
+                        dado[contador] = dados[i];
+                        contador++;
+                    }
+                    else
+                    {
+                        valordado[contvalor] = dados[i];
+                        contvalor++;
+                    }
+
                 }
 
+                List<Dado> ListaDados = new List<Dado>();
+
+
+                for (int i = 0; i < 4; i++)
+                {
+                    Dado d = new Dado();
+                    d.NumeroDado = dado[i];
+                    numerodado[i] = dado[i];
+                    d.ValorDado = valordado[i];
+                    d.PopularImagens(d.ValorDado);
+                    ListaDados.Add(d);
+                }
+
+                pcb_dado1.Image = ListaDados[0].FaceDado;
+                pcb_dado2.Image = ListaDados[1].FaceDado;
+                pcb_dado3.Image = ListaDados[2].FaceDado;
+                pcb_dado4.Image = ListaDados[3].FaceDado;
+
+                Dado de = new Dado();
+                int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
+                gb_jogadas.Visible = true;
+                btn_mover.Visible = true;
+                btn_parar.Visible = true;
+                rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
+                rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
+                rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro " + ex.Message);
             }
 
-            List<Dado> ListaDados  = new List<Dado>();
-            
-
-            for (int i = 0; i < 4; i++)
-            {
-                Dado d = new Dado();
-                d.NumeroDado = dado[i];
-                numerodado[i] = dado[i];
-                d.ValorDado = valordado[i];
-                d.PopularImagens(d.ValorDado);
-                ListaDados.Add(d);
-            }
-
-            pcb_dado1.Image = ListaDados[0].FaceDado;
-            pcb_dado2.Image = ListaDados[1].FaceDado;
-            pcb_dado3.Image = ListaDados[2].FaceDado;
-            pcb_dado4.Image = ListaDados[3].FaceDado;
-
-            Dado de = new Dado();
-            int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
-            gb_jogadas.Visible = true;
-            btn_mover.Visible = true;
-            btn_parar.Visible = true;
-            rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
-            rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
-            rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
         }
 
         private void bnt_verificarvez_Click(object sender, EventArgs e)
@@ -169,7 +138,7 @@ namespace TARS
         private void bnt_exibirTabuleiro_Click(object sender, EventArgs e)
         {
             string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
-            MessageBox.Show(tabuleiro);
+            dgv_teste.DataSource = TabuleiroP.LimparExibirTabuleiro(tabuleiro);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -215,12 +184,15 @@ namespace TARS
 
         private void btn_mover_Click(object sender, EventArgs e)
         {
-            Jogo.Mover(IDJogador, SenhaJogador, dadoescolha, tratarTextoEscolhaRadio(op_dado));
+            Jogo.Mover(IDJogador, SenhaJogador, dadoescolha, Dado.tratarTextoEscolhaRadio(op_dado));
+            string retornotab = Jogo.ExibirTabuleiro(IdPartida);
+            dgv_teste.DataSource = TabuleiroP.AdicionarMovimentos(retornotab);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"{dadoescolha} e {tratarTextoEscolhaRadio(op_dado)}");
+            MessageBox.Show($"{dadoescolha} e {Dado.tratarTextoEscolhaRadio(op_dado)}");
         }
 
         private void btn_parar_Click(object sender, EventArgs e)
