@@ -63,6 +63,10 @@ namespace TARS
             this.pcb_t22 = new System.Windows.Forms.PictureBox();
             this.pcb_t23 = new System.Windows.Forms.PictureBox();
             this.rtxt_historicoP = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).BeginInit();
@@ -82,6 +86,10 @@ namespace TARS
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t121)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_iniciarpartida
@@ -309,9 +317,9 @@ namespace TARS
             // 
             // pcb_t21
             // 
-            this.pcb_t21.Location = new System.Drawing.Point(549, 382);
+            this.pcb_t21.Location = new System.Drawing.Point(543, 382);
             this.pcb_t21.Name = "pcb_t21";
-            this.pcb_t21.Size = new System.Drawing.Size(30, 30);
+            this.pcb_t21.Size = new System.Drawing.Size(40, 40);
             this.pcb_t21.TabIndex = 27;
             this.pcb_t21.TabStop = false;
             this.pcb_t21.Visible = false;
@@ -399,29 +407,65 @@ namespace TARS
             // 
             // pcb_t22
             // 
-            this.pcb_t22.Location = new System.Drawing.Point(549, 326);
+            this.pcb_t22.Location = new System.Drawing.Point(543, 322);
             this.pcb_t22.Name = "pcb_t22";
-            this.pcb_t22.Size = new System.Drawing.Size(30, 30);
+            this.pcb_t22.Size = new System.Drawing.Size(40, 40);
             this.pcb_t22.TabIndex = 37;
             this.pcb_t22.TabStop = false;
             this.pcb_t22.Visible = false;
             // 
             // pcb_t23
             // 
-            this.pcb_t23.Location = new System.Drawing.Point(549, 270);
+            this.pcb_t23.Location = new System.Drawing.Point(543, 262);
             this.pcb_t23.Name = "pcb_t23";
-            this.pcb_t23.Size = new System.Drawing.Size(30, 30);
+            this.pcb_t23.Size = new System.Drawing.Size(40, 40);
             this.pcb_t23.TabIndex = 38;
             this.pcb_t23.TabStop = false;
             this.pcb_t23.Visible = false;
             // 
             // rtxt_historicoP
             // 
-            this.rtxt_historicoP.Location = new System.Drawing.Point(335, 539);
+            this.rtxt_historicoP.Location = new System.Drawing.Point(307, 510);
             this.rtxt_historicoP.Name = "rtxt_historicoP";
             this.rtxt_historicoP.Size = new System.Drawing.Size(295, 128);
             this.rtxt_historicoP.TabIndex = 39;
             this.rtxt_historicoP.Text = "";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(543, 322);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(563, 322);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.TabIndex = 41;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(543, 342);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox3.TabIndex = 42;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(563, 342);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox4.TabIndex = 43;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
             // 
             // Tabuleiro
             // 
@@ -431,6 +475,10 @@ namespace TARS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1163, 679);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rtxt_historicoP);
             this.Controls.Add(this.pcb_t23);
             this.Controls.Add(this.pcb_t22);
@@ -486,6 +534,10 @@ namespace TARS
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t121)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -526,5 +578,9 @@ namespace TARS
         private System.Windows.Forms.PictureBox pcb_t22;
         private System.Windows.Forms.PictureBox pcb_t23;
         private System.Windows.Forms.RichTextBox rtxt_historicoP;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
