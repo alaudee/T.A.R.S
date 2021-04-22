@@ -60,6 +60,9 @@ namespace TARS
             this.pcb_t101 = new System.Windows.Forms.PictureBox();
             this.pcb_t111 = new System.Windows.Forms.PictureBox();
             this.pcb_t121 = new System.Windows.Forms.PictureBox();
+            this.pcb_t22 = new System.Windows.Forms.PictureBox();
+            this.pcb_t23 = new System.Windows.Forms.PictureBox();
+            this.rtxt_historicoP = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).BeginInit();
@@ -77,6 +80,8 @@ namespace TARS
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t101)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t111)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t121)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t23)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_iniciarpartida
@@ -96,7 +101,7 @@ namespace TARS
             // 
             this.lbl_idjogador.AutoSize = true;
             this.lbl_idjogador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_idjogador.Location = new System.Drawing.Point(832, 514);
+            this.lbl_idjogador.Location = new System.Drawing.Point(974, 560);
             this.lbl_idjogador.Name = "lbl_idjogador";
             this.lbl_idjogador.Size = new System.Drawing.Size(81, 20);
             this.lbl_idjogador.TabIndex = 1;
@@ -106,7 +111,7 @@ namespace TARS
             // 
             this.lbl_senhajogador.AutoSize = true;
             this.lbl_senhajogador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_senhajogador.Location = new System.Drawing.Point(832, 544);
+            this.lbl_senhajogador.Location = new System.Drawing.Point(974, 590);
             this.lbl_senhajogador.Name = "lbl_senhajogador";
             this.lbl_senhajogador.Size = new System.Drawing.Size(56, 20);
             this.lbl_senhajogador.TabIndex = 2;
@@ -116,7 +121,7 @@ namespace TARS
             // 
             this.lbl_corjogador.AutoSize = true;
             this.lbl_corjogador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_corjogador.Location = new System.Drawing.Point(832, 570);
+            this.lbl_corjogador.Location = new System.Drawing.Point(974, 616);
             this.lbl_corjogador.Name = "lbl_corjogador";
             this.lbl_corjogador.Size = new System.Drawing.Size(34, 20);
             this.lbl_corjogador.TabIndex = 3;
@@ -213,9 +218,10 @@ namespace TARS
             // lbl_statuspart
             // 
             this.lbl_statuspart.AutoSize = true;
+            this.lbl_statuspart.BackColor = System.Drawing.Color.Transparent;
             this.lbl_statuspart.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_statuspart.ForeColor = System.Drawing.Color.Red;
-            this.lbl_statuspart.Location = new System.Drawing.Point(745, 12);
+            this.lbl_statuspart.Location = new System.Drawing.Point(918, 9);
             this.lbl_statuspart.Name = "lbl_statuspart";
             this.lbl_statuspart.Size = new System.Drawing.Size(224, 29);
             this.lbl_statuspart.TabIndex = 21;
@@ -289,116 +295,145 @@ namespace TARS
             this.dgv_teste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_teste.Location = new System.Drawing.Point(292, 12);
             this.dgv_teste.Name = "dgv_teste";
-            this.dgv_teste.Size = new System.Drawing.Size(240, 150);
+            this.dgv_teste.Size = new System.Drawing.Size(446, 150);
             this.dgv_teste.TabIndex = 25;
             // 
             // pcb_t51
             // 
-            this.pcb_t51.Location = new System.Drawing.Point(595, 479);
+            this.pcb_t51.Location = new System.Drawing.Point(711, 539);
             this.pcb_t51.Name = "pcb_t51";
-            this.pcb_t51.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t51.Size = new System.Drawing.Size(30, 30);
             this.pcb_t51.TabIndex = 26;
             this.pcb_t51.TabStop = false;
             this.pcb_t51.Visible = false;
             // 
             // pcb_t21
             // 
-            this.pcb_t21.Location = new System.Drawing.Point(462, 339);
+            this.pcb_t21.Location = new System.Drawing.Point(549, 382);
             this.pcb_t21.Name = "pcb_t21";
-            this.pcb_t21.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t21.Size = new System.Drawing.Size(30, 30);
             this.pcb_t21.TabIndex = 27;
             this.pcb_t21.TabStop = false;
             this.pcb_t21.Visible = false;
             // 
             // pcb_t41
             // 
-            this.pcb_t41.Location = new System.Drawing.Point(550, 437);
+            this.pcb_t41.Location = new System.Drawing.Point(654, 489);
             this.pcb_t41.Name = "pcb_t41";
-            this.pcb_t41.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t41.Size = new System.Drawing.Size(30, 30);
             this.pcb_t41.TabIndex = 28;
             this.pcb_t41.TabStop = false;
             this.pcb_t41.Visible = false;
             // 
             // pcb_t31
             // 
-            this.pcb_t31.Location = new System.Drawing.Point(505, 384);
+            this.pcb_t31.Location = new System.Drawing.Point(603, 437);
             this.pcb_t31.Name = "pcb_t31";
-            this.pcb_t31.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t31.Size = new System.Drawing.Size(30, 30);
             this.pcb_t31.TabIndex = 29;
             this.pcb_t31.TabStop = false;
             this.pcb_t31.Visible = false;
             // 
             // pcb_t61
             // 
-            this.pcb_t61.Location = new System.Drawing.Point(633, 520);
+            this.pcb_t61.Location = new System.Drawing.Point(751, 583);
             this.pcb_t61.Name = "pcb_t61";
-            this.pcb_t61.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t61.Size = new System.Drawing.Size(30, 30);
             this.pcb_t61.TabIndex = 30;
             this.pcb_t61.TabStop = false;
             this.pcb_t61.Visible = false;
             // 
             // pcb_t71
             // 
-            this.pcb_t71.Location = new System.Drawing.Point(671, 553);
+            this.pcb_t71.Location = new System.Drawing.Point(797, 626);
             this.pcb_t71.Name = "pcb_t71";
-            this.pcb_t71.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t71.Size = new System.Drawing.Size(30, 30);
             this.pcb_t71.TabIndex = 31;
             this.pcb_t71.TabStop = false;
             this.pcb_t71.Visible = false;
             // 
             // pcb_81
             // 
-            this.pcb_81.Location = new System.Drawing.Point(709, 520);
+            this.pcb_81.Location = new System.Drawing.Point(845, 584);
             this.pcb_81.Name = "pcb_81";
-            this.pcb_81.Size = new System.Drawing.Size(27, 27);
+            this.pcb_81.Size = new System.Drawing.Size(30, 30);
             this.pcb_81.TabIndex = 32;
             this.pcb_81.TabStop = false;
             this.pcb_81.Visible = false;
             // 
             // pcb_t91
             // 
-            this.pcb_t91.Location = new System.Drawing.Point(750, 479);
+            this.pcb_t91.Location = new System.Drawing.Point(888, 539);
             this.pcb_t91.Name = "pcb_t91";
-            this.pcb_t91.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t91.Size = new System.Drawing.Size(30, 30);
             this.pcb_t91.TabIndex = 33;
             this.pcb_t91.TabStop = false;
             this.pcb_t91.Visible = false;
             // 
             // pcb_t101
             // 
-            this.pcb_t101.Location = new System.Drawing.Point(792, 437);
+            this.pcb_t101.Location = new System.Drawing.Point(939, 489);
             this.pcb_t101.Name = "pcb_t101";
-            this.pcb_t101.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t101.Size = new System.Drawing.Size(30, 30);
             this.pcb_t101.TabIndex = 34;
             this.pcb_t101.TabStop = false;
             this.pcb_t101.Visible = false;
             // 
             // pcb_t111
             // 
-            this.pcb_t111.Location = new System.Drawing.Point(839, 384);
+            this.pcb_t111.Location = new System.Drawing.Point(997, 436);
             this.pcb_t111.Name = "pcb_t111";
-            this.pcb_t111.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t111.Size = new System.Drawing.Size(30, 30);
             this.pcb_t111.TabIndex = 35;
             this.pcb_t111.TabStop = false;
             this.pcb_t111.Visible = false;
             // 
             // pcb_t121
             // 
-            this.pcb_t121.Location = new System.Drawing.Point(886, 339);
+            this.pcb_t121.Location = new System.Drawing.Point(1046, 382);
             this.pcb_t121.Name = "pcb_t121";
-            this.pcb_t121.Size = new System.Drawing.Size(27, 27);
+            this.pcb_t121.Size = new System.Drawing.Size(30, 30);
             this.pcb_t121.TabIndex = 36;
             this.pcb_t121.TabStop = false;
             this.pcb_t121.Visible = false;
+            // 
+            // pcb_t22
+            // 
+            this.pcb_t22.Location = new System.Drawing.Point(549, 326);
+            this.pcb_t22.Name = "pcb_t22";
+            this.pcb_t22.Size = new System.Drawing.Size(30, 30);
+            this.pcb_t22.TabIndex = 37;
+            this.pcb_t22.TabStop = false;
+            this.pcb_t22.Visible = false;
+            // 
+            // pcb_t23
+            // 
+            this.pcb_t23.Location = new System.Drawing.Point(549, 270);
+            this.pcb_t23.Name = "pcb_t23";
+            this.pcb_t23.Size = new System.Drawing.Size(30, 30);
+            this.pcb_t23.TabIndex = 38;
+            this.pcb_t23.TabStop = false;
+            this.pcb_t23.Visible = false;
+            // 
+            // rtxt_historicoP
+            // 
+            this.rtxt_historicoP.Location = new System.Drawing.Point(335, 539);
+            this.rtxt_historicoP.Name = "rtxt_historicoP";
+            this.rtxt_historicoP.Size = new System.Drawing.Size(295, 128);
+            this.rtxt_historicoP.TabIndex = 39;
+            this.rtxt_historicoP.Text = "";
             // 
             // Tabuleiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(981, 604);
+            this.ClientSize = new System.Drawing.Size(1163, 679);
+            this.Controls.Add(this.rtxt_historicoP);
+            this.Controls.Add(this.pcb_t23);
+            this.Controls.Add(this.pcb_t22);
             this.Controls.Add(this.pcb_t121);
             this.Controls.Add(this.pcb_t111);
             this.Controls.Add(this.pcb_t101);
@@ -426,10 +461,11 @@ namespace TARS
             this.Controls.Add(this.lbl_senhajogador);
             this.Controls.Add(this.lbl_idjogador);
             this.Controls.Add(this.btn_iniciarpartida);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Tabuleiro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tabuleiro";
+            this.Load += new System.EventHandler(this.Tabuleiro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).EndInit();
@@ -448,6 +484,8 @@ namespace TARS
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t101)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t111)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_t121)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_t23)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -485,5 +523,8 @@ namespace TARS
         private System.Windows.Forms.PictureBox pcb_t101;
         private System.Windows.Forms.PictureBox pcb_t111;
         private System.Windows.Forms.PictureBox pcb_t121;
+        private System.Windows.Forms.PictureBox pcb_t22;
+        private System.Windows.Forms.PictureBox pcb_t23;
+        private System.Windows.Forms.RichTextBox rtxt_historicoP;
     }
 }

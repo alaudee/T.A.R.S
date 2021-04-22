@@ -32,6 +32,8 @@ namespace TARS
             this.Infojogador = infojogador;
             this.IdPartida = idpartida;
 
+            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+
             btn_rolarDado.Enabled = false;
             btn_verificarvez.Enabled = false;
 
@@ -49,7 +51,17 @@ namespace TARS
             SenhaJogador = senhajog;
 
             dtb_tabuleiro = TabuleiroP.CriarDataTable();
+        }
 
+        public static void DesenharTabuleiro(DataTable dtb_tabuleiro)
+        {
+            string[] trilhas = new string[dtb_tabuleiro.Rows.Count];
+            string[] posicoes = new string[dtb_tabuleiro.Rows.Count];
+            for (int i = 0; i < dtb_tabuleiro.Rows.Count; i++)
+            {
+                trilhas[i] = dtb_tabuleiro.Rows[i]["trilha"].ToString(); //Selecionando os rows i na coluna trilha
+                posicoes[i] = dtb_tabuleiro.Rows[i]["posicao"].ToString();
+            }
         }
 
         private void btn_iniciarpartida_Click(object sender, EventArgs e) 
@@ -60,6 +72,8 @@ namespace TARS
             lbl_statuspart.ForeColor = System.Drawing.Color.Green;
             btn_rolarDado.Enabled = true;
             btn_verificarvez.Enabled = true;
+
+            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
         }
 
         private void lbl_rolarDado_Click(object sender, EventArgs e)
@@ -114,6 +128,10 @@ namespace TARS
                 rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
                 rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
                 rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
+                btn_mover.Enabled = true;
+
+                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+
             }
             catch (Exception ex)
             {
@@ -138,16 +156,9 @@ namespace TARS
         private void bnt_exibirTabuleiro_Click(object sender, EventArgs e)
         {
             string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
-            dgv_teste.DataSource = TabuleiroP.LimparExibirTabuleiro(tabuleiro);
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgv_dados_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro,dtb_tabuleiro);
+            dgv_teste.DataSource = dtb_tabuleiro;
+            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
 
         }
 
@@ -186,8 +197,11 @@ namespace TARS
         {
             Jogo.Mover(IDJogador, SenhaJogador, dadoescolha, Dado.tratarTextoEscolhaRadio(op_dado));
             string retornotab = Jogo.ExibirTabuleiro(IdPartida);
-            dgv_teste.DataSource = TabuleiroP.AdicionarMovimentos(retornotab);
-
+            dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
+            dgv_teste.DataSource = dtb_tabuleiro;
+            btn_mover.Enabled = false;
+            DesenharTabuleiro(dtb_tabuleiro);
+            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -198,6 +212,12 @@ namespace TARS
         private void btn_parar_Click(object sender, EventArgs e)
         {
             string parar = Jogo.Parar(IDJogador, SenhaJogador);
+            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+        }
+
+        private void Tabuleiro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
