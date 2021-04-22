@@ -17,6 +17,7 @@ namespace TARS
         public int IDJogador { get; set; }
         public string SenhaJogador { get; set; }
         public int IdPartida { get; set; }
+        public string CorJogador { get; set; }
 
         char[] valordado = new char[4];
         char[] numerodado = new char[4];
@@ -44,6 +45,7 @@ namespace TARS
             string idjogador = linha[0];
             string senhajog = linha[1];
             string corjogador = linha[2];
+            CorJogador = corjogador;
             lbl_idjogador.Text = "Id: "+ idjogador;
             lbl_senhajogador.Text = "Senha: " + senhajog;
             lbl_corjogador.Text = "Cor: " + corjogador;
@@ -53,15 +55,254 @@ namespace TARS
             dtb_tabuleiro = TabuleiroP.CriarDataTable();
         }
 
-        public static void DesenharTabuleiro(DataTable dtb_tabuleiro)
+
+        public void desenharTabuleiro(string[] trilhas, string[] posicoes, string[] tipo, string corJogadores)
+        {
+            //string[] trilhaTabuleiro = new string[11];
+            //string[] jogadores = new string[corJogadores.Length];
+
+
+            for (int i = 0; i < trilhas.Length; i++)
+            {
+                if (trilhas[i] == "2")
+                {
+                    for (int j = 0; j < posicoes.Length; j++)
+                        if (posicoes[j] == "1")
+                        {//calma ae vou tentar entrar pelo celular
+                            if(tipo[i]== "A")
+                            {
+                                    //AAAAAAAAAAAAAAAAAAAAAAAAAAAA parei aqui
+                            }
+                            else if(tipo[i] == "B")
+                            {
+
+                            }
+                            //pcb_j121.BackColor = Color.Red;
+                            //pcb_j121.Visible = true;
+                        }
+                        else if (posicoes[j] == "2")
+                        {
+                            pcb_j121.BackColor = Color.Red;
+                            pcb_j121.Visible = true;
+                        }
+                        else if (posicoes[j] == "3")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                }
+
+                if (trilhas[i] == "3")
+                {
+                    for (int j = 0; j < posicoes.Length; j++)
+                        if (posicoes[j] == "1")
+                        {
+                            pcb_t31.BackColor = Color.Black;
+                            pcb_t31.Visible = true;
+                        }
+                        else if (posicoes[j] == "2")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                        else if (posicoes[j] == "3")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                }
+
+                if (trilhas[i] == "4")
+                {
+                    for (int j = 0; j < posicoes.Length; j++)
+                        if (posicoes[j] == "1")
+                        {
+                            pcb_t41.BackColor = Color.Black;
+                            pcb_t41.Visible = true;
+                        }
+                        else if (posicoes[j] == "2")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                        else if (posicoes[j] == "3")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                }
+
+                if (trilhas[i] == "5")
+                {
+                    for (int j = 0; j < posicoes.Length; j++)
+                        if (posicoes[j] == "1")
+                        {
+                            pcb_t51.BackColor = Color.Black;
+                            pcb_t51.Visible = true;
+                        }
+                        else if (posicoes[j] == "2")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                        else if (posicoes[j] == "3")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                }
+
+                if (trilhas[i] == "6")
+                {
+                    for (int j = 0; j < posicoes.Length; j++)
+                        if (posicoes[j] == "1")
+                        {
+                            pcb_t61.BackColor = Color.Black;
+                            pcb_t61.Visible = true;
+                        }
+                        else if (posicoes[j] == "2")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                        else if (posicoes[j] == "3")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                }
+
+                if (trilhas[i] == "7")
+                {
+                    for (int j = 0; j < posicoes.Length; j++)
+                        if (posicoes[j] == "1")
+                        {
+                            pcb_t71.BackColor = Color.Black;
+                            pcb_t71.Visible = true;
+                        }
+                        else if (posicoes[j] == "2")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                        else if (posicoes[j] == "3")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                }
+
+                if (trilhas[i] == "8")
+                {
+                    for (int j = 0; j < posicoes.Length; j++)
+                        if (posicoes[j] == "1")
+                        {
+                            pcb_t81.BackColor = Color.Black;
+                            pcb_t81.Visible = true;
+                        }
+                        else if (posicoes[j] == "2")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                        else if (posicoes[j] == "3")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                }
+
+                if (trilhas[i] == "9")
+                {
+                    for (int j = 0; j < posicoes.Length; j++)
+                        if (posicoes[j] == "1")
+                        {
+                            pcb_t91.BackColor = Color.Black;
+                            pcb_t91.Visible = true;
+                        }
+                        else if (posicoes[j] == "2")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                        else if (posicoes[j] == "3")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                }
+
+                if (trilhas[i] == "10")
+                {
+                    for (int j = 0; j < posicoes.Length; j++)
+                        if (posicoes[j] == "1")
+                        {
+                            pcb_t101.BackColor = Color.Black;
+                            pcb_t101.Visible = true;
+                        }
+                        else if (posicoes[j] == "2")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                        else if (posicoes[j] == "3")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                }
+
+                if (trilhas[i] == "11")
+                {
+                    for (int j = 0; j < posicoes.Length; j++)
+                        if (posicoes[j] == "1")
+                        {
+                            pcb_t111.BackColor = Color.Black;
+                            pcb_t111.Visible = true;
+                        }
+                        else if (posicoes[j] == "2")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                        else if (posicoes[j] == "3")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                }
+
+                if (trilhas[i] == "12")
+                {
+                    for (int j = 0; j < posicoes.Length; j++)
+                        if (posicoes[j] == "1")
+                        {
+                            pcb_t121.BackColor = Color.Black;
+                            pcb_t121.Visible = true;
+                        }
+                        else if (posicoes[j] == "2")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                        else if (posicoes[j] == "3")
+                        {
+                            pcb_t21.BackColor = Color.Black;
+                        }
+                }
+            }
+
+        }
+
+        public void valorTabuleiro(DataTable dtb_tabuleiro)
         {
             string[] trilhas = new string[dtb_tabuleiro.Rows.Count];
             string[] posicoes = new string[dtb_tabuleiro.Rows.Count];
+            string[] tipo = new string[dtb_tabuleiro.Rows.Count];
             for (int i = 0; i < dtb_tabuleiro.Rows.Count; i++)
             {
                 trilhas[i] = dtb_tabuleiro.Rows[i]["trilha"].ToString(); //Selecionando os rows i na coluna trilha
                 posicoes[i] = dtb_tabuleiro.Rows[i]["posicao"].ToString();
+                tipo[i] = dtb_tabuleiro.Rows[i]["tipo"].ToString();
             }
+            /*
+            // para pegar as cores de todos os jogadores
+            List<Jogador> jogadores = new List<Jogador>();
+            string retorno = Jogo.ListarJogadores(IdPartida);
+            retorno = retorno.Replace("\r", " ");
+            string[] linha = retorno.Split('\n');
+            for (int i = 0; i < linha.Length - 1; i++)
+            {
+                Jogador j = new Jogador();
+                string[] itens = linha[i].Split(',');
+                //j.Id = Convert.ToInt32(itens[0]);
+                //j.Nomejogador = itens[1];
+                //j.corjogador = itens[2];
+                coresJogadores[i] = itens[2];
+                jogadores.Add(j);
+            }
+            */ 
+            desenharTabuleiro(trilhas, posicoes, tipo ,CorJogador);
         }
 
         private void btn_iniciarpartida_Click(object sender, EventArgs e) 
@@ -72,7 +313,8 @@ namespace TARS
             lbl_statuspart.ForeColor = System.Drawing.Color.Green;
             btn_rolarDado.Enabled = true;
             btn_verificarvez.Enabled = true;
-
+            
+            
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
         }
 
@@ -200,7 +442,7 @@ namespace TARS
             dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
             dgv_teste.DataSource = dtb_tabuleiro;
             btn_mover.Enabled = false;
-            DesenharTabuleiro(dtb_tabuleiro);
+            valorTabuleiro(dtb_tabuleiro);
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
         }
 
@@ -216,6 +458,31 @@ namespace TARS
         }
 
         private void Tabuleiro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox50_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox64_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox138_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox355_Click(object sender, EventArgs e)
         {
 
         }
