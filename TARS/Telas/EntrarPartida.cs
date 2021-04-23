@@ -36,6 +36,7 @@ namespace TARS.Telas
                 jogadores.Add(j);
             }
             dgv_jogadores.DataSource = jogadores;
+            dgv_jogadores.Columns[3].Visible = false;
             dgv_jogadores.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             txt_senha.PasswordChar = '*';
         }

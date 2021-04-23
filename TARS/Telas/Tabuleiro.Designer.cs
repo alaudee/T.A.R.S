@@ -49,88 +49,88 @@ namespace TARS
             this.rdb_jogada1 = new System.Windows.Forms.RadioButton();
             this.btn_parar = new System.Windows.Forms.Button();
             this.dgv_teste = new System.Windows.Forms.DataGridView();
-            this.pcb_t81 = new System.Windows.Forms.PictureBox();
-            this.pictureBox47 = new System.Windows.Forms.PictureBox();
-            this.pictureBox48 = new System.Windows.Forms.PictureBox();
-            this.pictureBox49 = new System.Windows.Forms.PictureBox();
-            this.pictureBox50 = new System.Windows.Forms.PictureBox();
-            this.pcb_t82 = new System.Windows.Forms.PictureBox();
-            this.pictureBox52 = new System.Windows.Forms.PictureBox();
-            this.pictureBox53 = new System.Windows.Forms.PictureBox();
-            this.pictureBox54 = new System.Windows.Forms.PictureBox();
-            this.pictureBox55 = new System.Windows.Forms.PictureBox();
-            this.pictureBox56 = new System.Windows.Forms.PictureBox();
-            this.pictureBox57 = new System.Windows.Forms.PictureBox();
-            this.pictureBox58 = new System.Windows.Forms.PictureBox();
-            this.pcb_t92 = new System.Windows.Forms.PictureBox();
-            this.pcb_t91 = new System.Windows.Forms.PictureBox();
-            this.pictureBox61 = new System.Windows.Forms.PictureBox();
-            this.pictureBox62 = new System.Windows.Forms.PictureBox();
-            this.pictureBox63 = new System.Windows.Forms.PictureBox();
-            this.pictureBox64 = new System.Windows.Forms.PictureBox();
-            this.pictureBox65 = new System.Windows.Forms.PictureBox();
-            this.pictureBox66 = new System.Windows.Forms.PictureBox();
-            this.pictureBox67 = new System.Windows.Forms.PictureBox();
-            this.pcb_t102 = new System.Windows.Forms.PictureBox();
-            this.pcb_t101 = new System.Windows.Forms.PictureBox();
-            this.pictureBox70 = new System.Windows.Forms.PictureBox();
-            this.pictureBox71 = new System.Windows.Forms.PictureBox();
-            this.pictureBox72 = new System.Windows.Forms.PictureBox();
-            this.pcb_t122 = new System.Windows.Forms.PictureBox();
-            this.pcb_t121 = new System.Windows.Forms.PictureBox();
-            this.pictureBox75 = new System.Windows.Forms.PictureBox();
-            this.pictureBox76 = new System.Windows.Forms.PictureBox();
-            this.pictureBox77 = new System.Windows.Forms.PictureBox();
-            this.pcb_t112 = new System.Windows.Forms.PictureBox();
-            this.pcb_t111 = new System.Windows.Forms.PictureBox();
-            this.pictureBox80 = new System.Windows.Forms.PictureBox();
-            this.pcb_t61 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pcb_t72 = new System.Windows.Forms.PictureBox();
-            this.pcb_t71 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pcb_t52 = new System.Windows.Forms.PictureBox();
-            this.pcb_t51 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pcb_t62 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pcb_t42 = new System.Windows.Forms.PictureBox();
-            this.pcb_t41 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.pictureBox37 = new System.Windows.Forms.PictureBox();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.pictureBox39 = new System.Windows.Forms.PictureBox();
-            this.pictureBox40 = new System.Windows.Forms.PictureBox();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
-            this.pcb_t32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox46 = new System.Windows.Forms.PictureBox();
-            this.pictureBox82 = new System.Windows.Forms.PictureBox();
-            this.pictureBox83 = new System.Windows.Forms.PictureBox();
-            this.pcb_t21 = new System.Windows.Forms.PictureBox();
-            this.pcb_t31 = new System.Windows.Forms.PictureBox();
+            this.pcb_A81 = new System.Windows.Forms.PictureBox();
+            this.pcb_A89 = new System.Windows.Forms.PictureBox();
+            this.pcb_A88 = new System.Windows.Forms.PictureBox();
+            this.pcb_A87 = new System.Windows.Forms.PictureBox();
+            this.pcb_A83 = new System.Windows.Forms.PictureBox();
+            this.pcb_A82 = new System.Windows.Forms.PictureBox();
+            this.pcb_A86 = new System.Windows.Forms.PictureBox();
+            this.pcb_A84 = new System.Windows.Forms.PictureBox();
+            this.pcb_A85 = new System.Windows.Forms.PictureBox();
+            this.pcb_A96 = new System.Windows.Forms.PictureBox();
+            this.pcb_A95 = new System.Windows.Forms.PictureBox();
+            this.pcb_A94 = new System.Windows.Forms.PictureBox();
+            this.pcb_A93 = new System.Windows.Forms.PictureBox();
+            this.pcb_A92 = new System.Windows.Forms.PictureBox();
+            this.pcb_A91 = new System.Windows.Forms.PictureBox();
+            this.pcb_A11 = new System.Windows.Forms.PictureBox();
+            this.pcb_A10 = new System.Windows.Forms.PictureBox();
+            this.pcb_A107 = new System.Windows.Forms.PictureBox();
+            this.pcb_A106 = new System.Windows.Forms.PictureBox();
+            this.pcb_A105 = new System.Windows.Forms.PictureBox();
+            this.pcb_A104 = new System.Windows.Forms.PictureBox();
+            this.pcb_A103 = new System.Windows.Forms.PictureBox();
+            this.pcb_A102 = new System.Windows.Forms.PictureBox();
+            this.pcb_A101 = new System.Windows.Forms.PictureBox();
+            this.pcb_A99 = new System.Windows.Forms.PictureBox();
+            this.pcb_A98 = new System.Windows.Forms.PictureBox();
+            this.pcb_A97 = new System.Windows.Forms.PictureBox();
+            this.pcb_A122 = new System.Windows.Forms.PictureBox();
+            this.pcb_A121 = new System.Windows.Forms.PictureBox();
+            this.pcb_A115 = new System.Windows.Forms.PictureBox();
+            this.pcb_A114 = new System.Windows.Forms.PictureBox();
+            this.pcb_A113 = new System.Windows.Forms.PictureBox();
+            this.pcb_A112 = new System.Windows.Forms.PictureBox();
+            this.pcb_A111 = new System.Windows.Forms.PictureBox();
+            this.pcb_A123 = new System.Windows.Forms.PictureBox();
+            this.pcb_A61 = new System.Windows.Forms.PictureBox();
+            this.pcb_A713 = new System.Windows.Forms.PictureBox();
+            this.pcb_A712 = new System.Windows.Forms.PictureBox();
+            this.pcb_A711 = new System.Windows.Forms.PictureBox();
+            this.pcb_A710 = new System.Windows.Forms.PictureBox();
+            this.pcb_A79 = new System.Windows.Forms.PictureBox();
+            this.pcb_A78 = new System.Windows.Forms.PictureBox();
+            this.pcb_77 = new System.Windows.Forms.PictureBox();
+            this.pcb_A76 = new System.Windows.Forms.PictureBox();
+            this.pcb_75 = new System.Windows.Forms.PictureBox();
+            this.pcb_A74 = new System.Windows.Forms.PictureBox();
+            this.pcb_A73 = new System.Windows.Forms.PictureBox();
+            this.pcb_A72 = new System.Windows.Forms.PictureBox();
+            this.pcb_A71 = new System.Windows.Forms.PictureBox();
+            this.pcb_A53 = new System.Windows.Forms.PictureBox();
+            this.pcb_A52 = new System.Windows.Forms.PictureBox();
+            this.pcb_A51 = new System.Windows.Forms.PictureBox();
+            this.pcb_A611 = new System.Windows.Forms.PictureBox();
+            this.pcb_A610 = new System.Windows.Forms.PictureBox();
+            this.pcb_A69 = new System.Windows.Forms.PictureBox();
+            this.pcb_A68 = new System.Windows.Forms.PictureBox();
+            this.pcb_A67 = new System.Windows.Forms.PictureBox();
+            this.pcb_A66 = new System.Windows.Forms.PictureBox();
+            this.pcb_A65 = new System.Windows.Forms.PictureBox();
+            this.pcb_A64 = new System.Windows.Forms.PictureBox();
+            this.pcb_A63 = new System.Windows.Forms.PictureBox();
+            this.pcb_A62 = new System.Windows.Forms.PictureBox();
+            this.pcb_A44 = new System.Windows.Forms.PictureBox();
+            this.pcb_A43 = new System.Windows.Forms.PictureBox();
+            this.pcb_A42 = new System.Windows.Forms.PictureBox();
+            this.pcb_A41 = new System.Windows.Forms.PictureBox();
+            this.pcb_A59 = new System.Windows.Forms.PictureBox();
+            this.pcb_A58 = new System.Windows.Forms.PictureBox();
+            this.pcb_A57 = new System.Windows.Forms.PictureBox();
+            this.pcb_A56 = new System.Windows.Forms.PictureBox();
+            this.pcb_A55 = new System.Windows.Forms.PictureBox();
+            this.pcb_A54 = new System.Windows.Forms.PictureBox();
+            this.pcb_A47 = new System.Windows.Forms.PictureBox();
+            this.pcb_A46 = new System.Windows.Forms.PictureBox();
+            this.pcb_A45 = new System.Windows.Forms.PictureBox();
+            this.pcb_A33 = new System.Windows.Forms.PictureBox();
+            this.pcb_A32 = new System.Windows.Forms.PictureBox();
+            this.pcb_A34 = new System.Windows.Forms.PictureBox();
+            this.pcb_A35 = new System.Windows.Forms.PictureBox();
+            this.pcb_A23 = new System.Windows.Forms.PictureBox();
+            this.pcb_A21 = new System.Windows.Forms.PictureBox();
+            this.pcb_A31 = new System.Windows.Forms.PictureBox();
             this.rtxt_historicoP = new System.Windows.Forms.RichTextBox();
             this.pcb_j321 = new System.Windows.Forms.PictureBox();
             this.pcb_j121 = new System.Windows.Forms.PictureBox();
@@ -176,7 +176,7 @@ namespace TARS
             this.pcb_j3111 = new System.Windows.Forms.PictureBox();
             this.pcb_j1111 = new System.Windows.Forms.PictureBox();
             this.pcb_j2121 = new System.Windows.Forms.PictureBox();
-            this.pcb_t22 = new System.Windows.Forms.PictureBox();
+            this.pcb_A22 = new System.Windows.Forms.PictureBox();
             this.pcb_j322 = new System.Windows.Forms.PictureBox();
             this.pcb_j222 = new System.Windows.Forms.PictureBox();
             this.pcb_j422 = new System.Windows.Forms.PictureBox();
@@ -471,88 +471,88 @@ namespace TARS
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado4)).BeginInit();
             this.gb_jogadas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_teste)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t81)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t82)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t92)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t91)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t102)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t101)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t122)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t121)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t112)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t111)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t61)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t72)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t71)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t62)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A81)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A89)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A88)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A87)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A83)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A82)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A86)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A84)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A85)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A96)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A95)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A94)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A93)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A92)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A91)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A107)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A106)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A105)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A104)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A103)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A102)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A101)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A99)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A98)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A97)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A122)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A121)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A115)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A114)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A113)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A112)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A111)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A123)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A61)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A713)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A712)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A711)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A710)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A79)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A78)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_77)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A76)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_75)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A74)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A73)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A72)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A71)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A611)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A610)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A69)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A68)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A67)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A66)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A65)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A64)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A63)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A62)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A59)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A58)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A57)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A56)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j321)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j121)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j221)).BeginInit();
@@ -597,7 +597,7 @@ namespace TARS
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j3111)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j1111)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j2121)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j322)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j222)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j422)).BeginInit();
@@ -925,7 +925,7 @@ namespace TARS
             // 
             this.lbl_corjogador.AutoSize = true;
             this.lbl_corjogador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_corjogador.Location = new System.Drawing.Point(974, 610);
+            this.lbl_corjogador.Location = new System.Drawing.Point(975, 621);
             this.lbl_corjogador.Name = "lbl_corjogador";
             this.lbl_corjogador.Size = new System.Drawing.Size(34, 20);
             this.lbl_corjogador.TabIndex = 3;
@@ -1102,745 +1102,747 @@ namespace TARS
             this.dgv_teste.Size = new System.Drawing.Size(446, 150);
             this.dgv_teste.TabIndex = 25;
             // 
-            // pcb_t81
-            // 
-            this.pcb_t81.Location = new System.Drawing.Point(846, 580);
-            this.pcb_t81.Name = "pcb_t81";
-            this.pcb_t81.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t81.TabIndex = 90;
-            this.pcb_t81.TabStop = false;
-            this.pcb_t81.Visible = false;
-            // 
-            // pictureBox47
-            // 
-            this.pictureBox47.Location = new System.Drawing.Point(846, 228);
-            this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox47.TabIndex = 92;
-            this.pictureBox47.TabStop = false;
-            this.pictureBox47.Visible = false;
-            // 
-            // pictureBox48
-            // 
-            this.pictureBox48.Location = new System.Drawing.Point(846, 270);
-            this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox48.TabIndex = 93;
-            this.pictureBox48.TabStop = false;
-            this.pictureBox48.Visible = false;
-            // 
-            // pictureBox49
-            // 
-            this.pictureBox49.Location = new System.Drawing.Point(846, 316);
-            this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox49.TabIndex = 94;
-            this.pictureBox49.TabStop = false;
-            this.pictureBox49.Visible = false;
-            // 
-            // pictureBox50
-            // 
-            this.pictureBox50.Location = new System.Drawing.Point(846, 499);
-            this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox50.TabIndex = 95;
-            this.pictureBox50.TabStop = false;
-            this.pictureBox50.Visible = false;
-            this.pictureBox50.Click += new System.EventHandler(this.pictureBox50_Click);
-            // 
-            // pcb_t82
-            // 
-            this.pcb_t82.Location = new System.Drawing.Point(846, 540);
-            this.pcb_t82.Name = "pcb_t82";
-            this.pcb_t82.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t82.TabIndex = 96;
-            this.pcb_t82.TabStop = false;
-            this.pcb_t82.Visible = false;
-            // 
-            // pictureBox52
-            // 
-            this.pictureBox52.Location = new System.Drawing.Point(846, 362);
-            this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox52.TabIndex = 97;
-            this.pictureBox52.TabStop = false;
-            this.pictureBox52.Visible = false;
-            // 
-            // pictureBox53
-            // 
-            this.pictureBox53.Location = new System.Drawing.Point(846, 447);
-            this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox53.TabIndex = 98;
-            this.pictureBox53.TabStop = false;
-            this.pictureBox53.Visible = false;
-            // 
-            // pictureBox54
-            // 
-            this.pictureBox54.Location = new System.Drawing.Point(846, 401);
-            this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox54.TabIndex = 99;
-            this.pictureBox54.TabStop = false;
-            this.pictureBox54.Visible = false;
-            // 
-            // pictureBox55
-            // 
-            this.pictureBox55.Location = new System.Drawing.Point(891, 316);
-            this.pictureBox55.Name = "pictureBox55";
-            this.pictureBox55.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox55.TabIndex = 100;
-            this.pictureBox55.TabStop = false;
-            this.pictureBox55.Visible = false;
-            // 
-            // pictureBox56
-            // 
-            this.pictureBox56.Location = new System.Drawing.Point(891, 362);
-            this.pictureBox56.Name = "pictureBox56";
-            this.pictureBox56.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox56.TabIndex = 101;
-            this.pictureBox56.TabStop = false;
-            this.pictureBox56.Visible = false;
-            // 
-            // pictureBox57
-            // 
-            this.pictureBox57.Location = new System.Drawing.Point(891, 408);
-            this.pictureBox57.Name = "pictureBox57";
-            this.pictureBox57.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox57.TabIndex = 102;
-            this.pictureBox57.TabStop = false;
-            this.pictureBox57.Visible = false;
-            // 
-            // pictureBox58
-            // 
-            this.pictureBox58.Location = new System.Drawing.Point(891, 454);
-            this.pictureBox58.Name = "pictureBox58";
-            this.pictureBox58.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox58.TabIndex = 103;
-            this.pictureBox58.TabStop = false;
-            this.pictureBox58.Visible = false;
-            // 
-            // pcb_t92
-            // 
-            this.pcb_t92.Location = new System.Drawing.Point(891, 499);
-            this.pcb_t92.Name = "pcb_t92";
-            this.pcb_t92.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t92.TabIndex = 104;
-            this.pcb_t92.TabStop = false;
-            this.pcb_t92.Visible = false;
-            // 
-            // pcb_t91
-            // 
-            this.pcb_t91.Location = new System.Drawing.Point(891, 540);
-            this.pcb_t91.Name = "pcb_t91";
-            this.pcb_t91.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t91.TabIndex = 105;
-            this.pcb_t91.TabStop = false;
-            this.pcb_t91.Visible = false;
-            // 
-            // pictureBox61
-            // 
-            this.pictureBox61.Location = new System.Drawing.Point(846, 135);
-            this.pictureBox61.Name = "pictureBox61";
-            this.pictureBox61.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox61.TabIndex = 106;
-            this.pictureBox61.TabStop = false;
-            this.pictureBox61.Visible = false;
-            // 
-            // pictureBox62
-            // 
-            this.pictureBox62.Location = new System.Drawing.Point(846, 182);
-            this.pictureBox62.Name = "pictureBox62";
-            this.pictureBox62.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox62.TabIndex = 107;
-            this.pictureBox62.TabStop = false;
-            this.pictureBox62.Visible = false;
-            // 
-            // pictureBox63
-            // 
-            this.pictureBox63.Location = new System.Drawing.Point(943, 228);
-            this.pictureBox63.Name = "pictureBox63";
-            this.pictureBox63.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox63.TabIndex = 108;
-            this.pictureBox63.TabStop = false;
-            this.pictureBox63.Visible = false;
-            // 
-            // pictureBox64
-            // 
-            this.pictureBox64.Location = new System.Drawing.Point(943, 270);
-            this.pictureBox64.Name = "pictureBox64";
-            this.pictureBox64.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox64.TabIndex = 109;
-            this.pictureBox64.TabStop = false;
-            this.pictureBox64.Visible = false;
-            this.pictureBox64.Click += new System.EventHandler(this.pictureBox64_Click);
-            // 
-            // pictureBox65
-            // 
-            this.pictureBox65.Location = new System.Drawing.Point(943, 313);
-            this.pictureBox65.Name = "pictureBox65";
-            this.pictureBox65.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox65.TabIndex = 110;
-            this.pictureBox65.TabStop = false;
-            this.pictureBox65.Visible = false;
-            // 
-            // pictureBox66
-            // 
-            this.pictureBox66.Location = new System.Drawing.Point(943, 355);
-            this.pictureBox66.Name = "pictureBox66";
-            this.pictureBox66.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox66.TabIndex = 111;
-            this.pictureBox66.TabStop = false;
-            this.pictureBox66.Visible = false;
-            // 
-            // pictureBox67
-            // 
-            this.pictureBox67.Location = new System.Drawing.Point(943, 401);
-            this.pictureBox67.Name = "pictureBox67";
-            this.pictureBox67.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox67.TabIndex = 112;
-            this.pictureBox67.TabStop = false;
-            this.pictureBox67.Visible = false;
-            // 
-            // pcb_t102
-            // 
-            this.pcb_t102.Location = new System.Drawing.Point(943, 443);
-            this.pcb_t102.Name = "pcb_t102";
-            this.pcb_t102.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t102.TabIndex = 113;
-            this.pcb_t102.TabStop = false;
-            this.pcb_t102.Visible = false;
-            // 
-            // pcb_t101
-            // 
-            this.pcb_t101.Location = new System.Drawing.Point(943, 488);
-            this.pcb_t101.Name = "pcb_t101";
-            this.pcb_t101.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t101.TabIndex = 114;
-            this.pcb_t101.TabStop = false;
-            this.pcb_t101.Visible = false;
-            // 
-            // pictureBox70
-            // 
-            this.pictureBox70.Location = new System.Drawing.Point(891, 180);
-            this.pictureBox70.Name = "pictureBox70";
-            this.pictureBox70.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox70.TabIndex = 115;
-            this.pictureBox70.TabStop = false;
-            this.pictureBox70.Visible = false;
-            // 
-            // pictureBox71
-            // 
-            this.pictureBox71.Location = new System.Drawing.Point(891, 226);
-            this.pictureBox71.Name = "pictureBox71";
-            this.pictureBox71.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox71.TabIndex = 116;
-            this.pictureBox71.TabStop = false;
-            this.pictureBox71.Visible = false;
-            // 
-            // pictureBox72
-            // 
-            this.pictureBox72.Location = new System.Drawing.Point(891, 273);
-            this.pictureBox72.Name = "pictureBox72";
-            this.pictureBox72.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox72.TabIndex = 117;
-            this.pictureBox72.TabStop = false;
-            this.pictureBox72.Visible = false;
-            // 
-            // pcb_t122
-            // 
-            this.pcb_t122.Location = new System.Drawing.Point(1048, 330);
-            this.pcb_t122.Name = "pcb_t122";
-            this.pcb_t122.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t122.TabIndex = 118;
-            this.pcb_t122.TabStop = false;
-            this.pcb_t122.Visible = false;
-            // 
-            // pcb_t121
-            // 
-            this.pcb_t121.Location = new System.Drawing.Point(1048, 382);
-            this.pcb_t121.Name = "pcb_t121";
-            this.pcb_t121.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t121.TabIndex = 119;
-            this.pcb_t121.TabStop = false;
-            this.pcb_t121.Visible = false;
-            // 
-            // pictureBox75
-            // 
-            this.pictureBox75.Location = new System.Drawing.Point(994, 244);
-            this.pictureBox75.Name = "pictureBox75";
-            this.pictureBox75.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox75.TabIndex = 120;
-            this.pictureBox75.TabStop = false;
-            this.pictureBox75.Visible = false;
-            // 
-            // pictureBox76
-            // 
-            this.pictureBox76.Location = new System.Drawing.Point(994, 290);
-            this.pictureBox76.Name = "pictureBox76";
-            this.pictureBox76.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox76.TabIndex = 121;
-            this.pictureBox76.TabStop = false;
-            this.pictureBox76.Visible = false;
-            // 
-            // pictureBox77
-            // 
-            this.pictureBox77.Location = new System.Drawing.Point(994, 336);
-            this.pictureBox77.Name = "pictureBox77";
-            this.pictureBox77.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox77.TabIndex = 122;
-            this.pictureBox77.TabStop = false;
-            this.pictureBox77.Visible = false;
-            // 
-            // pcb_t112
-            // 
-            this.pcb_t112.Location = new System.Drawing.Point(994, 382);
-            this.pcb_t112.Name = "pcb_t112";
-            this.pcb_t112.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t112.TabIndex = 123;
-            this.pcb_t112.TabStop = false;
-            this.pcb_t112.Visible = false;
-            // 
-            // pcb_t111
-            // 
-            this.pcb_t111.Location = new System.Drawing.Point(994, 435);
-            this.pcb_t111.Name = "pcb_t111";
-            this.pcb_t111.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t111.TabIndex = 124;
-            this.pcb_t111.TabStop = false;
-            this.pcb_t111.Visible = false;
-            // 
-            // pictureBox80
-            // 
-            this.pictureBox80.Location = new System.Drawing.Point(1048, 270);
-            this.pictureBox80.Name = "pictureBox80";
-            this.pictureBox80.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox80.TabIndex = 125;
-            this.pictureBox80.TabStop = false;
-            this.pictureBox80.Visible = false;
-            // 
-            // pcb_t61
-            // 
-            this.pcb_t61.Location = new System.Drawing.Point(753, 580);
-            this.pcb_t61.Name = "pcb_t61";
-            this.pcb_t61.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t61.TabIndex = 133;
-            this.pcb_t61.TabStop = false;
-            this.pcb_t61.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(798, 106);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox2.TabIndex = 134;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(798, 144);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.TabIndex = 135;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Visible = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(798, 189);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox4.TabIndex = 136;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Visible = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(798, 228);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox5.TabIndex = 137;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Visible = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(798, 273);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox6.TabIndex = 138;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Visible = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(798, 316);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox7.TabIndex = 139;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Visible = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(798, 362);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox8.TabIndex = 140;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Visible = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Location = new System.Drawing.Point(798, 408);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox9.TabIndex = 141;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Visible = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Location = new System.Drawing.Point(798, 447);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox10.TabIndex = 142;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Visible = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Location = new System.Drawing.Point(798, 488);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox11.TabIndex = 143;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Visible = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Location = new System.Drawing.Point(798, 530);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox12.TabIndex = 144;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Visible = false;
-            // 
-            // pcb_t72
-            // 
-            this.pcb_t72.Location = new System.Drawing.Point(798, 580);
-            this.pcb_t72.Name = "pcb_t72";
-            this.pcb_t72.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t72.TabIndex = 145;
-            this.pcb_t72.TabStop = false;
-            this.pcb_t72.Visible = false;
-            // 
-            // pcb_t71
-            // 
-            this.pcb_t71.Location = new System.Drawing.Point(798, 626);
-            this.pcb_t71.Name = "pcb_t71";
-            this.pcb_t71.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t71.TabIndex = 146;
-            this.pcb_t71.TabStop = false;
-            this.pcb_t71.Visible = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Location = new System.Drawing.Point(708, 443);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox15.TabIndex = 147;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Visible = false;
-            // 
-            // pcb_t52
-            // 
-            this.pcb_t52.Location = new System.Drawing.Point(708, 489);
-            this.pcb_t52.Name = "pcb_t52";
-            this.pcb_t52.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t52.TabIndex = 148;
-            this.pcb_t52.TabStop = false;
-            this.pcb_t52.Visible = false;
-            // 
-            // pcb_t51
-            // 
-            this.pcb_t51.Location = new System.Drawing.Point(708, 540);
-            this.pcb_t51.Name = "pcb_t51";
-            this.pcb_t51.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t51.TabIndex = 149;
-            this.pcb_t51.TabStop = false;
-            this.pcb_t51.Visible = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Location = new System.Drawing.Point(753, 132);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox18.TabIndex = 150;
-            this.pictureBox18.TabStop = false;
-            this.pictureBox18.Visible = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Location = new System.Drawing.Point(753, 180);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox19.TabIndex = 151;
-            this.pictureBox19.TabStop = false;
-            this.pictureBox19.Visible = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Location = new System.Drawing.Point(753, 228);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox20.TabIndex = 152;
-            this.pictureBox20.TabStop = false;
-            this.pictureBox20.Visible = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Location = new System.Drawing.Point(753, 272);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox21.TabIndex = 153;
-            this.pictureBox21.TabStop = false;
-            this.pictureBox21.Visible = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Location = new System.Drawing.Point(753, 313);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox22.TabIndex = 154;
-            this.pictureBox22.TabStop = false;
-            this.pictureBox22.Visible = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Location = new System.Drawing.Point(753, 362);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox23.TabIndex = 155;
-            this.pictureBox23.TabStop = false;
-            this.pictureBox23.Visible = false;
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Location = new System.Drawing.Point(753, 401);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox24.TabIndex = 156;
-            this.pictureBox24.TabStop = false;
-            this.pictureBox24.Visible = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Location = new System.Drawing.Point(753, 447);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox25.TabIndex = 157;
-            this.pictureBox25.TabStop = false;
-            this.pictureBox25.Visible = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Location = new System.Drawing.Point(753, 496);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox26.TabIndex = 158;
-            this.pictureBox26.TabStop = false;
-            this.pictureBox26.Visible = false;
-            // 
-            // pcb_t62
-            // 
-            this.pcb_t62.Location = new System.Drawing.Point(753, 540);
-            this.pcb_t62.Name = "pcb_t62";
-            this.pcb_t62.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t62.TabIndex = 159;
-            this.pcb_t62.TabStop = false;
-            this.pcb_t62.Visible = false;
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Location = new System.Drawing.Point(655, 355);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox28.TabIndex = 160;
-            this.pictureBox28.TabStop = false;
-            this.pictureBox28.Visible = false;
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Location = new System.Drawing.Point(655, 401);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox29.TabIndex = 161;
-            this.pictureBox29.TabStop = false;
-            this.pictureBox29.Visible = false;
-            // 
-            // pcb_t42
-            // 
-            this.pcb_t42.Location = new System.Drawing.Point(655, 443);
-            this.pcb_t42.Name = "pcb_t42";
-            this.pcb_t42.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t42.TabIndex = 162;
-            this.pcb_t42.TabStop = false;
-            this.pcb_t42.Visible = false;
-            // 
-            // pcb_t41
-            // 
-            this.pcb_t41.Location = new System.Drawing.Point(655, 488);
-            this.pcb_t41.Name = "pcb_t41";
-            this.pcb_t41.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t41.TabIndex = 163;
-            this.pcb_t41.TabStop = false;
-            this.pcb_t41.Visible = false;
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.Location = new System.Drawing.Point(708, 180);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox32.TabIndex = 164;
-            this.pictureBox32.TabStop = false;
-            this.pictureBox32.Visible = false;
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.Location = new System.Drawing.Point(708, 228);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox33.TabIndex = 165;
-            this.pictureBox33.TabStop = false;
-            this.pictureBox33.Visible = false;
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.Location = new System.Drawing.Point(708, 272);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox34.TabIndex = 166;
-            this.pictureBox34.TabStop = false;
-            this.pictureBox34.Visible = false;
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.Location = new System.Drawing.Point(708, 316);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox35.TabIndex = 167;
-            this.pictureBox35.TabStop = false;
-            this.pictureBox35.Visible = false;
-            // 
-            // pictureBox36
-            // 
-            this.pictureBox36.Location = new System.Drawing.Point(708, 362);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox36.TabIndex = 168;
-            this.pictureBox36.TabStop = false;
-            this.pictureBox36.Visible = false;
-            // 
-            // pictureBox37
-            // 
-            this.pictureBox37.Location = new System.Drawing.Point(708, 407);
-            this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox37.TabIndex = 169;
-            this.pictureBox37.TabStop = false;
-            this.pictureBox37.Visible = false;
-            // 
-            // pictureBox38
-            // 
-            this.pictureBox38.Location = new System.Drawing.Point(655, 226);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox38.TabIndex = 170;
-            this.pictureBox38.TabStop = false;
-            this.pictureBox38.Visible = false;
-            // 
-            // pictureBox39
-            // 
-            this.pictureBox39.Location = new System.Drawing.Point(655, 270);
-            this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox39.TabIndex = 171;
-            this.pictureBox39.TabStop = false;
-            this.pictureBox39.Visible = false;
-            // 
-            // pictureBox40
-            // 
-            this.pictureBox40.Location = new System.Drawing.Point(655, 310);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox40.TabIndex = 172;
-            this.pictureBox40.TabStop = false;
-            this.pictureBox40.Visible = false;
-            // 
-            // pictureBox43
-            // 
-            this.pictureBox43.Location = new System.Drawing.Point(598, 336);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox43.TabIndex = 175;
-            this.pictureBox43.TabStop = false;
-            this.pictureBox43.Visible = false;
-            // 
-            // pcb_t32
-            // 
-            this.pcb_t32.Location = new System.Drawing.Point(598, 386);
-            this.pcb_t32.Name = "pcb_t32";
-            this.pcb_t32.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t32.TabIndex = 176;
-            this.pcb_t32.TabStop = false;
-            this.pcb_t32.Visible = false;
-            // 
-            // pictureBox46
-            // 
-            this.pictureBox46.Location = new System.Drawing.Point(598, 290);
-            this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox46.TabIndex = 177;
-            this.pictureBox46.TabStop = false;
-            this.pictureBox46.Visible = false;
-            // 
-            // pictureBox82
-            // 
-            this.pictureBox82.Location = new System.Drawing.Point(598, 244);
-            this.pictureBox82.Name = "pictureBox82";
-            this.pictureBox82.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox82.TabIndex = 178;
-            this.pictureBox82.TabStop = false;
-            this.pictureBox82.Visible = false;
-            // 
-            // pictureBox83
-            // 
-            this.pictureBox83.Location = new System.Drawing.Point(549, 270);
-            this.pictureBox83.Name = "pictureBox83";
-            this.pictureBox83.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox83.TabIndex = 179;
-            this.pictureBox83.TabStop = false;
-            this.pictureBox83.Visible = false;
-            // 
-            // pcb_t21
-            // 
-            this.pcb_t21.Location = new System.Drawing.Point(549, 382);
-            this.pcb_t21.Name = "pcb_t21";
-            this.pcb_t21.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t21.TabIndex = 180;
-            this.pcb_t21.TabStop = false;
-            this.pcb_t21.Visible = false;
-            // 
-            // pcb_t31
-            // 
-            this.pcb_t31.Location = new System.Drawing.Point(598, 434);
-            this.pcb_t31.Name = "pcb_t31";
-            this.pcb_t31.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t31.TabIndex = 181;
-            this.pcb_t31.TabStop = false;
-            this.pcb_t31.Visible = false;
+            // pcb_A81
+            // 
+            this.pcb_A81.Location = new System.Drawing.Point(846, 580);
+            this.pcb_A81.Name = "pcb_A81";
+            this.pcb_A81.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A81.TabIndex = 90;
+            this.pcb_A81.TabStop = false;
+            this.pcb_A81.Visible = false;
+            this.pcb_A81.Click += new System.EventHandler(this.pcb_t81_Click);
+            // 
+            // pcb_A89
+            // 
+            this.pcb_A89.Location = new System.Drawing.Point(846, 228);
+            this.pcb_A89.Name = "pcb_A89";
+            this.pcb_A89.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A89.TabIndex = 92;
+            this.pcb_A89.TabStop = false;
+            this.pcb_A89.Visible = false;
+            // 
+            // pcb_A88
+            // 
+            this.pcb_A88.Location = new System.Drawing.Point(846, 270);
+            this.pcb_A88.Name = "pcb_A88";
+            this.pcb_A88.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A88.TabIndex = 93;
+            this.pcb_A88.TabStop = false;
+            this.pcb_A88.Visible = false;
+            // 
+            // pcb_A87
+            // 
+            this.pcb_A87.Location = new System.Drawing.Point(846, 316);
+            this.pcb_A87.Name = "pcb_A87";
+            this.pcb_A87.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A87.TabIndex = 94;
+            this.pcb_A87.TabStop = false;
+            this.pcb_A87.Visible = false;
+            // 
+            // pcb_A83
+            // 
+            this.pcb_A83.Location = new System.Drawing.Point(846, 499);
+            this.pcb_A83.Name = "pcb_A83";
+            this.pcb_A83.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A83.TabIndex = 95;
+            this.pcb_A83.TabStop = false;
+            this.pcb_A83.Visible = false;
+            this.pcb_A83.Click += new System.EventHandler(this.pictureBox50_Click);
+            // 
+            // pcb_A82
+            // 
+            this.pcb_A82.Location = new System.Drawing.Point(846, 540);
+            this.pcb_A82.Name = "pcb_A82";
+            this.pcb_A82.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A82.TabIndex = 96;
+            this.pcb_A82.TabStop = false;
+            this.pcb_A82.Visible = false;
+            // 
+            // pcb_A86
+            // 
+            this.pcb_A86.Location = new System.Drawing.Point(846, 362);
+            this.pcb_A86.Name = "pcb_A86";
+            this.pcb_A86.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A86.TabIndex = 97;
+            this.pcb_A86.TabStop = false;
+            this.pcb_A86.Visible = false;
+            // 
+            // pcb_A84
+            // 
+            this.pcb_A84.Location = new System.Drawing.Point(846, 447);
+            this.pcb_A84.Name = "pcb_A84";
+            this.pcb_A84.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A84.TabIndex = 98;
+            this.pcb_A84.TabStop = false;
+            this.pcb_A84.Visible = false;
+            // 
+            // pcb_A85
+            // 
+            this.pcb_A85.Location = new System.Drawing.Point(846, 401);
+            this.pcb_A85.Name = "pcb_A85";
+            this.pcb_A85.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A85.TabIndex = 99;
+            this.pcb_A85.TabStop = false;
+            this.pcb_A85.Visible = false;
+            // 
+            // pcb_A96
+            // 
+            this.pcb_A96.Location = new System.Drawing.Point(891, 316);
+            this.pcb_A96.Name = "pcb_A96";
+            this.pcb_A96.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A96.TabIndex = 100;
+            this.pcb_A96.TabStop = false;
+            this.pcb_A96.Visible = false;
+            // 
+            // pcb_A95
+            // 
+            this.pcb_A95.Location = new System.Drawing.Point(891, 362);
+            this.pcb_A95.Name = "pcb_A95";
+            this.pcb_A95.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A95.TabIndex = 101;
+            this.pcb_A95.TabStop = false;
+            this.pcb_A95.Visible = false;
+            // 
+            // pcb_A94
+            // 
+            this.pcb_A94.Location = new System.Drawing.Point(891, 408);
+            this.pcb_A94.Name = "pcb_A94";
+            this.pcb_A94.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A94.TabIndex = 102;
+            this.pcb_A94.TabStop = false;
+            this.pcb_A94.Visible = false;
+            // 
+            // pcb_A93
+            // 
+            this.pcb_A93.Location = new System.Drawing.Point(891, 454);
+            this.pcb_A93.Name = "pcb_A93";
+            this.pcb_A93.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A93.TabIndex = 103;
+            this.pcb_A93.TabStop = false;
+            this.pcb_A93.Visible = false;
+            // 
+            // pcb_A92
+            // 
+            this.pcb_A92.Location = new System.Drawing.Point(891, 499);
+            this.pcb_A92.Name = "pcb_A92";
+            this.pcb_A92.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A92.TabIndex = 104;
+            this.pcb_A92.TabStop = false;
+            this.pcb_A92.Visible = false;
+            // 
+            // pcb_A91
+            // 
+            this.pcb_A91.Location = new System.Drawing.Point(891, 540);
+            this.pcb_A91.Name = "pcb_A91";
+            this.pcb_A91.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A91.TabIndex = 105;
+            this.pcb_A91.TabStop = false;
+            this.pcb_A91.Visible = false;
+            // 
+            // pcb_A11
+            // 
+            this.pcb_A11.Location = new System.Drawing.Point(846, 135);
+            this.pcb_A11.Name = "pcb_A11";
+            this.pcb_A11.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A11.TabIndex = 106;
+            this.pcb_A11.TabStop = false;
+            this.pcb_A11.Visible = false;
+            // 
+            // pcb_A10
+            // 
+            this.pcb_A10.Location = new System.Drawing.Point(846, 182);
+            this.pcb_A10.Name = "pcb_A10";
+            this.pcb_A10.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A10.TabIndex = 107;
+            this.pcb_A10.TabStop = false;
+            this.pcb_A10.Visible = false;
+            // 
+            // pcb_A107
+            // 
+            this.pcb_A107.Location = new System.Drawing.Point(943, 228);
+            this.pcb_A107.Name = "pcb_A107";
+            this.pcb_A107.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A107.TabIndex = 108;
+            this.pcb_A107.TabStop = false;
+            this.pcb_A107.Visible = false;
+            // 
+            // pcb_A106
+            // 
+            this.pcb_A106.Location = new System.Drawing.Point(943, 270);
+            this.pcb_A106.Name = "pcb_A106";
+            this.pcb_A106.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A106.TabIndex = 109;
+            this.pcb_A106.TabStop = false;
+            this.pcb_A106.Visible = false;
+            this.pcb_A106.Click += new System.EventHandler(this.pictureBox64_Click);
+            // 
+            // pcb_A105
+            // 
+            this.pcb_A105.Location = new System.Drawing.Point(943, 313);
+            this.pcb_A105.Name = "pcb_A105";
+            this.pcb_A105.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A105.TabIndex = 110;
+            this.pcb_A105.TabStop = false;
+            this.pcb_A105.Visible = false;
+            // 
+            // pcb_A104
+            // 
+            this.pcb_A104.Location = new System.Drawing.Point(943, 355);
+            this.pcb_A104.Name = "pcb_A104";
+            this.pcb_A104.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A104.TabIndex = 111;
+            this.pcb_A104.TabStop = false;
+            this.pcb_A104.Visible = false;
+            // 
+            // pcb_A103
+            // 
+            this.pcb_A103.Location = new System.Drawing.Point(943, 401);
+            this.pcb_A103.Name = "pcb_A103";
+            this.pcb_A103.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A103.TabIndex = 112;
+            this.pcb_A103.TabStop = false;
+            this.pcb_A103.Visible = false;
+            // 
+            // pcb_A102
+            // 
+            this.pcb_A102.Location = new System.Drawing.Point(943, 443);
+            this.pcb_A102.Name = "pcb_A102";
+            this.pcb_A102.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A102.TabIndex = 113;
+            this.pcb_A102.TabStop = false;
+            this.pcb_A102.Visible = false;
+            // 
+            // pcb_A101
+            // 
+            this.pcb_A101.Location = new System.Drawing.Point(943, 488);
+            this.pcb_A101.Name = "pcb_A101";
+            this.pcb_A101.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A101.TabIndex = 114;
+            this.pcb_A101.TabStop = false;
+            this.pcb_A101.Visible = false;
+            // 
+            // pcb_A99
+            // 
+            this.pcb_A99.Location = new System.Drawing.Point(891, 180);
+            this.pcb_A99.Name = "pcb_A99";
+            this.pcb_A99.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A99.TabIndex = 115;
+            this.pcb_A99.TabStop = false;
+            this.pcb_A99.Visible = false;
+            // 
+            // pcb_A98
+            // 
+            this.pcb_A98.Location = new System.Drawing.Point(891, 226);
+            this.pcb_A98.Name = "pcb_A98";
+            this.pcb_A98.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A98.TabIndex = 116;
+            this.pcb_A98.TabStop = false;
+            this.pcb_A98.Visible = false;
+            // 
+            // pcb_A97
+            // 
+            this.pcb_A97.Location = new System.Drawing.Point(891, 273);
+            this.pcb_A97.Name = "pcb_A97";
+            this.pcb_A97.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A97.TabIndex = 117;
+            this.pcb_A97.TabStop = false;
+            this.pcb_A97.Visible = false;
+            // 
+            // pcb_A122
+            // 
+            this.pcb_A122.Location = new System.Drawing.Point(1048, 330);
+            this.pcb_A122.Name = "pcb_A122";
+            this.pcb_A122.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A122.TabIndex = 118;
+            this.pcb_A122.TabStop = false;
+            this.pcb_A122.Visible = false;
+            // 
+            // pcb_A121
+            // 
+            this.pcb_A121.Location = new System.Drawing.Point(1048, 382);
+            this.pcb_A121.Name = "pcb_A121";
+            this.pcb_A121.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A121.TabIndex = 119;
+            this.pcb_A121.TabStop = false;
+            this.pcb_A121.Visible = false;
+            // 
+            // pcb_A115
+            // 
+            this.pcb_A115.Location = new System.Drawing.Point(994, 244);
+            this.pcb_A115.Name = "pcb_A115";
+            this.pcb_A115.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A115.TabIndex = 120;
+            this.pcb_A115.TabStop = false;
+            this.pcb_A115.Visible = false;
+            // 
+            // pcb_A114
+            // 
+            this.pcb_A114.Location = new System.Drawing.Point(994, 290);
+            this.pcb_A114.Name = "pcb_A114";
+            this.pcb_A114.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A114.TabIndex = 121;
+            this.pcb_A114.TabStop = false;
+            this.pcb_A114.Visible = false;
+            // 
+            // pcb_A113
+            // 
+            this.pcb_A113.Location = new System.Drawing.Point(994, 336);
+            this.pcb_A113.Name = "pcb_A113";
+            this.pcb_A113.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A113.TabIndex = 122;
+            this.pcb_A113.TabStop = false;
+            this.pcb_A113.Visible = false;
+            // 
+            // pcb_A112
+            // 
+            this.pcb_A112.Location = new System.Drawing.Point(994, 382);
+            this.pcb_A112.Name = "pcb_A112";
+            this.pcb_A112.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A112.TabIndex = 123;
+            this.pcb_A112.TabStop = false;
+            this.pcb_A112.Visible = false;
+            // 
+            // pcb_A111
+            // 
+            this.pcb_A111.Location = new System.Drawing.Point(994, 435);
+            this.pcb_A111.Name = "pcb_A111";
+            this.pcb_A111.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A111.TabIndex = 124;
+            this.pcb_A111.TabStop = false;
+            this.pcb_A111.Visible = false;
+            // 
+            // pcb_A123
+            // 
+            this.pcb_A123.Location = new System.Drawing.Point(1048, 270);
+            this.pcb_A123.Name = "pcb_A123";
+            this.pcb_A123.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A123.TabIndex = 125;
+            this.pcb_A123.TabStop = false;
+            this.pcb_A123.Visible = false;
+            // 
+            // pcb_A61
+            // 
+            this.pcb_A61.Location = new System.Drawing.Point(753, 580);
+            this.pcb_A61.Name = "pcb_A61";
+            this.pcb_A61.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A61.TabIndex = 133;
+            this.pcb_A61.TabStop = false;
+            this.pcb_A61.Visible = false;
+            // 
+            // pcb_A713
+            // 
+            this.pcb_A713.Location = new System.Drawing.Point(798, 106);
+            this.pcb_A713.Name = "pcb_A713";
+            this.pcb_A713.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A713.TabIndex = 134;
+            this.pcb_A713.TabStop = false;
+            this.pcb_A713.Visible = false;
+            // 
+            // pcb_A712
+            // 
+            this.pcb_A712.Location = new System.Drawing.Point(798, 144);
+            this.pcb_A712.Name = "pcb_A712";
+            this.pcb_A712.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A712.TabIndex = 135;
+            this.pcb_A712.TabStop = false;
+            this.pcb_A712.Visible = false;
+            // 
+            // pcb_A711
+            // 
+            this.pcb_A711.Location = new System.Drawing.Point(798, 189);
+            this.pcb_A711.Name = "pcb_A711";
+            this.pcb_A711.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A711.TabIndex = 136;
+            this.pcb_A711.TabStop = false;
+            this.pcb_A711.Visible = false;
+            // 
+            // pcb_A710
+            // 
+            this.pcb_A710.Location = new System.Drawing.Point(798, 228);
+            this.pcb_A710.Name = "pcb_A710";
+            this.pcb_A710.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A710.TabIndex = 137;
+            this.pcb_A710.TabStop = false;
+            this.pcb_A710.Visible = false;
+            // 
+            // pcb_A79
+            // 
+            this.pcb_A79.Location = new System.Drawing.Point(798, 273);
+            this.pcb_A79.Name = "pcb_A79";
+            this.pcb_A79.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A79.TabIndex = 138;
+            this.pcb_A79.TabStop = false;
+            this.pcb_A79.Visible = false;
+            // 
+            // pcb_A78
+            // 
+            this.pcb_A78.Location = new System.Drawing.Point(798, 316);
+            this.pcb_A78.Name = "pcb_A78";
+            this.pcb_A78.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A78.TabIndex = 139;
+            this.pcb_A78.TabStop = false;
+            this.pcb_A78.Visible = false;
+            // 
+            // pcb_77
+            // 
+            this.pcb_77.Location = new System.Drawing.Point(798, 362);
+            this.pcb_77.Name = "pcb_77";
+            this.pcb_77.Size = new System.Drawing.Size(30, 30);
+            this.pcb_77.TabIndex = 140;
+            this.pcb_77.TabStop = false;
+            this.pcb_77.Visible = false;
+            // 
+            // pcb_A76
+            // 
+            this.pcb_A76.Location = new System.Drawing.Point(798, 408);
+            this.pcb_A76.Name = "pcb_A76";
+            this.pcb_A76.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A76.TabIndex = 141;
+            this.pcb_A76.TabStop = false;
+            this.pcb_A76.Visible = false;
+            // 
+            // pcb_75
+            // 
+            this.pcb_75.Location = new System.Drawing.Point(798, 447);
+            this.pcb_75.Name = "pcb_75";
+            this.pcb_75.Size = new System.Drawing.Size(30, 30);
+            this.pcb_75.TabIndex = 142;
+            this.pcb_75.TabStop = false;
+            this.pcb_75.Visible = false;
+            // 
+            // pcb_A74
+            // 
+            this.pcb_A74.Location = new System.Drawing.Point(798, 488);
+            this.pcb_A74.Name = "pcb_A74";
+            this.pcb_A74.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A74.TabIndex = 143;
+            this.pcb_A74.TabStop = false;
+            this.pcb_A74.Visible = false;
+            // 
+            // pcb_A73
+            // 
+            this.pcb_A73.Location = new System.Drawing.Point(798, 530);
+            this.pcb_A73.Name = "pcb_A73";
+            this.pcb_A73.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A73.TabIndex = 144;
+            this.pcb_A73.TabStop = false;
+            this.pcb_A73.Visible = false;
+            // 
+            // pcb_A72
+            // 
+            this.pcb_A72.Location = new System.Drawing.Point(798, 580);
+            this.pcb_A72.Name = "pcb_A72";
+            this.pcb_A72.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A72.TabIndex = 145;
+            this.pcb_A72.TabStop = false;
+            this.pcb_A72.Visible = false;
+            // 
+            // pcb_A71
+            // 
+            this.pcb_A71.Location = new System.Drawing.Point(798, 626);
+            this.pcb_A71.Name = "pcb_A71";
+            this.pcb_A71.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A71.TabIndex = 146;
+            this.pcb_A71.TabStop = false;
+            this.pcb_A71.Visible = false;
+            // 
+            // pcb_A53
+            // 
+            this.pcb_A53.Location = new System.Drawing.Point(708, 443);
+            this.pcb_A53.Name = "pcb_A53";
+            this.pcb_A53.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A53.TabIndex = 147;
+            this.pcb_A53.TabStop = false;
+            this.pcb_A53.Visible = false;
+            // 
+            // pcb_A52
+            // 
+            this.pcb_A52.Location = new System.Drawing.Point(708, 489);
+            this.pcb_A52.Name = "pcb_A52";
+            this.pcb_A52.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A52.TabIndex = 148;
+            this.pcb_A52.TabStop = false;
+            this.pcb_A52.Visible = false;
+            // 
+            // pcb_A51
+            // 
+            this.pcb_A51.Location = new System.Drawing.Point(708, 540);
+            this.pcb_A51.Name = "pcb_A51";
+            this.pcb_A51.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A51.TabIndex = 149;
+            this.pcb_A51.TabStop = false;
+            this.pcb_A51.Visible = false;
+            // 
+            // pcb_A611
+            // 
+            this.pcb_A611.Location = new System.Drawing.Point(753, 132);
+            this.pcb_A611.Name = "pcb_A611";
+            this.pcb_A611.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A611.TabIndex = 150;
+            this.pcb_A611.TabStop = false;
+            this.pcb_A611.Visible = false;
+            // 
+            // pcb_A610
+            // 
+            this.pcb_A610.Location = new System.Drawing.Point(753, 180);
+            this.pcb_A610.Name = "pcb_A610";
+            this.pcb_A610.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A610.TabIndex = 151;
+            this.pcb_A610.TabStop = false;
+            this.pcb_A610.Visible = false;
+            // 
+            // pcb_A69
+            // 
+            this.pcb_A69.Location = new System.Drawing.Point(753, 228);
+            this.pcb_A69.Name = "pcb_A69";
+            this.pcb_A69.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A69.TabIndex = 152;
+            this.pcb_A69.TabStop = false;
+            this.pcb_A69.Visible = false;
+            // 
+            // pcb_A68
+            // 
+            this.pcb_A68.Location = new System.Drawing.Point(753, 272);
+            this.pcb_A68.Name = "pcb_A68";
+            this.pcb_A68.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A68.TabIndex = 153;
+            this.pcb_A68.TabStop = false;
+            this.pcb_A68.Visible = false;
+            // 
+            // pcb_A67
+            // 
+            this.pcb_A67.Location = new System.Drawing.Point(753, 313);
+            this.pcb_A67.Name = "pcb_A67";
+            this.pcb_A67.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A67.TabIndex = 154;
+            this.pcb_A67.TabStop = false;
+            this.pcb_A67.Visible = false;
+            // 
+            // pcb_A66
+            // 
+            this.pcb_A66.Location = new System.Drawing.Point(753, 362);
+            this.pcb_A66.Name = "pcb_A66";
+            this.pcb_A66.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A66.TabIndex = 155;
+            this.pcb_A66.TabStop = false;
+            this.pcb_A66.Visible = false;
+            // 
+            // pcb_A65
+            // 
+            this.pcb_A65.Location = new System.Drawing.Point(753, 401);
+            this.pcb_A65.Name = "pcb_A65";
+            this.pcb_A65.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A65.TabIndex = 156;
+            this.pcb_A65.TabStop = false;
+            this.pcb_A65.Visible = false;
+            // 
+            // pcb_A64
+            // 
+            this.pcb_A64.Location = new System.Drawing.Point(753, 447);
+            this.pcb_A64.Name = "pcb_A64";
+            this.pcb_A64.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A64.TabIndex = 157;
+            this.pcb_A64.TabStop = false;
+            this.pcb_A64.Visible = false;
+            // 
+            // pcb_A63
+            // 
+            this.pcb_A63.Location = new System.Drawing.Point(753, 496);
+            this.pcb_A63.Name = "pcb_A63";
+            this.pcb_A63.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A63.TabIndex = 158;
+            this.pcb_A63.TabStop = false;
+            this.pcb_A63.Visible = false;
+            // 
+            // pcb_A62
+            // 
+            this.pcb_A62.Location = new System.Drawing.Point(753, 540);
+            this.pcb_A62.Name = "pcb_A62";
+            this.pcb_A62.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A62.TabIndex = 159;
+            this.pcb_A62.TabStop = false;
+            this.pcb_A62.Visible = false;
+            // 
+            // pcb_A44
+            // 
+            this.pcb_A44.Location = new System.Drawing.Point(655, 355);
+            this.pcb_A44.Name = "pcb_A44";
+            this.pcb_A44.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A44.TabIndex = 160;
+            this.pcb_A44.TabStop = false;
+            this.pcb_A44.Visible = false;
+            // 
+            // pcb_A43
+            // 
+            this.pcb_A43.Location = new System.Drawing.Point(655, 401);
+            this.pcb_A43.Name = "pcb_A43";
+            this.pcb_A43.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A43.TabIndex = 161;
+            this.pcb_A43.TabStop = false;
+            this.pcb_A43.Visible = false;
+            // 
+            // pcb_A42
+            // 
+            this.pcb_A42.Location = new System.Drawing.Point(655, 443);
+            this.pcb_A42.Name = "pcb_A42";
+            this.pcb_A42.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A42.TabIndex = 162;
+            this.pcb_A42.TabStop = false;
+            this.pcb_A42.Visible = false;
+            // 
+            // pcb_A41
+            // 
+            this.pcb_A41.Location = new System.Drawing.Point(655, 488);
+            this.pcb_A41.Name = "pcb_A41";
+            this.pcb_A41.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A41.TabIndex = 163;
+            this.pcb_A41.TabStop = false;
+            this.pcb_A41.Visible = false;
+            // 
+            // pcb_A59
+            // 
+            this.pcb_A59.Location = new System.Drawing.Point(708, 180);
+            this.pcb_A59.Name = "pcb_A59";
+            this.pcb_A59.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A59.TabIndex = 164;
+            this.pcb_A59.TabStop = false;
+            this.pcb_A59.Visible = false;
+            // 
+            // pcb_A58
+            // 
+            this.pcb_A58.Location = new System.Drawing.Point(708, 228);
+            this.pcb_A58.Name = "pcb_A58";
+            this.pcb_A58.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A58.TabIndex = 165;
+            this.pcb_A58.TabStop = false;
+            this.pcb_A58.Visible = false;
+            // 
+            // pcb_A57
+            // 
+            this.pcb_A57.Location = new System.Drawing.Point(708, 272);
+            this.pcb_A57.Name = "pcb_A57";
+            this.pcb_A57.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A57.TabIndex = 166;
+            this.pcb_A57.TabStop = false;
+            this.pcb_A57.Visible = false;
+            // 
+            // pcb_A56
+            // 
+            this.pcb_A56.Location = new System.Drawing.Point(708, 316);
+            this.pcb_A56.Name = "pcb_A56";
+            this.pcb_A56.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A56.TabIndex = 167;
+            this.pcb_A56.TabStop = false;
+            this.pcb_A56.Visible = false;
+            // 
+            // pcb_A55
+            // 
+            this.pcb_A55.Location = new System.Drawing.Point(708, 362);
+            this.pcb_A55.Name = "pcb_A55";
+            this.pcb_A55.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A55.TabIndex = 168;
+            this.pcb_A55.TabStop = false;
+            this.pcb_A55.Visible = false;
+            // 
+            // pcb_A54
+            // 
+            this.pcb_A54.Location = new System.Drawing.Point(708, 407);
+            this.pcb_A54.Name = "pcb_A54";
+            this.pcb_A54.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A54.TabIndex = 169;
+            this.pcb_A54.TabStop = false;
+            this.pcb_A54.Visible = false;
+            // 
+            // pcb_A47
+            // 
+            this.pcb_A47.Location = new System.Drawing.Point(655, 226);
+            this.pcb_A47.Name = "pcb_A47";
+            this.pcb_A47.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A47.TabIndex = 170;
+            this.pcb_A47.TabStop = false;
+            this.pcb_A47.Visible = false;
+            // 
+            // pcb_A46
+            // 
+            this.pcb_A46.Location = new System.Drawing.Point(655, 270);
+            this.pcb_A46.Name = "pcb_A46";
+            this.pcb_A46.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A46.TabIndex = 171;
+            this.pcb_A46.TabStop = false;
+            this.pcb_A46.Visible = false;
+            // 
+            // pcb_A45
+            // 
+            this.pcb_A45.Location = new System.Drawing.Point(655, 310);
+            this.pcb_A45.Name = "pcb_A45";
+            this.pcb_A45.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A45.TabIndex = 172;
+            this.pcb_A45.TabStop = false;
+            this.pcb_A45.Visible = false;
+            this.pcb_A45.Click += new System.EventHandler(this.pictureBox40_Click);
+            // 
+            // pcb_A33
+            // 
+            this.pcb_A33.Location = new System.Drawing.Point(598, 336);
+            this.pcb_A33.Name = "pcb_A33";
+            this.pcb_A33.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A33.TabIndex = 175;
+            this.pcb_A33.TabStop = false;
+            this.pcb_A33.Visible = false;
+            // 
+            // pcb_A32
+            // 
+            this.pcb_A32.Location = new System.Drawing.Point(598, 386);
+            this.pcb_A32.Name = "pcb_A32";
+            this.pcb_A32.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A32.TabIndex = 176;
+            this.pcb_A32.TabStop = false;
+            this.pcb_A32.Visible = false;
+            // 
+            // pcb_A34
+            // 
+            this.pcb_A34.Location = new System.Drawing.Point(598, 290);
+            this.pcb_A34.Name = "pcb_A34";
+            this.pcb_A34.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A34.TabIndex = 177;
+            this.pcb_A34.TabStop = false;
+            this.pcb_A34.Visible = false;
+            // 
+            // pcb_A35
+            // 
+            this.pcb_A35.Location = new System.Drawing.Point(598, 244);
+            this.pcb_A35.Name = "pcb_A35";
+            this.pcb_A35.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A35.TabIndex = 178;
+            this.pcb_A35.TabStop = false;
+            this.pcb_A35.Visible = false;
+            // 
+            // pcb_A23
+            // 
+            this.pcb_A23.Location = new System.Drawing.Point(549, 270);
+            this.pcb_A23.Name = "pcb_A23";
+            this.pcb_A23.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A23.TabIndex = 179;
+            this.pcb_A23.TabStop = false;
+            this.pcb_A23.Visible = false;
+            // 
+            // pcb_A21
+            // 
+            this.pcb_A21.Location = new System.Drawing.Point(549, 382);
+            this.pcb_A21.Name = "pcb_A21";
+            this.pcb_A21.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A21.TabIndex = 180;
+            this.pcb_A21.TabStop = false;
+            this.pcb_A21.Visible = false;
+            // 
+            // pcb_A31
+            // 
+            this.pcb_A31.Location = new System.Drawing.Point(598, 434);
+            this.pcb_A31.Name = "pcb_A31";
+            this.pcb_A31.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A31.TabIndex = 181;
+            this.pcb_A31.TabStop = false;
+            this.pcb_A31.Visible = false;
             // 
             // rtxt_historicoP
             // 
@@ -1906,7 +1908,7 @@ namespace TARS
             // 
             // pcb_j331
             // 
-            this.pcb_j331.Location = new System.Drawing.Point(598, 449);
+            this.pcb_j331.Location = new System.Drawing.Point(598, 447);
             this.pcb_j331.Name = "pcb_j331";
             this.pcb_j331.Size = new System.Drawing.Size(15, 15);
             this.pcb_j331.TabIndex = 189;
@@ -2014,7 +2016,7 @@ namespace TARS
             // 
             // pcb_j441
             // 
-            this.pcb_j441.Location = new System.Drawing.Point(670, 503);
+            this.pcb_j441.Location = new System.Drawing.Point(670, 504);
             this.pcb_j441.Name = "pcb_j441";
             this.pcb_j441.Size = new System.Drawing.Size(15, 15);
             this.pcb_j441.TabIndex = 201;
@@ -2149,7 +2151,7 @@ namespace TARS
             // 
             // pcb_j4101
             // 
-            this.pcb_j4101.Location = new System.Drawing.Point(958, 503);
+            this.pcb_j4101.Location = new System.Drawing.Point(958, 504);
             this.pcb_j4101.Name = "pcb_j4101";
             this.pcb_j4101.Size = new System.Drawing.Size(15, 15);
             this.pcb_j4101.TabIndex = 219;
@@ -2246,14 +2248,14 @@ namespace TARS
             this.pcb_j2121.TabStop = false;
             this.pcb_j2121.Visible = false;
             // 
-            // pcb_t22
+            // pcb_A22
             // 
-            this.pcb_t22.Location = new System.Drawing.Point(549, 330);
-            this.pcb_t22.Name = "pcb_t22";
-            this.pcb_t22.Size = new System.Drawing.Size(30, 30);
-            this.pcb_t22.TabIndex = 173;
-            this.pcb_t22.TabStop = false;
-            this.pcb_t22.Visible = false;
+            this.pcb_A22.Location = new System.Drawing.Point(549, 330);
+            this.pcb_A22.Name = "pcb_A22";
+            this.pcb_A22.Size = new System.Drawing.Size(30, 30);
+            this.pcb_A22.TabIndex = 173;
+            this.pcb_A22.TabStop = false;
+            this.pcb_A22.Visible = false;
             // 
             // pcb_j322
             // 
@@ -2455,7 +2457,7 @@ namespace TARS
             // 
             // pcb_j235
             // 
-            this.pcb_j235.Location = new System.Drawing.Point(613, 244);
+            this.pcb_j235.Location = new System.Drawing.Point(613, 243);
             this.pcb_j235.Name = "pcb_j235";
             this.pcb_j235.Size = new System.Drawing.Size(15, 15);
             this.pcb_j235.TabIndex = 252;
@@ -3158,7 +3160,7 @@ namespace TARS
             // 
             // pcb_j167
             // 
-            this.pcb_j167.Location = new System.Drawing.Point(753, 315);
+            this.pcb_j167.Location = new System.Drawing.Point(753, 316);
             this.pcb_j167.Name = "pcb_j167";
             this.pcb_j167.Size = new System.Drawing.Size(15, 15);
             this.pcb_j167.TabIndex = 334;
@@ -3176,7 +3178,7 @@ namespace TARS
             // 
             // pcb_j267
             // 
-            this.pcb_j267.Location = new System.Drawing.Point(768, 315);
+            this.pcb_j267.Location = new System.Drawing.Point(768, 313);
             this.pcb_j267.Name = "pcb_j267";
             this.pcb_j267.Size = new System.Drawing.Size(15, 15);
             this.pcb_j267.TabIndex = 332;
@@ -3185,7 +3187,7 @@ namespace TARS
             // 
             // pcb_j367
             // 
-            this.pcb_j367.Location = new System.Drawing.Point(753, 330);
+            this.pcb_j367.Location = new System.Drawing.Point(753, 328);
             this.pcb_j367.Name = "pcb_j367";
             this.pcb_j367.Size = new System.Drawing.Size(15, 15);
             this.pcb_j367.TabIndex = 331;
@@ -3383,7 +3385,7 @@ namespace TARS
             // 
             // pcb_j474
             // 
-            this.pcb_j474.Location = new System.Drawing.Point(813, 503);
+            this.pcb_j474.Location = new System.Drawing.Point(813, 504);
             this.pcb_j474.Name = "pcb_j474";
             this.pcb_j474.Size = new System.Drawing.Size(15, 15);
             this.pcb_j474.TabIndex = 357;
@@ -3572,7 +3574,7 @@ namespace TARS
             // 
             // pcb_j279
             // 
-            this.pcb_j279.Location = new System.Drawing.Point(813, 272);
+            this.pcb_j279.Location = new System.Drawing.Point(813, 273);
             this.pcb_j279.Name = "pcb_j279";
             this.pcb_j279.Size = new System.Drawing.Size(15, 15);
             this.pcb_j279.TabIndex = 376;
@@ -3932,7 +3934,7 @@ namespace TARS
             // 
             // pcb_j287
             // 
-            this.pcb_j287.Location = new System.Drawing.Point(861, 316);
+            this.pcb_j287.Location = new System.Drawing.Point(861, 315);
             this.pcb_j287.Name = "pcb_j287";
             this.pcb_j287.Size = new System.Drawing.Size(15, 15);
             this.pcb_j287.TabIndex = 416;
@@ -4148,7 +4150,7 @@ namespace TARS
             // 
             // pcb_j293
             // 
-            this.pcb_j293.Location = new System.Drawing.Point(906, 453);
+            this.pcb_j293.Location = new System.Drawing.Point(906, 454);
             this.pcb_j293.Name = "pcb_j293";
             this.pcb_j293.Size = new System.Drawing.Size(15, 15);
             this.pcb_j293.TabIndex = 440;
@@ -4184,7 +4186,7 @@ namespace TARS
             // 
             // pcb_j294
             // 
-            this.pcb_j294.Location = new System.Drawing.Point(906, 407);
+            this.pcb_j294.Location = new System.Drawing.Point(906, 408);
             this.pcb_j294.Name = "pcb_j294";
             this.pcb_j294.Size = new System.Drawing.Size(15, 15);
             this.pcb_j294.TabIndex = 444;
@@ -4256,7 +4258,7 @@ namespace TARS
             // 
             // pcb_j296
             // 
-            this.pcb_j296.Location = new System.Drawing.Point(906, 316);
+            this.pcb_j296.Location = new System.Drawing.Point(906, 315);
             this.pcb_j296.Name = "pcb_j296";
             this.pcb_j296.Size = new System.Drawing.Size(15, 15);
             this.pcb_j296.TabIndex = 452;
@@ -4364,7 +4366,7 @@ namespace TARS
             // 
             // pcb_j299
             // 
-            this.pcb_j299.Location = new System.Drawing.Point(906, 180);
+            this.pcb_j299.Location = new System.Drawing.Point(906, 182);
             this.pcb_j299.Name = "pcb_j299";
             this.pcb_j299.Size = new System.Drawing.Size(15, 15);
             this.pcb_j299.TabIndex = 464;
@@ -5190,89 +5192,89 @@ namespace TARS
             this.Controls.Add(this.pcb_j121);
             this.Controls.Add(this.pcb_j321);
             this.Controls.Add(this.rtxt_historicoP);
-            this.Controls.Add(this.pcb_t31);
-            this.Controls.Add(this.pcb_t21);
-            this.Controls.Add(this.pictureBox83);
-            this.Controls.Add(this.pictureBox82);
-            this.Controls.Add(this.pictureBox46);
-            this.Controls.Add(this.pcb_t32);
-            this.Controls.Add(this.pictureBox43);
-            this.Controls.Add(this.pcb_t22);
-            this.Controls.Add(this.pictureBox40);
-            this.Controls.Add(this.pictureBox39);
-            this.Controls.Add(this.pictureBox38);
-            this.Controls.Add(this.pictureBox37);
-            this.Controls.Add(this.pictureBox36);
-            this.Controls.Add(this.pictureBox35);
-            this.Controls.Add(this.pictureBox34);
-            this.Controls.Add(this.pictureBox33);
-            this.Controls.Add(this.pictureBox32);
-            this.Controls.Add(this.pcb_t41);
-            this.Controls.Add(this.pcb_t42);
-            this.Controls.Add(this.pictureBox29);
-            this.Controls.Add(this.pictureBox28);
-            this.Controls.Add(this.pcb_t62);
-            this.Controls.Add(this.pictureBox26);
-            this.Controls.Add(this.pictureBox25);
-            this.Controls.Add(this.pictureBox24);
-            this.Controls.Add(this.pictureBox23);
-            this.Controls.Add(this.pictureBox22);
-            this.Controls.Add(this.pictureBox21);
-            this.Controls.Add(this.pictureBox20);
-            this.Controls.Add(this.pictureBox19);
-            this.Controls.Add(this.pictureBox18);
-            this.Controls.Add(this.pcb_t51);
-            this.Controls.Add(this.pcb_t52);
-            this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pcb_t71);
-            this.Controls.Add(this.pcb_t72);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pcb_t61);
-            this.Controls.Add(this.pictureBox80);
-            this.Controls.Add(this.pcb_t111);
-            this.Controls.Add(this.pcb_t112);
-            this.Controls.Add(this.pictureBox77);
-            this.Controls.Add(this.pictureBox76);
-            this.Controls.Add(this.pictureBox75);
-            this.Controls.Add(this.pcb_t121);
-            this.Controls.Add(this.pcb_t122);
-            this.Controls.Add(this.pictureBox72);
-            this.Controls.Add(this.pictureBox71);
-            this.Controls.Add(this.pictureBox70);
-            this.Controls.Add(this.pcb_t101);
-            this.Controls.Add(this.pcb_t102);
-            this.Controls.Add(this.pictureBox67);
-            this.Controls.Add(this.pictureBox66);
-            this.Controls.Add(this.pictureBox65);
-            this.Controls.Add(this.pictureBox64);
-            this.Controls.Add(this.pictureBox63);
-            this.Controls.Add(this.pictureBox62);
-            this.Controls.Add(this.pictureBox61);
-            this.Controls.Add(this.pcb_t91);
-            this.Controls.Add(this.pcb_t92);
-            this.Controls.Add(this.pictureBox58);
-            this.Controls.Add(this.pictureBox57);
-            this.Controls.Add(this.pictureBox56);
-            this.Controls.Add(this.pictureBox55);
-            this.Controls.Add(this.pictureBox54);
-            this.Controls.Add(this.pictureBox53);
-            this.Controls.Add(this.pictureBox52);
-            this.Controls.Add(this.pcb_t82);
-            this.Controls.Add(this.pictureBox50);
-            this.Controls.Add(this.pictureBox49);
-            this.Controls.Add(this.pictureBox48);
-            this.Controls.Add(this.pictureBox47);
-            this.Controls.Add(this.pcb_t81);
+            this.Controls.Add(this.pcb_A31);
+            this.Controls.Add(this.pcb_A21);
+            this.Controls.Add(this.pcb_A23);
+            this.Controls.Add(this.pcb_A35);
+            this.Controls.Add(this.pcb_A34);
+            this.Controls.Add(this.pcb_A32);
+            this.Controls.Add(this.pcb_A33);
+            this.Controls.Add(this.pcb_A22);
+            this.Controls.Add(this.pcb_A45);
+            this.Controls.Add(this.pcb_A46);
+            this.Controls.Add(this.pcb_A47);
+            this.Controls.Add(this.pcb_A54);
+            this.Controls.Add(this.pcb_A55);
+            this.Controls.Add(this.pcb_A56);
+            this.Controls.Add(this.pcb_A57);
+            this.Controls.Add(this.pcb_A58);
+            this.Controls.Add(this.pcb_A59);
+            this.Controls.Add(this.pcb_A41);
+            this.Controls.Add(this.pcb_A42);
+            this.Controls.Add(this.pcb_A43);
+            this.Controls.Add(this.pcb_A44);
+            this.Controls.Add(this.pcb_A62);
+            this.Controls.Add(this.pcb_A63);
+            this.Controls.Add(this.pcb_A64);
+            this.Controls.Add(this.pcb_A65);
+            this.Controls.Add(this.pcb_A66);
+            this.Controls.Add(this.pcb_A67);
+            this.Controls.Add(this.pcb_A68);
+            this.Controls.Add(this.pcb_A69);
+            this.Controls.Add(this.pcb_A610);
+            this.Controls.Add(this.pcb_A611);
+            this.Controls.Add(this.pcb_A51);
+            this.Controls.Add(this.pcb_A52);
+            this.Controls.Add(this.pcb_A53);
+            this.Controls.Add(this.pcb_A71);
+            this.Controls.Add(this.pcb_A72);
+            this.Controls.Add(this.pcb_A73);
+            this.Controls.Add(this.pcb_A74);
+            this.Controls.Add(this.pcb_75);
+            this.Controls.Add(this.pcb_A76);
+            this.Controls.Add(this.pcb_77);
+            this.Controls.Add(this.pcb_A78);
+            this.Controls.Add(this.pcb_A79);
+            this.Controls.Add(this.pcb_A710);
+            this.Controls.Add(this.pcb_A711);
+            this.Controls.Add(this.pcb_A712);
+            this.Controls.Add(this.pcb_A713);
+            this.Controls.Add(this.pcb_A61);
+            this.Controls.Add(this.pcb_A123);
+            this.Controls.Add(this.pcb_A111);
+            this.Controls.Add(this.pcb_A112);
+            this.Controls.Add(this.pcb_A113);
+            this.Controls.Add(this.pcb_A114);
+            this.Controls.Add(this.pcb_A115);
+            this.Controls.Add(this.pcb_A121);
+            this.Controls.Add(this.pcb_A122);
+            this.Controls.Add(this.pcb_A97);
+            this.Controls.Add(this.pcb_A98);
+            this.Controls.Add(this.pcb_A99);
+            this.Controls.Add(this.pcb_A101);
+            this.Controls.Add(this.pcb_A102);
+            this.Controls.Add(this.pcb_A103);
+            this.Controls.Add(this.pcb_A104);
+            this.Controls.Add(this.pcb_A105);
+            this.Controls.Add(this.pcb_A106);
+            this.Controls.Add(this.pcb_A107);
+            this.Controls.Add(this.pcb_A10);
+            this.Controls.Add(this.pcb_A11);
+            this.Controls.Add(this.pcb_A91);
+            this.Controls.Add(this.pcb_A92);
+            this.Controls.Add(this.pcb_A93);
+            this.Controls.Add(this.pcb_A94);
+            this.Controls.Add(this.pcb_A95);
+            this.Controls.Add(this.pcb_A96);
+            this.Controls.Add(this.pcb_A85);
+            this.Controls.Add(this.pcb_A84);
+            this.Controls.Add(this.pcb_A86);
+            this.Controls.Add(this.pcb_A82);
+            this.Controls.Add(this.pcb_A83);
+            this.Controls.Add(this.pcb_A87);
+            this.Controls.Add(this.pcb_A88);
+            this.Controls.Add(this.pcb_A89);
+            this.Controls.Add(this.pcb_A81);
             this.Controls.Add(this.dgv_teste);
             this.Controls.Add(this.btn_parar);
             this.Controls.Add(this.gb_jogadas);
@@ -5301,88 +5303,88 @@ namespace TARS
             this.gb_jogadas.ResumeLayout(false);
             this.gb_jogadas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_teste)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t81)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t82)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t92)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t91)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t102)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t101)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t122)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t121)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t112)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t111)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t61)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t72)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t71)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t62)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A81)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A89)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A88)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A87)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A83)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A82)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A86)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A84)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A85)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A96)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A95)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A94)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A93)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A92)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A91)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A107)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A106)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A105)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A104)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A103)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A102)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A101)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A99)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A98)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A97)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A122)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A121)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A115)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A114)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A113)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A112)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A111)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A123)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A61)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A713)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A712)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A711)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A710)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A79)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A78)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_77)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A76)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_75)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A74)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A73)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A72)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A71)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A611)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A610)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A69)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A68)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A67)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A66)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A65)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A64)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A63)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A62)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A59)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A58)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A57)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A56)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j321)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j121)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j221)).EndInit();
@@ -5427,7 +5429,7 @@ namespace TARS
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j3111)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j1111)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j2121)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_t22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_A22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j322)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j222)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_j422)).EndInit();
@@ -5742,88 +5744,88 @@ namespace TARS
         private System.Windows.Forms.RadioButton rdb_jogada1;
         private System.Windows.Forms.Button btn_parar;
         private System.Windows.Forms.DataGridView dgv_teste;
-        private System.Windows.Forms.PictureBox pcb_t81;
-        private System.Windows.Forms.PictureBox pictureBox47;
-        private System.Windows.Forms.PictureBox pictureBox48;
-        private System.Windows.Forms.PictureBox pictureBox49;
-        private System.Windows.Forms.PictureBox pictureBox50;
-        private System.Windows.Forms.PictureBox pcb_t82;
-        private System.Windows.Forms.PictureBox pictureBox52;
-        private System.Windows.Forms.PictureBox pictureBox53;
-        private System.Windows.Forms.PictureBox pictureBox54;
-        private System.Windows.Forms.PictureBox pictureBox55;
-        private System.Windows.Forms.PictureBox pictureBox56;
-        private System.Windows.Forms.PictureBox pictureBox57;
-        private System.Windows.Forms.PictureBox pictureBox58;
-        private System.Windows.Forms.PictureBox pcb_t92;
-        private System.Windows.Forms.PictureBox pcb_t91;
-        private System.Windows.Forms.PictureBox pictureBox61;
-        private System.Windows.Forms.PictureBox pictureBox62;
-        private System.Windows.Forms.PictureBox pictureBox63;
-        private System.Windows.Forms.PictureBox pictureBox64;
-        private System.Windows.Forms.PictureBox pictureBox65;
-        private System.Windows.Forms.PictureBox pictureBox66;
-        private System.Windows.Forms.PictureBox pictureBox67;
-        private System.Windows.Forms.PictureBox pcb_t102;
-        private System.Windows.Forms.PictureBox pcb_t101;
-        private System.Windows.Forms.PictureBox pictureBox70;
-        private System.Windows.Forms.PictureBox pictureBox71;
-        private System.Windows.Forms.PictureBox pictureBox72;
-        private System.Windows.Forms.PictureBox pcb_t122;
-        private System.Windows.Forms.PictureBox pcb_t121;
-        private System.Windows.Forms.PictureBox pictureBox75;
-        private System.Windows.Forms.PictureBox pictureBox76;
-        private System.Windows.Forms.PictureBox pictureBox77;
-        private System.Windows.Forms.PictureBox pcb_t112;
-        private System.Windows.Forms.PictureBox pcb_t111;
-        private System.Windows.Forms.PictureBox pictureBox80;
-        private System.Windows.Forms.PictureBox pcb_t61;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pcb_t72;
-        private System.Windows.Forms.PictureBox pcb_t71;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pcb_t52;
-        private System.Windows.Forms.PictureBox pcb_t51;
-        private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox20;
-        private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.PictureBox pictureBox24;
-        private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.PictureBox pictureBox26;
-        private System.Windows.Forms.PictureBox pcb_t62;
-        private System.Windows.Forms.PictureBox pictureBox28;
-        private System.Windows.Forms.PictureBox pictureBox29;
-        private System.Windows.Forms.PictureBox pcb_t42;
-        private System.Windows.Forms.PictureBox pcb_t41;
-        private System.Windows.Forms.PictureBox pictureBox32;
-        private System.Windows.Forms.PictureBox pictureBox33;
-        private System.Windows.Forms.PictureBox pictureBox34;
-        private System.Windows.Forms.PictureBox pictureBox35;
-        private System.Windows.Forms.PictureBox pictureBox36;
-        private System.Windows.Forms.PictureBox pictureBox37;
-        private System.Windows.Forms.PictureBox pictureBox38;
-        private System.Windows.Forms.PictureBox pictureBox39;
-        private System.Windows.Forms.PictureBox pictureBox40;
-        private System.Windows.Forms.PictureBox pictureBox43;
-        private System.Windows.Forms.PictureBox pcb_t32;
-        private System.Windows.Forms.PictureBox pictureBox46;
-        private System.Windows.Forms.PictureBox pictureBox82;
-        private System.Windows.Forms.PictureBox pictureBox83;
-        private System.Windows.Forms.PictureBox pcb_t21;
-        private System.Windows.Forms.PictureBox pcb_t31;
+        private System.Windows.Forms.PictureBox pcb_A81;
+        private System.Windows.Forms.PictureBox pcb_A89;
+        private System.Windows.Forms.PictureBox pcb_A88;
+        private System.Windows.Forms.PictureBox pcb_A87;
+        private System.Windows.Forms.PictureBox pcb_A83;
+        private System.Windows.Forms.PictureBox pcb_A82;
+        private System.Windows.Forms.PictureBox pcb_A86;
+        private System.Windows.Forms.PictureBox pcb_A84;
+        private System.Windows.Forms.PictureBox pcb_A85;
+        private System.Windows.Forms.PictureBox pcb_A96;
+        private System.Windows.Forms.PictureBox pcb_A95;
+        private System.Windows.Forms.PictureBox pcb_A94;
+        private System.Windows.Forms.PictureBox pcb_A93;
+        private System.Windows.Forms.PictureBox pcb_A92;
+        private System.Windows.Forms.PictureBox pcb_A91;
+        private System.Windows.Forms.PictureBox pcb_A11;
+        private System.Windows.Forms.PictureBox pcb_A10;
+        private System.Windows.Forms.PictureBox pcb_A107;
+        private System.Windows.Forms.PictureBox pcb_A106;
+        private System.Windows.Forms.PictureBox pcb_A105;
+        private System.Windows.Forms.PictureBox pcb_A104;
+        private System.Windows.Forms.PictureBox pcb_A103;
+        private System.Windows.Forms.PictureBox pcb_A102;
+        private System.Windows.Forms.PictureBox pcb_A101;
+        private System.Windows.Forms.PictureBox pcb_A99;
+        private System.Windows.Forms.PictureBox pcb_A98;
+        private System.Windows.Forms.PictureBox pcb_A97;
+        private System.Windows.Forms.PictureBox pcb_A122;
+        private System.Windows.Forms.PictureBox pcb_A121;
+        private System.Windows.Forms.PictureBox pcb_A115;
+        private System.Windows.Forms.PictureBox pcb_A114;
+        private System.Windows.Forms.PictureBox pcb_A113;
+        private System.Windows.Forms.PictureBox pcb_A112;
+        private System.Windows.Forms.PictureBox pcb_A111;
+        private System.Windows.Forms.PictureBox pcb_A123;
+        private System.Windows.Forms.PictureBox pcb_A61;
+        private System.Windows.Forms.PictureBox pcb_A713;
+        private System.Windows.Forms.PictureBox pcb_A712;
+        private System.Windows.Forms.PictureBox pcb_A711;
+        private System.Windows.Forms.PictureBox pcb_A710;
+        private System.Windows.Forms.PictureBox pcb_A79;
+        private System.Windows.Forms.PictureBox pcb_A78;
+        private System.Windows.Forms.PictureBox pcb_77;
+        private System.Windows.Forms.PictureBox pcb_A76;
+        private System.Windows.Forms.PictureBox pcb_75;
+        private System.Windows.Forms.PictureBox pcb_A74;
+        private System.Windows.Forms.PictureBox pcb_A73;
+        private System.Windows.Forms.PictureBox pcb_A72;
+        private System.Windows.Forms.PictureBox pcb_A71;
+        private System.Windows.Forms.PictureBox pcb_A53;
+        private System.Windows.Forms.PictureBox pcb_A52;
+        private System.Windows.Forms.PictureBox pcb_A51;
+        private System.Windows.Forms.PictureBox pcb_A611;
+        private System.Windows.Forms.PictureBox pcb_A610;
+        private System.Windows.Forms.PictureBox pcb_A69;
+        private System.Windows.Forms.PictureBox pcb_A68;
+        private System.Windows.Forms.PictureBox pcb_A67;
+        private System.Windows.Forms.PictureBox pcb_A66;
+        private System.Windows.Forms.PictureBox pcb_A65;
+        private System.Windows.Forms.PictureBox pcb_A64;
+        private System.Windows.Forms.PictureBox pcb_A63;
+        private System.Windows.Forms.PictureBox pcb_A62;
+        private System.Windows.Forms.PictureBox pcb_A44;
+        private System.Windows.Forms.PictureBox pcb_A43;
+        private System.Windows.Forms.PictureBox pcb_A42;
+        private System.Windows.Forms.PictureBox pcb_A41;
+        private System.Windows.Forms.PictureBox pcb_A59;
+        private System.Windows.Forms.PictureBox pcb_A58;
+        private System.Windows.Forms.PictureBox pcb_A57;
+        private System.Windows.Forms.PictureBox pcb_A56;
+        private System.Windows.Forms.PictureBox pcb_A55;
+        private System.Windows.Forms.PictureBox pcb_A54;
+        private System.Windows.Forms.PictureBox pcb_A47;
+        private System.Windows.Forms.PictureBox pcb_A46;
+        private System.Windows.Forms.PictureBox pcb_A45;
+        private System.Windows.Forms.PictureBox pcb_A33;
+        private System.Windows.Forms.PictureBox pcb_A32;
+        private System.Windows.Forms.PictureBox pcb_A34;
+        private System.Windows.Forms.PictureBox pcb_A35;
+        private System.Windows.Forms.PictureBox pcb_A23;
+        private System.Windows.Forms.PictureBox pcb_A21;
+        private System.Windows.Forms.PictureBox pcb_A31;
         private System.Windows.Forms.RichTextBox rtxt_historicoP;
         private System.Windows.Forms.PictureBox pcb_j321;
         private System.Windows.Forms.PictureBox pcb_j121;
@@ -5869,7 +5871,7 @@ namespace TARS
         private System.Windows.Forms.PictureBox pcb_j3111;
         private System.Windows.Forms.PictureBox pcb_j1111;
         private System.Windows.Forms.PictureBox pcb_j2121;
-        private System.Windows.Forms.PictureBox pcb_t22;
+        private System.Windows.Forms.PictureBox pcb_A22;
         private System.Windows.Forms.PictureBox pcb_j322;
         private System.Windows.Forms.PictureBox pcb_j222;
         private System.Windows.Forms.PictureBox pcb_j422;
