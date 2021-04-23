@@ -409,13 +409,11 @@ namespace TARS
                 int contador = 0;
                 int contvalor = 0;
 
-                char[] dado = new char[4];
-
                 for (int i = 0; i < dados.Length; i++)
                 {
                     if (i % 2 == 0)
                     {
-                        dado[contador] = dados[i];
+                        numerodado[contador] = dados[i];
                         contador++;
                     }
                     else
@@ -432,8 +430,7 @@ namespace TARS
                 for (int i = 0; i < 4; i++)
                 {
                     Dado d = new Dado();
-                    d.NumeroDado = dado[i];
-                    numerodado[i] = dado[i];
+                    d.NumeroDado = numerodado[i];
                     d.ValorDado = valordado[i];
                     d.PopularImagens(d.ValorDado);
                     ListaDados.Add(d);
