@@ -13,26 +13,15 @@ namespace TARS
         public string Nomejogador { get; set; }
         public string corjogador { get; set; }
         public string Senha { get; set; }
+        public int NumeroJogador { get; set; }
 
-        public static int VerificarNumeroJogador(Jogador jogadorativo)
+        public static int SetarNumeroJogador(int idpartida)
         {
-            if (jogadorativo.corjogador == "Vermelho")
-            {
-                return 1;
-            }
-            else if(jogadorativo.corjogador == "Azul")
-            {
-                return 2;
-            }
-            else if (jogadorativo.corjogador == "Verde")
-            {
-                return 3;
-            }
-            else
-            {
-                return 4;
-            }
-
+            string retorno = Jogo.ListarJogadores(idpartida);
+            retorno = retorno.Replace("\r", " ");
+            string[] linha = retorno.Split('\n');
+            int teste = linha.Count();
+            return teste;
         }
 
     }

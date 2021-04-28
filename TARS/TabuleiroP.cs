@@ -16,6 +16,8 @@ namespace TARS
         public string Tipo { get; set; }
 
         //Trilha[0] Posicao[1] Jogador[2] Tipo[3]
+        // 1            1          2        A
+        // 1            2          1        B
         public static DataTable CriarDataTable()
         {
             DataTable tabuleiro = new DataTable();

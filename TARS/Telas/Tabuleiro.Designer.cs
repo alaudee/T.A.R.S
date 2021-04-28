@@ -1110,7 +1110,6 @@ namespace TARS
             this.pcb_A81.TabIndex = 90;
             this.pcb_A81.TabStop = false;
             this.pcb_A81.Visible = false;
-            this.pcb_A81.Click += new System.EventHandler(this.pcb_t81_Click);
             // 
             // pcb_A89
             // 
@@ -1147,7 +1146,6 @@ namespace TARS
             this.pcb_A83.TabIndex = 95;
             this.pcb_A83.TabStop = false;
             this.pcb_A83.Visible = false;
-            this.pcb_A83.Click += new System.EventHandler(this.pictureBox50_Click);
             // 
             // pcb_A82
             // 
@@ -1274,7 +1272,6 @@ namespace TARS
             this.pcb_A106.TabIndex = 109;
             this.pcb_A106.TabStop = false;
             this.pcb_A106.Visible = false;
-            this.pcb_A106.Click += new System.EventHandler(this.pictureBox64_Click);
             // 
             // pcb_A105
             // 
@@ -1779,7 +1776,6 @@ namespace TARS
             this.pcb_A45.TabIndex = 172;
             this.pcb_A45.TabStop = false;
             this.pcb_A45.Visible = false;
-            this.pcb_A45.Click += new System.EventHandler(this.pictureBox40_Click);
             // 
             // pcb_A33
             // 
@@ -2553,7 +2549,6 @@ namespace TARS
             this.pcb_j144.TabIndex = 266;
             this.pcb_j144.TabStop = false;
             this.pcb_j144.Visible = false;
-            this.pcb_j144.Click += new System.EventHandler(this.pictureBox138_Click);
             // 
             // pcb_j444
             // 
@@ -3490,7 +3485,6 @@ namespace TARS
             this.pcb_j177.TabIndex = 370;
             this.pcb_j177.TabStop = false;
             this.pcb_j177.Visible = false;
-            this.pcb_j177.Click += new System.EventHandler(this.pcb_j177_Click);
             // 
             // pcb_j477
             // 
@@ -4076,7 +4070,6 @@ namespace TARS
             this.pcb_j4811.TabIndex = 433;
             this.pcb_j4811.TabStop = false;
             this.pcb_j4811.Visible = false;
-            this.pcb_j4811.Click += new System.EventHandler(this.pcb_j4811_Click);
             // 
             // pcb_j2811
             // 
@@ -4509,7 +4502,6 @@ namespace TARS
             this.pcb_j4105.TabIndex = 481;
             this.pcb_j4105.TabStop = false;
             this.pcb_j4105.Visible = false;
-            this.pcb_j4105.Click += new System.EventHandler(this.pictureBox355_Click);
             // 
             // pcb_j2105
             // 
@@ -5297,7 +5289,6 @@ namespace TARS
             this.Name = "Tabuleiro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tabuleiro";
-            this.Load += new System.EventHandler(this.Tabuleiro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).EndInit();

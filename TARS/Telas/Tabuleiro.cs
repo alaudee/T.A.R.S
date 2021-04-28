@@ -43,8 +43,8 @@ namespace TARS
             string[] linha = Infojogador.Split(',');
             JogadorAtivo.Id = Convert.ToInt32(linha[0]);
             JogadorAtivo.Senha = linha[1];
-            JogadorAtivo.corjogador = linha[2];
-            JogadorAtivo.corjogador = JogadorAtivo.corjogador.Replace("\r\n","");
+            JogadorAtivo.corjogador = linha[2].Replace("\r\n", "");
+            JogadorAtivo.NumeroJogador = Jogador.SetarNumeroJogador(IdPartida) - 1;
 
             lbl_idjogador.Text = "Id: "+ JogadorAtivo.Id;
             lbl_senhajogador.Text = "Senha: " + JogadorAtivo.Senha;
@@ -54,9 +54,21 @@ namespace TARS
         }
 
 
-        public void desenharTabuleiro(string[] trilhas, string[] posicoes, string[] tipo, Jogador jogadorativo)
+        public void desenharTabuleiro(Jogador playerativo)
         {
-            int numerojogador = Jogador.VerificarNumeroJogador(jogadorativo);
+            LimparTabuleiro();
+            string[] trilhas = new string[dtb_tabuleiro.Rows.Count];
+            string[] posicoes = new string[dtb_tabuleiro.Rows.Count];
+            string[] tipo = new string[dtb_tabuleiro.Rows.Count];
+            int[] Idjogador = new int[dtb_tabuleiro.Rows.Count];
+            for (int i = 0; i < dtb_tabuleiro.Rows.Count; i++)
+            {
+                trilhas[i] = dtb_tabuleiro.Rows[i]["trilha"].ToString(); //Selecionando os rows i na coluna trilha
+                posicoes[i] = dtb_tabuleiro.Rows[i]["posicao"].ToString();
+                tipo[i] = dtb_tabuleiro.Rows[i]["tipo"].ToString();
+                Idjogador[i] = Convert.ToInt32(dtb_tabuleiro.Rows[i]["jogador"]);
+            }
+
             for (int i = 0; i < trilhas.Length; i++)
             {
                 if (trilhas[i] == "2")
@@ -72,17 +84,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j121.BackColor = Color.Red;
                                     pcb_j121.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j221.BackColor = Color.Blue;
                                     pcb_j221.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j321.BackColor = Color.Green;
                                     pcb_j321.Visible = true;
@@ -104,17 +116,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j122.BackColor = Color.Red;
                                     pcb_j122.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j222.BackColor = Color.Blue;
                                     pcb_j222.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j322.BackColor = Color.Green;
                                     pcb_j322.Visible = true;
@@ -137,17 +149,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j123.BackColor = Color.Red;
                                     pcb_j123.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j223.BackColor = Color.Blue;
                                     pcb_j223.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j323.BackColor = Color.Green;
                                     pcb_j323.Visible = true;
@@ -176,17 +188,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j131.BackColor = Color.Red;
                                     pcb_j131.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j231.BackColor = Color.Blue;
                                     pcb_j231.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j331.BackColor = Color.Green;
                                     pcb_j331.Visible = true;
@@ -208,17 +220,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j132.BackColor = Color.Red;
                                     pcb_j132.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j232.BackColor = Color.Blue;
                                     pcb_j232.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j332.BackColor = Color.Green;
                                     pcb_j332.Visible = true;
@@ -240,17 +252,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j133.BackColor = Color.Red;
                                     pcb_j133.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j233.BackColor = Color.Blue;
                                     pcb_j233.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j333.BackColor = Color.Green;
                                     pcb_j333.Visible = true;
@@ -272,17 +284,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j134.BackColor = Color.Red;
                                     pcb_j134.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j234.BackColor = Color.Blue;
                                     pcb_j234.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j334.BackColor = Color.Green;
                                     pcb_j334.Visible = true;
@@ -304,17 +316,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j135.BackColor = Color.Red;
                                     pcb_j135.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j235.BackColor = Color.Blue;
                                     pcb_j235.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j335.BackColor = Color.Green;
                                     pcb_j335.Visible = true;
@@ -343,17 +355,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j141.BackColor = Color.Red;
                                     pcb_j141.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j241.BackColor = Color.Blue;
                                     pcb_j241.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j341.BackColor = Color.Green;
                                     pcb_j341.Visible = true;
@@ -375,17 +387,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j142.BackColor = Color.Red;
                                     pcb_j142.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j242.BackColor = Color.Blue;
                                     pcb_j242.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j342.BackColor = Color.Green;
                                     pcb_j342.Visible = true;
@@ -408,17 +420,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j143.BackColor = Color.Red;
                                     pcb_j143.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j243.BackColor = Color.Blue;
                                     pcb_j243.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j343.BackColor = Color.Green;
                                     pcb_j343.Visible = true;
@@ -441,17 +453,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j144.BackColor = Color.Red;
                                     pcb_j144.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j244.BackColor = Color.Blue;
                                     pcb_j244.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j344.BackColor = Color.Green;
                                     pcb_j344.Visible = true;
@@ -474,17 +486,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j145.BackColor = Color.Red;
                                     pcb_j145.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j245.BackColor = Color.Blue;
                                     pcb_j245.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j345.BackColor = Color.Green;
                                     pcb_j345.Visible = true;
@@ -507,17 +519,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j146.BackColor = Color.Red;
                                     pcb_j146.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j246.BackColor = Color.Blue;
                                     pcb_j246.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j346.BackColor = Color.Green;
                                     pcb_j346.Visible = true;
@@ -540,17 +552,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j147.BackColor = Color.Red;
                                     pcb_j147.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j247.BackColor = Color.Blue;
                                     pcb_j247.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j347.BackColor = Color.Green;
                                     pcb_j347.Visible = true;
@@ -579,17 +591,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j151.BackColor = Color.Red;
                                     pcb_j151.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j251.BackColor = Color.Blue;
                                     pcb_j251.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j351.BackColor = Color.Green;
                                     pcb_j351.Visible = true;
@@ -611,17 +623,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j152.BackColor = Color.Red;
                                     pcb_j152.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j252.BackColor = Color.Blue;
                                     pcb_j252.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j352.BackColor = Color.Green;
                                     pcb_j352.Visible = true;
@@ -643,17 +655,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j153.BackColor = Color.Red;
                                     pcb_j153.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j253.BackColor = Color.Blue;
                                     pcb_j253.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j353.BackColor = Color.Green;
                                     pcb_j353.Visible = true;
@@ -675,17 +687,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j154.BackColor = Color.Red;
                                     pcb_j154.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j254.BackColor = Color.Blue;
                                     pcb_j254.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j354.BackColor = Color.Green;
                                     pcb_j354.Visible = true;
@@ -707,17 +719,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j155.BackColor = Color.Red;
                                     pcb_j155.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j255.BackColor = Color.Blue;
                                     pcb_j255.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j355.BackColor = Color.Green;
                                     pcb_j355.Visible = true;
@@ -739,17 +751,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j156.BackColor = Color.Red;
                                     pcb_j156.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j256.BackColor = Color.Blue;
                                     pcb_j256.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j356.BackColor = Color.Green;
                                     pcb_j356.Visible = true;
@@ -771,17 +783,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j157.BackColor = Color.Red;
                                     pcb_j157.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j257.BackColor = Color.Blue;
                                     pcb_j257.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j357.BackColor = Color.Green;
                                     pcb_j357.Visible = true;
@@ -803,17 +815,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j158.BackColor = Color.Red;
                                     pcb_j158.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j258.BackColor = Color.Blue;
                                     pcb_j258.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j358.BackColor = Color.Green;
                                     pcb_j358.Visible = true;
@@ -835,17 +847,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j159.BackColor = Color.Red;
                                     pcb_j159.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j259.BackColor = Color.Blue;
                                     pcb_j259.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j359.BackColor = Color.Green;
                                     pcb_j359.Visible = true;
@@ -874,17 +886,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j161.BackColor = Color.Red;
                                     pcb_j161.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j261.BackColor = Color.Blue;
                                     pcb_j261.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j361.BackColor = Color.Green;
                                     pcb_j361.Visible = true;
@@ -906,17 +918,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j162.BackColor = Color.Red;
                                     pcb_j162.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j262.BackColor = Color.Blue;
                                     pcb_j262.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j362.BackColor = Color.Green;
                                     pcb_j362.Visible = true;
@@ -938,17 +950,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j163.BackColor = Color.Red;
                                     pcb_j163.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j263.BackColor = Color.Blue;
                                     pcb_j263.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j363.BackColor = Color.Green;
                                     pcb_j363.Visible = true;
@@ -970,17 +982,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j164.BackColor = Color.Red;
                                     pcb_j164.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j264.BackColor = Color.Blue;
                                     pcb_j264.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j364.BackColor = Color.Green;
                                     pcb_j364.Visible = true;
@@ -1002,17 +1014,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j165.BackColor = Color.Red;
                                     pcb_j165.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j265.BackColor = Color.Blue;
                                     pcb_j265.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j365.BackColor = Color.Green;
                                     pcb_j365.Visible = true;
@@ -1034,17 +1046,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j166.BackColor = Color.Red;
                                     pcb_j166.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j266.BackColor = Color.Blue;
                                     pcb_j266.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j366.BackColor = Color.Green;
                                     pcb_j366.Visible = true;
@@ -1066,17 +1078,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j167.BackColor = Color.Red;
                                     pcb_j167.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j267.BackColor = Color.Blue;
                                     pcb_j267.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j367.BackColor = Color.Green;
                                     pcb_j367.Visible = true;
@@ -1098,17 +1110,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j168.BackColor = Color.Red;
                                     pcb_j168.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j268.BackColor = Color.Blue;
                                     pcb_j268.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j368.BackColor = Color.Green;
                                     pcb_j368.Visible = true;
@@ -1130,17 +1142,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j169.BackColor = Color.Red;
                                     pcb_j169.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j269.BackColor = Color.Blue;
                                     pcb_j269.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j369.BackColor = Color.Green;
                                     pcb_j369.Visible = true;
@@ -1162,17 +1174,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1610.BackColor = Color.Red;
                                     pcb_j1610.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2610.BackColor = Color.Blue;
                                     pcb_j2610.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3610.BackColor = Color.Green;
                                     pcb_j3610.Visible = true;
@@ -1194,17 +1206,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1611.BackColor = Color.Red;
                                     pcb_j1611.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2611.BackColor = Color.Blue;
                                     pcb_j2611.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3611.BackColor = Color.Green;
                                     pcb_j3611.Visible = true;
@@ -1233,17 +1245,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j171.BackColor = Color.Red;
                                     pcb_j171.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j271.BackColor = Color.Blue;
                                     pcb_j271.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j371.BackColor = Color.Green;
                                     pcb_j371.Visible = true;
@@ -1266,17 +1278,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j172.BackColor = Color.Red;
                                     pcb_j172.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j272.BackColor = Color.Blue;
                                     pcb_j272.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j372.BackColor = Color.Green;
                                     pcb_j372.Visible = true;
@@ -1298,17 +1310,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j173.BackColor = Color.Red;
                                     pcb_j173.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j273.BackColor = Color.Blue;
                                     pcb_j273.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j373.BackColor = Color.Green;
                                     pcb_j373.Visible = true;
@@ -1330,17 +1342,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j174.BackColor = Color.Red;
                                     pcb_j174.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j274.BackColor = Color.Blue;
                                     pcb_j274.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j374.BackColor = Color.Green;
                                     pcb_j374.Visible = true;
@@ -1362,17 +1374,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j175.BackColor = Color.Red;
                                     pcb_j175.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j275.BackColor = Color.Blue;
                                     pcb_j275.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j375.BackColor = Color.Green;
                                     pcb_j375.Visible = true;
@@ -1394,17 +1406,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j176.BackColor = Color.Red;
                                     pcb_j176.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j276.BackColor = Color.Blue;
                                     pcb_j276.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j376.BackColor = Color.Green;
                                     pcb_j376.Visible = true;
@@ -1426,17 +1438,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j177.BackColor = Color.Red;
                                     pcb_j177.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j277.BackColor = Color.Blue;
                                     pcb_j277.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j377.BackColor = Color.Green;
                                     pcb_j377.Visible = true;
@@ -1458,17 +1470,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j178.BackColor = Color.Red;
                                     pcb_j178.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j278.BackColor = Color.Blue;
                                     pcb_j278.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j378.BackColor = Color.Green;
                                     pcb_j378.Visible = true;
@@ -1490,17 +1502,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j179.BackColor = Color.Red;
                                     pcb_j179.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j279.BackColor = Color.Blue;
                                     pcb_j279.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j379.BackColor = Color.Green;
                                     pcb_j379.Visible = true;
@@ -1522,17 +1534,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1710.BackColor = Color.Red;
                                     pcb_j1710.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2710.BackColor = Color.Blue;
                                     pcb_j2710.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3710.BackColor = Color.Green;
                                     pcb_j373.Visible = true;
@@ -1554,17 +1566,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1711.BackColor = Color.Red;
                                     pcb_j1711.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2711.BackColor = Color.Blue;
                                     pcb_j2711.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3711.BackColor = Color.Green;
                                     pcb_j3711.Visible = true;
@@ -1586,17 +1598,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1712.BackColor = Color.Red;
                                     pcb_j1712.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2712.BackColor = Color.Blue;
                                     pcb_j2712.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3712.BackColor = Color.Green;
                                     pcb_j3712.Visible = true;
@@ -1618,17 +1630,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1713.BackColor = Color.Red;
                                     pcb_j1713.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2713.BackColor = Color.Blue;
                                     pcb_j2713.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3713.BackColor = Color.Green;
                                     pcb_j3713.Visible = true;
@@ -1657,17 +1669,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j181.BackColor = Color.Red;
                                     pcb_j181.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j281.BackColor = Color.Blue;
                                     pcb_j281.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j381.BackColor = Color.Green;
                                     pcb_j381.Visible = true;
@@ -1689,17 +1701,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j182.BackColor = Color.Red;
                                     pcb_j182.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j282.BackColor = Color.Blue;
                                     pcb_j282.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j382.BackColor = Color.Green;
                                     pcb_j382.Visible = true;
@@ -1721,17 +1733,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j183.BackColor = Color.Red;
                                     pcb_j183.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j283.BackColor = Color.Blue;
                                     pcb_j283.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j383.BackColor = Color.Green;
                                     pcb_j383.Visible = true;
@@ -1753,17 +1765,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j184.BackColor = Color.Red;
                                     pcb_j184.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j284.BackColor = Color.Blue;
                                     pcb_j284.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j384.BackColor = Color.Green;
                                     pcb_j384.Visible = true;
@@ -1785,17 +1797,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j185.BackColor = Color.Red;
                                     pcb_j185.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j285.BackColor = Color.Blue;
                                     pcb_j285.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j385.BackColor = Color.Green;
                                     pcb_j385.Visible = true;
@@ -1817,17 +1829,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j186.BackColor = Color.Red;
                                     pcb_j186.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j286.BackColor = Color.Blue;
                                     pcb_j286.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j386.BackColor = Color.Green;
                                     pcb_j386.Visible = true;
@@ -1849,17 +1861,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j187.BackColor = Color.Red;
                                     pcb_j187.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j287.BackColor = Color.Blue;
                                     pcb_j287.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j387.BackColor = Color.Green;
                                     pcb_j387.Visible = true;
@@ -1881,17 +1893,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j188.BackColor = Color.Red;
                                     pcb_j188.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j288.BackColor = Color.Blue;
                                     pcb_j288.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j388.BackColor = Color.Green;
                                     pcb_j388.Visible = true;
@@ -1913,17 +1925,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j189.BackColor = Color.Red;
                                     pcb_j189.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j289.BackColor = Color.Blue;
                                     pcb_j289.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j389.BackColor = Color.Green;
                                     pcb_j389.Visible = true;
@@ -1945,17 +1957,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1810.BackColor = Color.Red;
                                     pcb_j1810.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2810.BackColor = Color.Blue;
                                     pcb_j2810.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3810.BackColor = Color.Green;
                                     pcb_j3810.Visible = true;
@@ -1977,17 +1989,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1811.BackColor = Color.Red;
                                     pcb_j1811.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2811.BackColor = Color.Blue;
                                     pcb_j2811.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3811.BackColor = Color.Green;
                                     pcb_j3811.Visible = true;
@@ -2016,17 +2028,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j191.BackColor = Color.Red;
                                     pcb_j191.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j291.BackColor = Color.Blue;
                                     pcb_j291.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j391.BackColor = Color.Green;
                                     pcb_j391.Visible = true;
@@ -2048,17 +2060,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j192.BackColor = Color.Red;
                                     pcb_j192.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j292.BackColor = Color.Blue;
                                     pcb_j292.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j392.BackColor = Color.Green;
                                     pcb_j392.Visible = true;
@@ -2080,17 +2092,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j193.BackColor = Color.Red;
                                     pcb_j193.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j293.BackColor = Color.Blue;
                                     pcb_j293.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j393.BackColor = Color.Green;
                                     pcb_j393.Visible = true;
@@ -2112,17 +2124,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j194.BackColor = Color.Red;
                                     pcb_j194.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j294.BackColor = Color.Blue;
                                     pcb_j294.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j394.BackColor = Color.Green;
                                     pcb_j394.Visible = true;
@@ -2144,17 +2156,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j195.BackColor = Color.Red;
                                     pcb_j195.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j295.BackColor = Color.Blue;
                                     pcb_j295.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j395.BackColor = Color.Green;
                                     pcb_j395.Visible = true;
@@ -2176,17 +2188,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j196.BackColor = Color.Red;
                                     pcb_j196.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j296.BackColor = Color.Blue;
                                     pcb_j296.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j396.BackColor = Color.Green;
                                     pcb_j396.Visible = true;
@@ -2208,17 +2220,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j197.BackColor = Color.Red;
                                     pcb_j197.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j297.BackColor = Color.Blue;
                                     pcb_j297.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j397.BackColor = Color.Green;
                                     pcb_j397.Visible = true;
@@ -2240,17 +2252,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j198.BackColor = Color.Red;
                                     pcb_j198.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j298.BackColor = Color.Blue;
                                     pcb_j298.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j398.BackColor = Color.Green;
                                     pcb_j398.Visible = true;
@@ -2272,17 +2284,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j199.BackColor = Color.Red;
                                     pcb_j199.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j299.BackColor = Color.Blue;
                                     pcb_j299.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j399.BackColor = Color.Green;
                                     pcb_j399.Visible = true;
@@ -2311,17 +2323,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1101.BackColor = Color.Red;
                                     pcb_j1101.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2101.BackColor = Color.Blue;
                                     pcb_j2101.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3101.BackColor = Color.Green;
                                     pcb_j3101.Visible = true;
@@ -2343,17 +2355,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1102.BackColor = Color.Red;
                                     pcb_j1102.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2102.BackColor = Color.Blue;
                                     pcb_j2102.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3102.BackColor = Color.Green;
                                     pcb_j3102.Visible = true;
@@ -2375,17 +2387,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1103.BackColor = Color.Red;
                                     pcb_j1103.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2103.BackColor = Color.Blue;
                                     pcb_j2103.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3103.BackColor = Color.Green;
                                     pcb_j3103.Visible = true;
@@ -2407,17 +2419,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1104.BackColor = Color.Red;
                                     pcb_j1104.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2104.BackColor = Color.Blue;
                                     pcb_j2104.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3104.BackColor = Color.Green;
                                     pcb_j3104.Visible = true;
@@ -2439,17 +2451,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1105.BackColor = Color.Red;
                                     pcb_j1105.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2105.BackColor = Color.Blue;
                                     pcb_j2105.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3105.BackColor = Color.Green;
                                     pcb_j3105.Visible = true;
@@ -2471,17 +2483,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1106.BackColor = Color.Red;
                                     pcb_j1106.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2106.BackColor = Color.Blue;
                                     pcb_j2106.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3106.BackColor = Color.Green;
                                     pcb_j3106.Visible = true;
@@ -2503,17 +2515,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1107.BackColor = Color.Red;
                                     pcb_j1107.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2107.BackColor = Color.Blue;
                                     pcb_j2107.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3107.BackColor = Color.Green;
                                     pcb_j3107.Visible = true;
@@ -2543,17 +2555,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1111.BackColor = Color.Red;
                                     pcb_j1111.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2111.BackColor = Color.Blue;
                                     pcb_j2111.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3111.BackColor = Color.Green;
                                     pcb_j3111.Visible = true;
@@ -2575,17 +2587,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1112.BackColor = Color.Red;
                                     pcb_j1112.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2112.BackColor = Color.Blue;
                                     pcb_j2112.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3112.BackColor = Color.Green;
                                     pcb_j3112.Visible = true;
@@ -2607,17 +2619,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1113.BackColor = Color.Red;
                                     pcb_j1113.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2113.BackColor = Color.Blue;
                                     pcb_j2113.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3113.BackColor = Color.Green;
                                     pcb_j3113.Visible = true;
@@ -2639,17 +2651,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1114.BackColor = Color.Red;
                                     pcb_j1114.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2114.BackColor = Color.Blue;
                                     pcb_j2114.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3114.BackColor = Color.Green;
                                     pcb_j3114.Visible = true;
@@ -2671,17 +2683,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1115.BackColor = Color.Red;
                                     pcb_j1115.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2115.BackColor = Color.Blue;
                                     pcb_j2115.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3115.BackColor = Color.Green;
                                     pcb_j3115.Visible = true;
@@ -2710,17 +2722,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1121.BackColor = Color.Red;
                                     pcb_j1121.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2121.BackColor = Color.Blue;
                                     pcb_j2121.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3121.BackColor = Color.Green;
                                     pcb_j3121.Visible = true;
@@ -2742,17 +2754,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1122.BackColor = Color.Red;
                                     pcb_j1122.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2122.BackColor = Color.Blue;
                                     pcb_j2122.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3122.BackColor = Color.Green;
                                     pcb_j3122.Visible = true;
@@ -2774,17 +2786,17 @@ namespace TARS
                             }
                             else
                             {
-                                if (numerojogador == 1)
+                                if (playerativo.NumeroJogador == 1)
                                 {
                                     pcb_j1123.BackColor = Color.Red;
                                     pcb_j1123.Visible = true;
                                 }
-                                else if (numerojogador == 2)
+                                else if (playerativo.NumeroJogador == 2)
                                 {
                                     pcb_j2123.BackColor = Color.Blue;
                                     pcb_j2123.Visible = true;
                                 }
-                                else if (numerojogador == 3)
+                                else if (playerativo.NumeroJogador == 3)
                                 {
                                     pcb_j3123.BackColor = Color.Green;
                                     pcb_j3123.Visible = true;
@@ -2803,35 +2815,480 @@ namespace TARS
 
         }
 
-        public void valorTabuleiro(DataTable dtb_tabuleiro)
+        public void LimparTabuleiro()
         {
-            string[] trilhas = new string[dtb_tabuleiro.Rows.Count];
-            string[] posicoes = new string[dtb_tabuleiro.Rows.Count];
-            string[] tipo = new string[dtb_tabuleiro.Rows.Count];
-            for (int i = 0; i < dtb_tabuleiro.Rows.Count; i++)
-            {
-                trilhas[i] = dtb_tabuleiro.Rows[i]["trilha"].ToString(); //Selecionando os rows i na coluna trilha
-                posicoes[i] = dtb_tabuleiro.Rows[i]["posicao"].ToString();
-                tipo[i] = dtb_tabuleiro.Rows[i]["tipo"].ToString();
-            }
-            /*
-            // para pegar as cores de todos os jogadores
-            List<Jogador> jogadores = new List<Jogador>();
-            string retorno = Jogo.ListarJogadores(IdPartida);
-            retorno = retorno.Replace("\r", " ");
-            string[] linha = retorno.Split('\n');
-            for (int i = 0; i < linha.Length - 1; i++)
-            {
-                Jogador j = new Jogador();
-                string[] itens = linha[i].Split(',');
-                //j.Id = Convert.ToInt32(itens[0]);
-                //j.Nomejogador = itens[1];
-                //j.corjogador = itens[2];
-                coresJogadores[i] = itens[2];
-                jogadores.Add(j);
-            }
-            */ 
-            desenharTabuleiro(trilhas, posicoes, tipo ,JogadorAtivo);
+            pcb_A21.Visible = false;
+            pcb_A22.Visible = false;
+            pcb_A23.Visible = false;
+
+            pcb_A31.Visible = false;
+            pcb_A32.Visible = false;
+            pcb_A33.Visible = false;
+            pcb_A34.Visible = false;
+            pcb_A35.Visible = false;
+
+            pcb_A41.Visible = false;
+            pcb_A42.Visible = false;
+            pcb_A43.Visible = false;
+            pcb_A44.Visible = false;
+            pcb_A45.Visible = false;
+            pcb_A46.Visible = false;
+            pcb_A47.Visible = false;
+
+            pcb_A51.Visible = false;
+            pcb_A52.Visible = false;
+            pcb_A53.Visible = false;
+            pcb_A54.Visible = false;
+            pcb_A55.Visible = false;
+            pcb_A56.Visible = false;
+            pcb_A57.Visible = false;
+            pcb_A58.Visible = false;
+            pcb_A59.Visible = false;
+
+            pcb_A61.Visible = false;
+            pcb_A62.Visible = false;
+            pcb_A63.Visible = false;
+            pcb_A64.Visible = false;
+            pcb_A65.Visible = false;
+            pcb_A66.Visible = false;
+            pcb_A67.Visible = false;
+            pcb_A68.Visible = false;
+            pcb_A69.Visible = false;
+            pcb_A610.Visible = false;
+            pcb_A611.Visible = false;
+
+            pcb_A71.Visible = false;
+            pcb_A72.Visible = false;
+            pcb_A73.Visible = false;
+            pcb_A74.Visible = false;
+            pcb_A75.Visible = false;
+            pcb_A76.Visible = false;
+            pcb_A77.Visible = false;
+            pcb_A78.Visible = false;
+            pcb_A79.Visible = false;
+            pcb_A710.Visible = false;
+            pcb_A711.Visible = false;
+            pcb_A712.Visible = false;
+            pcb_A713.Visible = false;
+
+            pcb_A81.Visible = false;
+            pcb_A82.Visible = false;
+            pcb_A83.Visible = false;
+            pcb_A84.Visible = false;
+            pcb_A85.Visible = false;
+            pcb_A86.Visible = false;
+            pcb_A87.Visible = false;
+            pcb_A88.Visible = false;
+            pcb_A89.Visible = false;
+            pcb_A810.Visible = false;
+            pcb_A811.Visible = false;
+
+            pcb_A91.Visible = false;
+            pcb_A92.Visible = false;
+            pcb_A93.Visible = false;
+            pcb_A94.Visible = false;
+            pcb_A95.Visible = false;
+            pcb_A96.Visible = false;
+            pcb_A97.Visible = false;
+            pcb_A98.Visible = false;
+            pcb_A99.Visible = false;
+
+            pcb_A101.Visible = false;
+            pcb_A102.Visible = false;
+            pcb_A103.Visible = false;
+            pcb_A104.Visible = false;
+            pcb_A105.Visible = false;
+            pcb_A106.Visible = false;
+            pcb_A107.Visible = false;
+
+            pcb_A111.Visible = false;
+            pcb_A112.Visible = false;
+            pcb_A113.Visible = false;
+            pcb_A114.Visible = false;
+            pcb_A115.Visible = false;
+
+            pcb_A121.Visible = false;
+            pcb_A122.Visible = false;
+            pcb_A123.Visible = false;
+
+            pcb_j121.Visible = false;
+            pcb_j122.Visible = false;
+            pcb_j123.Visible = false;
+
+
+            pcb_j221.Visible = false;
+            pcb_j222.Visible = false;
+            pcb_j223.Visible = false;
+
+            pcb_j321.Visible = false;
+            pcb_j322.Visible = false;
+            pcb_j323.Visible = false;
+
+            pcb_j421.Visible = false;
+            pcb_j422.Visible = false;
+            pcb_j423.Visible = false;
+
+            pcb_j131.Visible = false;
+            pcb_j132.Visible = false;
+            pcb_j133.Visible = false;
+            pcb_j134.Visible = false;
+            pcb_j135.Visible = false;
+
+            pcb_j231.Visible = false;
+            pcb_j232.Visible = false;
+            pcb_j233.Visible = false;
+            pcb_j234.Visible = false;
+            pcb_j235.Visible = false;
+
+            pcb_j331.Visible = false;
+            pcb_j332.Visible = false;
+            pcb_j333.Visible = false;
+            pcb_j334.Visible = false;
+            pcb_j335.Visible = false;
+
+            pcb_j431.Visible = false;
+            pcb_j432.Visible = false;
+            pcb_j433.Visible = false;
+            pcb_j434.Visible = false;
+            pcb_j435.Visible = false;
+
+            pcb_j141.Visible = false;
+            pcb_j142.Visible = false;
+            pcb_j143.Visible = false;
+            pcb_j144.Visible = false;
+            pcb_j145.Visible = false;
+            pcb_j146.Visible = false;
+            pcb_j147.Visible = false;
+
+            pcb_j241.Visible = false;
+            pcb_j242.Visible = false;
+            pcb_j243.Visible = false;
+            pcb_j244.Visible = false;
+            pcb_j245.Visible = false;
+            pcb_j246.Visible = false;
+            pcb_j247.Visible = false;
+
+            pcb_j341.Visible = false;
+            pcb_j342.Visible = false;
+            pcb_j343.Visible = false;
+            pcb_j344.Visible = false;
+            pcb_j345.Visible = false;
+            pcb_j346.Visible = false;
+            pcb_j347.Visible = false;
+
+            pcb_j441.Visible = false;
+            pcb_j442.Visible = false;
+            pcb_j443.Visible = false;
+            pcb_j444.Visible = false;
+            pcb_j445.Visible = false;
+            pcb_j446.Visible = false;
+            pcb_j447.Visible = false;
+
+            pcb_j151.Visible = false;
+            pcb_j152.Visible = false;
+            pcb_j153.Visible = false;
+            pcb_j154.Visible = false;
+            pcb_j155.Visible = false;
+            pcb_j156.Visible = false;
+            pcb_j157.Visible = false;
+            pcb_j158.Visible = false;
+            pcb_j159.Visible = false;
+
+            pcb_j251.Visible = false;
+            pcb_j252.Visible = false;
+            pcb_j253.Visible = false;
+            pcb_j254.Visible = false;
+            pcb_j255.Visible = false;
+            pcb_j256.Visible = false;
+            pcb_j257.Visible = false;
+            pcb_j258.Visible = false;
+            pcb_j259.Visible = false;
+
+            pcb_j351.Visible = false;
+            pcb_j352.Visible = false;
+            pcb_j353.Visible = false;
+            pcb_j354.Visible = false;
+            pcb_j355.Visible = false;
+            pcb_j356.Visible = false;
+            pcb_j357.Visible = false;
+            pcb_j358.Visible = false;
+            pcb_j359.Visible = false;
+
+            pcb_j451.Visible = false;
+            pcb_j452.Visible = false;
+            pcb_j453.Visible = false;
+            pcb_j454.Visible = false;
+            pcb_j455.Visible = false;
+            pcb_j456.Visible = false;
+            pcb_j457.Visible = false;
+            pcb_j458.Visible = false;
+            pcb_j459.Visible = false;
+
+
+            pcb_j161.Visible = false;
+            pcb_j162.Visible = false;
+            pcb_j163.Visible = false;
+            pcb_j164.Visible = false;
+            pcb_j165.Visible = false;
+            pcb_j166.Visible = false;
+            pcb_j167.Visible = false;
+            pcb_j168.Visible = false;
+            pcb_j169.Visible = false;
+            pcb_j1610.Visible = false;
+            pcb_j1611.Visible = false;
+
+
+            pcb_j261.Visible = false;
+            pcb_j262.Visible = false;
+            pcb_j263.Visible = false;
+            pcb_j264.Visible = false;
+            pcb_j265.Visible = false;
+            pcb_j266.Visible = false;
+            pcb_j267.Visible = false;
+            pcb_j268.Visible = false;
+            pcb_j269.Visible = false;
+            pcb_j2610.Visible = false;
+            pcb_j2611.Visible = false;
+
+            pcb_j361.Visible = false;
+            pcb_j362.Visible = false;
+            pcb_j363.Visible = false;
+            pcb_j364.Visible = false;
+            pcb_j365.Visible = false;
+            pcb_j366.Visible = false;
+            pcb_j367.Visible = false;
+            pcb_j368.Visible = false;
+            pcb_j369.Visible = false;
+            pcb_j3610.Visible = false;
+            pcb_j3611.Visible = false;
+
+            pcb_j461.Visible = false;
+            pcb_j462.Visible = false;
+            pcb_j463.Visible = false;
+            pcb_j464.Visible = false;
+            pcb_j465.Visible = false;
+            pcb_j466.Visible = false;
+            pcb_j467.Visible = false;
+            pcb_j468.Visible = false;
+            pcb_j469.Visible = false;
+            pcb_j4610.Visible = false;
+            pcb_j4611.Visible = false;
+
+            pcb_j171.Visible = false;
+            pcb_j172.Visible = false;
+            pcb_j173.Visible = false;
+            pcb_j174.Visible = false;
+            pcb_j175.Visible = false;
+            pcb_j176.Visible = false;
+            pcb_j177.Visible = false;
+            pcb_j178.Visible = false;
+            pcb_j179.Visible = false;
+            pcb_j1710.Visible = false;
+            pcb_j1711.Visible = false;
+            pcb_j1712.Visible = false;
+            pcb_j1713.Visible = false;
+
+            pcb_j271.Visible = false;
+            pcb_j272.Visible = false;
+            pcb_j273.Visible = false;
+            pcb_j274.Visible = false;
+            pcb_j275.Visible = false;
+            pcb_j276.Visible = false;
+            pcb_j277.Visible = false;
+            pcb_j278.Visible = false;
+            pcb_j279.Visible = false;
+            pcb_j2710.Visible = false;
+            pcb_j2711.Visible = false;
+            pcb_j2712.Visible = false;
+            pcb_j2713.Visible = false;
+
+            pcb_j371.Visible = false;
+            pcb_j372.Visible = false;
+            pcb_j373.Visible = false;
+            pcb_j374.Visible = false;
+            pcb_j375.Visible = false;
+            pcb_j376.Visible = false;
+            pcb_j377.Visible = false;
+            pcb_j378.Visible = false;
+            pcb_j379.Visible = false;
+            pcb_j3710.Visible = false;
+            pcb_j3711.Visible = false;
+            pcb_j3712.Visible = false;
+            pcb_j3713.Visible = false;
+
+            pcb_j471.Visible = false;
+            pcb_j472.Visible = false;
+            pcb_j473.Visible = false;
+            pcb_j474.Visible = false;
+            pcb_j475.Visible = false;
+            pcb_j476.Visible = false;
+            pcb_j477.Visible = false;
+            pcb_j478.Visible = false;
+            pcb_j479.Visible = false;
+            pcb_j4710.Visible = false;
+            pcb_j4711.Visible = false;
+            pcb_j4712.Visible = false;
+            pcb_j4713.Visible = false;
+
+            pcb_j181.Visible = false;
+            pcb_j182.Visible = false;
+            pcb_j183.Visible = false;
+            pcb_j184.Visible = false;
+            pcb_j185.Visible = false;
+            pcb_j186.Visible = false;
+            pcb_j187.Visible = false;
+            pcb_j188.Visible = false;
+            pcb_j189.Visible = false;
+            pcb_j1810.Visible = false;
+            pcb_j1811.Visible = false;
+
+            pcb_j281.Visible = false;
+            pcb_j282.Visible = false;
+            pcb_j283.Visible = false;
+            pcb_j284.Visible = false;
+            pcb_j285.Visible = false;
+            pcb_j286.Visible = false;
+            pcb_j287.Visible = false;
+            pcb_j288.Visible = false;
+            pcb_j289.Visible = false;
+            pcb_j2810.Visible = false;
+            pcb_j2811.Visible = false;
+
+            pcb_j381.Visible = false;
+            pcb_j382.Visible = false;
+            pcb_j383.Visible = false;
+            pcb_j384.Visible = false;
+            pcb_j385.Visible = false;
+            pcb_j386.Visible = false;
+            pcb_j387.Visible = false;
+            pcb_j388.Visible = false;
+            pcb_j389.Visible = false;
+            pcb_j3810.Visible = false;
+            pcb_j3811.Visible = false;
+
+            pcb_j481.Visible = false;
+            pcb_j482.Visible = false;
+            pcb_j483.Visible = false;
+            pcb_j484.Visible = false;
+            pcb_j485.Visible = false;
+            pcb_j486.Visible = false;
+            pcb_j487.Visible = false;
+            pcb_j488.Visible = false;
+            pcb_j489.Visible = false;
+            pcb_j4810.Visible = false;
+            pcb_j4811.Visible = false;
+
+            pcb_j191.Visible = false;
+            pcb_j192.Visible = false;
+            pcb_j193.Visible = false;
+            pcb_j194.Visible = false;
+            pcb_j195.Visible = false;
+            pcb_j196.Visible = false;
+            pcb_j197.Visible = false;
+            pcb_j198.Visible = false;
+            pcb_j199.Visible = false;
+
+            pcb_j291.Visible = false;
+            pcb_j292.Visible = false;
+            pcb_j293.Visible = false;
+            pcb_j294.Visible = false;
+            pcb_j295.Visible = false;
+            pcb_j296.Visible = false;
+            pcb_j297.Visible = false;
+            pcb_j298.Visible = false;
+            pcb_j299.Visible = false;
+
+            pcb_j391.Visible = false;
+            pcb_j392.Visible = false;
+            pcb_j393.Visible = false;
+            pcb_j394.Visible = false;
+            pcb_j395.Visible = false;
+            pcb_j396.Visible = false;
+            pcb_j397.Visible = false;
+            pcb_j398.Visible = false;
+            pcb_j399.Visible = false;
+
+            pcb_j491.Visible = false;
+            pcb_j492.Visible = false;
+            pcb_j493.Visible = false;
+            pcb_j494.Visible = false;
+            pcb_j495.Visible = false;
+            pcb_j496.Visible = false;
+            pcb_j497.Visible = false;
+            pcb_j498.Visible = false;
+            pcb_j499.Visible = false;
+
+            pcb_j1101.Visible = false;
+            pcb_j1102.Visible = false;
+            pcb_j1103.Visible = false;
+            pcb_j1104.Visible = false;
+            pcb_j1105.Visible = false;
+            pcb_j1106.Visible = false;
+            pcb_j1107.Visible = false;
+
+            pcb_j2101.Visible = false;
+            pcb_j2102.Visible = false;
+            pcb_j2103.Visible = false;
+            pcb_j2104.Visible = false;
+            pcb_j2105.Visible = false;
+            pcb_j2106.Visible = false;
+            pcb_j2107.Visible = false;
+
+            pcb_j3101.Visible = false;
+            pcb_j3102.Visible = false;
+            pcb_j3103.Visible = false;
+            pcb_j3104.Visible = false;
+            pcb_j3105.Visible = false;
+            pcb_j3106.Visible = false;
+            pcb_j3107.Visible = false;
+
+            pcb_j4101.Visible = false;
+            pcb_j4102.Visible = false;
+            pcb_j4103.Visible = false;
+            pcb_j4104.Visible = false;
+            pcb_j4105.Visible = false;
+            pcb_j4106.Visible = false;
+            pcb_j4107.Visible = false;
+
+            pcb_j1111.Visible = false;
+            pcb_j1112.Visible = false;
+            pcb_j1113.Visible = false;
+            pcb_j1114.Visible = false;
+            pcb_j1115.Visible = false;
+
+            pcb_j2111.Visible = false;
+            pcb_j2112.Visible = false;
+            pcb_j2113.Visible = false;
+            pcb_j2114.Visible = false;
+            pcb_j2115.Visible = false;
+
+            pcb_j3111.Visible = false;
+            pcb_j3112.Visible = false;
+            pcb_j3113.Visible = false;
+            pcb_j3114.Visible = false;
+            pcb_j3115.Visible = false;
+
+            pcb_j4111.Visible = false;
+            pcb_j4112.Visible = false;
+            pcb_j4113.Visible = false;
+            pcb_j4114.Visible = false;
+            pcb_j4115.Visible = false;
+
+            pcb_j1121.Visible = false;
+            pcb_j1122.Visible = false;
+            pcb_j1123.Visible = false;
+
+            pcb_j2121.Visible = false;
+            pcb_j2122.Visible = false;
+            pcb_j2123.Visible = false;
+
+            pcb_j3121.Visible = false;
+            pcb_j3122.Visible = false;
+            pcb_j3123.Visible = false;
+
+            pcb_j4121.Visible = false;
+            pcb_j4122.Visible = false;
+            pcb_j4123.Visible = false;
         }
 
         private void btn_iniciarpartida_Click(object sender, EventArgs e) 
@@ -2927,7 +3384,7 @@ namespace TARS
             dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro,dtb_tabuleiro);
             dgv_teste.DataSource = dtb_tabuleiro;
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-            valorTabuleiro(dtb_tabuleiro);
+            desenharTabuleiro(JogadorAtivo);
 
         }
 
@@ -2969,7 +3426,7 @@ namespace TARS
             dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
             dgv_teste.DataSource = dtb_tabuleiro;
             btn_mover.Enabled = false;
-            valorTabuleiro(dtb_tabuleiro);
+            desenharTabuleiro(JogadorAtivo);
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
         }
 
@@ -2984,57 +3441,8 @@ namespace TARS
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
             string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
             dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro, dtb_tabuleiro);
-            valorTabuleiro(dtb_tabuleiro);
+            desenharTabuleiro(JogadorAtivo);
         }
 
-        private void Tabuleiro_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox50_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox64_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox138_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox355_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox40_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pcb_t81_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pcb_j177_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pcb_j4811_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
