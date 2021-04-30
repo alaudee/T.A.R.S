@@ -29,6 +29,7 @@ namespace TARS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tabuleiro));
             this.btn_iniciarpartida = new System.Windows.Forms.Button();
             this.lbl_idjogador = new System.Windows.Forms.Label();
@@ -465,6 +466,8 @@ namespace TARS
             this.pcb_j4713 = new System.Windows.Forms.PictureBox();
             this.pcb_j2713 = new System.Windows.Forms.PictureBox();
             this.pcb_j3713 = new System.Windows.Forms.PictureBox();
+            this.timer_partida = new System.Windows.Forms.Timer(this.components);
+            this.btn_continuar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).BeginInit();
@@ -4845,6 +4848,24 @@ namespace TARS
             this.pcb_j3713.TabStop = false;
             this.pcb_j3713.Visible = false;
             // 
+            // timer_partida
+            // 
+            this.timer_partida.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btn_continuar
+            // 
+            this.btn_continuar.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_continuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_continuar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_continuar.Location = new System.Drawing.Point(12, 571);
+            this.btn_continuar.Name = "btn_continuar";
+            this.btn_continuar.Size = new System.Drawing.Size(119, 58);
+            this.btn_continuar.TabIndex = 519;
+            this.btn_continuar.Text = "Continuar?";
+            this.btn_continuar.UseVisualStyleBackColor = false;
+            this.btn_continuar.Visible = false;
+            this.btn_continuar.Click += new System.EventHandler(this.btn_continuar_Click);
+            // 
             // Tabuleiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4853,6 +4874,7 @@ namespace TARS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1163, 679);
+            this.Controls.Add(this.btn_continuar);
             this.Controls.Add(this.pcb_j1713);
             this.Controls.Add(this.pcb_j4713);
             this.Controls.Add(this.pcb_j2713);
@@ -5289,6 +5311,7 @@ namespace TARS
             this.Name = "Tabuleiro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tabuleiro";
+            this.Load += new System.EventHandler(this.Tabuleiro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).EndInit();
@@ -6153,5 +6176,7 @@ namespace TARS
         private System.Windows.Forms.PictureBox pcb_j4713;
         private System.Windows.Forms.PictureBox pcb_j2713;
         private System.Windows.Forms.PictureBox pcb_j3713;
+        private System.Windows.Forms.Timer timer_partida;
+        private System.Windows.Forms.Button btn_continuar;
     }
 }

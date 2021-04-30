@@ -23,6 +23,8 @@ namespace TARS
         string dadoescolha;
         string[] idJogadores = new string[4];
 
+        bool dadojarolado = false;
+
         string op_dado;
 
         DataTable dtb_tabuleiro;
@@ -55,12 +57,9 @@ namespace TARS
             dtb_tabuleiro = TabuleiroP.CriarDataTable();
         }
 
-
         public void desenharTabuleiro(string [] jogadores)
         {
             LimparTabuleiro();
-
-
             foreach (DataRow row in dtb_tabuleiro.Rows)
             {
                 DataRow newRow = dtb_tabuleiro.NewRow();
@@ -68,7 +67,6 @@ namespace TARS
                 newRow[1] = row[1];//posição
                 newRow[2] = row[2];//jogador id
                 newRow[3] = row[3];//tipo
-
 
                 for (int i = 0; i < 1; i++)
                 {
@@ -3301,9 +3299,7 @@ namespace TARS
             lbl_statuspart.Text = "Partida iniciada";
             lbl_statuspart.ForeColor = System.Drawing.Color.Green;
             btn_rolarDado.Enabled = true;
-            btn_verificarvez.Enabled = true;
-            
-            
+            btn_verificarvez.Enabled = true;        
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
         }
 
@@ -3356,7 +3352,6 @@ namespace TARS
                 rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
                 rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
                 rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
-                btn_mover.Enabled = true;
 
                 rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
 
@@ -3388,7 +3383,6 @@ namespace TARS
             dgv_teste.DataSource = dtb_tabuleiro;
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
             desenharTabuleiro(idJogadores);
-
         }
 
         private void rdb_jogada1_CheckedChanged(object sender, EventArgs e)
@@ -3428,8 +3422,7 @@ namespace TARS
             string retornotab = Jogo.ExibirTabuleiro(IdPartida);
             dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
             dgv_teste.DataSource = dtb_tabuleiro;
-            btn_mover.Enabled = false;
-
+            btn_continuar.Visible = true;
             //teste
             string retorno = Jogo.ListarJogadores(IdPartida);
             retorno = retorno.Replace("\r", " ");
@@ -3442,6 +3435,9 @@ namespace TARS
 
             desenharTabuleiro(idJogadores);
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+
+            gb_jogadas.Visible = false;
+            btn_mover.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -3456,7 +3452,106 @@ namespace TARS
             string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
             dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro, dtb_tabuleiro);
             desenharTabuleiro(idJogadores);
+            dadojarolado = false;
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            string statuspartida = Jogo.ExibirHistorico(IdPartida);
+            if (statuspartida.Contains("iniciou") || statuspartida.Contains("Iniciou"))
+            {
+                lbl_statuspart.ForeColor = System.Drawing.Color.Green;
+                btn_rolarDado.Enabled = true;
+                btn_verificarvez.Enabled = true;
+                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+
+                string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
+                dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro, dtb_tabuleiro);
+                dgv_teste.DataSource = dtb_tabuleiro;
+                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+                desenharTabuleiro(idJogadores);
+
+                string teste = Jogo.VerificarVez(IdPartida);
+                string[] linha = teste.Split(',');
+                string jogadorvez = linha[1];
+                int comparar = Convert.ToInt32(jogadorvez);
+
+                if (comparar == JogadorAtivo.Id && dadojarolado == false)
+                {
+                    dadojarolado = true;
+                    try
+                    {
+                        string dados = Jogo.RolarDados(JogadorAtivo.Id, JogadorAtivo.Senha);
+                        dados = dados.Replace("\r\n", "");
+                        int contador = 0;
+                        int contvalor = 0;
+
+                        for (int i = 0; i < dados.Length; i++)
+                        {
+                            if (i % 2 == 0)
+                            {
+                                numerodado[contador] = dados[i];
+                                contador++;
+                            }
+                            else
+                            {
+                                valordado[contvalor] = dados[i];
+                                contvalor++;
+                            }
+
+                        }
+
+                        List<Dado> ListaDados = new List<Dado>();
+
+
+                        for (int i = 0; i < 4; i++)
+                        {
+                            Dado d = new Dado();
+                            d.NumeroDado = numerodado[i];
+                            d.ValorDado = valordado[i];
+                            d.PopularImagens(d.ValorDado);
+                            ListaDados.Add(d);
+                        }
+
+                        pcb_dado1.Image = ListaDados[0].FaceDado;
+                        pcb_dado2.Image = ListaDados[1].FaceDado;
+                        pcb_dado3.Image = ListaDados[2].FaceDado;
+                        pcb_dado4.Image = ListaDados[3].FaceDado;
+
+                        Dado de = new Dado();
+                        int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
+                        gb_jogadas.Visible = true;
+                        btn_mover.Visible = true;
+                        btn_parar.Visible = true;
+                        rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
+                        rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
+                        rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
+                        btn_mover.Enabled = true;
+
+                        rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Ocorreu um erro " + ex.Message);
+                    }
+                }
+            }
+        }
+
+        private void Tabuleiro_Load(object sender, EventArgs e)
+        {
+            Timer timer = new Timer();
+            timer.Interval = (3 * 1000); // 3 secs
+            timer.Tick += new EventHandler(timer1_Tick);
+            timer.Start();
+        }
+
+        private void btn_continuar_Click(object sender, EventArgs e)
+        {
+            dadojarolado = false;
+            btn_continuar.Visible = false;
+
+        }
     }
 }

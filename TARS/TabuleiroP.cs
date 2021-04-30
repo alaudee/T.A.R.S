@@ -59,7 +59,6 @@ namespace TARS
                 row[3] = itens[3];
                 dtb_tabuleiro.Rows.Add(row);
             }
-
             return dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(retornotab, dtb_tabuleiro);
         }
         
