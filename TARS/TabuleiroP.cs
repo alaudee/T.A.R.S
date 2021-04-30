@@ -16,6 +16,8 @@ namespace TARS
         public string Tipo { get; set; }
 
         //Trilha[0] Posicao[1] Jogador[2] Tipo[3]
+        // 1            1          2        A
+        // 1            2          1        B
         public static DataTable CriarDataTable()
         {
             DataTable tabuleiro = new DataTable();
@@ -25,42 +27,40 @@ namespace TARS
             tabuleiro.Columns.Add("tipo", typeof(string));
             return tabuleiro;
         }
+        public static DataTable LimparExibirTabuleiro(string retornotab, DataTable dtb_tabuleiro)
+        {
+            dtb_tabuleiro = CriarDataTable();
+            retornotab = retornotab.Replace("\r", " ");
+            string[] linha = retornotab.Split('\n');
+            for (int i = 0; i < linha.Length - 1; i++)
+            {
+                DataRow row = dtb_tabuleiro.NewRow();
+                string[] itens = linha[i].Split(',');
+                row[0] = itens[0];
+                row[1] = itens[1];
+                row[2] = itens[2];
+                row[3] = itens[3];
+                dtb_tabuleiro.Rows.Add(row);
+            }
+            return dtb_tabuleiro;
 
-        public static List<TabuleiroP> AdicionarMovimentos(string retornotab)
+        }
+        public static DataTable AdicionarMovimentos(string retornotab, DataTable dtb_tabuleiro)
         {
             retornotab = retornotab.Replace("\r", "");
             string[] linha = retornotab.Split('\n');
-            List<TabuleiroP> tabuleiro = new List<TabuleiroP>();
             for (int i = 0; i < linha.Length - 1; i++)
             {
-                TabuleiroP t = new TabuleiroP();
+                DataRow row = dtb_tabuleiro.NewRow();
                 string[] itens = linha[i].Split(',');
-                t.Trilha = itens[0];
-                t.Posicao = itens[1];
-                t.Jogador = itens[2];
-                t.Tipo = itens[3];
-                tabuleiro.Add(t);
+                row[0] = itens[0];
+                row[1] = itens[1];
+                row[2] = itens[2];
+                row[3] = itens[3];
+                dtb_tabuleiro.Rows.Add(row);
             }
-            return tabuleiro;
+            return dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(retornotab, dtb_tabuleiro);
         }
-
-        public static List<TabuleiroP> LimparExibirTabuleiro(string retornotab)
-        {
-            retornotab = retornotab.Replace("\r", " ");
-            string[] linha = retornotab.Split('\n');
-            List<TabuleiroP> tabuleiro = new List<TabuleiroP>();
-            for (int i = 0; i < linha.Length -1; i++)
-            {
-                TabuleiroP t = new TabuleiroP();
-                string[] itens = linha[i].Split(',');
-                t.Trilha = itens[0];
-                t.Posicao = itens[1];
-                t.Jogador = itens[2];
-                t.Tipo = itens[3];
-                tabuleiro.Add(t);
-            }
-            return tabuleiro;
-
-        }
+        
     }
 }

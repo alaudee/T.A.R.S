@@ -36,6 +36,7 @@ namespace TARS.Telas
                 jogadores.Add(j);
             }
             dgv_jogadores.DataSource = jogadores;
+            dgv_jogadores.Columns[3].Visible = false;
             dgv_jogadores.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             txt_senha.PasswordChar = '*';
         }
@@ -61,10 +62,11 @@ namespace TARS.Telas
             {
                 txt_nomejogador.Text = "";
                 txt_senha.Text = "";
-                MessageBox.Show("Você entrou na partida");
+                this.Hide();
                 Tabuleiro tabuleiro = new Tabuleiro(validadorEntrarPartida, idpartida);
                 DialogResult = DialogResult.OK;
-                tabuleiro.Show();
+                tabuleiro.ShowDialog();
+                this.Show();
             }
 
         }

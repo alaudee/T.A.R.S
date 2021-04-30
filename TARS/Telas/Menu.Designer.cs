@@ -157,7 +157,7 @@ namespace TARS
             this.Controls.Add(this.btn_entrarpartida);
             this.Controls.Add(this.btn_criarpartida);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
