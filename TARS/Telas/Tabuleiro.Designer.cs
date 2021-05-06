@@ -35,9 +35,6 @@ namespace TARS
             this.lbl_idjogador = new System.Windows.Forms.Label();
             this.lbl_senhajogador = new System.Windows.Forms.Label();
             this.lbl_corjogador = new System.Windows.Forms.Label();
-            this.btn_rolarDado = new System.Windows.Forms.Button();
-            this.btn_verificarvez = new System.Windows.Forms.Button();
-            this.btn_exibirTabuleiro = new System.Windows.Forms.Button();
             this.btn_mover = new System.Windows.Forms.Button();
             this.pcb_dado1 = new System.Windows.Forms.PictureBox();
             this.pcb_dado2 = new System.Windows.Forms.PictureBox();
@@ -934,51 +931,12 @@ namespace TARS
             this.lbl_corjogador.TabIndex = 3;
             this.lbl_corjogador.Text = "Cor";
             // 
-            // btn_rolarDado
-            // 
-            this.btn_rolarDado.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_rolarDado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_rolarDado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_rolarDado.Location = new System.Drawing.Point(12, 106);
-            this.btn_rolarDado.Name = "btn_rolarDado";
-            this.btn_rolarDado.Size = new System.Drawing.Size(119, 58);
-            this.btn_rolarDado.TabIndex = 4;
-            this.btn_rolarDado.Text = "Rolar Dados";
-            this.btn_rolarDado.UseVisualStyleBackColor = false;
-            this.btn_rolarDado.Click += new System.EventHandler(this.lbl_rolarDado_Click);
-            // 
-            // btn_verificarvez
-            // 
-            this.btn_verificarvez.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_verificarvez.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_verificarvez.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_verificarvez.Location = new System.Drawing.Point(148, 12);
-            this.btn_verificarvez.Name = "btn_verificarvez";
-            this.btn_verificarvez.Size = new System.Drawing.Size(119, 58);
-            this.btn_verificarvez.TabIndex = 8;
-            this.btn_verificarvez.Text = "Verificar Vez";
-            this.btn_verificarvez.UseVisualStyleBackColor = false;
-            this.btn_verificarvez.Click += new System.EventHandler(this.bnt_verificarvez_Click);
-            // 
-            // btn_exibirTabuleiro
-            // 
-            this.btn_exibirTabuleiro.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_exibirTabuleiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_exibirTabuleiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exibirTabuleiro.Location = new System.Drawing.Point(148, 106);
-            this.btn_exibirTabuleiro.Name = "btn_exibirTabuleiro";
-            this.btn_exibirTabuleiro.Size = new System.Drawing.Size(119, 58);
-            this.btn_exibirTabuleiro.TabIndex = 9;
-            this.btn_exibirTabuleiro.Text = "Exibir tabuleiro";
-            this.btn_exibirTabuleiro.UseVisualStyleBackColor = false;
-            this.btn_exibirTabuleiro.Click += new System.EventHandler(this.bnt_exibirTabuleiro_Click);
-            // 
             // btn_mover
             // 
             this.btn_mover.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_mover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mover.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_mover.Location = new System.Drawing.Point(12, 489);
+            this.btn_mover.Location = new System.Drawing.Point(12, 397);
             this.btn_mover.Name = "btn_mover";
             this.btn_mover.Size = new System.Drawing.Size(119, 58);
             this.btn_mover.TabIndex = 15;
@@ -988,7 +946,7 @@ namespace TARS
             // 
             // pcb_dado1
             // 
-            this.pcb_dado1.Location = new System.Drawing.Point(12, 189);
+            this.pcb_dado1.Location = new System.Drawing.Point(12, 97);
             this.pcb_dado1.Name = "pcb_dado1";
             this.pcb_dado1.Size = new System.Drawing.Size(77, 68);
             this.pcb_dado1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -997,7 +955,7 @@ namespace TARS
             // 
             // pcb_dado2
             // 
-            this.pcb_dado2.Location = new System.Drawing.Point(95, 189);
+            this.pcb_dado2.Location = new System.Drawing.Point(95, 97);
             this.pcb_dado2.Name = "pcb_dado2";
             this.pcb_dado2.Size = new System.Drawing.Size(77, 68);
             this.pcb_dado2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1006,7 +964,7 @@ namespace TARS
             // 
             // pcb_dado3
             // 
-            this.pcb_dado3.Location = new System.Drawing.Point(12, 272);
+            this.pcb_dado3.Location = new System.Drawing.Point(12, 180);
             this.pcb_dado3.Name = "pcb_dado3";
             this.pcb_dado3.Size = new System.Drawing.Size(77, 68);
             this.pcb_dado3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1015,7 +973,7 @@ namespace TARS
             // 
             // pcb_dado4
             // 
-            this.pcb_dado4.Location = new System.Drawing.Point(96, 272);
+            this.pcb_dado4.Location = new System.Drawing.Point(96, 180);
             this.pcb_dado4.Name = "pcb_dado4";
             this.pcb_dado4.Size = new System.Drawing.Size(77, 68);
             this.pcb_dado4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1040,7 +998,7 @@ namespace TARS
             this.gb_jogadas.Controls.Add(this.rdb_jogada3);
             this.gb_jogadas.Controls.Add(this.rdb_jogada2);
             this.gb_jogadas.Controls.Add(this.rdb_jogada1);
-            this.gb_jogadas.Location = new System.Drawing.Point(12, 373);
+            this.gb_jogadas.Location = new System.Drawing.Point(12, 281);
             this.gb_jogadas.Name = "gb_jogadas";
             this.gb_jogadas.Size = new System.Drawing.Size(245, 110);
             this.gb_jogadas.TabIndex = 22;
@@ -1057,7 +1015,6 @@ namespace TARS
             this.rdb_jogada3.TabStop = true;
             this.rdb_jogada3.Text = "radioButton3";
             this.rdb_jogada3.UseVisualStyleBackColor = true;
-            this.rdb_jogada3.CheckedChanged += new System.EventHandler(this.rdb_jogada3_CheckedChanged);
             // 
             // rdb_jogada2
             // 
@@ -1069,7 +1026,6 @@ namespace TARS
             this.rdb_jogada2.TabStop = true;
             this.rdb_jogada2.Text = "radioButton2";
             this.rdb_jogada2.UseVisualStyleBackColor = true;
-            this.rdb_jogada2.CheckedChanged += new System.EventHandler(this.rdb_jogada2_CheckedChanged);
             // 
             // rdb_jogada1
             // 
@@ -1081,14 +1037,13 @@ namespace TARS
             this.rdb_jogada1.TabStop = true;
             this.rdb_jogada1.Text = "radioButton1";
             this.rdb_jogada1.UseVisualStyleBackColor = true;
-            this.rdb_jogada1.CheckedChanged += new System.EventHandler(this.rdb_jogada1_CheckedChanged);
             // 
             // btn_parar
             // 
             this.btn_parar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_parar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_parar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_parar.Location = new System.Drawing.Point(148, 489);
+            this.btn_parar.Location = new System.Drawing.Point(148, 397);
             this.btn_parar.Name = "btn_parar";
             this.btn_parar.Size = new System.Drawing.Size(119, 58);
             this.btn_parar.TabIndex = 24;
@@ -1100,7 +1055,7 @@ namespace TARS
             // dgv_teste
             // 
             this.dgv_teste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_teste.Location = new System.Drawing.Point(292, 12);
+            this.dgv_teste.Location = new System.Drawing.Point(199, 0);
             this.dgv_teste.Name = "dgv_teste";
             this.dgv_teste.Size = new System.Drawing.Size(446, 150);
             this.dgv_teste.TabIndex = 25;
@@ -1845,9 +1800,9 @@ namespace TARS
             // 
             // rtxt_historicoP
             // 
-            this.rtxt_historicoP.Location = new System.Drawing.Point(292, 562);
+            this.rtxt_historicoP.Location = new System.Drawing.Point(166, 479);
             this.rtxt_historicoP.Name = "rtxt_historicoP";
-            this.rtxt_historicoP.Size = new System.Drawing.Size(267, 96);
+            this.rtxt_historicoP.Size = new System.Drawing.Size(398, 162);
             this.rtxt_historicoP.TabIndex = 182;
             this.rtxt_historicoP.Text = "";
             // 
@@ -4857,7 +4812,7 @@ namespace TARS
             this.btn_continuar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_continuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_continuar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_continuar.Location = new System.Drawing.Point(12, 571);
+            this.btn_continuar.Location = new System.Drawing.Point(12, 479);
             this.btn_continuar.Name = "btn_continuar";
             this.btn_continuar.Size = new System.Drawing.Size(119, 58);
             this.btn_continuar.TabIndex = 519;
@@ -5300,9 +5255,6 @@ namespace TARS
             this.Controls.Add(this.pcb_dado2);
             this.Controls.Add(this.pcb_dado1);
             this.Controls.Add(this.btn_mover);
-            this.Controls.Add(this.btn_exibirTabuleiro);
-            this.Controls.Add(this.btn_verificarvez);
-            this.Controls.Add(this.btn_rolarDado);
             this.Controls.Add(this.lbl_corjogador);
             this.Controls.Add(this.lbl_senhajogador);
             this.Controls.Add(this.lbl_idjogador);
@@ -5745,9 +5697,6 @@ namespace TARS
         private System.Windows.Forms.Label lbl_idjogador;
         private System.Windows.Forms.Label lbl_senhajogador;
         private System.Windows.Forms.Label lbl_corjogador;
-        private System.Windows.Forms.Button btn_rolarDado;
-        private System.Windows.Forms.Button btn_verificarvez;
-        private System.Windows.Forms.Button btn_exibirTabuleiro;
         private System.Windows.Forms.Button btn_mover;
         private System.Windows.Forms.PictureBox pcb_dado1;
         private System.Windows.Forms.PictureBox pcb_dado2;

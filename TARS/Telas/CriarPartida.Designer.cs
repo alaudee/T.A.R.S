@@ -39,9 +39,9 @@ namespace TARS.Telas
             // 
             // txt_senhapartida
             // 
-            this.txt_senhapartida.Location = new System.Drawing.Point(15, 100);
+            this.txt_senhapartida.Location = new System.Drawing.Point(12, 100);
             this.txt_senhapartida.Name = "txt_senhapartida";
-            this.txt_senhapartida.Size = new System.Drawing.Size(229, 20);
+            this.txt_senhapartida.Size = new System.Drawing.Size(232, 20);
             this.txt_senhapartida.TabIndex = 20;
             // 
             // label3

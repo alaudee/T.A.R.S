@@ -52,7 +52,7 @@ namespace TARS.Telas
             string senha = txt_senha.Text;
             string validadorEntrarPartida = Jogo.EntrarPartida(idpartida, nomejogador, senha);
 
-            if (validadorEntrarPartida[0] == 'E')
+            if (validadorEntrarPartida.Contains("ERRO"))
             {
                 MessageBox.Show(validadorEntrarPartida);
                 txt_nomejogador.Text = "";

@@ -27,7 +27,7 @@ namespace TARS.Telas
             string nomepartida = txt_nomepartida.Text;
             string senhapartida = txt_senhapartida.Text;
             string validadorCriarPartida = Jogo.CriarPartida(nomepartida, senhapartida);
-            if (validadorCriarPartida[0] == 'E')
+            if (validadorCriarPartida.Contains("ERRO"))
             {
                 txt_nomepartida.Text = "";
                 txt_senhapartida.Text = "";

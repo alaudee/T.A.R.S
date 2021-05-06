@@ -23,7 +23,9 @@ namespace TARS
         string dadoescolha;
         string[] idJogadores = new string[4];
 
-        bool dadojarolado = false;
+        bool dadojarolado = false; // escolhe se quer continuar a jogar ou parar
+
+        int movimentosfeitos; // O bot jogará 2 vezes no maximo e logo depois irá parar
 
         string op_dado;
 
@@ -37,9 +39,6 @@ namespace TARS
             this.IdPartida = idpartida;
 
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-
-            btn_rolarDado.Enabled = false;
-            btn_verificarvez.Enabled = false;
 
             gb_jogadas.Visible = false;
             btn_mover.Visible = false;
@@ -77,7 +76,7 @@ namespace TARS
                         {
                             if (newRow[1].ToString() == "1")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A21.BackColor = Color.Black;
                                     pcb_A21.Visible = true;
@@ -109,7 +108,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A22.BackColor = Color.Black;
                                     pcb_A22.Visible = true;
@@ -142,7 +141,7 @@ namespace TARS
 
                             else if (newRow[1].ToString() == "3")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A23.BackColor = Color.Black;
                                     pcb_A23.Visible = true;
@@ -181,7 +180,7 @@ namespace TARS
                         {
                             if (newRow[1].ToString() == "1")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A31.BackColor = Color.Black;
                                     pcb_A31.Visible = true;
@@ -213,7 +212,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A32.BackColor = Color.Black;
                                     pcb_A32.Visible = true;
@@ -245,7 +244,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A33.BackColor = Color.Black;
                                     pcb_A33.Visible = true;
@@ -277,7 +276,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A34.BackColor = Color.Black;
                                     pcb_A34.Visible = true;
@@ -309,7 +308,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A35.BackColor = Color.Black;
                                     pcb_A35.Visible = true;
@@ -348,7 +347,7 @@ namespace TARS
                         {
                             if (newRow[1].ToString() == "1")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A41.BackColor = Color.Black;
                                     pcb_A41.Visible = true;
@@ -380,7 +379,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A42.BackColor = Color.Black;
                                     pcb_A42.Visible = true;
@@ -413,7 +412,7 @@ namespace TARS
                             else if (newRow[1].ToString() == "3")
                             {
 
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A43.BackColor = Color.Black;
                                     pcb_A43.Visible = true;
@@ -446,7 +445,7 @@ namespace TARS
                             else if (newRow[1].ToString() == "4")
                             {
 
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A44.BackColor = Color.Black;
                                     pcb_A44.Visible = true;
@@ -479,7 +478,7 @@ namespace TARS
                             else if (newRow[1].ToString() == "5")
                             {
 
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A45.BackColor = Color.Black;
                                     pcb_A45.Visible = true;
@@ -512,7 +511,7 @@ namespace TARS
                             else if (newRow[1].ToString() == "6")
                             {
 
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A46.BackColor = Color.Black;
                                     pcb_A46.Visible = true;
@@ -545,7 +544,7 @@ namespace TARS
                             else if (newRow[1].ToString() == "7")
                             {
 
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A47.BackColor = Color.Black;
                                     pcb_A47.Visible = true;
@@ -584,7 +583,7 @@ namespace TARS
                         {
                             if (newRow[1].ToString() == "1")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A51.BackColor = Color.Black;
                                     pcb_A51.Visible = true;
@@ -616,7 +615,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A52.BackColor = Color.Black;
                                     pcb_A52.Visible = true;
@@ -648,7 +647,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A53.BackColor = Color.Black;
                                     pcb_A53.Visible = true;
@@ -680,7 +679,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A54.BackColor = Color.Black;
                                     pcb_A54.Visible = true;
@@ -712,7 +711,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A55.BackColor = Color.Black;
                                     pcb_A55.Visible = true;
@@ -744,7 +743,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A56.BackColor = Color.Black;
                                     pcb_A56.Visible = true;
@@ -776,7 +775,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A57.BackColor = Color.Black;
                                     pcb_A57.Visible = true;
@@ -808,7 +807,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "8")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A58.BackColor = Color.Black;
                                     pcb_A58.Visible = true;
@@ -840,7 +839,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "9")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A59.BackColor = Color.Black;
                                     pcb_A59.Visible = true;
@@ -879,7 +878,7 @@ namespace TARS
                         {
                             if (newRow[1].ToString() == "1")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ") 
                                 {
                                     pcb_A61.BackColor = Color.Black;
                                     pcb_A61.Visible = true;
@@ -911,7 +910,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A62.BackColor = Color.Black;
                                     pcb_A62.Visible = true;
@@ -943,7 +942,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A63.BackColor = Color.Black;
                                     pcb_A63.Visible = true;
@@ -975,7 +974,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A64.BackColor = Color.Black;
                                     pcb_A64.Visible = true;
@@ -1007,7 +1006,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A65.BackColor = Color.Black;
                                     pcb_A65.Visible = true;
@@ -1039,7 +1038,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A66.BackColor = Color.Black;
                                     pcb_A66.Visible = true;
@@ -1071,7 +1070,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A67.BackColor = Color.Black;
                                     pcb_A67.Visible = true;
@@ -1103,7 +1102,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "8")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A68.BackColor = Color.Black;
                                     pcb_A68.Visible = true;
@@ -1135,7 +1134,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "9")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A69.BackColor = Color.Black;
                                     pcb_A69.Visible = true;
@@ -1167,7 +1166,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "10")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A610.BackColor = Color.Black;
                                     pcb_A610.Visible = true;
@@ -1199,8 +1198,8 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "11")
                             {
-                                if (newRow[3].ToString() == "A")
-                                {
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
+                                { 
                                     pcb_A611.BackColor = Color.Black;
                                     pcb_A611.Visible = true;
                                 }
@@ -1238,7 +1237,7 @@ namespace TARS
                         {
                             if (newRow[1].ToString() == "1")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A71.BackColor = Color.Black;
                                     pcb_A71.Visible = true;
@@ -1271,7 +1270,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A72.BackColor = Color.Black;
                                     pcb_A72.Visible = true;
@@ -1303,7 +1302,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A73.BackColor = Color.Black;
                                     pcb_A73.Visible = true;
@@ -1335,7 +1334,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A74.BackColor = Color.Black;
                                     pcb_A74.Visible = true;
@@ -1367,7 +1366,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A75.BackColor = Color.Black;
                                     pcb_A75.Visible = true;
@@ -1399,7 +1398,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A76.BackColor = Color.Black;
                                     pcb_A76.Visible = true;
@@ -1431,7 +1430,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A77.BackColor = Color.Black;
                                     pcb_A77.Visible = true;
@@ -1463,7 +1462,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "8")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A78.BackColor = Color.Black;
                                     pcb_A78.Visible = true;
@@ -1495,7 +1494,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "9")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A79.BackColor = Color.Black;
                                     pcb_A79.Visible = true;
@@ -1527,7 +1526,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "10")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A710.BackColor = Color.Black;
                                     pcb_A710.Visible = true;
@@ -1559,7 +1558,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "11")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A711.BackColor = Color.Black;
                                     pcb_A711.Visible = true;
@@ -1591,7 +1590,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "12")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A712.BackColor = Color.Black;
                                     pcb_A712.Visible = true;
@@ -1623,7 +1622,7 @@ namespace TARS
                             }
                             else
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A713.BackColor = Color.Black;
                                     pcb_A713.Visible = true;
@@ -1662,7 +1661,7 @@ namespace TARS
                         {
                             if (newRow[1].ToString() == "1")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A81.BackColor = Color.Black;
                                     pcb_A81.Visible = true;
@@ -1694,7 +1693,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A82.BackColor = Color.Black;
                                     pcb_A82.Visible = true;
@@ -1726,7 +1725,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A83.BackColor = Color.Black;
                                     pcb_A83.Visible = true;
@@ -1758,7 +1757,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A84.BackColor = Color.Black;
                                     pcb_A84.Visible = true;
@@ -1790,7 +1789,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A85.BackColor = Color.Black;
                                     pcb_A85.Visible = true;
@@ -1822,7 +1821,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A86.BackColor = Color.Black;
                                     pcb_A86.Visible = true;
@@ -1854,7 +1853,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A87.BackColor = Color.Black;
                                     pcb_A87.Visible = true;
@@ -1886,7 +1885,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "8")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A88.BackColor = Color.Black;
                                     pcb_A88.Visible = true;
@@ -1918,7 +1917,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "9")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A89.BackColor = Color.Black;
                                     pcb_A89.Visible = true;
@@ -1950,7 +1949,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "10")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A810.BackColor = Color.Black;
                                     pcb_A810.Visible = true;
@@ -1982,7 +1981,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "11")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ") 
                                 {
                                     pcb_A811.BackColor = Color.Black;
                                     pcb_A811.Visible = true;
@@ -2021,7 +2020,7 @@ namespace TARS
                         {
                             if (newRow[1].ToString() == "1")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A91.BackColor = Color.Black;
                                     pcb_A91.Visible = true;
@@ -2053,7 +2052,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A92.BackColor = Color.Black;
                                     pcb_A92.Visible = true;
@@ -2085,7 +2084,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A93.BackColor = Color.Black;
                                     pcb_A93.Visible = true;
@@ -2116,8 +2115,8 @@ namespace TARS
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
-                            {
-                                if (newRow[3].ToString() == "A")
+                            { 
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A94.BackColor = Color.Black;
                                     pcb_A94.Visible = true;
@@ -2149,7 +2148,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A95.BackColor = Color.Black;
                                     pcb_A95.Visible = true;
@@ -2181,7 +2180,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ") 
                                 {
                                     pcb_A96.BackColor = Color.Black;
                                     pcb_A96.Visible = true;
@@ -2213,7 +2212,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A97.BackColor = Color.Black;
                                     pcb_A97.Visible = true;
@@ -2245,7 +2244,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "8")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A98.BackColor = Color.Black;
                                     pcb_A98.Visible = true;
@@ -2277,7 +2276,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "9")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A99.BackColor = Color.Black;
                                     pcb_A99.Visible = true;
@@ -2316,7 +2315,7 @@ namespace TARS
                         {
                             if (newRow[1].ToString() == "1")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A101.BackColor = Color.Black;
                                     pcb_A101.Visible = true;
@@ -2348,7 +2347,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A102.BackColor = Color.Black;
                                     pcb_A102.Visible = true;
@@ -2380,7 +2379,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A103.BackColor = Color.Black;
                                     pcb_A103.Visible = true;
@@ -2412,7 +2411,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A104.BackColor = Color.Black;
                                     pcb_A104.Visible = true;
@@ -2444,7 +2443,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A105.BackColor = Color.Black;
                                     pcb_A105.Visible = true;
@@ -2476,7 +2475,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A106.BackColor = Color.Black;
                                     pcb_A106.Visible = true;
@@ -2508,7 +2507,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A107.BackColor = Color.Black;
                                     pcb_A107.Visible = true;
@@ -2548,7 +2547,7 @@ namespace TARS
                             if (newRow[1].ToString() == "1")
                             {
 
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A111.BackColor = Color.Black;
                                     pcb_A111.Visible = true;
@@ -2580,7 +2579,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A112.BackColor = Color.Black;
                                     pcb_A112.Visible = true;
@@ -2612,7 +2611,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A113.BackColor = Color.Black;
                                     pcb_A113.Visible = true;
@@ -2644,7 +2643,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A114.BackColor = Color.Black;
                                     pcb_A114.Visible = true;
@@ -2676,7 +2675,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A115.BackColor = Color.Black;
                                     pcb_A115.Visible = true;
@@ -2715,7 +2714,7 @@ namespace TARS
                         {
                             if (newRow[1].ToString() == "1")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A121.BackColor = Color.Black;
                                     pcb_A121.Visible = true;
@@ -2747,7 +2746,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A122.BackColor = Color.Black;
                                     pcb_A122.Visible = true;
@@ -2779,7 +2778,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
-                                if (newRow[3].ToString() == "A")
+                                if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A123.BackColor = Color.Black;
                                     pcb_A123.Visible = true;
@@ -3297,162 +3296,49 @@ namespace TARS
             string retorno = Jogo.IniciarPartida(JogadorAtivo.Id, JogadorAtivo.Senha);
             MessageBox.Show("Iniciada a partida");
             lbl_statuspart.Text = "Partida iniciada";
-            lbl_statuspart.ForeColor = System.Drawing.Color.Green;
-            btn_rolarDado.Enabled = true;
-            btn_verificarvez.Enabled = true;        
+            lbl_statuspart.ForeColor = System.Drawing.Color.Green;    
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
         }
-
-        private void lbl_rolarDado_Click(object sender, EventArgs e)
-        {
-            try 
-            {
-                string dados = Jogo.RolarDados(JogadorAtivo.Id, JogadorAtivo.Senha);
-                dados = dados.Replace("\r\n", "");
-                int contador = 0;
-                int contvalor = 0;
-
-                for (int i = 0; i < dados.Length; i++)
-                {
-                    if (i % 2 == 0)
-                    {
-                        numerodado[contador] = dados[i];
-                        contador++;
-                    }
-                    else
-                    {
-                        valordado[contvalor] = dados[i];
-                        contvalor++;
-                    }
-
-                }
-
-                List<Dado> ListaDados = new List<Dado>();
-
-
-                for (int i = 0; i < 4; i++)
-                {
-                    Dado d = new Dado();
-                    d.NumeroDado = numerodado[i];
-                    d.ValorDado = valordado[i];
-                    d.PopularImagens(d.ValorDado);
-                    ListaDados.Add(d);
-                }
-
-                pcb_dado1.Image = ListaDados[0].FaceDado;
-                pcb_dado2.Image = ListaDados[1].FaceDado;
-                pcb_dado3.Image = ListaDados[2].FaceDado;
-                pcb_dado4.Image = ListaDados[3].FaceDado;
-
-                Dado de = new Dado();
-                int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
-                gb_jogadas.Visible = true;
-                btn_mover.Visible = true;
-                btn_parar.Visible = true;
-                rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
-                rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
-                rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
-
-                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ocorreu um erro " + ex.Message);
-            }
-
-        }
-
-        private void bnt_verificarvez_Click(object sender, EventArgs e)
-        {
-            string teste = Jogo.VerificarVez(IdPartida);
-            string[] linha = teste.Split(',');
-            string jogadorvez = linha[1];
-            int comparar = Convert.ToInt32(jogadorvez);
-
-            if (comparar == JogadorAtivo.Id)
-                MessageBox.Show("É a sua vez de jogar!", jogadorvez);
-            else
-                MessageBox.Show("Não é a sua vez de jogar!", jogadorvez);
-        }
-
-        private void bnt_exibirTabuleiro_Click(object sender, EventArgs e)
-        {
-            string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
-            dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro,dtb_tabuleiro);
-            dgv_teste.DataSource = dtb_tabuleiro;
-            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-            desenharTabuleiro(idJogadores);
-        }
-
-        private void rdb_jogada1_CheckedChanged(object sender, EventArgs e)
-        {
-            op_dado = rdb_jogada1.Text;
-
-            dadoescolha = "";
-            dadoescolha = numerodado[0].ToString();
-            dadoescolha += numerodado[1].ToString();
-            dadoescolha += numerodado[2].ToString();
-            dadoescolha += numerodado[3].ToString();
-        }
-
-        private void rdb_jogada2_CheckedChanged(object sender, EventArgs e)
-        {
-            op_dado = rdb_jogada2.Text;
-            dadoescolha = "";
-            dadoescolha = numerodado[0].ToString();
-            dadoescolha += numerodado[2].ToString();
-            dadoescolha += numerodado[1].ToString();
-            dadoescolha += numerodado[3].ToString();
-        }
-
-        private void rdb_jogada3_CheckedChanged(object sender, EventArgs e)
-        {
-            op_dado = rdb_jogada3.Text;
-            dadoescolha = "";
-            dadoescolha = numerodado[0].ToString();
-            dadoescolha += numerodado[3].ToString();
-            dadoescolha += numerodado[1].ToString();
-            dadoescolha += numerodado[2].ToString();
-        }
-
+   
         private void btn_mover_Click(object sender, EventArgs e)
         {
-            Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, Dado.tratarTextoEscolhaRadio(op_dado));
-            string retornotab = Jogo.ExibirTabuleiro(IdPartida);
-            dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
-            dgv_teste.DataSource = dtb_tabuleiro;
-            btn_continuar.Visible = true;
-            //teste
-            string retorno = Jogo.ListarJogadores(IdPartida);
-            retorno = retorno.Replace("\r", " ");
-            string[] linha = retorno.Split('\n');
-            for (int i = 0; i < linha.Length - 1; i++)
+            string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, Dado.tratarTextoEscolhaRadio(op_dado));
+            if(movimento.Contains("ERRO"))
             {
-                string[] itens = linha[i].Split(',');
-                idJogadores[i] = itens[0];
+                MessageBox.Show(movimento);
+            }
+            else
+            {
+                string retornotab = Jogo.ExibirTabuleiro(IdPartida);
+                dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
+                dgv_teste.DataSource = dtb_tabuleiro;
+                btn_continuar.Visible = true;
+                desenharTabuleiro(idJogadores);
+                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+
+                gb_jogadas.Visible = false;
+                btn_mover.Visible = false;
+                rdb_jogada1.Checked = false;
+                rdb_jogada2.Checked = false;
+                rdb_jogada3.Checked = false;
             }
 
-            desenharTabuleiro(idJogadores);
-            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-
-            gb_jogadas.Visible = false;
-            btn_mover.Visible = false;
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show($"{dadoescolha} e {Dado.tratarTextoEscolhaRadio(op_dado)}");
-        }
-
         private void btn_parar_Click(object sender, EventArgs e)
         {
             string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
-            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-            string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
-            dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro, dtb_tabuleiro);
-            desenharTabuleiro(idJogadores);
-            dadojarolado = false;
+            if(parar.Contains("ERRO"))
+            {
+                MessageBox.Show(parar);
+            }
+            else
+            {
+                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+                string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
+                dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro, dtb_tabuleiro);
+                desenharTabuleiro(idJogadores);
+                dadojarolado = false;
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -3461,8 +3347,6 @@ namespace TARS
             if (statuspartida.Contains("iniciou") || statuspartida.Contains("Iniciou"))
             {
                 lbl_statuspart.ForeColor = System.Drawing.Color.Green;
-                btn_rolarDado.Enabled = true;
-                btn_verificarvez.Enabled = true;
                 rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
 
                 string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
@@ -3476,59 +3360,81 @@ namespace TARS
                 string jogadorvez = linha[1];
                 int comparar = Convert.ToInt32(jogadorvez);
 
-                if (comparar == JogadorAtivo.Id && dadojarolado == false)
+                if (comparar == JogadorAtivo.Id)
                 {
-                    dadojarolado = true;
+                    
                     try
                     {
-                        string dados = Jogo.RolarDados(JogadorAtivo.Id, JogadorAtivo.Senha);
-                        dados = dados.Replace("\r\n", "");
-                        int contador = 0;
-                        int contvalor = 0;
-
-                        for (int i = 0; i < dados.Length; i++)
+                        if (movimentosfeitos == 1)
                         {
-                            if (i % 2 == 0)
+                            string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
+                            if (parar.Contains("ERRO"))
                             {
-                                numerodado[contador] = dados[i];
-                                contador++;
+                                MessageBox.Show(parar);
+                            }
+                            movimentosfeitos = 0;
+                        }
+                        else
+                        {
+                            string dados = Jogo.RolarDados(JogadorAtivo.Id, JogadorAtivo.Senha);
+                            if (dados.Contains("ERRO"))
+                            {
+                                MessageBox.Show(dados);
                             }
                             else
                             {
-                                valordado[contvalor] = dados[i];
-                                contvalor++;
+                                dados = dados.Replace("\r\n", "");
+                                int contador = 0;
+                                int contvalor = 0;
+
+                                for (int i = 0; i < dados.Length; i++)
+                                {
+                                    if (i % 2 == 0)
+                                    {
+                                        numerodado[contador] = dados[i];
+                                        contador++;
+                                    }
+                                    else
+                                    {
+                                        valordado[contvalor] = dados[i];
+                                        contvalor++;
+                                    }
+
+                                }
+
+                                List<Dado> ListaDados = new List<Dado>();
+
+
+                                for (int i = 0; i < 4; i++)
+                                {
+                                    Dado d = new Dado();
+                                    d.NumeroDado = numerodado[i];
+                                    d.ValorDado = valordado[i];
+                                    d.PopularImagens(d.ValorDado);
+                                    ListaDados.Add(d);
+                                }
+
+                                pcb_dado1.Image = ListaDados[0].FaceDado;
+                                pcb_dado2.Image = ListaDados[1].FaceDado;
+                                pcb_dado3.Image = ListaDados[2].FaceDado;
+                                pcb_dado4.Image = ListaDados[3].FaceDado;
+
+                                Dado de = new Dado();
+                                int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
+                                gb_jogadas.Visible = true;
+                                btn_mover.Visible = true;
+                                btn_parar.Visible = true;
+                                rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
+                                rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
+                                rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
+                                btn_mover.Enabled = true;
+
+                                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+
+                                MovimentosBOT();
                             }
-
                         }
-
-                        List<Dado> ListaDados = new List<Dado>();
-
-
-                        for (int i = 0; i < 4; i++)
-                        {
-                            Dado d = new Dado();
-                            d.NumeroDado = numerodado[i];
-                            d.ValorDado = valordado[i];
-                            d.PopularImagens(d.ValorDado);
-                            ListaDados.Add(d);
-                        }
-
-                        pcb_dado1.Image = ListaDados[0].FaceDado;
-                        pcb_dado2.Image = ListaDados[1].FaceDado;
-                        pcb_dado3.Image = ListaDados[2].FaceDado;
-                        pcb_dado4.Image = ListaDados[3].FaceDado;
-
-                        Dado de = new Dado();
-                        int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
-                        gb_jogadas.Visible = true;
-                        btn_mover.Visible = true;
-                        btn_parar.Visible = true;
-                        rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
-                        rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
-                        rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
-                        btn_mover.Enabled = true;
-
-                        rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+                       
 
                     }
                     catch (Exception ex)
@@ -3542,7 +3448,7 @@ namespace TARS
         private void Tabuleiro_Load(object sender, EventArgs e)
         {
             Timer timer = new Timer();
-            timer.Interval = (3 * 1000); // 3 secs
+            timer.Interval = (5 * 1000); // 5 secs
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
         }
@@ -3553,5 +3459,61 @@ namespace TARS
             btn_continuar.Visible = false;
 
         }
+
+        public void MovimentosBOT()
+        {
+            Random rand = new Random();
+            int escolha = rand.Next(0, 2);
+            switch (escolha)
+            {
+                case 0:
+                    op_dado = rdb_jogada1.Text;
+                    dadoescolha = "";
+                    dadoescolha = numerodado[0].ToString();
+                    dadoescolha += numerodado[1].ToString();
+                    dadoescolha += numerodado[2].ToString();
+                    dadoescolha += numerodado[3].ToString();
+                    break;
+                case 1:
+                    op_dado = rdb_jogada2.Text;
+                    dadoescolha = "";
+                    dadoescolha = numerodado[0].ToString();
+                    dadoescolha += numerodado[2].ToString();
+                    dadoescolha += numerodado[1].ToString();
+                    dadoescolha += numerodado[3].ToString();
+                    break;
+                case 2:
+                    op_dado = rdb_jogada3.Text;
+                    dadoescolha = "";
+                    dadoescolha = numerodado[0].ToString();
+                    dadoescolha += numerodado[3].ToString();
+                    dadoescolha += numerodado[1].ToString();
+                    dadoescolha += numerodado[2].ToString();
+                    break;
+            }
+            string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, Dado.tratarTextoEscolhaRadio(op_dado));
+            if (movimento.Contains("ERRO"))
+            {
+                MessageBox.Show(movimento);
+            }
+            else
+            {
+                string retornotab = Jogo.ExibirTabuleiro(IdPartida);
+                dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
+                dgv_teste.DataSource = dtb_tabuleiro;
+                btn_continuar.Visible = true;
+                desenharTabuleiro(idJogadores);
+                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+
+                gb_jogadas.Visible = false;
+                btn_mover.Visible = false;
+                rdb_jogada1.Checked = false;
+                rdb_jogada2.Checked = false;
+                rdb_jogada3.Checked = false;
+            }
+            movimentosfeitos++;
+        }
+
+
     }
 }
