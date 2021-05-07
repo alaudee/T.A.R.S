@@ -23,8 +23,6 @@ namespace TARS
         string dadoescolha;
         string[] idJogadores = new string[4];
 
-        bool dadojarolado = false; // escolhe se quer continuar a jogar ou parar
-
         int movimentosfeitos; // O bot jogará 2 vezes no maximo e logo depois irá parar
 
         string op_dado;
@@ -41,7 +39,6 @@ namespace TARS
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
 
             gb_jogadas.Visible = false;
-            btn_mover.Visible = false;
 
             string[] linha = Infojogador.Split(',');
             JogadorAtivo.Id = Convert.ToInt32(linha[0]);
@@ -3291,19 +3288,49 @@ namespace TARS
             pcb_j4123.Visible = false;
         }
 
-        private void btn_iniciarpartida_Click(object sender, EventArgs e) 
+
+        public void MovimentosBOT()
         {
-            string retorno = Jogo.IniciarPartida(JogadorAtivo.Id, JogadorAtivo.Senha);
-            MessageBox.Show("Iniciada a partida");
-            lbl_statuspart.Text = "Partida iniciada";
-            lbl_statuspart.ForeColor = System.Drawing.Color.Green;    
-            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-        }
-   
-        private void btn_mover_Click(object sender, EventArgs e)
-        {
+            Random rand = new Random();
+            int escolha = rand.Next(0, 2);
+            switch (escolha)
+            {
+                case 0:
+                    op_dado = rdb_jogada1.Text;
+                    dadoescolha = "";
+                    dadoescolha = numerodado[0].ToString();
+                    dadoescolha += numerodado[1].ToString();
+                    dadoescolha += numerodado[2].ToString();
+                    dadoescolha += numerodado[3].ToString();
+                    break;
+                case 1:
+                    op_dado = rdb_jogada2.Text;
+                    dadoescolha = "";
+                    dadoescolha = numerodado[0].ToString();
+                    dadoescolha += numerodado[2].ToString();
+                    dadoescolha += numerodado[1].ToString();
+                    dadoescolha += numerodado[3].ToString();
+                    break;
+                case 2:
+                    op_dado = rdb_jogada3.Text;
+                    dadoescolha = "";
+                    dadoescolha = numerodado[0].ToString();
+                    dadoescolha += numerodado[3].ToString();
+                    dadoescolha += numerodado[1].ToString();
+                    dadoescolha += numerodado[2].ToString();
+                    break;
+            }
             string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, Dado.tratarTextoEscolhaRadio(op_dado));
-            if(movimento.Contains("ERRO"))
+            string retorno = Jogo.ListarJogadores(IdPartida);
+            retorno = retorno.Replace("\r", " ");
+            string[] linha = retorno.Split('\n');
+            for (int i = 0; i < linha.Length - 1; i++)
+            {
+                string[] itens = linha[i].Split(',');
+                idJogadores[i] = itens[0];
+            }
+
+            if (movimento.Contains("ERRO"))
             {
                 MessageBox.Show(movimento);
             }
@@ -3312,33 +3339,23 @@ namespace TARS
                 string retornotab = Jogo.ExibirTabuleiro(IdPartida);
                 dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
                 dgv_teste.DataSource = dtb_tabuleiro;
-                btn_continuar.Visible = true;
                 desenharTabuleiro(idJogadores);
                 rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-
-                gb_jogadas.Visible = false;
-                btn_mover.Visible = false;
                 rdb_jogada1.Checked = false;
                 rdb_jogada2.Checked = false;
                 rdb_jogada3.Checked = false;
             }
-
+            movimentosfeitos++;
         }
-        private void btn_parar_Click(object sender, EventArgs e)
+
+        private void btn_iniciarpartida_Click(object sender, EventArgs e) 
         {
-            string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
-            if(parar.Contains("ERRO"))
-            {
-                MessageBox.Show(parar);
-            }
-            else
-            {
-                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-                string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
-                dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro, dtb_tabuleiro);
-                desenharTabuleiro(idJogadores);
-                dadojarolado = false;
-            }
+            string retorno = Jogo.IniciarPartida(JogadorAtivo.Id, JogadorAtivo.Senha);
+            MessageBox.Show("Iniciada a partida");
+            lbl_statuspart.Text = "Partida iniciada";
+            lbl_statuspart.ForeColor = System.Drawing.Color.Green;    
+            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+            btn_iniciarpartida.Enabled = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -3421,14 +3438,9 @@ namespace TARS
 
                                 Dado de = new Dado();
                                 int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
-                                gb_jogadas.Visible = true;
-                                btn_mover.Visible = true;
-                                btn_parar.Visible = true;
                                 rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
                                 rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
                                 rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
-                                btn_mover.Enabled = true;
-
                                 rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
 
                                 MovimentosBOT();
@@ -3452,68 +3464,5 @@ namespace TARS
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
         }
-
-        private void btn_continuar_Click(object sender, EventArgs e)
-        {
-            dadojarolado = false;
-            btn_continuar.Visible = false;
-
-        }
-
-        public void MovimentosBOT()
-        {
-            Random rand = new Random();
-            int escolha = rand.Next(0, 2);
-            switch (escolha)
-            {
-                case 0:
-                    op_dado = rdb_jogada1.Text;
-                    dadoescolha = "";
-                    dadoescolha = numerodado[0].ToString();
-                    dadoescolha += numerodado[1].ToString();
-                    dadoescolha += numerodado[2].ToString();
-                    dadoescolha += numerodado[3].ToString();
-                    break;
-                case 1:
-                    op_dado = rdb_jogada2.Text;
-                    dadoescolha = "";
-                    dadoescolha = numerodado[0].ToString();
-                    dadoescolha += numerodado[2].ToString();
-                    dadoescolha += numerodado[1].ToString();
-                    dadoescolha += numerodado[3].ToString();
-                    break;
-                case 2:
-                    op_dado = rdb_jogada3.Text;
-                    dadoescolha = "";
-                    dadoescolha = numerodado[0].ToString();
-                    dadoescolha += numerodado[3].ToString();
-                    dadoescolha += numerodado[1].ToString();
-                    dadoescolha += numerodado[2].ToString();
-                    break;
-            }
-            string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, Dado.tratarTextoEscolhaRadio(op_dado));
-            if (movimento.Contains("ERRO"))
-            {
-                MessageBox.Show(movimento);
-            }
-            else
-            {
-                string retornotab = Jogo.ExibirTabuleiro(IdPartida);
-                dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
-                dgv_teste.DataSource = dtb_tabuleiro;
-                btn_continuar.Visible = true;
-                desenharTabuleiro(idJogadores);
-                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-
-                gb_jogadas.Visible = false;
-                btn_mover.Visible = false;
-                rdb_jogada1.Checked = false;
-                rdb_jogada2.Checked = false;
-                rdb_jogada3.Checked = false;
-            }
-            movimentosfeitos++;
-        }
-
-
     }
 }

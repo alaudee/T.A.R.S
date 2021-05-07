@@ -35,7 +35,6 @@ namespace TARS
             this.lbl_idjogador = new System.Windows.Forms.Label();
             this.lbl_senhajogador = new System.Windows.Forms.Label();
             this.lbl_corjogador = new System.Windows.Forms.Label();
-            this.btn_mover = new System.Windows.Forms.Button();
             this.pcb_dado1 = new System.Windows.Forms.PictureBox();
             this.pcb_dado2 = new System.Windows.Forms.PictureBox();
             this.pcb_dado3 = new System.Windows.Forms.PictureBox();
@@ -45,7 +44,6 @@ namespace TARS
             this.rdb_jogada3 = new System.Windows.Forms.RadioButton();
             this.rdb_jogada2 = new System.Windows.Forms.RadioButton();
             this.rdb_jogada1 = new System.Windows.Forms.RadioButton();
-            this.btn_parar = new System.Windows.Forms.Button();
             this.dgv_teste = new System.Windows.Forms.DataGridView();
             this.pcb_A81 = new System.Windows.Forms.PictureBox();
             this.pcb_A89 = new System.Windows.Forms.PictureBox();
@@ -464,7 +462,6 @@ namespace TARS
             this.pcb_j2713 = new System.Windows.Forms.PictureBox();
             this.pcb_j3713 = new System.Windows.Forms.PictureBox();
             this.timer_partida = new System.Windows.Forms.Timer(this.components);
-            this.btn_continuar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).BeginInit();
@@ -931,19 +928,6 @@ namespace TARS
             this.lbl_corjogador.TabIndex = 3;
             this.lbl_corjogador.Text = "Cor";
             // 
-            // btn_mover
-            // 
-            this.btn_mover.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_mover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mover.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_mover.Location = new System.Drawing.Point(12, 397);
-            this.btn_mover.Name = "btn_mover";
-            this.btn_mover.Size = new System.Drawing.Size(119, 58);
-            this.btn_mover.TabIndex = 15;
-            this.btn_mover.Text = "Mover";
-            this.btn_mover.UseVisualStyleBackColor = false;
-            this.btn_mover.Click += new System.EventHandler(this.btn_mover_Click);
-            // 
             // pcb_dado1
             // 
             this.pcb_dado1.Location = new System.Drawing.Point(12, 97);
@@ -986,7 +970,7 @@ namespace TARS
             this.lbl_statuspart.BackColor = System.Drawing.Color.Transparent;
             this.lbl_statuspart.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_statuspart.ForeColor = System.Drawing.Color.Red;
-            this.lbl_statuspart.Location = new System.Drawing.Point(918, 9);
+            this.lbl_statuspart.Location = new System.Drawing.Point(901, 9);
             this.lbl_statuspart.Name = "lbl_statuspart";
             this.lbl_statuspart.Size = new System.Drawing.Size(224, 29);
             this.lbl_statuspart.TabIndex = 21;
@@ -998,7 +982,7 @@ namespace TARS
             this.gb_jogadas.Controls.Add(this.rdb_jogada3);
             this.gb_jogadas.Controls.Add(this.rdb_jogada2);
             this.gb_jogadas.Controls.Add(this.rdb_jogada1);
-            this.gb_jogadas.Location = new System.Drawing.Point(12, 281);
+            this.gb_jogadas.Location = new System.Drawing.Point(258, 12);
             this.gb_jogadas.Name = "gb_jogadas";
             this.gb_jogadas.Size = new System.Drawing.Size(245, 110);
             this.gb_jogadas.TabIndex = 22;
@@ -1038,26 +1022,12 @@ namespace TARS
             this.rdb_jogada1.Text = "radioButton1";
             this.rdb_jogada1.UseVisualStyleBackColor = true;
             // 
-            // btn_parar
-            // 
-            this.btn_parar.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_parar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_parar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_parar.Location = new System.Drawing.Point(148, 397);
-            this.btn_parar.Name = "btn_parar";
-            this.btn_parar.Size = new System.Drawing.Size(119, 58);
-            this.btn_parar.TabIndex = 24;
-            this.btn_parar.Text = "Parar";
-            this.btn_parar.UseVisualStyleBackColor = false;
-            this.btn_parar.Visible = false;
-            this.btn_parar.Click += new System.EventHandler(this.btn_parar_Click);
-            // 
             // dgv_teste
             // 
             this.dgv_teste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_teste.Location = new System.Drawing.Point(199, 0);
+            this.dgv_teste.Location = new System.Drawing.Point(12, 262);
             this.dgv_teste.Name = "dgv_teste";
-            this.dgv_teste.Size = new System.Drawing.Size(446, 150);
+            this.dgv_teste.Size = new System.Drawing.Size(446, 187);
             this.dgv_teste.TabIndex = 25;
             // 
             // pcb_A81
@@ -4807,20 +4777,6 @@ namespace TARS
             // 
             this.timer_partida.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btn_continuar
-            // 
-            this.btn_continuar.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_continuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_continuar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_continuar.Location = new System.Drawing.Point(12, 479);
-            this.btn_continuar.Name = "btn_continuar";
-            this.btn_continuar.Size = new System.Drawing.Size(119, 58);
-            this.btn_continuar.TabIndex = 519;
-            this.btn_continuar.Text = "Continuar?";
-            this.btn_continuar.UseVisualStyleBackColor = false;
-            this.btn_continuar.Visible = false;
-            this.btn_continuar.Click += new System.EventHandler(this.btn_continuar_Click);
-            // 
             // Tabuleiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4829,7 +4785,6 @@ namespace TARS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1163, 679);
-            this.Controls.Add(this.btn_continuar);
             this.Controls.Add(this.pcb_j1713);
             this.Controls.Add(this.pcb_j4713);
             this.Controls.Add(this.pcb_j2713);
@@ -5247,14 +5202,12 @@ namespace TARS
             this.Controls.Add(this.pcb_A89);
             this.Controls.Add(this.pcb_A81);
             this.Controls.Add(this.dgv_teste);
-            this.Controls.Add(this.btn_parar);
             this.Controls.Add(this.gb_jogadas);
             this.Controls.Add(this.lbl_statuspart);
             this.Controls.Add(this.pcb_dado4);
             this.Controls.Add(this.pcb_dado3);
             this.Controls.Add(this.pcb_dado2);
             this.Controls.Add(this.pcb_dado1);
-            this.Controls.Add(this.btn_mover);
             this.Controls.Add(this.lbl_corjogador);
             this.Controls.Add(this.lbl_senhajogador);
             this.Controls.Add(this.lbl_idjogador);
@@ -5697,7 +5650,6 @@ namespace TARS
         private System.Windows.Forms.Label lbl_idjogador;
         private System.Windows.Forms.Label lbl_senhajogador;
         private System.Windows.Forms.Label lbl_corjogador;
-        private System.Windows.Forms.Button btn_mover;
         private System.Windows.Forms.PictureBox pcb_dado1;
         private System.Windows.Forms.PictureBox pcb_dado2;
         private System.Windows.Forms.PictureBox pcb_dado3;
@@ -5707,7 +5659,6 @@ namespace TARS
         private System.Windows.Forms.RadioButton rdb_jogada3;
         private System.Windows.Forms.RadioButton rdb_jogada2;
         private System.Windows.Forms.RadioButton rdb_jogada1;
-        private System.Windows.Forms.Button btn_parar;
         private System.Windows.Forms.DataGridView dgv_teste;
         private System.Windows.Forms.PictureBox pcb_A81;
         private System.Windows.Forms.PictureBox pcb_A89;
@@ -6126,6 +6077,5 @@ namespace TARS
         private System.Windows.Forms.PictureBox pcb_j2713;
         private System.Windows.Forms.PictureBox pcb_j3713;
         private System.Windows.Forms.Timer timer_partida;
-        private System.Windows.Forms.Button btn_continuar;
     }
 }
