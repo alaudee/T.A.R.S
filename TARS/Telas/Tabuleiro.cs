@@ -22,6 +22,7 @@ namespace TARS
         char[] numerodado = new char[4];
         string dadoescolha;
         string[] idJogadores = new string[4];
+        string[] corJogdores = new string[4];
 
         int movimentosfeitos; // O bot jogará 2 vezes no maximo e logo depois irá parar
 
@@ -29,7 +30,7 @@ namespace TARS
 
         DataTable dtb_tabuleiro;
 
-        public Tabuleiro(string infojogador, int idpartida) //coloquei mais um parametro no construtor para pegar o idpartida
+        public Tabuleiro(string infojogador, int idpartida) 
         {
             InitializeComponent();
             JogadorAtivo = new Jogador();
@@ -50,12 +51,75 @@ namespace TARS
             lbl_senhajogador.Text = "Senha: " + JogadorAtivo.Senha;
             lbl_corjogador.Text = "Cor: " + JogadorAtivo.corjogador;
 
+            for(int i = 0; i < 1; i++)
+            {
+                if(JogadorAtivo.corjogador == "Vermelho")
+                {
+                    panel1.BackColor = Color.Red;
+                }
+                else if (JogadorAtivo.corjogador == "Azul")
+                {
+                    panel1.BackColor = Color.Blue;
+                }
+                else if (JogadorAtivo.corjogador == "Verde")
+                {
+                    panel1.BackColor = Color.Green;
+                }
+                else
+                {
+                    panel1.BackColor = Color.Yellow;
+                }
+            }
+
+            
+            
+            panel1.Visible = true;
+            panel2.Visible = true;
+            lbl_corJgadorAtual.Visible = true;
+            lbl_nossaCor.Visible = true;
+
+            
+
             dtb_tabuleiro = TabuleiroP.CriarDataTable();
+        }
+
+        public void jogadorCor()
+        {
+            for (int i = 0; i < corJogdores.Length; i++)
+            {
+
+                string teste = Jogo.VerificarVez(IdPartida);
+                string[] linha1 = teste.Split(',');
+                string jogadorvez = linha1[1];
+                jogadorvez = jogadorvez.Replace("\r\n", "");
+
+                if (jogadorvez == idJogadores[i])
+                {
+                    if (corJogdores[i].Contains("Vermelho"))
+                    {
+                        panel2.BackColor = Color.Red;
+                    }
+                    else if (corJogdores[i] == "Azul ")
+                    {
+                        panel2.BackColor = Color.Blue;
+                    }
+                    else if (corJogdores[i] == "Verde ")
+                    {
+                        panel2.BackColor = Color.Green;
+                    }
+                    else
+                    {
+                        panel2.BackColor = Color.Yellow;
+                    }
+                }
+            }
         }
 
         public void desenharTabuleiro(string [] jogadores)
         {
             LimparTabuleiro();
+            jogadorCor();
+
             foreach (DataRow row in dtb_tabuleiro.Rows)
             {
                 DataRow newRow = dtb_tabuleiro.NewRow();
@@ -3321,6 +3385,7 @@ namespace TARS
                     break;
             }
             string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, Dado.tratarTextoEscolhaRadio(op_dado));
+
             string retorno = Jogo.ListarJogadores(IdPartida);
             retorno = retorno.Replace("\r", " ");
             string[] linha = retorno.Split('\n');
@@ -3328,8 +3393,10 @@ namespace TARS
             {
                 string[] itens = linha[i].Split(',');
                 idJogadores[i] = itens[0];
+                corJogdores[i] = itens[2];
             }
 
+            
             if (movimento.Contains("ERRO"))
             {
                 MessageBox.Show(movimento);

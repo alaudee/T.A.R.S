@@ -462,6 +462,10 @@ namespace TARS
             this.pcb_j2713 = new System.Windows.Forms.PictureBox();
             this.pcb_j3713 = new System.Windows.Forms.PictureBox();
             this.timer_partida = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_nossaCor = new System.Windows.Forms.Label();
+            this.lbl_corJgadorAtual = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).BeginInit();
@@ -982,7 +986,7 @@ namespace TARS
             this.gb_jogadas.Controls.Add(this.rdb_jogada3);
             this.gb_jogadas.Controls.Add(this.rdb_jogada2);
             this.gb_jogadas.Controls.Add(this.rdb_jogada1);
-            this.gb_jogadas.Location = new System.Drawing.Point(258, 12);
+            this.gb_jogadas.Location = new System.Drawing.Point(213, 138);
             this.gb_jogadas.Name = "gb_jogadas";
             this.gb_jogadas.Size = new System.Drawing.Size(245, 110);
             this.gb_jogadas.TabIndex = 22;
@@ -1770,7 +1774,7 @@ namespace TARS
             // 
             // rtxt_historicoP
             // 
-            this.rtxt_historicoP.Location = new System.Drawing.Point(166, 479);
+            this.rtxt_historicoP.Location = new System.Drawing.Point(12, 488);
             this.rtxt_historicoP.Name = "rtxt_historicoP";
             this.rtxt_historicoP.Size = new System.Drawing.Size(398, 162);
             this.rtxt_historicoP.TabIndex = 182;
@@ -4777,6 +4781,44 @@ namespace TARS
             // 
             this.timer_partida.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(286, 21);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(95, 61);
+            this.panel1.TabIndex = 519;
+            this.panel1.Visible = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(520, 21);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(95, 61);
+            this.panel2.TabIndex = 520;
+            this.panel2.Visible = false;
+            // 
+            // lbl_nossaCor
+            // 
+            this.lbl_nossaCor.AutoSize = true;
+            this.lbl_nossaCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nossaCor.Location = new System.Drawing.Point(204, 12);
+            this.lbl_nossaCor.Name = "lbl_nossaCor";
+            this.lbl_nossaCor.Size = new System.Drawing.Size(76, 16);
+            this.lbl_nossaCor.TabIndex = 521;
+            this.lbl_nossaCor.Text = "Nossa cor: ";
+            this.lbl_nossaCor.Visible = false;
+            // 
+            // lbl_corJgadorAtual
+            // 
+            this.lbl_corJgadorAtual.AutoSize = true;
+            this.lbl_corJgadorAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_corJgadorAtual.Location = new System.Drawing.Point(397, 12);
+            this.lbl_corJgadorAtual.Name = "lbl_corJgadorAtual";
+            this.lbl_corJgadorAtual.Size = new System.Drawing.Size(117, 16);
+            this.lbl_corJgadorAtual.TabIndex = 522;
+            this.lbl_corJgadorAtual.Text = "Cor jogador atual: ";
+            this.lbl_corJgadorAtual.Visible = false;
+            // 
             // Tabuleiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4785,6 +4827,10 @@ namespace TARS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1163, 679);
+            this.Controls.Add(this.lbl_corJgadorAtual);
+            this.Controls.Add(this.lbl_nossaCor);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pcb_j1713);
             this.Controls.Add(this.pcb_j4713);
             this.Controls.Add(this.pcb_j2713);
@@ -6077,5 +6123,9 @@ namespace TARS
         private System.Windows.Forms.PictureBox pcb_j2713;
         private System.Windows.Forms.PictureBox pcb_j3713;
         private System.Windows.Forms.Timer timer_partida;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lbl_nossaCor;
+        private System.Windows.Forms.Label lbl_corJgadorAtual;
     }
 }
