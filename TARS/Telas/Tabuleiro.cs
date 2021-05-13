@@ -24,11 +24,13 @@ namespace TARS
         string[] idJogadores = new string[4];
         string[] corJogdores = new string[4];
 
-        int movimentosfeitos; // O bot jogará 2 vezes no maximo e logo depois irá parar
+        int movimentosfeitos; // O bot jogará 1 vezes no maximo e logo depois irá parar
 
         string op_dado;
 
         DataTable dtb_tabuleiro;
+
+        List<Alpinista> alpinistas = new List<Alpinista>();
 
         public Tabuleiro(string infojogador, int idpartida) 
         {
@@ -38,9 +40,6 @@ namespace TARS
             this.IdPartida = idpartida;
 
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-
-            gb_jogadas.Visible = false;
-
             string[] linha = Infojogador.Split(',');
             JogadorAtivo.Id = Convert.ToInt32(linha[0]);
             JogadorAtivo.Senha = linha[1];
@@ -70,15 +69,10 @@ namespace TARS
                     panel1.BackColor = Color.Yellow;
                 }
             }
-
-            
-            
             panel1.Visible = true;
             panel2.Visible = true;
             lbl_corJgadorAtual.Visible = true;
             lbl_nossaCor.Visible = true;
-
-            
 
             dtb_tabuleiro = TabuleiroP.CriarDataTable();
         }
@@ -115,6 +109,54 @@ namespace TARS
             }
         }
 
+        public void rolarDados()
+        {
+            string dados = Jogo.RolarDados(JogadorAtivo.Id, JogadorAtivo.Senha);
+            if (dados.Contains("ERRO"))
+            {
+                MessageBox.Show(dados);
+            }
+            else
+            {
+                dados = dados.Replace("\r\n", "");
+                int contador = 0;
+                int contvalor = 0;
+
+                for (int i = 0; i < dados.Length; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        numerodado[contador] = dados[i];
+                        contador++;
+                    }
+                    else
+                    {
+                        valordado[contvalor] = dados[i];
+                        contvalor++;
+                    }
+
+                }
+
+                List<Dado> ListaDados = new List<Dado>();
+
+
+                for (int i = 0; i < 4; i++)
+                {
+                    Dado d = new Dado();
+                    d.NumeroDado = numerodado[i];
+                    d.ValorDado = valordado[i];
+                    d.PopularImagens(d.ValorDado);
+                    ListaDados.Add(d);
+                }
+
+                pcb_dado1.Image = ListaDados[0].FaceDado;
+                pcb_dado2.Image = ListaDados[1].FaceDado;
+                pcb_dado3.Image = ListaDados[2].FaceDado;
+                pcb_dado4.Image = ListaDados[3].FaceDado;
+
+                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+            }
+        }
         public void desenharTabuleiro(string [] jogadores)
         {
             LimparTabuleiro();
@@ -3355,12 +3397,17 @@ namespace TARS
 
         public void MovimentosBOT()
         {
+            int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
+            string escolha1 = trilhas[0] + " e " + trilhas[5];
+            string escolha2 = trilhas[1] + " e " + trilhas[4];
+            string escolha3 = trilhas[2] + " e " + trilhas[3];
+
             Random rand = new Random();
             int escolha = rand.Next(0, 2);
             switch (escolha)
             {
                 case 0:
-                    op_dado = rdb_jogada1.Text;
+                    op_dado = escolha1;
                     dadoescolha = "";
                     dadoescolha = numerodado[0].ToString();
                     dadoescolha += numerodado[1].ToString();
@@ -3368,7 +3415,7 @@ namespace TARS
                     dadoescolha += numerodado[3].ToString();
                     break;
                 case 1:
-                    op_dado = rdb_jogada2.Text;
+                    op_dado = escolha2;
                     dadoescolha = "";
                     dadoescolha = numerodado[0].ToString();
                     dadoescolha += numerodado[2].ToString();
@@ -3376,7 +3423,7 @@ namespace TARS
                     dadoescolha += numerodado[3].ToString();
                     break;
                 case 2:
-                    op_dado = rdb_jogada3.Text;
+                    op_dado = escolha3;
                     dadoescolha = "";
                     dadoescolha = numerodado[0].ToString();
                     dadoescolha += numerodado[3].ToString();
@@ -3384,19 +3431,16 @@ namespace TARS
                     dadoescolha += numerodado[2].ToString();
                     break;
             }
-            string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, Dado.tratarTextoEscolhaRadio(op_dado));
 
-            string retorno = Jogo.ListarJogadores(IdPartida);
-            retorno = retorno.Replace("\r", " ");
-            string[] linha = retorno.Split('\n');
-            for (int i = 0; i < linha.Length - 1; i++)
+            string trilhasEscolhidas = Dado.tratarTextoEscolhaRadio(op_dado);
+            for (int i = 0; i < trilhasEscolhidas.Length; i++)
             {
-                string[] itens = linha[i].Split(',');
-                idJogadores[i] = itens[0];
-                corJogdores[i] = itens[2];
+                Alpinista a = new Alpinista(trilhasEscolhidas[i].ToString());
+                alpinistas.Add(a);
             }
 
-            
+            string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, trilhasEscolhidas);
+
             if (movimento.Contains("ERRO"))
             {
                 MessageBox.Show(movimento);
@@ -3408,9 +3452,6 @@ namespace TARS
                 dgv_teste.DataSource = dtb_tabuleiro;
                 desenharTabuleiro(idJogadores);
                 rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-                rdb_jogada1.Checked = false;
-                rdb_jogada2.Checked = false;
-                rdb_jogada3.Checked = false;
             }
             movimentosfeitos++;
         }
@@ -3438,7 +3479,17 @@ namespace TARS
                 dgv_teste.DataSource = dtb_tabuleiro;
                 rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
                 desenharTabuleiro(idJogadores);
-
+                
+                //Mudar este código de lugar(Verificar onde coloca-lo)
+                string retorno = Jogo.ListarJogadores(IdPartida);
+                retorno = retorno.Replace("\r", " ");
+                string[] linhar = retorno.Split('\n');
+                for (int i = 0; i < linhar.Length - 1; i++)
+                {
+                    string[] itens = linhar[i].Split(',');
+                    idJogadores[i] = itens[0];
+                    corJogdores[i] = itens[2];
+                }
                 string teste = Jogo.VerificarVez(IdPartida);
                 string[] linha = teste.Split(',');
                 string jogadorvez = linha[1];
@@ -3457,61 +3508,17 @@ namespace TARS
                                 MessageBox.Show(parar);
                             }
                             movimentosfeitos = 0;
+                            alpinistas = new List<Alpinista>();
+                        }
+                        else if(movimentosfeitos == 2)
+                        {
+                            rolarDados(); 
+
                         }
                         else
                         {
-                            string dados = Jogo.RolarDados(JogadorAtivo.Id, JogadorAtivo.Senha);
-                            if (dados.Contains("ERRO"))
-                            {
-                                MessageBox.Show(dados);
-                            }
-                            else
-                            {
-                                dados = dados.Replace("\r\n", "");
-                                int contador = 0;
-                                int contvalor = 0;
-
-                                for (int i = 0; i < dados.Length; i++)
-                                {
-                                    if (i % 2 == 0)
-                                    {
-                                        numerodado[contador] = dados[i];
-                                        contador++;
-                                    }
-                                    else
-                                    {
-                                        valordado[contvalor] = dados[i];
-                                        contvalor++;
-                                    }
-
-                                }
-
-                                List<Dado> ListaDados = new List<Dado>();
-
-
-                                for (int i = 0; i < 4; i++)
-                                {
-                                    Dado d = new Dado();
-                                    d.NumeroDado = numerodado[i];
-                                    d.ValorDado = valordado[i];
-                                    d.PopularImagens(d.ValorDado);
-                                    ListaDados.Add(d);
-                                }
-
-                                pcb_dado1.Image = ListaDados[0].FaceDado;
-                                pcb_dado2.Image = ListaDados[1].FaceDado;
-                                pcb_dado3.Image = ListaDados[2].FaceDado;
-                                pcb_dado4.Image = ListaDados[3].FaceDado;
-
-                                Dado de = new Dado();
-                                int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
-                                rdb_jogada1.Text = trilhas[0] + " e " + trilhas[5];
-                                rdb_jogada2.Text = trilhas[1] + " e " + trilhas[4];
-                                rdb_jogada3.Text = trilhas[2] + " e " + trilhas[3];
-                                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-
-                                MovimentosBOT();
-                            }
+                            rolarDados();
+                            MovimentosBOT();
                         }
                        
 

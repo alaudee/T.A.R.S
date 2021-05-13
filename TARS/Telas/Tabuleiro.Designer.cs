@@ -40,10 +40,6 @@ namespace TARS
             this.pcb_dado3 = new System.Windows.Forms.PictureBox();
             this.pcb_dado4 = new System.Windows.Forms.PictureBox();
             this.lbl_statuspart = new System.Windows.Forms.Label();
-            this.gb_jogadas = new System.Windows.Forms.GroupBox();
-            this.rdb_jogada3 = new System.Windows.Forms.RadioButton();
-            this.rdb_jogada2 = new System.Windows.Forms.RadioButton();
-            this.rdb_jogada1 = new System.Windows.Forms.RadioButton();
             this.dgv_teste = new System.Windows.Forms.DataGridView();
             this.pcb_A81 = new System.Windows.Forms.PictureBox();
             this.pcb_A89 = new System.Windows.Forms.PictureBox();
@@ -470,7 +466,6 @@ namespace TARS
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado4)).BeginInit();
-            this.gb_jogadas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_teste)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_A81)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_A89)).BeginInit();
@@ -979,52 +974,6 @@ namespace TARS
             this.lbl_statuspart.Size = new System.Drawing.Size(224, 29);
             this.lbl_statuspart.TabIndex = 21;
             this.lbl_statuspart.Text = "Partida não iniciada";
-            // 
-            // gb_jogadas
-            // 
-            this.gb_jogadas.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.gb_jogadas.Controls.Add(this.rdb_jogada3);
-            this.gb_jogadas.Controls.Add(this.rdb_jogada2);
-            this.gb_jogadas.Controls.Add(this.rdb_jogada1);
-            this.gb_jogadas.Location = new System.Drawing.Point(213, 138);
-            this.gb_jogadas.Name = "gb_jogadas";
-            this.gb_jogadas.Size = new System.Drawing.Size(245, 110);
-            this.gb_jogadas.TabIndex = 22;
-            this.gb_jogadas.TabStop = false;
-            this.gb_jogadas.Text = "Jogadas";
-            // 
-            // rdb_jogada3
-            // 
-            this.rdb_jogada3.AutoSize = true;
-            this.rdb_jogada3.Location = new System.Drawing.Point(73, 74);
-            this.rdb_jogada3.Name = "rdb_jogada3";
-            this.rdb_jogada3.Size = new System.Drawing.Size(85, 17);
-            this.rdb_jogada3.TabIndex = 2;
-            this.rdb_jogada3.TabStop = true;
-            this.rdb_jogada3.Text = "radioButton3";
-            this.rdb_jogada3.UseVisualStyleBackColor = true;
-            // 
-            // rdb_jogada2
-            // 
-            this.rdb_jogada2.AutoSize = true;
-            this.rdb_jogada2.Location = new System.Drawing.Point(73, 51);
-            this.rdb_jogada2.Name = "rdb_jogada2";
-            this.rdb_jogada2.Size = new System.Drawing.Size(85, 17);
-            this.rdb_jogada2.TabIndex = 1;
-            this.rdb_jogada2.TabStop = true;
-            this.rdb_jogada2.Text = "radioButton2";
-            this.rdb_jogada2.UseVisualStyleBackColor = true;
-            // 
-            // rdb_jogada1
-            // 
-            this.rdb_jogada1.AutoSize = true;
-            this.rdb_jogada1.Location = new System.Drawing.Point(73, 28);
-            this.rdb_jogada1.Name = "rdb_jogada1";
-            this.rdb_jogada1.Size = new System.Drawing.Size(85, 17);
-            this.rdb_jogada1.TabIndex = 0;
-            this.rdb_jogada1.TabStop = true;
-            this.rdb_jogada1.Text = "radioButton1";
-            this.rdb_jogada1.UseVisualStyleBackColor = true;
             // 
             // dgv_teste
             // 
@@ -5248,7 +5197,6 @@ namespace TARS
             this.Controls.Add(this.pcb_A89);
             this.Controls.Add(this.pcb_A81);
             this.Controls.Add(this.dgv_teste);
-            this.Controls.Add(this.gb_jogadas);
             this.Controls.Add(this.lbl_statuspart);
             this.Controls.Add(this.pcb_dado4);
             this.Controls.Add(this.pcb_dado3);
@@ -5267,8 +5215,6 @@ namespace TARS
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado4)).EndInit();
-            this.gb_jogadas.ResumeLayout(false);
-            this.gb_jogadas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_teste)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_A81)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_A89)).EndInit();
@@ -5701,10 +5647,6 @@ namespace TARS
         private System.Windows.Forms.PictureBox pcb_dado3;
         private System.Windows.Forms.PictureBox pcb_dado4;
         private System.Windows.Forms.Label lbl_statuspart;
-        private System.Windows.Forms.GroupBox gb_jogadas;
-        private System.Windows.Forms.RadioButton rdb_jogada3;
-        private System.Windows.Forms.RadioButton rdb_jogada2;
-        private System.Windows.Forms.RadioButton rdb_jogada1;
         private System.Windows.Forms.DataGridView dgv_teste;
         private System.Windows.Forms.PictureBox pcb_A81;
         private System.Windows.Forms.PictureBox pcb_A89;

@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alpinista.cs" />
     <Compile Include="Jogador.cs" />
     <Compile Include="TabuleiroP.cs" />
     <Compile Include="Telas\CriarPartida.cs">
