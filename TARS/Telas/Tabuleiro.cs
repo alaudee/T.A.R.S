@@ -54,23 +54,23 @@ namespace TARS
             {
                 if(JogadorAtivo.corjogador == "Vermelho")
                 {
-                    panel1.BackColor = Color.Red;
+                    pnl_corjogador.BackColor = Color.Red;
                 }
                 else if (JogadorAtivo.corjogador == "Azul")
                 {
-                    panel1.BackColor = Color.Blue;
+                    pnl_corjogador.BackColor = Color.Blue;
                 }
                 else if (JogadorAtivo.corjogador == "Verde")
                 {
-                    panel1.BackColor = Color.Green;
+                    pnl_corjogador.BackColor = Color.Green;
                 }
                 else
                 {
-                    panel1.BackColor = Color.Yellow;
+                    pnl_corjogador.BackColor = Color.Yellow;
                 }
             }
-            panel1.Visible = true;
-            panel2.Visible = true;
+            pnl_corjogador.Visible = true;
+            pnl_jogadoratual.Visible = true;
             lbl_corJgadorAtual.Visible = true;
             lbl_nossaCor.Visible = true;
 
@@ -91,19 +91,19 @@ namespace TARS
                 {
                     if (corJogdores[i].Contains("Vermelho"))
                     {
-                        panel2.BackColor = Color.Red;
+                        pnl_jogadoratual.BackColor = Color.Red;
                     }
                     else if (corJogdores[i] == "Azul ")
                     {
-                        panel2.BackColor = Color.Blue;
+                        pnl_jogadoratual.BackColor = Color.Blue;
                     }
                     else if (corJogdores[i] == "Verde ")
                     {
-                        panel2.BackColor = Color.Green;
+                        pnl_jogadoratual.BackColor = Color.Green;
                     }
                     else
                     {
-                        panel2.BackColor = Color.Yellow;
+                        pnl_jogadoratual.BackColor = Color.Yellow;
                     }
                 }
             }
@@ -329,8 +329,8 @@ namespace TARS
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
-                                        pcb_j232.BackColor = Color.Blue;
-                                        pcb_j232.Visible = true;
+                                        pcb_j332.BackColor = Color.Blue;
+                                        pcb_j332.Visible = true;
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
@@ -2920,99 +2920,6 @@ namespace TARS
 
         public void LimparTabuleiro()
         {
-            pcb_A21.Visible = false;
-            pcb_A22.Visible = false;
-            pcb_A23.Visible = false;
-
-            pcb_A31.Visible = false;
-            pcb_A32.Visible = false;
-            pcb_A33.Visible = false;
-            pcb_A34.Visible = false;
-            pcb_A35.Visible = false;
-
-            pcb_A41.Visible = false;
-            pcb_A42.Visible = false;
-            pcb_A43.Visible = false;
-            pcb_A44.Visible = false;
-            pcb_A45.Visible = false;
-            pcb_A46.Visible = false;
-            pcb_A47.Visible = false;
-
-            pcb_A51.Visible = false;
-            pcb_A52.Visible = false;
-            pcb_A53.Visible = false;
-            pcb_A54.Visible = false;
-            pcb_A55.Visible = false;
-            pcb_A56.Visible = false;
-            pcb_A57.Visible = false;
-            pcb_A58.Visible = false;
-            pcb_A59.Visible = false;
-
-            pcb_A61.Visible = false;
-            pcb_A62.Visible = false;
-            pcb_A63.Visible = false;
-            pcb_A64.Visible = false;
-            pcb_A65.Visible = false;
-            pcb_A66.Visible = false;
-            pcb_A67.Visible = false;
-            pcb_A68.Visible = false;
-            pcb_A69.Visible = false;
-            pcb_A610.Visible = false;
-            pcb_A611.Visible = false;
-
-            pcb_A71.Visible = false;
-            pcb_A72.Visible = false;
-            pcb_A73.Visible = false;
-            pcb_A74.Visible = false;
-            pcb_A75.Visible = false;
-            pcb_A76.Visible = false;
-            pcb_A77.Visible = false;
-            pcb_A78.Visible = false;
-            pcb_A79.Visible = false;
-            pcb_A710.Visible = false;
-            pcb_A711.Visible = false;
-            pcb_A712.Visible = false;
-            pcb_A713.Visible = false;
-
-            pcb_A81.Visible = false;
-            pcb_A82.Visible = false;
-            pcb_A83.Visible = false;
-            pcb_A84.Visible = false;
-            pcb_A85.Visible = false;
-            pcb_A86.Visible = false;
-            pcb_A87.Visible = false;
-            pcb_A88.Visible = false;
-            pcb_A89.Visible = false;
-            pcb_A810.Visible = false;
-            pcb_A811.Visible = false;
-
-            pcb_A91.Visible = false;
-            pcb_A92.Visible = false;
-            pcb_A93.Visible = false;
-            pcb_A94.Visible = false;
-            pcb_A95.Visible = false;
-            pcb_A96.Visible = false;
-            pcb_A97.Visible = false;
-            pcb_A98.Visible = false;
-            pcb_A99.Visible = false;
-
-            pcb_A101.Visible = false;
-            pcb_A102.Visible = false;
-            pcb_A103.Visible = false;
-            pcb_A104.Visible = false;
-            pcb_A105.Visible = false;
-            pcb_A106.Visible = false;
-            pcb_A107.Visible = false;
-
-            pcb_A111.Visible = false;
-            pcb_A112.Visible = false;
-            pcb_A113.Visible = false;
-            pcb_A114.Visible = false;
-            pcb_A115.Visible = false;
-
-            pcb_A121.Visible = false;
-            pcb_A122.Visible = false;
-            pcb_A123.Visible = false;
 
             pcb_j121.Visible = false;
             pcb_j122.Visible = false;
@@ -3038,7 +2945,7 @@ namespace TARS
             pcb_j135.Visible = false;
 
             pcb_j231.Visible = false;
-            pcb_j232.Visible = false;
+            pcb_j332.Visible = false;
             pcb_j233.Visible = false;
             pcb_j234.Visible = false;
             pcb_j235.Visible = false;
@@ -3449,7 +3356,6 @@ namespace TARS
             {
                 string retornotab = Jogo.ExibirTabuleiro(IdPartida);
                 dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
-                dgv_teste.DataSource = dtb_tabuleiro;
                 desenharTabuleiro(idJogadores);
                 rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
             }
@@ -3476,7 +3382,6 @@ namespace TARS
 
                 string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
                 dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro, dtb_tabuleiro);
-                dgv_teste.DataSource = dtb_tabuleiro;
                 rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
                 desenharTabuleiro(idJogadores);
                 
@@ -3538,5 +3443,6 @@ namespace TARS
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
         }
+
     }
 }
