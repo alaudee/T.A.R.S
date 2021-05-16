@@ -17,35 +17,19 @@ namespace TARS
         public Menu()
         {
             InitializeComponent();
+            //Mostra a versão da DLL atual
             lbl_versao.Text = "Versão: " + Jogo.Versao;
 
-            string retorno = Jogo.ListarPartidas("T");
-            retorno = retorno.Replace("\r", " ");
-            string[] linha = retorno.Split('\n');
-            List<Partida> partidas = new List<Partida>();
-            for (int i = 0; i < linha.Length - 1; i++)
-            {
-                Partida p = new Partida();
-                string[] itens = linha[i].Split(',');
-                p.id = Convert.ToInt32(itens[0]);
-                p.nome = itens[1];
-                p.data = itens[2];
-                p.status = itens[3];
-                partidas.Add(p);
-            }
-            dgv_partidas.DataSource = partidas;
+            // Popula a dataGridView com as partidas disponíveis
+            dgv_partidas.DataSource = Partida.listarPartidas();
             dgv_partidas.Columns[4].Visible = false;
             dgv_partidas.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            //Cria uma partida
             CriarPartida criarpartida = new CriarPartida(dgv_partidas);
             criarpartida.ShowDialog();
             
@@ -53,19 +37,24 @@ namespace TARS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //Fecha o programa
+            Application.Exit();
         }
 
         private void btn_entrarpartida_Click(object sender, EventArgs e)
         {
+            //Entrar em uma partida
             Partida p = (Partida)dgv_partidas.SelectedRows[0].DataBoundItem;
             EntrarPartida entrarpartida = new EntrarPartida(p.id);
             entrarpartida.ShowDialog();
         }
 
-        private void lbl_versão_Click(object sender, EventArgs e)
+        private void btn_atualizar_Click(object sender, EventArgs e)
         {
-
+            //Atualiza as partidas
+            dgv_partidas.DataSource = Partida.listarPartidas();
+            dgv_partidas.Columns[4].Visible = false;
+            dgv_partidas.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
     }
 }

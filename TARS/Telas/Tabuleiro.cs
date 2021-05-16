@@ -18,16 +18,24 @@ namespace TARS
         public  string Infojogador { get; set; }
         public int IdPartida { get; set; }
 
+
+        //Os valores dos dados rolados
         char[] valordado = new char[4];
+        //O indice dos dados
         char[] numerodado = new char[4];
+        //
         string dadoescolha;
+            
+        //Id de todos os jogadores da partida
         string[] idJogadores = new string[4];
         string[] corJogdores = new string[4];
 
-        int movimentosfeitos; // O bot jogará 1 vezes no maximo e logo depois irá parar
+        // O bot jogará 1 vezes no maximo e logo depois irá parar
+        int movimentosfeitos; 
 
         string op_dado;
 
+        //DataTable que guarda toda a informação do tabuleiro
         DataTable dtb_tabuleiro;
 
         List<Alpinista> alpinistas = new List<Alpinista>();
@@ -50,6 +58,8 @@ namespace TARS
             lbl_senhajogador.Text = "Senha: " + JogadorAtivo.Senha;
             lbl_corjogador.Text = "Cor: " + JogadorAtivo.corjogador;
 
+
+            //Procura qual é a cor do jogador para mostrar no panel
             for(int i = 0; i < 1; i++)
             {
                 if(JogadorAtivo.corjogador == "Vermelho")
@@ -69,14 +79,11 @@ namespace TARS
                     pnl_corjogador.BackColor = Color.Yellow;
                 }
             }
-            pnl_corjogador.Visible = true;
-            pnl_jogadoratual.Visible = true;
-            lbl_corJgadorAtual.Visible = true;
-            lbl_nossaCor.Visible = true;
 
-            dtb_tabuleiro = TabuleiroP.CriarDataTable();
+            //dtb_tabuleiro = TabuleiroP.CriarDataTable();
         }
 
+        //Função que verifica qual jogador está jogando agora
         public void jogadorCor()
         {
             for (int i = 0; i < corJogdores.Length; i++)
@@ -109,6 +116,7 @@ namespace TARS
             }
         }
 
+        //Função que retorna os valores dos dados
         public void rolarDados()
         {
             string dados = Jogo.RolarDados(JogadorAtivo.Id, JogadorAtivo.Senha);
@@ -157,6 +165,8 @@ namespace TARS
                 rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
             }
         }
+
+        //Função que desenha os panels na tela com os valores da DataTable
         public void desenharTabuleiro(string [] jogadores)
         {
             jogadorCor();
@@ -3214,6 +3224,7 @@ namespace TARS
             }
         }
 
+        //Função Main das jogadas do BOT
         public void MovimentosBOT()
         {
             int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
@@ -3293,7 +3304,7 @@ namespace TARS
                 rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
 
                 string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
-                dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro, dtb_tabuleiro);
+                dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro);
                 rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
                 desenharTabuleiro(idJogadores);
                 

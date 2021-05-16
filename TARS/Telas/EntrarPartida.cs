@@ -21,31 +21,18 @@ namespace TARS.Telas
         public EntrarPartida(int idpartida)
         {
             InitializeComponent();
+            //Seta o id da partida escolha como global e lista os jogadores dentro dela
             this.idpartida = idpartida;
+            jogadores = Jogador.listarJogadores(this.idpartida);
 
-            string retorno = Jogo.ListarJogadores(idpartida);
-            retorno = retorno.Replace("\r", " ");
-            string[] linha = retorno.Split('\n');
-            for (int i = 0; i < linha.Length - 1; i++)
-            {
-                Jogador j = new Jogador();
-                string[] itens = linha[i].Split(',');
-                j.Id = Convert.ToInt32(itens[0]);
-                j.Nomejogador = itens[1];
-                j.corjogador = itens[2];
-                jogadores.Add(j);
-            }
+
+            //Popula a grid com os jogadores, ocultando a Senha[3] e o numerodojogador[4]
             dgv_jogadores.DataSource = jogadores;
             dgv_jogadores.Columns[3].Visible = false;
+            dgv_jogadores.Columns[4].Visible = false;
             dgv_jogadores.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             txt_senha.PasswordChar = '*';
         }
-
-        private void txt_jogadores_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_entrarpartida_Click(object sender, EventArgs e)
         {
             string nomejogador = txt_nomejogador.Text;
@@ -76,14 +63,5 @@ namespace TARS.Telas
             this.Close();
         }
 
-        private void dgv_jogadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void txt_senha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

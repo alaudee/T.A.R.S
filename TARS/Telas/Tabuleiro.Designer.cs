@@ -1392,6 +1392,7 @@ namespace TARS
             // 
             // rtxt_historicoP
             // 
+            this.rtxt_historicoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxt_historicoP.Location = new System.Drawing.Point(12, 261);
             this.rtxt_historicoP.Name = "rtxt_historicoP";
             this.rtxt_historicoP.Size = new System.Drawing.Size(398, 223);
@@ -1417,7 +1418,6 @@ namespace TARS
             this.pnl_corjogador.Name = "pnl_corjogador";
             this.pnl_corjogador.Size = new System.Drawing.Size(95, 61);
             this.pnl_corjogador.TabIndex = 519;
-            this.pnl_corjogador.Visible = false;
             // 
             // pnl_jogadoratual
             // 
@@ -1425,7 +1425,6 @@ namespace TARS
             this.pnl_jogadoratual.Name = "pnl_jogadoratual";
             this.pnl_jogadoratual.Size = new System.Drawing.Size(95, 61);
             this.pnl_jogadoratual.TabIndex = 520;
-            this.pnl_jogadoratual.Visible = false;
             // 
             // lbl_nossaCor
             // 
@@ -1437,7 +1436,6 @@ namespace TARS
             this.lbl_nossaCor.Size = new System.Drawing.Size(86, 20);
             this.lbl_nossaCor.TabIndex = 521;
             this.lbl_nossaCor.Text = "Minha cor: ";
-            this.lbl_nossaCor.Visible = false;
             // 
             // lbl_corJgadorAtual
             // 
@@ -1449,7 +1447,6 @@ namespace TARS
             this.lbl_corJgadorAtual.Size = new System.Drawing.Size(114, 20);
             this.lbl_corJgadorAtual.TabIndex = 522;
             this.lbl_corJgadorAtual.Text = "Jogador atual: ";
-            this.lbl_corJgadorAtual.Visible = false;
             // 
             // pcb_j123
             // 

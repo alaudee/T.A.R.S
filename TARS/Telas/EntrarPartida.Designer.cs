@@ -56,7 +56,6 @@ namespace TARS.Telas
             this.txt_senha.Name = "txt_senha";
             this.txt_senha.Size = new System.Drawing.Size(303, 20);
             this.txt_senha.TabIndex = 13;
-            this.txt_senha.TextChanged += new System.EventHandler(this.txt_senha_TextChanged);
             // 
             // label2
             // 
@@ -124,7 +123,6 @@ namespace TARS.Telas
             this.dgv_jogadores.RowHeadersVisible = false;
             this.dgv_jogadores.Size = new System.Drawing.Size(302, 169);
             this.dgv_jogadores.TabIndex = 16;
-            this.dgv_jogadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_jogadores_CellContentClick);
             // 
             // EntrarPartida
             // 

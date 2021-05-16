@@ -15,9 +15,12 @@ namespace TARS
         public string Jogador { get; set; }
         public string Tipo { get; set; }
 
-        //Trilha[0] Posicao[1] Jogador[2] Tipo[3]
-        // 1            1          2        A
-        // 1            2          1        B
+        /*EXEMPLO DA DATATABLE
+         Trilha[0] Posicao[1] Jogador[2] Tipo[3]
+            1            1          2        A
+            1            2          1        B  */
+
+        //Função que gera a datatable com suas colunas
         public static DataTable CriarDataTable()
         {
             DataTable tabuleiro = new DataTable();
@@ -27,9 +30,12 @@ namespace TARS
             tabuleiro.Columns.Add("tipo", typeof(string));
             return tabuleiro;
         }
-        public static DataTable LimparExibirTabuleiro(string retornotab, DataTable dtb_tabuleiro)
+
+        /* Recria o tabuleiro para atualiza-lo e atribui 
+            os dados retornados do servidor às colunas */
+        public static DataTable LimparExibirTabuleiro(string retornotab)
         {
-            dtb_tabuleiro = CriarDataTable();
+            DataTable dtb_tabuleiro = CriarDataTable();
             retornotab = retornotab.Replace("\r", " ");
             string[] linha = retornotab.Split('\n');
             for (int i = 0; i < linha.Length - 1; i++)
@@ -45,6 +51,8 @@ namespace TARS
             return dtb_tabuleiro;
 
         }
+
+        //Adiciona os movimentos quando o jogador faz uma inserção
         public static DataTable AdicionarMovimentos(string retornotab, DataTable dtb_tabuleiro)
         {
             retornotab = retornotab.Replace("\r", "");
@@ -59,7 +67,7 @@ namespace TARS
                 row[3] = itens[3];
                 dtb_tabuleiro.Rows.Add(row);
             }
-            return dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(retornotab, dtb_tabuleiro);
+            return LimparExibirTabuleiro(retornotab);
         }
         
     }

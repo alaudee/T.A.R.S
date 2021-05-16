@@ -15,7 +15,7 @@ namespace TARS
         public char ValorDado { get; set; }
         public Image FaceDado { get; set; }
 
-
+        //Coloca a imagem do respectivo valor do dado 
         public void PopularImagens(char valordado)
         {
             if (this.ValorDado == '1')
@@ -32,6 +32,8 @@ namespace TARS
                  this.FaceDado = TARS.Properties.Resources.dado6;
         }
 
+
+        //Gera todas as combinações possiveis da rolagem de dados
         public static int[] FormarDuplasSomaDados(char[] valordado)
         {
             int[] trilha = new int[6];
@@ -51,6 +53,8 @@ namespace TARS
             return trilha;
         }
 
+
+        //Converte os valores para hexadecimal
         public static string converteHexadecimal(string caso)
         {
             string[] valores = caso.Split(',');
@@ -80,6 +84,8 @@ namespace TARS
 
             return res;
         }
+
+
         public static string tratarTextoEscolhaRadio(string valores_dado)
         {
             string res = valores_dado;
