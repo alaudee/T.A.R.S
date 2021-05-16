@@ -552,7 +552,7 @@ namespace TARS
             // 
             // pcb_j286
             // 
-            this.pcb_j286.Location = new System.Drawing.Point(861, 360);
+            this.pcb_j286.Location = new System.Drawing.Point(859, 360);
             this.pcb_j286.Name = "pcb_j286";
             this.pcb_j286.Size = new System.Drawing.Size(15, 15);
             this.pcb_j286.TabIndex = 611;
@@ -654,7 +654,7 @@ namespace TARS
             // 
             // pcb_A81
             // 
-            this.pcb_A81.Location = new System.Drawing.Point(846, 580);
+            this.pcb_A81.Location = new System.Drawing.Point(844, 580);
             this.pcb_A81.Name = "pcb_A81";
             this.pcb_A81.Size = new System.Drawing.Size(30, 30);
             this.pcb_A81.TabIndex = 90;
@@ -663,7 +663,7 @@ namespace TARS
             // 
             // pcb_A89
             // 
-            this.pcb_A89.Location = new System.Drawing.Point(846, 228);
+            this.pcb_A89.Location = new System.Drawing.Point(844, 228);
             this.pcb_A89.Name = "pcb_A89";
             this.pcb_A89.Size = new System.Drawing.Size(30, 30);
             this.pcb_A89.TabIndex = 92;
@@ -672,7 +672,7 @@ namespace TARS
             // 
             // pcb_A88
             // 
-            this.pcb_A88.Location = new System.Drawing.Point(846, 270);
+            this.pcb_A88.Location = new System.Drawing.Point(844, 270);
             this.pcb_A88.Name = "pcb_A88";
             this.pcb_A88.Size = new System.Drawing.Size(30, 30);
             this.pcb_A88.TabIndex = 93;
@@ -681,7 +681,7 @@ namespace TARS
             // 
             // pcb_A87
             // 
-            this.pcb_A87.Location = new System.Drawing.Point(846, 315);
+            this.pcb_A87.Location = new System.Drawing.Point(844, 315);
             this.pcb_A87.Name = "pcb_A87";
             this.pcb_A87.Size = new System.Drawing.Size(30, 30);
             this.pcb_A87.TabIndex = 94;
@@ -690,7 +690,7 @@ namespace TARS
             // 
             // pcb_A83
             // 
-            this.pcb_A83.Location = new System.Drawing.Point(846, 496);
+            this.pcb_A83.Location = new System.Drawing.Point(844, 496);
             this.pcb_A83.Name = "pcb_A83";
             this.pcb_A83.Size = new System.Drawing.Size(30, 30);
             this.pcb_A83.TabIndex = 95;
@@ -699,7 +699,7 @@ namespace TARS
             // 
             // pcb_A82
             // 
-            this.pcb_A82.Location = new System.Drawing.Point(846, 540);
+            this.pcb_A82.Location = new System.Drawing.Point(844, 540);
             this.pcb_A82.Name = "pcb_A82";
             this.pcb_A82.Size = new System.Drawing.Size(30, 30);
             this.pcb_A82.TabIndex = 96;
@@ -708,7 +708,7 @@ namespace TARS
             // 
             // pcb_A86
             // 
-            this.pcb_A86.Location = new System.Drawing.Point(846, 360);
+            this.pcb_A86.Location = new System.Drawing.Point(844, 360);
             this.pcb_A86.Name = "pcb_A86";
             this.pcb_A86.Size = new System.Drawing.Size(30, 30);
             this.pcb_A86.TabIndex = 97;
@@ -717,7 +717,7 @@ namespace TARS
             // 
             // pcb_A84
             // 
-            this.pcb_A84.Location = new System.Drawing.Point(846, 450);
+            this.pcb_A84.Location = new System.Drawing.Point(844, 450);
             this.pcb_A84.Name = "pcb_A84";
             this.pcb_A84.Size = new System.Drawing.Size(30, 30);
             this.pcb_A84.TabIndex = 98;
@@ -726,7 +726,7 @@ namespace TARS
             // 
             // pcb_A85
             // 
-            this.pcb_A85.Location = new System.Drawing.Point(846, 401);
+            this.pcb_A85.Location = new System.Drawing.Point(844, 401);
             this.pcb_A85.Name = "pcb_A85";
             this.pcb_A85.Size = new System.Drawing.Size(30, 30);
             this.pcb_A85.TabIndex = 99;
@@ -789,7 +789,7 @@ namespace TARS
             // 
             // pcb_A811
             // 
-            this.pcb_A811.Location = new System.Drawing.Point(846, 137);
+            this.pcb_A811.Location = new System.Drawing.Point(844, 137);
             this.pcb_A811.Name = "pcb_A811";
             this.pcb_A811.Size = new System.Drawing.Size(30, 30);
             this.pcb_A811.TabIndex = 106;
@@ -798,7 +798,7 @@ namespace TARS
             // 
             // pcb_A810
             // 
-            this.pcb_A810.Location = new System.Drawing.Point(846, 180);
+            this.pcb_A810.Location = new System.Drawing.Point(844, 180);
             this.pcb_A810.Name = "pcb_A810";
             this.pcb_A810.Size = new System.Drawing.Size(30, 30);
             this.pcb_A810.TabIndex = 107;
@@ -3117,7 +3117,7 @@ namespace TARS
             // 
             // pcb_j4811
             // 
-            this.pcb_j4811.Location = new System.Drawing.Point(861, 152);
+            this.pcb_j4811.Location = new System.Drawing.Point(859, 152);
             this.pcb_j4811.Name = "pcb_j4811";
             this.pcb_j4811.Size = new System.Drawing.Size(15, 15);
             this.pcb_j4811.TabIndex = 546;
@@ -3125,7 +3125,7 @@ namespace TARS
             // 
             // pcb_j3811
             // 
-            this.pcb_j3811.Location = new System.Drawing.Point(846, 152);
+            this.pcb_j3811.Location = new System.Drawing.Point(844, 152);
             this.pcb_j3811.Name = "pcb_j3811";
             this.pcb_j3811.Size = new System.Drawing.Size(15, 15);
             this.pcb_j3811.TabIndex = 545;
@@ -3133,7 +3133,7 @@ namespace TARS
             // 
             // pcb_j2811
             // 
-            this.pcb_j2811.Location = new System.Drawing.Point(861, 137);
+            this.pcb_j2811.Location = new System.Drawing.Point(859, 137);
             this.pcb_j2811.Name = "pcb_j2811";
             this.pcb_j2811.Size = new System.Drawing.Size(15, 15);
             this.pcb_j2811.TabIndex = 544;
@@ -3141,7 +3141,7 @@ namespace TARS
             // 
             // pcb_j1811
             // 
-            this.pcb_j1811.Location = new System.Drawing.Point(846, 137);
+            this.pcb_j1811.Location = new System.Drawing.Point(844, 137);
             this.pcb_j1811.Name = "pcb_j1811";
             this.pcb_j1811.Size = new System.Drawing.Size(15, 15);
             this.pcb_j1811.TabIndex = 543;
@@ -3149,7 +3149,7 @@ namespace TARS
             // 
             // pcb_j4810
             // 
-            this.pcb_j4810.Location = new System.Drawing.Point(861, 195);
+            this.pcb_j4810.Location = new System.Drawing.Point(859, 195);
             this.pcb_j4810.Name = "pcb_j4810";
             this.pcb_j4810.Size = new System.Drawing.Size(15, 15);
             this.pcb_j4810.TabIndex = 546;
@@ -3157,7 +3157,7 @@ namespace TARS
             // 
             // pcb_j3810
             // 
-            this.pcb_j3810.Location = new System.Drawing.Point(846, 195);
+            this.pcb_j3810.Location = new System.Drawing.Point(844, 195);
             this.pcb_j3810.Name = "pcb_j3810";
             this.pcb_j3810.Size = new System.Drawing.Size(15, 15);
             this.pcb_j3810.TabIndex = 545;
@@ -3165,7 +3165,7 @@ namespace TARS
             // 
             // pcb_j2810
             // 
-            this.pcb_j2810.Location = new System.Drawing.Point(861, 180);
+            this.pcb_j2810.Location = new System.Drawing.Point(859, 180);
             this.pcb_j2810.Name = "pcb_j2810";
             this.pcb_j2810.Size = new System.Drawing.Size(15, 15);
             this.pcb_j2810.TabIndex = 544;
@@ -3173,7 +3173,7 @@ namespace TARS
             // 
             // pcb_j1810
             // 
-            this.pcb_j1810.Location = new System.Drawing.Point(846, 180);
+            this.pcb_j1810.Location = new System.Drawing.Point(844, 180);
             this.pcb_j1810.Name = "pcb_j1810";
             this.pcb_j1810.Size = new System.Drawing.Size(15, 15);
             this.pcb_j1810.TabIndex = 543;
@@ -3181,7 +3181,7 @@ namespace TARS
             // 
             // pcb_j489
             // 
-            this.pcb_j489.Location = new System.Drawing.Point(861, 243);
+            this.pcb_j489.Location = new System.Drawing.Point(859, 243);
             this.pcb_j489.Name = "pcb_j489";
             this.pcb_j489.Size = new System.Drawing.Size(15, 15);
             this.pcb_j489.TabIndex = 546;
@@ -3189,7 +3189,7 @@ namespace TARS
             // 
             // pcb_j389
             // 
-            this.pcb_j389.Location = new System.Drawing.Point(846, 243);
+            this.pcb_j389.Location = new System.Drawing.Point(844, 243);
             this.pcb_j389.Name = "pcb_j389";
             this.pcb_j389.Size = new System.Drawing.Size(15, 15);
             this.pcb_j389.TabIndex = 545;
@@ -3197,7 +3197,7 @@ namespace TARS
             // 
             // pcb_j289
             // 
-            this.pcb_j289.Location = new System.Drawing.Point(861, 228);
+            this.pcb_j289.Location = new System.Drawing.Point(859, 228);
             this.pcb_j289.Name = "pcb_j289";
             this.pcb_j289.Size = new System.Drawing.Size(15, 15);
             this.pcb_j289.TabIndex = 544;
@@ -3205,7 +3205,7 @@ namespace TARS
             // 
             // pcb_j189
             // 
-            this.pcb_j189.Location = new System.Drawing.Point(846, 228);
+            this.pcb_j189.Location = new System.Drawing.Point(844, 228);
             this.pcb_j189.Name = "pcb_j189";
             this.pcb_j189.Size = new System.Drawing.Size(15, 15);
             this.pcb_j189.TabIndex = 543;
@@ -3213,7 +3213,7 @@ namespace TARS
             // 
             // pcb_j488
             // 
-            this.pcb_j488.Location = new System.Drawing.Point(861, 285);
+            this.pcb_j488.Location = new System.Drawing.Point(859, 285);
             this.pcb_j488.Name = "pcb_j488";
             this.pcb_j488.Size = new System.Drawing.Size(15, 15);
             this.pcb_j488.TabIndex = 546;
@@ -3221,7 +3221,7 @@ namespace TARS
             // 
             // pcb_j388
             // 
-            this.pcb_j388.Location = new System.Drawing.Point(846, 285);
+            this.pcb_j388.Location = new System.Drawing.Point(844, 285);
             this.pcb_j388.Name = "pcb_j388";
             this.pcb_j388.Size = new System.Drawing.Size(15, 15);
             this.pcb_j388.TabIndex = 545;
@@ -3229,7 +3229,7 @@ namespace TARS
             // 
             // pcb_j288
             // 
-            this.pcb_j288.Location = new System.Drawing.Point(861, 270);
+            this.pcb_j288.Location = new System.Drawing.Point(859, 270);
             this.pcb_j288.Name = "pcb_j288";
             this.pcb_j288.Size = new System.Drawing.Size(15, 15);
             this.pcb_j288.TabIndex = 544;
@@ -3237,7 +3237,7 @@ namespace TARS
             // 
             // pcb_j188
             // 
-            this.pcb_j188.Location = new System.Drawing.Point(846, 270);
+            this.pcb_j188.Location = new System.Drawing.Point(844, 270);
             this.pcb_j188.Name = "pcb_j188";
             this.pcb_j188.Size = new System.Drawing.Size(15, 15);
             this.pcb_j188.TabIndex = 543;
@@ -3245,7 +3245,7 @@ namespace TARS
             // 
             // pcb_j487
             // 
-            this.pcb_j487.Location = new System.Drawing.Point(861, 330);
+            this.pcb_j487.Location = new System.Drawing.Point(859, 330);
             this.pcb_j487.Name = "pcb_j487";
             this.pcb_j487.Size = new System.Drawing.Size(15, 15);
             this.pcb_j487.TabIndex = 546;
@@ -3253,7 +3253,7 @@ namespace TARS
             // 
             // pcb_j387
             // 
-            this.pcb_j387.Location = new System.Drawing.Point(846, 330);
+            this.pcb_j387.Location = new System.Drawing.Point(844, 330);
             this.pcb_j387.Name = "pcb_j387";
             this.pcb_j387.Size = new System.Drawing.Size(15, 15);
             this.pcb_j387.TabIndex = 545;
@@ -3261,7 +3261,7 @@ namespace TARS
             // 
             // pcb_j287
             // 
-            this.pcb_j287.Location = new System.Drawing.Point(861, 315);
+            this.pcb_j287.Location = new System.Drawing.Point(859, 315);
             this.pcb_j287.Name = "pcb_j287";
             this.pcb_j287.Size = new System.Drawing.Size(15, 15);
             this.pcb_j287.TabIndex = 544;
@@ -3269,7 +3269,7 @@ namespace TARS
             // 
             // pcb_j187
             // 
-            this.pcb_j187.Location = new System.Drawing.Point(846, 315);
+            this.pcb_j187.Location = new System.Drawing.Point(844, 315);
             this.pcb_j187.Name = "pcb_j187";
             this.pcb_j187.Size = new System.Drawing.Size(15, 15);
             this.pcb_j187.TabIndex = 543;
@@ -3277,7 +3277,7 @@ namespace TARS
             // 
             // pcb_j486
             // 
-            this.pcb_j486.Location = new System.Drawing.Point(861, 375);
+            this.pcb_j486.Location = new System.Drawing.Point(859, 375);
             this.pcb_j486.Name = "pcb_j486";
             this.pcb_j486.Size = new System.Drawing.Size(15, 15);
             this.pcb_j486.TabIndex = 546;
@@ -3285,7 +3285,7 @@ namespace TARS
             // 
             // pcb_j386
             // 
-            this.pcb_j386.Location = new System.Drawing.Point(846, 375);
+            this.pcb_j386.Location = new System.Drawing.Point(844, 375);
             this.pcb_j386.Name = "pcb_j386";
             this.pcb_j386.Size = new System.Drawing.Size(15, 15);
             this.pcb_j386.TabIndex = 545;
@@ -3293,7 +3293,7 @@ namespace TARS
             // 
             // pcb_j186
             // 
-            this.pcb_j186.Location = new System.Drawing.Point(846, 360);
+            this.pcb_j186.Location = new System.Drawing.Point(844, 360);
             this.pcb_j186.Name = "pcb_j186";
             this.pcb_j186.Size = new System.Drawing.Size(15, 15);
             this.pcb_j186.TabIndex = 543;
@@ -3301,7 +3301,7 @@ namespace TARS
             // 
             // pcb_j485
             // 
-            this.pcb_j485.Location = new System.Drawing.Point(861, 416);
+            this.pcb_j485.Location = new System.Drawing.Point(859, 416);
             this.pcb_j485.Name = "pcb_j485";
             this.pcb_j485.Size = new System.Drawing.Size(15, 15);
             this.pcb_j485.TabIndex = 546;
@@ -3309,7 +3309,7 @@ namespace TARS
             // 
             // pcb_j385
             // 
-            this.pcb_j385.Location = new System.Drawing.Point(846, 416);
+            this.pcb_j385.Location = new System.Drawing.Point(844, 416);
             this.pcb_j385.Name = "pcb_j385";
             this.pcb_j385.Size = new System.Drawing.Size(15, 15);
             this.pcb_j385.TabIndex = 545;
@@ -3317,7 +3317,7 @@ namespace TARS
             // 
             // pcb_j285
             // 
-            this.pcb_j285.Location = new System.Drawing.Point(861, 401);
+            this.pcb_j285.Location = new System.Drawing.Point(859, 401);
             this.pcb_j285.Name = "pcb_j285";
             this.pcb_j285.Size = new System.Drawing.Size(15, 15);
             this.pcb_j285.TabIndex = 544;
@@ -3325,7 +3325,7 @@ namespace TARS
             // 
             // pcb_j185
             // 
-            this.pcb_j185.Location = new System.Drawing.Point(846, 401);
+            this.pcb_j185.Location = new System.Drawing.Point(844, 401);
             this.pcb_j185.Name = "pcb_j185";
             this.pcb_j185.Size = new System.Drawing.Size(15, 15);
             this.pcb_j185.TabIndex = 543;
@@ -3333,7 +3333,7 @@ namespace TARS
             // 
             // pcb_j484
             // 
-            this.pcb_j484.Location = new System.Drawing.Point(861, 465);
+            this.pcb_j484.Location = new System.Drawing.Point(859, 465);
             this.pcb_j484.Name = "pcb_j484";
             this.pcb_j484.Size = new System.Drawing.Size(15, 15);
             this.pcb_j484.TabIndex = 546;
@@ -3341,7 +3341,7 @@ namespace TARS
             // 
             // pcb_j384
             // 
-            this.pcb_j384.Location = new System.Drawing.Point(846, 465);
+            this.pcb_j384.Location = new System.Drawing.Point(844, 465);
             this.pcb_j384.Name = "pcb_j384";
             this.pcb_j384.Size = new System.Drawing.Size(15, 15);
             this.pcb_j384.TabIndex = 545;
@@ -3349,7 +3349,7 @@ namespace TARS
             // 
             // pcb_j284
             // 
-            this.pcb_j284.Location = new System.Drawing.Point(861, 450);
+            this.pcb_j284.Location = new System.Drawing.Point(859, 450);
             this.pcb_j284.Name = "pcb_j284";
             this.pcb_j284.Size = new System.Drawing.Size(15, 15);
             this.pcb_j284.TabIndex = 544;
@@ -3357,7 +3357,7 @@ namespace TARS
             // 
             // pcb_j184
             // 
-            this.pcb_j184.Location = new System.Drawing.Point(846, 450);
+            this.pcb_j184.Location = new System.Drawing.Point(844, 450);
             this.pcb_j184.Name = "pcb_j184";
             this.pcb_j184.Size = new System.Drawing.Size(15, 15);
             this.pcb_j184.TabIndex = 543;
@@ -3365,7 +3365,7 @@ namespace TARS
             // 
             // pcb_j483
             // 
-            this.pcb_j483.Location = new System.Drawing.Point(861, 511);
+            this.pcb_j483.Location = new System.Drawing.Point(859, 511);
             this.pcb_j483.Name = "pcb_j483";
             this.pcb_j483.Size = new System.Drawing.Size(15, 15);
             this.pcb_j483.TabIndex = 546;
@@ -3373,7 +3373,7 @@ namespace TARS
             // 
             // pcb_j383
             // 
-            this.pcb_j383.Location = new System.Drawing.Point(846, 511);
+            this.pcb_j383.Location = new System.Drawing.Point(844, 511);
             this.pcb_j383.Name = "pcb_j383";
             this.pcb_j383.Size = new System.Drawing.Size(15, 15);
             this.pcb_j383.TabIndex = 545;
@@ -3381,7 +3381,7 @@ namespace TARS
             // 
             // pcb_j283
             // 
-            this.pcb_j283.Location = new System.Drawing.Point(861, 496);
+            this.pcb_j283.Location = new System.Drawing.Point(859, 496);
             this.pcb_j283.Name = "pcb_j283";
             this.pcb_j283.Size = new System.Drawing.Size(15, 15);
             this.pcb_j283.TabIndex = 544;
@@ -3389,7 +3389,7 @@ namespace TARS
             // 
             // pcb_j183
             // 
-            this.pcb_j183.Location = new System.Drawing.Point(846, 496);
+            this.pcb_j183.Location = new System.Drawing.Point(844, 496);
             this.pcb_j183.Name = "pcb_j183";
             this.pcb_j183.Size = new System.Drawing.Size(15, 15);
             this.pcb_j183.TabIndex = 543;
@@ -3397,7 +3397,7 @@ namespace TARS
             // 
             // pcb_j482
             // 
-            this.pcb_j482.Location = new System.Drawing.Point(861, 555);
+            this.pcb_j482.Location = new System.Drawing.Point(859, 555);
             this.pcb_j482.Name = "pcb_j482";
             this.pcb_j482.Size = new System.Drawing.Size(15, 15);
             this.pcb_j482.TabIndex = 546;
@@ -3405,7 +3405,7 @@ namespace TARS
             // 
             // pcb_j382
             // 
-            this.pcb_j382.Location = new System.Drawing.Point(846, 555);
+            this.pcb_j382.Location = new System.Drawing.Point(844, 555);
             this.pcb_j382.Name = "pcb_j382";
             this.pcb_j382.Size = new System.Drawing.Size(15, 15);
             this.pcb_j382.TabIndex = 545;
@@ -3413,7 +3413,7 @@ namespace TARS
             // 
             // pcb_j282
             // 
-            this.pcb_j282.Location = new System.Drawing.Point(861, 540);
+            this.pcb_j282.Location = new System.Drawing.Point(859, 540);
             this.pcb_j282.Name = "pcb_j282";
             this.pcb_j282.Size = new System.Drawing.Size(15, 15);
             this.pcb_j282.TabIndex = 544;
@@ -3421,7 +3421,7 @@ namespace TARS
             // 
             // pcb_j182
             // 
-            this.pcb_j182.Location = new System.Drawing.Point(846, 540);
+            this.pcb_j182.Location = new System.Drawing.Point(844, 540);
             this.pcb_j182.Name = "pcb_j182";
             this.pcb_j182.Size = new System.Drawing.Size(15, 15);
             this.pcb_j182.TabIndex = 543;
@@ -3429,7 +3429,7 @@ namespace TARS
             // 
             // pcb_j481
             // 
-            this.pcb_j481.Location = new System.Drawing.Point(861, 595);
+            this.pcb_j481.Location = new System.Drawing.Point(859, 595);
             this.pcb_j481.Name = "pcb_j481";
             this.pcb_j481.Size = new System.Drawing.Size(15, 15);
             this.pcb_j481.TabIndex = 546;
@@ -3437,7 +3437,7 @@ namespace TARS
             // 
             // pcb_j381
             // 
-            this.pcb_j381.Location = new System.Drawing.Point(846, 595);
+            this.pcb_j381.Location = new System.Drawing.Point(844, 595);
             this.pcb_j381.Name = "pcb_j381";
             this.pcb_j381.Size = new System.Drawing.Size(15, 15);
             this.pcb_j381.TabIndex = 545;
@@ -3445,7 +3445,7 @@ namespace TARS
             // 
             // pcb_j281
             // 
-            this.pcb_j281.Location = new System.Drawing.Point(861, 580);
+            this.pcb_j281.Location = new System.Drawing.Point(859, 580);
             this.pcb_j281.Name = "pcb_j281";
             this.pcb_j281.Size = new System.Drawing.Size(15, 15);
             this.pcb_j281.TabIndex = 544;
@@ -3453,7 +3453,7 @@ namespace TARS
             // 
             // pcb_j181
             // 
-            this.pcb_j181.Location = new System.Drawing.Point(846, 580);
+            this.pcb_j181.Location = new System.Drawing.Point(844, 580);
             this.pcb_j181.Name = "pcb_j181";
             this.pcb_j181.Size = new System.Drawing.Size(15, 15);
             this.pcb_j181.TabIndex = 543;

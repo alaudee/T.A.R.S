@@ -159,7 +159,6 @@ namespace TARS
         }
         public void desenharTabuleiro(string [] jogadores)
         {
-            LimparTabuleiro();
             jogadorCor();
 
             foreach (DataRow row in dtb_tabuleiro.Rows)
@@ -238,7 +237,11 @@ namespace TARS
                                         pcb_j422.BackColor = Color.Yellow;
                                         pcb_j422.Visible = true;
                                     }
-                                    pcb_A21.Visible = false;
+                                    pcb_A22.Visible = false;
+                                    pcb_j121.Visible = false;
+                                    pcb_j221.Visible = false;
+                                    pcb_j321.Visible = false;
+                                    pcb_j421.Visible = false;
                                 }
                             }
 
@@ -272,6 +275,10 @@ namespace TARS
                                         pcb_j423.Visible = true;
                                     }
                                     pcb_A23.Visible = false;
+                                    pcb_j122.Visible = false;
+                                    pcb_j222.Visible = false;
+                                    pcb_j322.Visible = false;
+                                    pcb_j422.Visible = false;
                                 }
                             }
                         }
@@ -343,6 +350,11 @@ namespace TARS
                                         pcb_j432.Visible = true;
                                     }
                                     pcb_A32.Visible = false;
+                                    pcb_j131.Visible = false;
+                                    pcb_j231.Visible = false;
+                                    pcb_j331.Visible = false;
+                                    pcb_j431.Visible = false;
+
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -375,6 +387,11 @@ namespace TARS
                                         pcb_j433.Visible = true;
                                     }
                                     pcb_A33.Visible = false;
+                                    pcb_j132.Visible = false;
+                                    pcb_j332.Visible = false;
+                                    pcb_j332.Visible = false;
+                                    pcb_j432.Visible = false;
+
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -407,6 +424,11 @@ namespace TARS
                                         pcb_j434.Visible = true;
                                     }
                                     pcb_A34.Visible = false;
+                                    pcb_j133.Visible = false;
+                                    pcb_j233.Visible = false;
+                                    pcb_j333.Visible = false;
+                                    pcb_j433.Visible = false;
+
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -439,6 +461,10 @@ namespace TARS
                                         pcb_j435.Visible = true;
                                     }
                                     pcb_A35.Visible = false;
+                                    pcb_j134.Visible = false;
+                                    pcb_j234.Visible = false;
+                                    pcb_j334.Visible = false;
+                                    pcb_j434.Visible = false;
                                 }
                             }
                         }
@@ -510,6 +536,11 @@ namespace TARS
                                         pcb_j442.Visible = true;
                                     }
                                     pcb_A42.Visible = false;
+                                    pcb_j141.Visible = false;
+                                    pcb_j241.Visible = false;
+                                    pcb_j341.Visible = false;
+                                    pcb_j441.Visible = false;
+
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -543,6 +574,11 @@ namespace TARS
                                         pcb_j443.Visible = true;
                                     }
                                     pcb_A43.Visible = false;
+                                    pcb_j142.Visible = false;
+                                    pcb_j242.Visible = false;
+                                    pcb_j342.Visible = false;
+                                    pcb_j442.Visible = false;
+
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -576,6 +612,11 @@ namespace TARS
                                         pcb_j444.Visible = true;
                                     }
                                     pcb_A44.Visible = false;
+                                    pcb_j143.Visible = false;
+                                    pcb_j243.Visible = false;
+                                    pcb_j343.Visible = false;
+                                    pcb_j443.Visible = false;
+
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -609,6 +650,10 @@ namespace TARS
                                         pcb_j445.Visible = true;
                                     }
                                     pcb_A45.Visible = false;
+                                    pcb_j144.Visible = false;
+                                    pcb_j244.Visible = false;
+                                    pcb_j344.Visible = false;
+                                    pcb_j444.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -642,6 +687,10 @@ namespace TARS
                                         pcb_j446.Visible = true;
                                     }
                                     pcb_A46.Visible = false;
+                                    pcb_j145.Visible = false;
+                                    pcb_j245.Visible = false;
+                                    pcb_j345.Visible = false;
+                                    pcb_j445.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -675,6 +724,10 @@ namespace TARS
                                         pcb_j447.Visible = true;
                                     }
                                     pcb_A47.Visible = false;
+                                    pcb_j146.Visible = false;
+                                    pcb_j246.Visible = false;
+                                    pcb_j346.Visible = false;
+                                    pcb_j446.Visible = false;
                                 }
                             }
                         }
@@ -746,6 +799,10 @@ namespace TARS
                                         pcb_j452.Visible = true;
                                     }
                                     pcb_A52.Visible = false;
+                                    pcb_j151.Visible = false;
+                                    pcb_j251.Visible = false;
+                                    pcb_j351.Visible = false;
+                                    pcb_j451.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -778,6 +835,10 @@ namespace TARS
                                         pcb_j453.Visible = true;
                                     }
                                     pcb_A53.Visible = false;
+                                    pcb_j152.Visible = false;
+                                    pcb_j252.Visible = false;
+                                    pcb_j352.Visible = false;
+                                    pcb_j452.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -810,6 +871,10 @@ namespace TARS
                                         pcb_j454.Visible = true;
                                     }
                                     pcb_A54.Visible = false;
+                                    pcb_j153.Visible = false;
+                                    pcb_j253.Visible = false;
+                                    pcb_j353.Visible = false;
+                                    pcb_j453.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -842,6 +907,10 @@ namespace TARS
                                         pcb_j455.Visible = true;
                                     }
                                     pcb_A55.Visible = false;
+                                    pcb_j154.Visible = false;
+                                    pcb_j254.Visible = false;
+                                    pcb_j354.Visible = false;
+                                    pcb_j454.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -874,6 +943,10 @@ namespace TARS
                                         pcb_j456.Visible = true;
                                     }
                                     pcb_A56.Visible = false;
+                                    pcb_j155.Visible = false;
+                                    pcb_j255.Visible = false;
+                                    pcb_j355.Visible = false;
+                                    pcb_j455.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -906,6 +979,10 @@ namespace TARS
                                         pcb_j457.Visible = true;
                                     }
                                     pcb_A57.Visible = false;
+                                    pcb_j156.Visible = false;
+                                    pcb_j256.Visible = false;
+                                    pcb_j356.Visible = false;
+                                    pcb_j456.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -938,6 +1015,10 @@ namespace TARS
                                         pcb_j458.Visible = true;
                                     }
                                     pcb_A58.Visible = false;
+                                    pcb_j157.Visible = false;
+                                    pcb_j257.Visible = false;
+                                    pcb_j357.Visible = false;
+                                    pcb_j457.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -970,6 +1051,10 @@ namespace TARS
                                         pcb_j459.Visible = true;
                                     }
                                     pcb_A59.Visible = false;
+                                    pcb_j158.Visible = false;
+                                    pcb_j258.Visible = false;
+                                    pcb_j358.Visible = false;
+                                    pcb_j458.Visible = false;
                                 }
                             }
                         }
@@ -1041,6 +1126,11 @@ namespace TARS
                                         pcb_j462.Visible = true;
                                     }
                                     pcb_A62.Visible = false;
+                                    pcb_j161.Visible = false;
+                                    pcb_j261.Visible = false;
+                                    pcb_j361.Visible = false;
+                                    pcb_j461.Visible = false;
+
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -1073,6 +1163,10 @@ namespace TARS
                                         pcb_j463.Visible = true;
                                     }
                                     pcb_A63.Visible = false;
+                                    pcb_j162.Visible = false;
+                                    pcb_j262.Visible = false;
+                                    pcb_j362.Visible = false;
+                                    pcb_j462.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -1105,6 +1199,10 @@ namespace TARS
                                         pcb_j464.Visible = true;
                                     }
                                     pcb_A64.Visible = false;
+                                    pcb_j163.Visible = false;
+                                    pcb_j263.Visible = false;
+                                    pcb_j363.Visible = false;
+                                    pcb_j463.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -1137,6 +1235,10 @@ namespace TARS
                                         pcb_j465.Visible = true;
                                     }
                                     pcb_A65.Visible = false;
+                                    pcb_j164.Visible = false;
+                                    pcb_j264.Visible = false;
+                                    pcb_j364.Visible = false;
+                                    pcb_j464.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -1169,6 +1271,10 @@ namespace TARS
                                         pcb_j466.Visible = true;
                                     }
                                     pcb_A66.Visible = false;
+                                    pcb_j165.Visible = false;
+                                    pcb_j265.Visible = false;
+                                    pcb_j365.Visible = false;
+                                    pcb_j465.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -1201,6 +1307,10 @@ namespace TARS
                                         pcb_j467.Visible = true;
                                     }
                                     pcb_A67.Visible = false;
+                                    pcb_j166.Visible = false;
+                                    pcb_j266.Visible = false;
+                                    pcb_j366.Visible = false;
+                                    pcb_j466.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -1233,6 +1343,10 @@ namespace TARS
                                         pcb_j468.Visible = true;
                                     }
                                     pcb_A68.Visible = false;
+                                    pcb_j167.Visible = false;
+                                    pcb_j267.Visible = false;
+                                    pcb_j367.Visible = false;
+                                    pcb_j467.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -1265,6 +1379,10 @@ namespace TARS
                                         pcb_j469.Visible = true;
                                     }
                                     pcb_A69.Visible = false;
+                                    pcb_j168.Visible = false;
+                                    pcb_j268.Visible = false;
+                                    pcb_j368.Visible = false;
+                                    pcb_j468.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "10")
@@ -1297,6 +1415,10 @@ namespace TARS
                                         pcb_j4610.Visible = true;
                                     }
                                     pcb_A610.Visible = false;
+                                    pcb_j169.Visible = false;
+                                    pcb_j269.Visible = false;
+                                    pcb_j369.Visible = false;
+                                    pcb_j469.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "11")
@@ -1329,6 +1451,10 @@ namespace TARS
                                         pcb_j4611.Visible = true;
                                     }
                                     pcb_A611.Visible = false;
+                                    pcb_j1610.Visible = false;
+                                    pcb_j2610.Visible = false;
+                                    pcb_j3610.Visible = false;
+                                    pcb_j4610.Visible = false;
                                 }
                             }
                         }
@@ -1401,6 +1527,11 @@ namespace TARS
                                         pcb_j472.Visible = true;
                                     }
                                     pcb_A72.Visible = false;
+                                    pcb_j171.Visible = false;
+                                    pcb_j271.Visible = false;
+                                    pcb_j371.Visible = false;
+                                    pcb_j471.Visible = false;
+
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -1433,6 +1564,10 @@ namespace TARS
                                         pcb_j473.Visible = true;
                                     }
                                     pcb_A73.Visible = false;
+                                    pcb_j172.Visible = false;
+                                    pcb_j272.Visible = false;
+                                    pcb_j372.Visible = false;
+                                    pcb_j472.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -1465,6 +1600,10 @@ namespace TARS
                                         pcb_j474.Visible = true;
                                     }
                                     pcb_A74.Visible = false;
+                                    pcb_j173.Visible = false;
+                                    pcb_j273.Visible = false;
+                                    pcb_j373.Visible = false;
+                                    pcb_j473.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -1497,6 +1636,10 @@ namespace TARS
                                         pcb_j475.Visible = true;
                                     }
                                     pcb_A75.Visible = false;
+                                    pcb_j174.Visible = false;
+                                    pcb_j274.Visible = false;
+                                    pcb_j374.Visible = false;
+                                    pcb_j474.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -1529,6 +1672,10 @@ namespace TARS
                                         pcb_j476.Visible = true;
                                     }
                                     pcb_A76.Visible = false;
+                                    pcb_j175.Visible = false;
+                                    pcb_j275.Visible = false;
+                                    pcb_j375.Visible = false;
+                                    pcb_j475.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -1561,6 +1708,10 @@ namespace TARS
                                         pcb_j477.Visible = true;
                                     }
                                     pcb_A77.Visible = false;
+                                    pcb_j176.Visible = false;
+                                    pcb_j276.Visible = false;
+                                    pcb_j376.Visible = false;
+                                    pcb_j476.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -1593,6 +1744,10 @@ namespace TARS
                                         pcb_j478.Visible = true;
                                     }
                                     pcb_A78.Visible = false;
+                                    pcb_j177.Visible = false;
+                                    pcb_j277.Visible = false;
+                                    pcb_j377.Visible = false;
+                                    pcb_j477.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -1625,6 +1780,10 @@ namespace TARS
                                         pcb_j479.Visible = true;
                                     }
                                     pcb_A79.Visible = false;
+                                    pcb_j178.Visible = false;
+                                    pcb_j278.Visible = false;
+                                    pcb_j378.Visible = false;
+                                    pcb_j478.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "10")
@@ -1657,6 +1816,10 @@ namespace TARS
                                         pcb_j4710.Visible = true;
                                     }
                                     pcb_A710.Visible = false;
+                                    pcb_j179.Visible = false;
+                                    pcb_j279.Visible = false;
+                                    pcb_j379.Visible = false;
+                                    pcb_j479.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "11")
@@ -1689,6 +1852,10 @@ namespace TARS
                                         pcb_j4711.Visible = true;
                                     }
                                     pcb_A711.Visible = false;
+                                    pcb_j1710.Visible = false;
+                                    pcb_j2710.Visible = false;
+                                    pcb_j3710.Visible = false;
+                                    pcb_j4710.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "12")
@@ -1721,6 +1888,10 @@ namespace TARS
                                         pcb_j4712.Visible = true;
                                     }
                                     pcb_A712.Visible = false;
+                                    pcb_j1711.Visible = false;
+                                    pcb_j2711.Visible = false;
+                                    pcb_j3711.Visible = false;
+                                    pcb_j4711.Visible = false;
                                 }
                             }
                             else
@@ -1753,6 +1924,10 @@ namespace TARS
                                         pcb_j4713.Visible = true;
                                     }
                                     pcb_A713.Visible = false;
+                                    pcb_j1712.Visible = false;
+                                    pcb_j2712.Visible = false;
+                                    pcb_j3712.Visible = false;
+                                    pcb_j4712.Visible = false;
                                 }
                             }
                         }
@@ -1824,6 +1999,10 @@ namespace TARS
                                         pcb_j482.Visible = true;
                                     }
                                     pcb_A82.Visible = false;
+                                    pcb_j181.Visible = false;
+                                    pcb_j281.Visible = false;
+                                    pcb_j381.Visible = false;
+                                    pcb_j481.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -1856,6 +2035,10 @@ namespace TARS
                                         pcb_j483.Visible = true;
                                     }
                                     pcb_A83.Visible = false;
+                                    pcb_j182.Visible = false;
+                                    pcb_j282.Visible = false;
+                                    pcb_j382.Visible = false;
+                                    pcb_j482.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -1888,6 +2071,10 @@ namespace TARS
                                         pcb_j484.Visible = true;
                                     }
                                     pcb_A84.Visible = false;
+                                    pcb_j183.Visible = false;
+                                    pcb_j283.Visible = false;
+                                    pcb_j383.Visible = false;
+                                    pcb_j483.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -1920,6 +2107,10 @@ namespace TARS
                                         pcb_j485.Visible = true;
                                     }
                                     pcb_A85.Visible = false;
+                                    pcb_j184.Visible = false;
+                                    pcb_j284.Visible = false;
+                                    pcb_j384.Visible = false;
+                                    pcb_j484.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -1952,6 +2143,10 @@ namespace TARS
                                         pcb_j486.Visible = true;
                                     }
                                     pcb_A86.Visible = false;
+                                    pcb_j185.Visible = false;
+                                    pcb_j285.Visible = false;
+                                    pcb_j385.Visible = false;
+                                    pcb_j485.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -1984,6 +2179,10 @@ namespace TARS
                                         pcb_j487.Visible = true;
                                     }
                                     pcb_A87.Visible = false;
+                                    pcb_j186.Visible = false;
+                                    pcb_j286.Visible = false;
+                                    pcb_j386.Visible = false;
+                                    pcb_j486.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -2016,6 +2215,10 @@ namespace TARS
                                         pcb_j488.Visible = true;
                                     }
                                     pcb_A88.Visible = false;
+                                    pcb_j187.Visible = false;
+                                    pcb_j287.Visible = false;
+                                    pcb_j387.Visible = false;
+                                    pcb_j487.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -2048,6 +2251,10 @@ namespace TARS
                                         pcb_j489.Visible = true;
                                     }
                                     pcb_A89.Visible = false;
+                                    pcb_j188.Visible = false;
+                                    pcb_j288.Visible = false;
+                                    pcb_j388.Visible = false;
+                                    pcb_j488.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "10")
@@ -2080,6 +2287,10 @@ namespace TARS
                                         pcb_j4810.Visible = true;
                                     }
                                     pcb_A810.Visible = false;
+                                    pcb_j189.Visible = false;
+                                    pcb_j289.Visible = false;
+                                    pcb_j389.Visible = false;
+                                    pcb_j489.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "11")
@@ -2112,6 +2323,10 @@ namespace TARS
                                         pcb_j4811.Visible = true;
                                     }
                                     pcb_A811.Visible = false;
+                                    pcb_j1810.Visible = false;
+                                    pcb_j2810.Visible = false;
+                                    pcb_j3810.Visible = false;
+                                    pcb_j4810.Visible = false;
                                 }
                             }
                         }
@@ -2151,6 +2366,7 @@ namespace TARS
                                         pcb_j491.Visible = true;
                                     }
                                     pcb_A91.Visible = false;
+
                                 }
                             }
                             else if (newRow[1].ToString() == "2")
@@ -2182,7 +2398,11 @@ namespace TARS
                                         pcb_j492.BackColor = Color.Yellow;
                                         pcb_j491.Visible = true;
                                     }
-                                    pcb_A91.Visible = false;
+                                    pcb_A92.Visible = false;
+                                    pcb_j191.Visible = false;
+                                    pcb_j291.Visible = false;
+                                    pcb_j391.Visible = false;
+                                    pcb_j491.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -2215,6 +2435,10 @@ namespace TARS
                                         pcb_j493.Visible = true;
                                     }
                                     pcb_A93.Visible = false;
+                                    pcb_j192.Visible = false;
+                                    pcb_j292.Visible = false;
+                                    pcb_j392.Visible = false;
+                                    pcb_j492.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -2247,6 +2471,10 @@ namespace TARS
                                         pcb_j494.Visible = true;
                                     }
                                     pcb_A94.Visible = false;
+                                    pcb_j193.Visible = false;
+                                    pcb_j293.Visible = false;
+                                    pcb_j393.Visible = false;
+                                    pcb_j493.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -2279,6 +2507,10 @@ namespace TARS
                                         pcb_j495.Visible = true;
                                     }
                                     pcb_A95.Visible = false;
+                                    pcb_j194.Visible = false;
+                                    pcb_j294.Visible = false;
+                                    pcb_j394.Visible = false;
+                                    pcb_j494.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -2311,6 +2543,10 @@ namespace TARS
                                         pcb_j496.Visible = true;
                                     }
                                     pcb_A96.Visible = false;
+                                    pcb_j195.Visible = false;
+                                    pcb_j295.Visible = false;
+                                    pcb_j395.Visible = false;
+                                    pcb_j495.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -2343,6 +2579,10 @@ namespace TARS
                                         pcb_j497.Visible = true;
                                     }
                                     pcb_A97.Visible = false;
+                                    pcb_j196.Visible = false;
+                                    pcb_j296.Visible = false;
+                                    pcb_j396.Visible = false;
+                                    pcb_j496.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -2375,6 +2615,10 @@ namespace TARS
                                         pcb_j498.Visible = true;
                                     }
                                     pcb_A98.Visible = false;
+                                    pcb_j197.Visible = false;
+                                    pcb_j297.Visible = false;
+                                    pcb_j397.Visible = false;
+                                    pcb_j497.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -2407,6 +2651,10 @@ namespace TARS
                                         pcb_j499.Visible = true;
                                     }
                                     pcb_A99.Visible = false;
+                                    pcb_j198.Visible = false;
+                                    pcb_j298.Visible = false;
+                                    pcb_j398.Visible = false;
+                                    pcb_j498.Visible = false;
                                 }
                             }
                         }
@@ -2478,6 +2726,10 @@ namespace TARS
                                         pcb_j4102.Visible = true;
                                     }
                                     pcb_A102.Visible = false;
+                                    pcb_j1101.Visible = false;
+                                    pcb_j2101.Visible = false;
+                                    pcb_j3101.Visible = false;
+                                    pcb_j4101.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -2510,6 +2762,10 @@ namespace TARS
                                         pcb_j4103.Visible = true;
                                     }
                                     pcb_A103.Visible = false;
+                                    pcb_j1102.Visible = false;
+                                    pcb_j2102.Visible = false;
+                                    pcb_j3102.Visible = false;
+                                    pcb_j4102.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -2542,6 +2798,10 @@ namespace TARS
                                         pcb_j4104.Visible = true;
                                     }
                                     pcb_A104.Visible = false;
+                                    pcb_j1103.Visible = false;
+                                    pcb_j2103.Visible = false;
+                                    pcb_j3103.Visible = false;
+                                    pcb_j4103.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -2574,6 +2834,10 @@ namespace TARS
                                         pcb_j4105.Visible = true;
                                     }
                                     pcb_A105.Visible = false;
+                                    pcb_j1104.Visible = false;
+                                    pcb_j2104.Visible = false;
+                                    pcb_j3104.Visible = false;
+                                    pcb_j4104.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -2606,6 +2870,10 @@ namespace TARS
                                         pcb_j4106.Visible = true;
                                     }
                                     pcb_A106.Visible = false;
+                                    pcb_j1105.Visible = false;
+                                    pcb_j2105.Visible = false;
+                                    pcb_j3105.Visible = false;
+                                    pcb_j4105.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -2638,6 +2906,10 @@ namespace TARS
                                         pcb_j4107.Visible = true;
                                     }
                                     pcb_A107.Visible = false;
+                                    pcb_j1106.Visible = false;
+                                    pcb_j2106.Visible = false;
+                                    pcb_j3106.Visible = false;
+                                    pcb_j4106.Visible = false;
                                 }
                             }
                         }
@@ -2710,6 +2982,10 @@ namespace TARS
                                         pcb_j4112.Visible = true;
                                     }
                                     pcb_A112.Visible = false;
+                                    pcb_j1111.Visible = false;
+                                    pcb_j2111.Visible = false;
+                                    pcb_j3111.Visible = false;
+                                    pcb_j4111.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -2742,6 +3018,10 @@ namespace TARS
                                         pcb_j4113.Visible = true;
                                     }
                                     pcb_A113.Visible = false;
+                                    pcb_j1112.Visible = false;
+                                    pcb_j2112.Visible = false;
+                                    pcb_j3112.Visible = false;
+                                    pcb_j4112.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -2774,6 +3054,10 @@ namespace TARS
                                         pcb_j4114.Visible = true;
                                     }
                                     pcb_A114.Visible = false;
+                                    pcb_j1113.Visible = false;
+                                    pcb_j2113.Visible = false;
+                                    pcb_j3113.Visible = false;
+                                    pcb_j4113.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -2806,6 +3090,10 @@ namespace TARS
                                         pcb_j4115.Visible = true;
                                     }
                                     pcb_A115.Visible = false;
+                                    pcb_j1114.Visible = false;
+                                    pcb_j2114.Visible = false;
+                                    pcb_j3114.Visible = false;
+                                    pcb_j4114.Visible = false;
                                 }
                             }
                         }
@@ -2877,6 +3165,10 @@ namespace TARS
                                         pcb_j4122.Visible = true;
                                     }
                                     pcb_A122.Visible = false;
+                                    pcb_j1121.Visible = false;
+                                    pcb_j2121.Visible = false;
+                                    pcb_j3121.Visible = false;
+                                    pcb_j4121.Visible = false;
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -2909,6 +3201,10 @@ namespace TARS
                                         pcb_j4123.Visible = true;
                                     }
                                     pcb_A123.Visible = false;
+                                    pcb_j1122.Visible = false;
+                                    pcb_j2122.Visible = false;
+                                    pcb_j3122.Visible = false;
+                                    pcb_j4122.Visible = false;
                                 }
                             }
                         }
@@ -2917,390 +3213,6 @@ namespace TARS
 
             }
         }
-
-        public void LimparTabuleiro()
-        {
-
-            pcb_j121.Visible = false;
-            pcb_j122.Visible = false;
-            pcb_j123.Visible = false;
-
-
-            pcb_j221.Visible = false;
-            pcb_j222.Visible = false;
-            pcb_j223.Visible = false;
-
-            pcb_j321.Visible = false;
-            pcb_j322.Visible = false;
-            pcb_j323.Visible = false;
-
-            pcb_j421.Visible = false;
-            pcb_j422.Visible = false;
-            pcb_j423.Visible = false;
-
-            pcb_j131.Visible = false;
-            pcb_j132.Visible = false;
-            pcb_j133.Visible = false;
-            pcb_j134.Visible = false;
-            pcb_j135.Visible = false;
-
-            pcb_j231.Visible = false;
-            pcb_j332.Visible = false;
-            pcb_j233.Visible = false;
-            pcb_j234.Visible = false;
-            pcb_j235.Visible = false;
-
-            pcb_j331.Visible = false;
-            pcb_j332.Visible = false;
-            pcb_j333.Visible = false;
-            pcb_j334.Visible = false;
-            pcb_j335.Visible = false;
-
-            pcb_j431.Visible = false;
-            pcb_j432.Visible = false;
-            pcb_j433.Visible = false;
-            pcb_j434.Visible = false;
-            pcb_j435.Visible = false;
-
-            pcb_j141.Visible = false;
-            pcb_j142.Visible = false;
-            pcb_j143.Visible = false;
-            pcb_j144.Visible = false;
-            pcb_j145.Visible = false;
-            pcb_j146.Visible = false;
-            pcb_j147.Visible = false;
-
-            pcb_j241.Visible = false;
-            pcb_j242.Visible = false;
-            pcb_j243.Visible = false;
-            pcb_j244.Visible = false;
-            pcb_j245.Visible = false;
-            pcb_j246.Visible = false;
-            pcb_j247.Visible = false;
-
-            pcb_j341.Visible = false;
-            pcb_j342.Visible = false;
-            pcb_j343.Visible = false;
-            pcb_j344.Visible = false;
-            pcb_j345.Visible = false;
-            pcb_j346.Visible = false;
-            pcb_j347.Visible = false;
-
-            pcb_j441.Visible = false;
-            pcb_j442.Visible = false;
-            pcb_j443.Visible = false;
-            pcb_j444.Visible = false;
-            pcb_j445.Visible = false;
-            pcb_j446.Visible = false;
-            pcb_j447.Visible = false;
-
-            pcb_j151.Visible = false;
-            pcb_j152.Visible = false;
-            pcb_j153.Visible = false;
-            pcb_j154.Visible = false;
-            pcb_j155.Visible = false;
-            pcb_j156.Visible = false;
-            pcb_j157.Visible = false;
-            pcb_j158.Visible = false;
-            pcb_j159.Visible = false;
-
-            pcb_j251.Visible = false;
-            pcb_j252.Visible = false;
-            pcb_j253.Visible = false;
-            pcb_j254.Visible = false;
-            pcb_j255.Visible = false;
-            pcb_j256.Visible = false;
-            pcb_j257.Visible = false;
-            pcb_j258.Visible = false;
-            pcb_j259.Visible = false;
-
-            pcb_j351.Visible = false;
-            pcb_j352.Visible = false;
-            pcb_j353.Visible = false;
-            pcb_j354.Visible = false;
-            pcb_j355.Visible = false;
-            pcb_j356.Visible = false;
-            pcb_j357.Visible = false;
-            pcb_j358.Visible = false;
-            pcb_j359.Visible = false;
-
-            pcb_j451.Visible = false;
-            pcb_j452.Visible = false;
-            pcb_j453.Visible = false;
-            pcb_j454.Visible = false;
-            pcb_j455.Visible = false;
-            pcb_j456.Visible = false;
-            pcb_j457.Visible = false;
-            pcb_j458.Visible = false;
-            pcb_j459.Visible = false;
-
-
-            pcb_j161.Visible = false;
-            pcb_j162.Visible = false;
-            pcb_j163.Visible = false;
-            pcb_j164.Visible = false;
-            pcb_j165.Visible = false;
-            pcb_j166.Visible = false;
-            pcb_j167.Visible = false;
-            pcb_j168.Visible = false;
-            pcb_j169.Visible = false;
-            pcb_j1610.Visible = false;
-            pcb_j1611.Visible = false;
-
-
-            pcb_j261.Visible = false;
-            pcb_j262.Visible = false;
-            pcb_j263.Visible = false;
-            pcb_j264.Visible = false;
-            pcb_j265.Visible = false;
-            pcb_j266.Visible = false;
-            pcb_j267.Visible = false;
-            pcb_j268.Visible = false;
-            pcb_j269.Visible = false;
-            pcb_j2610.Visible = false;
-            pcb_j2611.Visible = false;
-
-            pcb_j361.Visible = false;
-            pcb_j362.Visible = false;
-            pcb_j363.Visible = false;
-            pcb_j364.Visible = false;
-            pcb_j365.Visible = false;
-            pcb_j366.Visible = false;
-            pcb_j367.Visible = false;
-            pcb_j368.Visible = false;
-            pcb_j369.Visible = false;
-            pcb_j3610.Visible = false;
-            pcb_j3611.Visible = false;
-
-            pcb_j461.Visible = false;
-            pcb_j462.Visible = false;
-            pcb_j463.Visible = false;
-            pcb_j464.Visible = false;
-            pcb_j465.Visible = false;
-            pcb_j466.Visible = false;
-            pcb_j467.Visible = false;
-            pcb_j468.Visible = false;
-            pcb_j469.Visible = false;
-            pcb_j4610.Visible = false;
-            pcb_j4611.Visible = false;
-
-            pcb_j171.Visible = false;
-            pcb_j172.Visible = false;
-            pcb_j173.Visible = false;
-            pcb_j174.Visible = false;
-            pcb_j175.Visible = false;
-            pcb_j176.Visible = false;
-            pcb_j177.Visible = false;
-            pcb_j178.Visible = false;
-            pcb_j179.Visible = false;
-            pcb_j1710.Visible = false;
-            pcb_j1711.Visible = false;
-            pcb_j1712.Visible = false;
-            pcb_j1713.Visible = false;
-
-            pcb_j271.Visible = false;
-            pcb_j272.Visible = false;
-            pcb_j273.Visible = false;
-            pcb_j274.Visible = false;
-            pcb_j275.Visible = false;
-            pcb_j276.Visible = false;
-            pcb_j277.Visible = false;
-            pcb_j278.Visible = false;
-            pcb_j279.Visible = false;
-            pcb_j2710.Visible = false;
-            pcb_j2711.Visible = false;
-            pcb_j2712.Visible = false;
-            pcb_j2713.Visible = false;
-
-            pcb_j371.Visible = false;
-            pcb_j372.Visible = false;
-            pcb_j373.Visible = false;
-            pcb_j374.Visible = false;
-            pcb_j375.Visible = false;
-            pcb_j376.Visible = false;
-            pcb_j377.Visible = false;
-            pcb_j378.Visible = false;
-            pcb_j379.Visible = false;
-            pcb_j3710.Visible = false;
-            pcb_j3711.Visible = false;
-            pcb_j3712.Visible = false;
-            pcb_j3713.Visible = false;
-
-            pcb_j471.Visible = false;
-            pcb_j472.Visible = false;
-            pcb_j473.Visible = false;
-            pcb_j474.Visible = false;
-            pcb_j475.Visible = false;
-            pcb_j476.Visible = false;
-            pcb_j477.Visible = false;
-            pcb_j478.Visible = false;
-            pcb_j479.Visible = false;
-            pcb_j4710.Visible = false;
-            pcb_j4711.Visible = false;
-            pcb_j4712.Visible = false;
-            pcb_j4713.Visible = false;
-
-            pcb_j181.Visible = false;
-            pcb_j182.Visible = false;
-            pcb_j183.Visible = false;
-            pcb_j184.Visible = false;
-            pcb_j185.Visible = false;
-            pcb_j186.Visible = false;
-            pcb_j187.Visible = false;
-            pcb_j188.Visible = false;
-            pcb_j189.Visible = false;
-            pcb_j1810.Visible = false;
-            pcb_j1811.Visible = false;
-
-            pcb_j281.Visible = false;
-            pcb_j282.Visible = false;
-            pcb_j283.Visible = false;
-            pcb_j284.Visible = false;
-            pcb_j285.Visible = false;
-            pcb_j286.Visible = false;
-            pcb_j287.Visible = false;
-            pcb_j288.Visible = false;
-            pcb_j289.Visible = false;
-            pcb_j2810.Visible = false;
-            pcb_j2811.Visible = false;
-
-            pcb_j381.Visible = false;
-            pcb_j382.Visible = false;
-            pcb_j383.Visible = false;
-            pcb_j384.Visible = false;
-            pcb_j385.Visible = false;
-            pcb_j386.Visible = false;
-            pcb_j387.Visible = false;
-            pcb_j388.Visible = false;
-            pcb_j389.Visible = false;
-            pcb_j3810.Visible = false;
-            pcb_j3811.Visible = false;
-
-            pcb_j481.Visible = false;
-            pcb_j482.Visible = false;
-            pcb_j483.Visible = false;
-            pcb_j484.Visible = false;
-            pcb_j485.Visible = false;
-            pcb_j486.Visible = false;
-            pcb_j487.Visible = false;
-            pcb_j488.Visible = false;
-            pcb_j489.Visible = false;
-            pcb_j4810.Visible = false;
-            pcb_j4811.Visible = false;
-
-            pcb_j191.Visible = false;
-            pcb_j192.Visible = false;
-            pcb_j193.Visible = false;
-            pcb_j194.Visible = false;
-            pcb_j195.Visible = false;
-            pcb_j196.Visible = false;
-            pcb_j197.Visible = false;
-            pcb_j198.Visible = false;
-            pcb_j199.Visible = false;
-
-            pcb_j291.Visible = false;
-            pcb_j292.Visible = false;
-            pcb_j293.Visible = false;
-            pcb_j294.Visible = false;
-            pcb_j295.Visible = false;
-            pcb_j296.Visible = false;
-            pcb_j297.Visible = false;
-            pcb_j298.Visible = false;
-            pcb_j299.Visible = false;
-
-            pcb_j391.Visible = false;
-            pcb_j392.Visible = false;
-            pcb_j393.Visible = false;
-            pcb_j394.Visible = false;
-            pcb_j395.Visible = false;
-            pcb_j396.Visible = false;
-            pcb_j397.Visible = false;
-            pcb_j398.Visible = false;
-            pcb_j399.Visible = false;
-
-            pcb_j491.Visible = false;
-            pcb_j492.Visible = false;
-            pcb_j493.Visible = false;
-            pcb_j494.Visible = false;
-            pcb_j495.Visible = false;
-            pcb_j496.Visible = false;
-            pcb_j497.Visible = false;
-            pcb_j498.Visible = false;
-            pcb_j499.Visible = false;
-
-            pcb_j1101.Visible = false;
-            pcb_j1102.Visible = false;
-            pcb_j1103.Visible = false;
-            pcb_j1104.Visible = false;
-            pcb_j1105.Visible = false;
-            pcb_j1106.Visible = false;
-            pcb_j1107.Visible = false;
-
-            pcb_j2101.Visible = false;
-            pcb_j2102.Visible = false;
-            pcb_j2103.Visible = false;
-            pcb_j2104.Visible = false;
-            pcb_j2105.Visible = false;
-            pcb_j2106.Visible = false;
-            pcb_j2107.Visible = false;
-
-            pcb_j3101.Visible = false;
-            pcb_j3102.Visible = false;
-            pcb_j3103.Visible = false;
-            pcb_j3104.Visible = false;
-            pcb_j3105.Visible = false;
-            pcb_j3106.Visible = false;
-            pcb_j3107.Visible = false;
-
-            pcb_j4101.Visible = false;
-            pcb_j4102.Visible = false;
-            pcb_j4103.Visible = false;
-            pcb_j4104.Visible = false;
-            pcb_j4105.Visible = false;
-            pcb_j4106.Visible = false;
-            pcb_j4107.Visible = false;
-
-            pcb_j1111.Visible = false;
-            pcb_j1112.Visible = false;
-            pcb_j1113.Visible = false;
-            pcb_j1114.Visible = false;
-            pcb_j1115.Visible = false;
-
-            pcb_j2111.Visible = false;
-            pcb_j2112.Visible = false;
-            pcb_j2113.Visible = false;
-            pcb_j2114.Visible = false;
-            pcb_j2115.Visible = false;
-
-            pcb_j3111.Visible = false;
-            pcb_j3112.Visible = false;
-            pcb_j3113.Visible = false;
-            pcb_j3114.Visible = false;
-            pcb_j3115.Visible = false;
-
-            pcb_j4111.Visible = false;
-            pcb_j4112.Visible = false;
-            pcb_j4113.Visible = false;
-            pcb_j4114.Visible = false;
-            pcb_j4115.Visible = false;
-
-            pcb_j1121.Visible = false;
-            pcb_j1122.Visible = false;
-            pcb_j1123.Visible = false;
-
-            pcb_j2121.Visible = false;
-            pcb_j2122.Visible = false;
-            pcb_j2123.Visible = false;
-
-            pcb_j3121.Visible = false;
-            pcb_j3122.Visible = false;
-            pcb_j3123.Visible = false;
-
-            pcb_j4121.Visible = false;
-            pcb_j4122.Visible = false;
-            pcb_j4123.Visible = false;
-        }
-
 
         public void MovimentosBOT()
         {
