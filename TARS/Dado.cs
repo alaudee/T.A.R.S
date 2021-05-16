@@ -9,11 +9,14 @@ using CantStopServer;
 
 namespace TARS
 {
-    class Dado
+    public class Dado
     {
         public char NumeroDado { get; set; }
         public char ValorDado { get; set; }
         public Image FaceDado { get; set; }
+
+        public static string[] dupladodado = new string[6];
+        public static string dadoescolhido = "";
 
         //Coloca a imagem do respectivo valor do dado 
         public void PopularImagens(char valordado)
@@ -34,70 +37,156 @@ namespace TARS
 
 
         //Gera todas as combinações possiveis da rolagem de dados
-        public static int[] FormarDuplasSomaDados(char[] valordado)
+
+        public static string FormarDuplasSomaDados(char[] valordado)
         {
             int[] trilha = new int[6];
+            dadoescolhido = "";
 
-            trilha[0] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[1]);
+            trilha[0] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[1]);//dado 1 e 2
+            dupladodado[0] = "12";
 
-            trilha[1] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[2]);
+            trilha[1] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[2]);// dado 1 e 3
+            dupladodado[1] = "13";
 
-            trilha[2] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[3]);
+            trilha[2] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[3]);// dado 1 e 4
+            dupladodado[2] = "14";
 
-            trilha[3] = (int)Char.GetNumericValue(valordado[1]) + (int)Char.GetNumericValue(valordado[2]);
+            trilha[3] = (int)Char.GetNumericValue(valordado[1]) + (int)Char.GetNumericValue(valordado[2]);// dado 2 e 3
+            dupladodado[3] = "23";
 
-            trilha[4] = (int)Char.GetNumericValue(valordado[1]) + (int)Char.GetNumericValue(valordado[3]);
+            trilha[4] = (int)Char.GetNumericValue(valordado[1]) + (int)Char.GetNumericValue(valordado[3]);// dado 2 e 4
+            dupladodado[4] = "24";
 
-            trilha[5] = (int)Char.GetNumericValue(valordado[2]) + (int)Char.GetNumericValue(valordado[3]);
+            trilha[5] = (int)Char.GetNumericValue(valordado[2]) + (int)Char.GetNumericValue(valordado[3]);// dado 3 e 4
+            dupladodado[5] = "34";
 
-            return trilha;
+            preferencia(trilha);
+
+            if(dadoescolhido == "12")
+            {
+                dadoescolhido += 34;
+                dadoescolhido += "e" + trilha[0] + "e" + trilha[5];
+            }
+            else if(dadoescolhido == "13")
+            {
+                dadoescolhido += "24";
+                dadoescolhido += "e" + trilha[1] + "e" + trilha[4];
+            }
+            else if (dadoescolhido == "14")
+            {
+                dadoescolhido += "23";
+                dadoescolhido += "e" + trilha[2] + "e" + trilha[3];
+            }
+            else if (dadoescolhido == "23")
+            {
+                dadoescolhido += "14";
+                dadoescolhido += "e" + trilha[3] + "e" + trilha[2];
+            }
+            else if (dadoescolhido == "24")
+            {
+                dadoescolhido += "13";
+                dadoescolhido += "e" + trilha[4] + "e" + trilha[1];
+            }
+            else
+            {
+                dadoescolhido += "12";
+                dadoescolhido += "e" + trilha[5] + "e" + trilha[0];
+            }
+
+            return dadoescolhido;
         }
 
 
         //Converte os valores para hexadecimal
         public static string converteHexadecimal(string caso)
         {
-            string[] valores = caso.Split(',');
-
-            string res = "";
-
-            for (int i = 0; i < valores.Length; i++)
+            if (int.Parse(caso) == 10)
             {
-                if (int.Parse(valores[i]) == 10)
-                {
-                    valores[i] = "A";
-                }
-                else if (int.Parse(valores[i]) == 11)
-                {
-                    valores[i] = "B";
-                }
-                else if (int.Parse(valores[i]) == 12)
-                {
-                    valores[i] = "C";
-                }
+                caso = "A";
             }
-
-            foreach (string num in valores)
+            else if (int.Parse(caso) == 11)
             {
-                res += num;
+                caso = "B";
             }
-
-            return res;
+            else if (int.Parse(caso) == 12)
+            {
+                caso = "C";
+            }
+            return caso;
         }
 
-
-        public static string tratarTextoEscolhaRadio(string valores_dado)
+        public static void preferencia(int [] trilhas) // 7 8 10 4 6 2
         {
-            string res = valores_dado;
+            for (int i = 0; i < trilhas.Length; i++)
+            {
+                if (trilhas[i] == 7)
+                {
+                    dadoescolhido += dupladodado[i];
+                    return;
+                }
+            }
 
-            res = res.Replace(" ", "");
-            res = res.Replace("e", ",");
+            for (int i = 0; i < trilhas.Length; i++)
+            {
+                if (trilhas[i] == 2)
+                {
+                    dadoescolhido += dupladodado[i];
+                    return;
+                }
+                else if (trilhas[i] == 12)
+                {
+                    dadoescolhido += dupladodado[i];
+                    return;
+                }
+                else if (trilhas[i] == 6)
+                {
+                    dadoescolhido += dupladodado[i];
+                    return;
+                }
+                else if (trilhas[i] == 8)
+                {
+                    dadoescolhido += dupladodado[i];
+                    return;
+                }
+            }
 
-            string final = converteHexadecimal(res);
+            for (int i = 0; i < trilhas.Length; i++)
+            {
+                if (trilhas[i] == 3)
+                {
+                    dadoescolhido += dupladodado[i];
+                    return;
+                }
+                else if (trilhas[i] == 4)
+                {
+                    dadoescolhido += dupladodado[i];
+                    return;
+                }
+                else if (trilhas[i] == 5)
+                {
+                    dadoescolhido += dupladodado[i];
+                    return;
+                }
+                else if (trilhas[i] == 9)
+                {
+                    dadoescolhido += dupladodado[i];
+                    return;
+                }
+                else if (trilhas[i] == 10)
+                {
+                    dadoescolhido += dupladodado[i];
+                    return;
+                }
+                else if (trilhas[i] == 11)
+                {
+                    dadoescolhido += dupladodado[i];
+                    return;
+                }
 
-            return final;
+            }
+
+
         }
-
-
     }
 }
