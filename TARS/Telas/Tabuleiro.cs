@@ -3227,14 +3227,10 @@ namespace TARS
         //Função Main das jogadas do BOT
         public void MovimentosBOT()
         {
-            int[] trilhas = Dado.FormarDuplasSomaDados(valordado);
-            string escolha1 = trilhas[0] + " e " + trilhas[5];
-            string escolha2 = trilhas[1] + " e " + trilhas[4];
-            string escolha3 = trilhas[2] + " e " + trilhas[3];
 
             Random rand = new Random();
             int escolha = rand.Next(0, 2);
-            switch (escolha)
+            /*switch (escolha)
             {
                 case 0:
                     op_dado = escolha1;
@@ -3261,15 +3257,18 @@ namespace TARS
                     dadoescolha += numerodado[2].ToString();
                     break;
             }
-            
-            alpinistas= Alpinista.DefinirSoma(trilhas);
+            */
             string trilhasEscolhidas = "";
-            for (int i = 0; i < 2; i++)
-            {
-                Random rande = new Random();
-                int escolhae = rande.Next(0, 5);
-                trilhasEscolhidas += Dado.converteHexadecimal(alpinistas[escolhae].Trilha);
-            }
+            dadoescolha = "";
+
+            string resultado = Dado.FormarDuplasSomaDados(valordado);
+            string [] divisao = resultado.Split('e');
+            //vai retornar a ordem dos dados e as trilhas
+            trilhasEscolhidas += Dado.converteHexadecimal(divisao[1]);
+            trilhasEscolhidas += Dado.converteHexadecimal(divisao[2]);
+
+            dadoescolha += divisao[0];
+            
 
             string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, trilhasEscolhidas);
             if (movimento.Contains("ERRO"))
