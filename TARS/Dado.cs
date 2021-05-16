@@ -63,6 +63,10 @@ namespace TARS
 
             preferencia(trilha);
 
+            /*Jogo.VerificarTrilhas(idpartida)
+              trilha[0]  jogadorid[1]
+                 5           2        */
+
             if(dadoescolhido == "12")
             {
                 dadoescolhido += 34;
@@ -116,7 +120,7 @@ namespace TARS
             return caso;
         }
 
-        public static void preferencia(int [] trilhas) // 7 8 10 4 6 2
+        public static void preferencia(int [] trilhas)
         {
             for (int i = 0; i < trilhas.Length; i++)
             {
