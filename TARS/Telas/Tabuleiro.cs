@@ -23,7 +23,8 @@ namespace TARS
         char[] valordado = new char[4];
         //O indice dos dados
         char[] numerodado = new char[4];
-        //
+
+        //Dados escolhidos para o mover
         string dadoescolha;
             
         //Id de todos os jogadores da partida
@@ -80,7 +81,6 @@ namespace TARS
                 }
             }
 
-            //dtb_tabuleiro = TabuleiroP.CriarDataTable();
         }
 
         //Função que verifica qual jogador está jogando agora
@@ -3261,16 +3261,17 @@ namespace TARS
                     dadoescolha += numerodado[2].ToString();
                     break;
             }
-
-            string trilhasEscolhidas = Dado.tratarTextoEscolhaRadio(op_dado);
-            for (int i = 0; i < trilhasEscolhidas.Length; i++)
+            
+            alpinistas= Alpinista.DefinirSoma(trilhas);
+            string trilhasEscolhidas = "";
+            for (int i = 0; i < 2; i++)
             {
-                Alpinista a = new Alpinista(trilhasEscolhidas[i].ToString());
-                alpinistas.Add(a);
+                Random rande = new Random();
+                int escolhae = rande.Next(0, 5);
+                trilhasEscolhidas += Dado.converteHexadecimal(alpinistas[escolhae].Trilha);
             }
 
             string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, trilhasEscolhidas);
-
             if (movimento.Contains("ERRO"))
             {
                 MessageBox.Show(movimento);

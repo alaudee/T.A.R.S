@@ -34,21 +34,22 @@ namespace TARS
 
 
         //Gera todas as combinações possiveis da rolagem de dados
+
         public static int[] FormarDuplasSomaDados(char[] valordado)
         {
             int[] trilha = new int[6];
 
-            trilha[0] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[1]);
+            trilha[0] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[1]);//dado 1 e 2
 
-            trilha[1] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[2]);
+            trilha[1] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[2]);// dado 1 e 3
 
-            trilha[2] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[3]);
+            trilha[2] = (int)Char.GetNumericValue(valordado[0]) + (int)Char.GetNumericValue(valordado[3]);// dado 1 e 4
 
-            trilha[3] = (int)Char.GetNumericValue(valordado[1]) + (int)Char.GetNumericValue(valordado[2]);
+            trilha[3] = (int)Char.GetNumericValue(valordado[1]) + (int)Char.GetNumericValue(valordado[2]);// dado 2 e 3
 
-            trilha[4] = (int)Char.GetNumericValue(valordado[1]) + (int)Char.GetNumericValue(valordado[3]);
+            trilha[4] = (int)Char.GetNumericValue(valordado[1]) + (int)Char.GetNumericValue(valordado[3]);// dado 2 e 4
 
-            trilha[5] = (int)Char.GetNumericValue(valordado[2]) + (int)Char.GetNumericValue(valordado[3]);
+            trilha[5] = (int)Char.GetNumericValue(valordado[2]) + (int)Char.GetNumericValue(valordado[3]);// dado 3 e 4
 
             return trilha;
         }
@@ -57,47 +58,19 @@ namespace TARS
         //Converte os valores para hexadecimal
         public static string converteHexadecimal(string caso)
         {
-            string[] valores = caso.Split(',');
-
-            string res = "";
-
-            for (int i = 0; i < valores.Length; i++)
+            if (int.Parse(caso) == 10)
             {
-                if (int.Parse(valores[i]) == 10)
-                {
-                    valores[i] = "A";
-                }
-                else if (int.Parse(valores[i]) == 11)
-                {
-                    valores[i] = "B";
-                }
-                else if (int.Parse(valores[i]) == 12)
-                {
-                    valores[i] = "C";
-                }
+                caso = "A";
             }
-
-            foreach (string num in valores)
+            else if (int.Parse(caso) == 11)
             {
-                res += num;
+                caso = "B";
             }
-
-            return res;
+            else if (int.Parse(caso) == 12)
+            {
+                caso = "C";
+            }
+            return caso;
         }
-
-
-        public static string tratarTextoEscolhaRadio(string valores_dado)
-        {
-            string res = valores_dado;
-
-            res = res.Replace(" ", "");
-            res = res.Replace("e", ",");
-
-            string final = converteHexadecimal(res);
-
-            return final;
-        }
-
-
     }
 }
