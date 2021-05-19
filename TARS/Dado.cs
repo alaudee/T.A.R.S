@@ -18,6 +18,7 @@ namespace TARS
         public static string[] dupladodado = new string[6];
         public static string dadoescolhido = "";
 
+        
         //Coloca a imagem do respectivo valor do dado 
         public void PopularImagens(char valordado)
         {
