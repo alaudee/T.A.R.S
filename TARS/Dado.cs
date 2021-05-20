@@ -39,7 +39,7 @@ namespace TARS
 
         //Gera todas as combinações possiveis da rolagem de dados
 
-        public static string FormarDuplasSomaDados(char[] valordado)
+        public static string FormarDuplasSomaDados(char[] valordado, bool [] trilhaFormada)
         {
             int[] trilha = new int[6];
             dadoescolhido = "";
@@ -62,7 +62,7 @@ namespace TARS
             trilha[5] = (int)Char.GetNumericValue(valordado[2]) + (int)Char.GetNumericValue(valordado[3]);// dado 3 e 4
             dupladodado[5] = "34";
 
-            preferencia(trilha);
+            preferencia(trilha, trilhaFormada);
 
             /*Jogo.VerificarTrilhas(idpartida)
               trilha[0]  jogadorid[1]
@@ -121,72 +121,107 @@ namespace TARS
             return caso;
         }
 
-        public static void preferencia(int [] trilhas)
+        public static void preferencia(int [] trilhas, bool [] trilhaCompleta)
         {
             for (int i = 0; i < trilhas.Length; i++)
-            {
-                if (trilhas[i] == 7)
+            {   
+                if(trilhaCompleta[5] == false)
                 {
-                    dadoescolhido += dupladodado[i];
-                    return;
+                    if (trilhas[i] == 7)
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
                 }
+                
             }
 
             for (int i = 0; i < trilhas.Length; i++)
             {
-                if (trilhas[i] == 2)
+                if(trilhaCompleta[0] == false)
                 {
-                    dadoescolhido += dupladodado[i];
-                    return;
+                    if (trilhas[i] == 2)
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
                 }
-                else if (trilhas[i] == 12)
+                else if (trilhaCompleta[10] == false)
                 {
-                    dadoescolhido += dupladodado[i];
-                    return;
+                    if (trilhas[i] == 12)
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
                 }
-                else if (trilhas[i] == 6)
+                else if(trilhaCompleta[4] == false)
                 {
-                    dadoescolhido += dupladodado[i];
-                    return;
+                    if (trilhas[i] == 6)
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
                 }
-                else if (trilhas[i] == 8)
+                else if(trilhaCompleta[6] == false)
                 {
-                    dadoescolhido += dupladodado[i];
-                    return;
+                    if (trilhas[i] == 8)
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
                 }
+                
             }
 
             for (int i = 0; i < trilhas.Length; i++)
             {
-                if (trilhas[i] == 3)
+                if(trilhaCompleta[1] == false)
                 {
-                    dadoescolhido += dupladodado[i];
-                    return;
+                    if (trilhas[i] == 3)
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
                 }
-                else if (trilhas[i] == 4)
+                else if(trilhaCompleta[2] == false)
                 {
-                    dadoescolhido += dupladodado[i];
-                    return;
+                    if (trilhas[i] == 4)
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
                 }
-                else if (trilhas[i] == 5)
+                else if(trilhaCompleta[3] == false)
                 {
-                    dadoescolhido += dupladodado[i];
-                    return;
+                    if (trilhas[i] == 5)
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
                 }
-                else if (trilhas[i] == 9)
+                else if(trilhaCompleta[7] == false)
                 {
-                    dadoescolhido += dupladodado[i];
-                    return;
+                    if (trilhas[i] == 9)
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
                 }
-                else if (trilhas[i] == 10)
+                else if(trilhaCompleta[8] == false )
                 {
-                    dadoescolhido += dupladodado[i];
-                    return;
+                    if (trilhas[i] == 10)
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
                 }
-                else if (trilhas[i] == 11)
+                else if(trilhaCompleta [9] == false)
                 {
-                    dadoescolhido += dupladodado[i];
-                    return;
+                    if (trilhas[i] == 11)
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
                 }
 
             }

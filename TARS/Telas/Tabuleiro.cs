@@ -228,40 +228,31 @@ namespace TARS
                                     {
                                         pcb_j122.BackColor = Color.Red;
                                         pcb_j122.Visible = true;
-                                        if (trilhaFeita[0] == false)
-                                        {
-                                            pcb_j121.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j222.BackColor = Color.Blue;
                                         pcb_j222.Visible = true;
-                                        if (trilhaFeita[0] == false)
-                                        {
-                                            pcb_j221.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j322.BackColor = Color.Green;
                                         pcb_j322.Visible = true;
-
-                                        if (trilhaFeita[0] == false)
-                                        {
-                                            pcb_j321.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j422.BackColor = Color.Yellow;
                                         pcb_j422.Visible = true;
-                                        if (trilhaFeita[0] == false)
-                                        {
-                                            pcb_j421.Visible = false;
-                                        }
                                     }
                                     pcb_A22.Visible = false;
+                                    if(trilhaFeita[0] == false)
+                                    {
+                                        pcb_j121.Visible = false;
+                                        pcb_j221.Visible = false;
+                                        pcb_j321.Visible = false;
+                                        pcb_j421.Visible = false;
+                                    }
+
                                 }
                             }
 
@@ -350,39 +341,32 @@ namespace TARS
                                     {
                                         pcb_j132.BackColor = Color.Red;
                                         pcb_j132.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j131.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j332.BackColor = Color.Blue;
                                         pcb_j332.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j231.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j332.BackColor = Color.Green;
                                         pcb_j332.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j331.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j432.BackColor = Color.Yellow;
                                         pcb_j432.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j431.Visible = false;
-                                        }
                                     }
                                     pcb_A32.Visible = false;
+                                    if(trilhaFeita[1] == false)
+                                    {
+                                        pcb_j131.Visible = false;
+                                        pcb_j231.Visible = false;
+                                        pcb_j331.Visible = false;
+                                        pcb_j431.Visible = false;
+                                    }
+                                    
+
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -398,43 +382,37 @@ namespace TARS
                                     {
                                         pcb_j133.BackColor = Color.Red;
                                         pcb_j133.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j131.Visible = false;
-                                            pcb_j132.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j233.BackColor = Color.Blue;
                                         pcb_j233.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j231.Visible = false;
-                                            pcb_j232.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j333.BackColor = Color.Green;
                                         pcb_j333.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j331.Visible = false;
-                                            pcb_j332.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j433.BackColor = Color.Yellow;
                                         pcb_j433.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j431.Visible = false;
-                                            pcb_j432.Visible = false;
-                                        }
                                     }
                                     pcb_A33.Visible = false;
+                                    if (trilhaFeita[1] == false)
+                                    {
+                                        pcb_j131.Visible = false;
+                                        pcb_j231.Visible = false;
+                                        pcb_j331.Visible = false;
+                                        pcb_j431.Visible = false;
+
+                                        pcb_j132.Visible = false;
+                                        pcb_j332.Visible = false;
+                                        pcb_j332.Visible = false;
+                                        pcb_j432.Visible = false;
+                                    }
+       
+
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -450,43 +428,36 @@ namespace TARS
                                     {
                                         pcb_j134.BackColor = Color.Red;
                                         pcb_j134.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j132.Visible = false;
-                                            pcb_j133.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j234.BackColor = Color.Blue;
                                         pcb_j234.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j232.Visible = false;
-                                            pcb_j233.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j334.BackColor = Color.Green;
                                         pcb_j334.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j332.Visible = false;
-                                            pcb_j333.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j434.BackColor = Color.Yellow;
                                         pcb_j434.Visible = true;
-                                        if (trilhaFeita[1] == false)
-                                        {
-                                            pcb_j432.Visible = false;
-                                            pcb_j433.Visible = false;
-                                        }
                                     }
                                     pcb_A34.Visible = false;
+                                    if (trilhaFeita[1] == false)
+                                    {
+                                        pcb_j132.Visible = false;
+                                        pcb_j332.Visible = false;
+                                        pcb_j332.Visible = false;
+                                        pcb_j432.Visible = false;
+
+                                        pcb_j133.Visible = false;
+                                        pcb_j233.Visible = false;
+                                        pcb_j333.Visible = false;
+                                        pcb_j433.Visible = false;
+                                    }
+
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -574,39 +545,32 @@ namespace TARS
                                     {
                                         pcb_j142.BackColor = Color.Red;
                                         pcb_j142.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j141.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j242.BackColor = Color.Blue;
                                         pcb_j242.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j241.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j342.BackColor = Color.Green;
                                         pcb_j342.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j341.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j442.BackColor = Color.Yellow;
                                         pcb_j442.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j441.Visible = false;
-                                        }
                                     }
                                     pcb_A42.Visible = false;
+                                    if (trilhaFeita[2] == false)
+                                    {
+                                        pcb_j141.Visible = false;
+                                        pcb_j241.Visible = false;
+                                        pcb_j341.Visible = false;
+                                        pcb_j441.Visible = false;
+                                    }
+                                      
+
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -623,43 +587,36 @@ namespace TARS
                                     {
                                         pcb_j143.BackColor = Color.Red;
                                         pcb_j143.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j141.Visible = false;
-                                            pcb_j142.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j243.BackColor = Color.Blue;
                                         pcb_j243.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j241.Visible = false;
-                                            pcb_j242.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j343.BackColor = Color.Green;
                                         pcb_j343.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j341.Visible = false;
-                                            pcb_j342.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j443.BackColor = Color.Yellow;
                                         pcb_j443.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j441.Visible = false;
-                                            pcb_j442.Visible = false;
-                                        }
                                     }
                                     pcb_A43.Visible = false;
+                                    if (trilhaFeita[2] == false)
+                                    {
+                                        pcb_j141.Visible = false;
+                                        pcb_j241.Visible = false;
+                                        pcb_j341.Visible = false;
+                                        pcb_j441.Visible = false;
+
+                                        pcb_j142.Visible = false;
+                                        pcb_j242.Visible = false;
+                                        pcb_j342.Visible = false;
+                                        pcb_j442.Visible = false;
+                                    }
+
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -676,43 +633,36 @@ namespace TARS
                                     {
                                         pcb_j144.BackColor = Color.Red;
                                         pcb_j144.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j142.Visible = false;
-                                            pcb_j143.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j244.BackColor = Color.Blue;
                                         pcb_j244.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j242.Visible = false;
-                                            pcb_j243.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j344.BackColor = Color.Green;
                                         pcb_j344.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j342.Visible = false;
-                                            pcb_j343.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j444.BackColor = Color.Yellow;
                                         pcb_j444.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j442.Visible = false;
-                                            pcb_j443.Visible = false;
-                                        }
                                     }
                                     pcb_A44.Visible = false;
+                                    if (trilhaFeita[2] == false)
+                                    {
+                                        pcb_j142.Visible = false;
+                                        pcb_j242.Visible = false;
+                                        pcb_j342.Visible = false;
+                                        pcb_j442.Visible = false;
+
+                                        pcb_j143.Visible = false;
+                                        pcb_j243.Visible = false;
+                                        pcb_j343.Visible = false;
+                                        pcb_j443.Visible = false;
+                                    }
+
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -729,44 +679,35 @@ namespace TARS
                                     {
                                         pcb_j145.BackColor = Color.Red;
                                         pcb_j145.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j143.Visible = false;
-                                            pcb_j144.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j245.BackColor = Color.Blue;
                                         pcb_j245.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j243.Visible = false;
-                                            pcb_j244.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j345.BackColor = Color.Green;
                                         pcb_j345.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j343.Visible = false;
-                                            pcb_j344.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j445.BackColor = Color.Yellow;
                                         pcb_j445.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j443.Visible = false;
-                                            pcb_j444.Visible = false;
-                                        }
                                     }
                                     pcb_A45.Visible = false;
+                                    if (trilhaFeita[2] == false)
+                                    {
+                                        pcb_j143.Visible = false;
+                                        pcb_j243.Visible = false;
+                                        pcb_j343.Visible = false;
+                                        pcb_j443.Visible = false;
 
+                                        pcb_j144.Visible = false;
+                                        pcb_j244.Visible = false;
+                                        pcb_j344.Visible = false;
+                                        pcb_j444.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -783,43 +724,35 @@ namespace TARS
                                     {
                                         pcb_j146.BackColor = Color.Red;
                                         pcb_j146.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j144.Visible = false;
-                                            pcb_j145.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j246.BackColor = Color.Blue;
                                         pcb_j246.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j244.Visible = false;
-                                            pcb_j245.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j346.BackColor = Color.Green;
                                         pcb_j346.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j344.Visible = false;
-                                            pcb_j345.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j446.BackColor = Color.Yellow;
                                         pcb_j446.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j444.Visible = false;
-                                            pcb_j445.Visible = false;
-                                        }
                                     }
                                     pcb_A46.Visible = false;
+                                    if (trilhaFeita[2] == false)
+                                    {
+                                        pcb_j144.Visible = false;
+                                        pcb_j244.Visible = false;
+                                        pcb_j344.Visible = false;
+                                        pcb_j444.Visible = false;
+
+                                        pcb_j145.Visible = false;
+                                        pcb_j245.Visible = false;
+                                        pcb_j345.Visible = false;
+                                        pcb_j445.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -908,39 +841,31 @@ namespace TARS
                                     {
                                         pcb_j152.BackColor = Color.Red;
                                         pcb_j152.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j151.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j252.BackColor = Color.Blue;
                                         pcb_j252.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j251.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j352.BackColor = Color.Green;
                                         pcb_j352.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j351.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j452.BackColor = Color.Yellow;
                                         pcb_j452.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j451.Visible = false;
-                                        }
                                     }
                                     pcb_A52.Visible = false;
+                                    if(trilhaFeita[3] == false)
+                                    {
+                                        pcb_j151.Visible = false;
+                                        pcb_j251.Visible = false;
+                                        pcb_j351.Visible = false;
+                                        pcb_j451.Visible = false;
+                                    }
+
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -956,43 +881,36 @@ namespace TARS
                                     {
                                         pcb_j153.BackColor = Color.Red;
                                         pcb_j153.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j151.Visible = false;
-                                            pcb_j152.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j253.BackColor = Color.Blue;
                                         pcb_j253.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j251.Visible = false;
-                                            pcb_j252.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j353.BackColor = Color.Green;
                                         pcb_j353.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j351.Visible = false;
-                                            pcb_j352.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j453.BackColor = Color.Yellow;
                                         pcb_j453.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j451.Visible = false;
-                                            pcb_j452.Visible = false;
-                                        }
                                     }
                                     pcb_A53.Visible = false;
+                                    if (trilhaFeita[3] == false)
+                                    {
+                                        pcb_j151.Visible = false;
+                                        pcb_j251.Visible = false;
+                                        pcb_j351.Visible = false;
+                                        pcb_j451.Visible = false;
+
+                                        pcb_j152.Visible = false;
+                                        pcb_j252.Visible = false;
+                                        pcb_j352.Visible = false;
+                                        pcb_j452.Visible = false;
+                                    }
+                                       
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -1008,43 +926,35 @@ namespace TARS
                                     {
                                         pcb_j154.BackColor = Color.Red;
                                         pcb_j154.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j152.Visible = false;
-                                            pcb_j153.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j254.BackColor = Color.Blue;
                                         pcb_j254.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j252.Visible = false;
-                                            pcb_j253.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j354.BackColor = Color.Green;
                                         pcb_j354.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j352.Visible = false;
-                                            pcb_j353.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j454.BackColor = Color.Yellow;
                                         pcb_j454.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j452.Visible = false;
-                                            pcb_j453.Visible = false;
-                                        }
                                     }
                                     pcb_A54.Visible = false;
+                                    if (trilhaFeita[3] == false)
+                                    {
+                                        pcb_j152.Visible = false;
+                                        pcb_j252.Visible = false;
+                                        pcb_j352.Visible = false;
+                                        pcb_j452.Visible = false;
+
+                                        pcb_j153.Visible = false;
+                                        pcb_j253.Visible = false;
+                                        pcb_j353.Visible = false;
+                                        pcb_j453.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -1060,43 +970,35 @@ namespace TARS
                                     {
                                         pcb_j155.BackColor = Color.Red;
                                         pcb_j155.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j153.Visible = false;
-                                            pcb_j154.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j255.BackColor = Color.Blue;
                                         pcb_j255.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j253.Visible = false;
-                                            pcb_j254.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j355.BackColor = Color.Green;
                                         pcb_j355.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j353.Visible = false;
-                                            pcb_j354.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j455.BackColor = Color.Yellow;
                                         pcb_j455.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j453.Visible = false;
-                                            pcb_j454.Visible = false;
-                                        }
                                     }
                                     pcb_A55.Visible = false;
+                                    if (trilhaFeita[3] == false)
+                                    {
+                                        pcb_j153.Visible = false;
+                                        pcb_j253.Visible = false;
+                                        pcb_j353.Visible = false;
+                                        pcb_j453.Visible = false;
+
+                                        pcb_j154.Visible = false;
+                                        pcb_j254.Visible = false;
+                                        pcb_j354.Visible = false;
+                                        pcb_j454.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -1112,43 +1014,35 @@ namespace TARS
                                     {
                                         pcb_j156.BackColor = Color.Red;
                                         pcb_j156.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j154.Visible = false;
-                                            pcb_j155.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j256.BackColor = Color.Blue;
                                         pcb_j256.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j254.Visible = false;
-                                            pcb_j255.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j356.BackColor = Color.Green;
                                         pcb_j356.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j354.Visible = false;
-                                            pcb_j355.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j456.BackColor = Color.Yellow;
                                         pcb_j456.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j454.Visible = false;
-                                            pcb_j455.Visible = false;
-                                        }
                                     }
                                     pcb_A56.Visible = false;
+                                    if (trilhaFeita[3] == false)
+                                    {
+                                        pcb_j154.Visible = false;
+                                        pcb_j254.Visible = false;
+                                        pcb_j354.Visible = false;
+                                        pcb_j454.Visible = false;
+
+                                        pcb_j155.Visible = false;
+                                        pcb_j255.Visible = false;
+                                        pcb_j355.Visible = false;
+                                        pcb_j455.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -1164,43 +1058,36 @@ namespace TARS
                                     {
                                         pcb_j157.BackColor = Color.Red;
                                         pcb_j157.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j155.Visible = false;
-                                            pcb_j156.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j257.BackColor = Color.Blue;
                                         pcb_j257.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j255.Visible = false;
-                                            pcb_j256.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j357.BackColor = Color.Green;
                                         pcb_j357.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j355.Visible = false;
-                                            pcb_j356.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j457.BackColor = Color.Yellow;
                                         pcb_j457.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j455.Visible = false;
-                                            pcb_j456.Visible = false;
-                                        }
                                     }
                                     pcb_A57.Visible = false;
+                                    if (trilhaFeita[3] == false)
+                                    {
+                                        pcb_j155.Visible = false;
+                                        pcb_j255.Visible = false;
+                                        pcb_j355.Visible = false;
+                                        pcb_j455.Visible = false;
+
+                                        pcb_j156.Visible = false;
+                                        pcb_j256.Visible = false;
+                                        pcb_j356.Visible = false;
+                                        pcb_j456.Visible = false;
+                                    }
+                                       
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -1216,43 +1103,36 @@ namespace TARS
                                     {
                                         pcb_j158.BackColor = Color.Red;
                                         pcb_j158.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j156.Visible = false;
-                                            pcb_j157.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j258.BackColor = Color.Blue;
                                         pcb_j258.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j256.Visible = false;
-                                            pcb_j257.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j358.BackColor = Color.Green;
                                         pcb_j358.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j356.Visible = false;
-                                            pcb_j357.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j458.BackColor = Color.Yellow;
                                         pcb_j458.Visible = true;
-                                        if (trilhaFeita[2] == false)
-                                        {
-                                            pcb_j456.Visible = false;
-                                            pcb_j457.Visible = false;
-                                        }
                                     }
-                                    pcb_A58.Visible = false;                 
+                                    pcb_A58.Visible = false;
+                                    if (trilhaFeita[3] == false)
+                                    {
+                                        pcb_j156.Visible = false;
+                                        pcb_j256.Visible = false;
+                                        pcb_j356.Visible = false;
+                                        pcb_j456.Visible = false;
+
+                                        pcb_j157.Visible = false;
+                                        pcb_j257.Visible = false;
+                                        pcb_j357.Visible = false;
+                                        pcb_j457.Visible = false;
+                                    }
+                                       
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -1340,39 +1220,31 @@ namespace TARS
                                     {
                                         pcb_j162.BackColor = Color.Red;
                                         pcb_j162.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j161.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j262.BackColor = Color.Blue;
                                         pcb_j262.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j261.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j362.BackColor = Color.Green;
                                         pcb_j362.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j361.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j462.BackColor = Color.Yellow;
                                         pcb_j462.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j461.Visible = false;
-                                        }
                                     }
-                                    pcb_A62.Visible = false;
+                                    if(trilhaFeita[4] == false)
+                                    {
+                                        pcb_A62.Visible = false;
+                                        pcb_j161.Visible = false;
+                                        pcb_j261.Visible = false;
+                                        pcb_j361.Visible = false;
+                                        pcb_j461.Visible = false;
+                                    }
+                                    
 
                                 }
                             }
@@ -1389,43 +1261,35 @@ namespace TARS
                                     {
                                         pcb_j163.BackColor = Color.Red;
                                         pcb_j163.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j161.Visible = false;
-                                            pcb_j162.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j263.BackColor = Color.Blue;
                                         pcb_j263.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j261.Visible = false;
-                                            pcb_j262.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j363.BackColor = Color.Green;
                                         pcb_j363.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j361.Visible = false;
-                                            pcb_j362.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j463.BackColor = Color.Yellow;
                                         pcb_j463.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j461.Visible = false;
-                                            pcb_j462.Visible = false;
-                                        }
                                     }
                                     pcb_A63.Visible = false;
+                                    if (trilhaFeita[4] == false)
+                                    {
+                                        pcb_j161.Visible = false;
+                                        pcb_j261.Visible = false;
+                                        pcb_j361.Visible = false;
+                                        pcb_j461.Visible = false;
+
+                                        pcb_j162.Visible = false;
+                                        pcb_j262.Visible = false;
+                                        pcb_j362.Visible = false;
+                                        pcb_j462.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -1441,43 +1305,35 @@ namespace TARS
                                     {
                                         pcb_j164.BackColor = Color.Red;
                                         pcb_j164.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j162.Visible = false;
-                                            pcb_j163.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j264.BackColor = Color.Blue;
                                         pcb_j264.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j262.Visible = false;
-                                            pcb_j263.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j364.BackColor = Color.Green;
                                         pcb_j364.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j362.Visible = false;
-                                            pcb_j363.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j464.BackColor = Color.Yellow;
                                         pcb_j464.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j462.Visible = false;
-                                            pcb_j463.Visible = false;
-                                        }
                                     }
                                     pcb_A64.Visible = false;
+                                    if (trilhaFeita[4] == false)
+                                    {
+                                        pcb_j162.Visible = false;
+                                        pcb_j262.Visible = false;
+                                        pcb_j362.Visible = false;
+                                        pcb_j462.Visible = false;
+
+                                        pcb_j163.Visible = false;
+                                        pcb_j263.Visible = false;
+                                        pcb_j363.Visible = false;
+                                        pcb_j463.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -1493,43 +1349,35 @@ namespace TARS
                                     {
                                         pcb_j165.BackColor = Color.Red;
                                         pcb_j165.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j163.Visible = false;
-                                            pcb_j164.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j265.BackColor = Color.Blue;
                                         pcb_j265.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j263.Visible = false;
-                                            pcb_j264.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j365.BackColor = Color.Green;
                                         pcb_j365.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j363.Visible = false;
-                                            pcb_j364.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j465.BackColor = Color.Yellow;
                                         pcb_j465.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j463.Visible = false;
-                                            pcb_j464.Visible = false;
-                                        }
                                     }
                                     pcb_A65.Visible = false;
+                                    if (trilhaFeita[4] == false)
+                                    {
+                                        pcb_j163.Visible = false;
+                                        pcb_j263.Visible = false;
+                                        pcb_j363.Visible = false;
+                                        pcb_j463.Visible = false;
+
+                                        pcb_j164.Visible = false;
+                                        pcb_j264.Visible = false;
+                                        pcb_j364.Visible = false;
+                                        pcb_j464.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -1545,43 +1393,36 @@ namespace TARS
                                     {
                                         pcb_j166.BackColor = Color.Red;
                                         pcb_j166.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j164.Visible = false;
-                                            pcb_j165.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j266.BackColor = Color.Blue;
                                         pcb_j266.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j264.Visible = false;
-                                            pcb_j265.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j366.BackColor = Color.Green;
                                         pcb_j366.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j364.Visible = false;
-                                            pcb_j365.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j466.BackColor = Color.Yellow;
                                         pcb_j466.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j464.Visible = false;
-                                            pcb_j465.Visible = false;
-                                        }
                                     }
                                     pcb_A66.Visible = false;
+                                    if (trilhaFeita[4] == false)
+                                    {
+                                        pcb_j164.Visible = false;
+                                        pcb_j264.Visible = false;
+                                        pcb_j364.Visible = false;
+                                        pcb_j464.Visible = false;
+
+                                        pcb_j165.Visible = false;
+                                        pcb_j265.Visible = false;
+                                        pcb_j365.Visible = false;
+                                        pcb_j465.Visible = false;
+                                    }
+                                       
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -1597,43 +1438,35 @@ namespace TARS
                                     {
                                         pcb_j167.BackColor = Color.Red;
                                         pcb_j167.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j165.Visible = false;
-                                            pcb_j166.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j267.BackColor = Color.Blue;
                                         pcb_j267.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j265.Visible = false;
-                                            pcb_j266.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j367.BackColor = Color.Green;
                                         pcb_j367.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j365.Visible = false;
-                                            pcb_j366.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j467.BackColor = Color.Yellow;
                                         pcb_j467.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j465.Visible = false;
-                                            pcb_j466.Visible = false;
-                                        }
                                     }
                                     pcb_A67.Visible = false;
+                                    if (trilhaFeita[4] == false)
+                                    {
+                                        pcb_j165.Visible = false;
+                                        pcb_j265.Visible = false;
+                                        pcb_j365.Visible = false;
+                                        pcb_j465.Visible = false;
+
+                                        pcb_j166.Visible = false;
+                                        pcb_j266.Visible = false;
+                                        pcb_j366.Visible = false;
+                                        pcb_j466.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -1649,43 +1482,35 @@ namespace TARS
                                     {
                                         pcb_j168.BackColor = Color.Red;
                                         pcb_j168.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j166.Visible = false;
-                                            pcb_j167.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j268.BackColor = Color.Blue;
                                         pcb_j268.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j266.Visible = false;
-                                            pcb_j267.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j368.BackColor = Color.Green;
                                         pcb_j368.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j366.Visible = false;
-                                            pcb_j367.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j468.BackColor = Color.Yellow;
                                         pcb_j468.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j466.Visible = false;
-                                            pcb_j467.Visible = false;
-                                        }
                                     }
                                     pcb_A68.Visible = false;
+                                    if (trilhaFeita[4] == false)
+                                    {
+                                        pcb_j166.Visible = false;
+                                        pcb_j266.Visible = false;
+                                        pcb_j366.Visible = false;
+                                        pcb_j466.Visible = false;
+
+                                        pcb_j167.Visible = false;
+                                        pcb_j267.Visible = false;
+                                        pcb_j367.Visible = false;
+                                        pcb_j467.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -1701,43 +1526,35 @@ namespace TARS
                                     {
                                         pcb_j169.BackColor = Color.Red;
                                         pcb_j169.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j167.Visible = false;
-                                            pcb_j168.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j269.BackColor = Color.Blue;
                                         pcb_j269.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j267.Visible = false;
-                                            pcb_j268.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j369.BackColor = Color.Green;
                                         pcb_j369.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j367.Visible = false;
-                                            pcb_j368.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j469.BackColor = Color.Yellow;
                                         pcb_j469.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j467.Visible = false;
-                                            pcb_j468.Visible = false;
-                                        }
                                     }
                                     pcb_A69.Visible = false;
+                                    if (trilhaFeita[4] == false)
+                                    {
+                                        pcb_j167.Visible = false;
+                                        pcb_j267.Visible = false;
+                                        pcb_j367.Visible = false;
+                                        pcb_j467.Visible = false;
+
+                                        pcb_j168.Visible = false;
+                                        pcb_j268.Visible = false;
+                                        pcb_j368.Visible = false;
+                                        pcb_j468.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "10")
@@ -1753,43 +1570,36 @@ namespace TARS
                                     {
                                         pcb_j1610.BackColor = Color.Red;
                                         pcb_j1610.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j168.Visible = false;
-                                            pcb_j169.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2610.BackColor = Color.Blue;
                                         pcb_j2610.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j268.Visible = false;
-                                            pcb_j269.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3610.BackColor = Color.Green;
                                         pcb_j3610.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j368.Visible = false;
-                                            pcb_j369.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4610.BackColor = Color.Yellow;
                                         pcb_j4610.Visible = true;
-                                        if (trilhaFeita[4] == false)
-                                        {
-                                            pcb_j468.Visible = false;
-                                            pcb_j469.Visible = false;
-                                        }
                                     }
-                                    pcb_A610.Visible = false;     
+                                    pcb_A610.Visible = false;
+                                    if (trilhaFeita[4] == false)
+                                    {
+                                        pcb_j168.Visible = false;
+                                        pcb_j268.Visible = false;
+                                        pcb_j368.Visible = false;
+                                        pcb_j468.Visible = false;
+
+                                        pcb_j169.Visible = false;
+                                        pcb_j269.Visible = false;
+                                        pcb_j369.Visible = false;
+                                        pcb_j469.Visible = false;
+                                    }
+                                        
                                 }
                             }
                             else if (newRow[1].ToString() == "11")
@@ -1878,39 +1688,32 @@ namespace TARS
                                     {
                                         pcb_j172.BackColor = Color.Red;
                                         pcb_j172.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j171.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j272.BackColor = Color.Blue;
                                         pcb_j272.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j271.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j372.BackColor = Color.Green;
                                         pcb_j372.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j371.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j472.BackColor = Color.Yellow;
                                         pcb_j472.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j471.Visible = false;
-                                        }
                                     }
                                     pcb_A72.Visible = false;
+                                    if(trilhaFeita[5] == false) 
+                                    {
+                                        pcb_j171.Visible = false;
+                                        pcb_j271.Visible = false;
+                                        pcb_j371.Visible = false;
+                                        pcb_j471.Visible = false;
+                                    }
+                                    
+
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -1926,43 +1729,35 @@ namespace TARS
                                     {
                                         pcb_j173.BackColor = Color.Red;
                                         pcb_j173.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j171.Visible = false;
-                                            pcb_j172.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j273.BackColor = Color.Blue;
                                         pcb_j273.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j271.Visible = false;
-                                            pcb_j272.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j373.BackColor = Color.Green;
                                         pcb_j373.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j371.Visible = false;
-                                            pcb_j372.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j473.BackColor = Color.Yellow;
                                         pcb_j473.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j471.Visible = false;
-                                            pcb_j472.Visible = false;
-                                        }
                                     }
                                     pcb_A73.Visible = false;
+                                    if (trilhaFeita[5] == false)
+                                    {
+                                        pcb_j171.Visible = false;
+                                        pcb_j271.Visible = false;
+                                        pcb_j371.Visible = false;
+                                        pcb_j471.Visible = false;
+
+                                        pcb_j172.Visible = false;
+                                        pcb_j272.Visible = false;
+                                        pcb_j372.Visible = false;
+                                        pcb_j472.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -1978,43 +1773,35 @@ namespace TARS
                                     {
                                         pcb_j174.BackColor = Color.Red;
                                         pcb_j174.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j172.Visible = false;
-                                            pcb_j173.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j274.BackColor = Color.Blue;
                                         pcb_j274.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j272.Visible = false;
-                                            pcb_j273.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j374.BackColor = Color.Green;
                                         pcb_j374.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j372.Visible = false;
-                                            pcb_j373.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j474.BackColor = Color.Yellow;
                                         pcb_j474.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j472.Visible = false;
-                                            pcb_j473.Visible = false;
-                                        }
                                     }
                                     pcb_A74.Visible = false;
+                                    if (trilhaFeita[5] == false)
+                                    {
+                                        pcb_j172.Visible = false;
+                                        pcb_j272.Visible = false;
+                                        pcb_j372.Visible = false;
+                                        pcb_j472.Visible = false;
+
+                                        pcb_j173.Visible = false;
+                                        pcb_j273.Visible = false;
+                                        pcb_j373.Visible = false;
+                                        pcb_j473.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -2030,43 +1817,35 @@ namespace TARS
                                     {
                                         pcb_j175.BackColor = Color.Red;
                                         pcb_j175.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j173.Visible = false;
-                                            pcb_j174.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j275.BackColor = Color.Blue;
                                         pcb_j275.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j273.Visible = false;
-                                            pcb_j274.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j375.BackColor = Color.Green;
                                         pcb_j375.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j373.Visible = false;
-                                            pcb_j374.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j475.BackColor = Color.Yellow;
                                         pcb_j475.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j473.Visible = false;
-                                            pcb_j474.Visible = false;
-                                        }
                                     }
                                     pcb_A75.Visible = false;
+                                    if (trilhaFeita[5] == false)
+                                    {
+                                        pcb_j173.Visible = false;
+                                        pcb_j273.Visible = false;
+                                        pcb_j373.Visible = false;
+                                        pcb_j473.Visible = false;
+
+                                        pcb_j174.Visible = false;
+                                        pcb_j274.Visible = false;
+                                        pcb_j374.Visible = false;
+                                        pcb_j474.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -2082,43 +1861,35 @@ namespace TARS
                                     {
                                         pcb_j176.BackColor = Color.Red;
                                         pcb_j176.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j174.Visible = false;
-                                            pcb_j175.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j276.BackColor = Color.Blue;
                                         pcb_j276.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j274.Visible = false;
-                                            pcb_j275.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j376.BackColor = Color.Green;
                                         pcb_j376.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j374.Visible = false;
-                                            pcb_j375.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j476.BackColor = Color.Yellow;
                                         pcb_j476.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j474.Visible = false;
-                                            pcb_j475.Visible = false;
-                                        }
                                     }
                                     pcb_A76.Visible = false;
+                                    if (trilhaFeita[5] == false)
+                                    {
+                                        pcb_j174.Visible = false;
+                                        pcb_j274.Visible = false;
+                                        pcb_j374.Visible = false;
+                                        pcb_j474.Visible = false;
+
+                                        pcb_j175.Visible = false;
+                                        pcb_j275.Visible = false;
+                                        pcb_j375.Visible = false;
+                                        pcb_j475.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -2134,43 +1905,36 @@ namespace TARS
                                     {
                                         pcb_j177.BackColor = Color.Red;
                                         pcb_j177.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j175.Visible = false;
-                                            pcb_j176.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j277.BackColor = Color.Blue;
                                         pcb_j277.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j275.Visible = false;
-                                            pcb_j276.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j377.BackColor = Color.Green;
                                         pcb_j377.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j375.Visible = false;
-                                            pcb_j376.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j477.BackColor = Color.Yellow;
                                         pcb_j477.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j475.Visible = false;
-                                            pcb_j476.Visible = false;
-                                        }
                                     }
                                     pcb_A77.Visible = false;
+                                    if (trilhaFeita[5] == false)
+                                    {
+                                        pcb_j175.Visible = false;
+                                        pcb_j275.Visible = false;
+                                        pcb_j375.Visible = false;
+                                        pcb_j475.Visible = false;
+
+                                        pcb_j176.Visible = false;
+                                        pcb_j276.Visible = false;
+                                        pcb_j376.Visible = false;
+                                        pcb_j476.Visible = false;
+                                    }
+                                       
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -2186,43 +1950,35 @@ namespace TARS
                                     {
                                         pcb_j178.BackColor = Color.Red;
                                         pcb_j178.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j176.Visible = false;
-                                            pcb_j177.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j278.BackColor = Color.Blue;
                                         pcb_j278.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j276.Visible = false;
-                                            pcb_j277.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j378.BackColor = Color.Green;
                                         pcb_j378.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j376.Visible = false;
-                                            pcb_j377.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j478.BackColor = Color.Yellow;
                                         pcb_j478.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j476.Visible = false;
-                                            pcb_j477.Visible = false;
-                                        }
                                     }
                                     pcb_A78.Visible = false;
+                                    if (trilhaFeita[5] == false)
+                                    {
+                                        pcb_j176.Visible = false;
+                                        pcb_j276.Visible = false;
+                                        pcb_j376.Visible = false;
+                                        pcb_j476.Visible = false;
+
+                                        pcb_j177.Visible = false;
+                                        pcb_j277.Visible = false;
+                                        pcb_j377.Visible = false;
+                                        pcb_j477.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -2238,43 +1994,35 @@ namespace TARS
                                     {
                                         pcb_j179.BackColor = Color.Red;
                                         pcb_j179.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j177.Visible = false;
-                                            pcb_j178.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j279.BackColor = Color.Blue;
                                         pcb_j279.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j277.Visible = false;
-                                            pcb_j278.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j379.BackColor = Color.Green;
                                         pcb_j379.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j377.Visible = false;
-                                            pcb_j378.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j479.BackColor = Color.Yellow;
                                         pcb_j479.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j477.Visible = false;
-                                            pcb_j478.Visible = false;
-                                        }
                                     }
                                     pcb_A79.Visible = false;
+                                    if (trilhaFeita[5] == false)
+                                    {
+                                        pcb_j177.Visible = false;
+                                        pcb_j277.Visible = false;
+                                        pcb_j377.Visible = false;
+                                        pcb_j477.Visible = false;
+
+                                        pcb_j178.Visible = false;
+                                        pcb_j278.Visible = false;
+                                        pcb_j378.Visible = false;
+                                        pcb_j478.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "10")
@@ -2290,43 +2038,35 @@ namespace TARS
                                     {
                                         pcb_j1710.BackColor = Color.Red;
                                         pcb_j1710.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j178.Visible = false;
-                                            pcb_j179.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2710.BackColor = Color.Blue;
                                         pcb_j2710.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j278.Visible = false;
-                                            pcb_j279.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3710.BackColor = Color.Green;
                                         pcb_j373.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j378.Visible = false;
-                                            pcb_j379.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4710.BackColor = Color.Yellow;
                                         pcb_j4710.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j478.Visible = false;
-                                            pcb_j479.Visible = false;
-                                        }
                                     }
                                     pcb_A710.Visible = false;
+                                    if (trilhaFeita[5] == false)
+                                    {
+                                        pcb_j178.Visible = false;
+                                        pcb_j278.Visible = false;
+                                        pcb_j378.Visible = false;
+                                        pcb_j478.Visible = false;
+
+                                        pcb_j179.Visible = false;
+                                        pcb_j279.Visible = false;
+                                        pcb_j379.Visible = false;
+                                        pcb_j479.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "11")
@@ -2342,43 +2082,35 @@ namespace TARS
                                     {
                                         pcb_j1711.BackColor = Color.Red;
                                         pcb_j1711.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j179.Visible = false;
-                                            pcb_j1710.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2711.BackColor = Color.Blue;
                                         pcb_j2711.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j279.Visible = false;
-                                            pcb_j2710.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3711.BackColor = Color.Green;
                                         pcb_j3711.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j379.Visible = false;
-                                            pcb_j3710.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4711.BackColor = Color.Yellow;
                                         pcb_j4711.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j479.Visible = false;
-                                            pcb_j4710.Visible = false;
-                                        }
                                     }
                                     pcb_A711.Visible = false;
+                                    if (trilhaFeita[5] == false)
+                                    {
+                                        pcb_j179.Visible = false;
+                                        pcb_j279.Visible = false;
+                                        pcb_j379.Visible = false;
+                                        pcb_j479.Visible = false;
+
+                                        pcb_j1710.Visible = false;
+                                        pcb_j2710.Visible = false;
+                                        pcb_j3710.Visible = false;
+                                        pcb_j4710.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "12")
@@ -2394,43 +2126,35 @@ namespace TARS
                                     {
                                         pcb_j1712.BackColor = Color.Red;
                                         pcb_j1712.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j1710.Visible = false;
-                                            pcb_j1711.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2712.BackColor = Color.Blue;
                                         pcb_j2712.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j2710.Visible = false;
-                                            pcb_j2711.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3712.BackColor = Color.Green;
                                         pcb_j3712.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j3710.Visible = false;
-                                            pcb_j3711.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4712.BackColor = Color.Yellow;
                                         pcb_j4712.Visible = true;
-                                        if (trilhaFeita[5] == false)
-                                        {
-                                            pcb_j4710.Visible = false;
-                                            pcb_j4711.Visible = false;
-                                        }
                                     }
                                     pcb_A712.Visible = false;
+                                    if (trilhaFeita[5] == false)
+                                    {
+                                        pcb_j1710.Visible = false;
+                                        pcb_j2710.Visible = false;
+                                        pcb_j3710.Visible = false;
+                                        pcb_j4710.Visible = false;
+
+                                        pcb_j1711.Visible = false;
+                                        pcb_j2711.Visible = false;
+                                        pcb_j3711.Visible = false;
+                                        pcb_j4711.Visible = false;
+                                    }
                                 }
                             }
                             else
@@ -2518,39 +2242,30 @@ namespace TARS
                                     {
                                         pcb_j182.BackColor = Color.Red;
                                         pcb_j182.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j181.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j282.BackColor = Color.Blue;
                                         pcb_j282.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j281.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j382.BackColor = Color.Green;
                                         pcb_j382.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j381.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j482.BackColor = Color.Yellow;
                                         pcb_j482.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j481.Visible = false;
-                                        }
                                     }
                                     pcb_A82.Visible = false;
+                                    if (trilhaFeita[6] == false)
+                                    {
+                                        pcb_j181.Visible = false;
+                                        pcb_j281.Visible = false;
+                                        pcb_j381.Visible = false;
+                                        pcb_j481.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -2566,43 +2281,35 @@ namespace TARS
                                     {
                                         pcb_j183.BackColor = Color.Red;
                                         pcb_j183.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j181.Visible = false;
-                                            pcb_j182.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j283.BackColor = Color.Blue;
                                         pcb_j283.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j281.Visible = false;
-                                            pcb_j282.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j383.BackColor = Color.Green;
                                         pcb_j383.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j381.Visible = false;
-                                            pcb_j382.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j483.BackColor = Color.Yellow;
                                         pcb_j483.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j481.Visible = false;
-                                            pcb_j482.Visible = false;
-                                        }
                                     }
                                     pcb_A83.Visible = false;
+                                    if (trilhaFeita[6] == false)
+                                    {
+                                        pcb_j181.Visible = false;
+                                        pcb_j281.Visible = false;
+                                        pcb_j381.Visible = false;
+                                        pcb_j481.Visible = false;
+
+                                        pcb_j182.Visible = false;
+                                        pcb_j282.Visible = false;
+                                        pcb_j382.Visible = false;
+                                        pcb_j482.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -2618,43 +2325,35 @@ namespace TARS
                                     {
                                         pcb_j184.BackColor = Color.Red;
                                         pcb_j184.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j182.Visible = false;
-                                            pcb_j183.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j284.BackColor = Color.Blue;
                                         pcb_j284.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j282.Visible = false;
-                                            pcb_j283.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j384.BackColor = Color.Green;
                                         pcb_j384.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j382.Visible = false;
-                                            pcb_j383.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j484.BackColor = Color.Yellow;
                                         pcb_j484.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j482.Visible = false;
-                                            pcb_j483.Visible = false;
-                                        }
                                     }
                                     pcb_A84.Visible = false;
+                                    if (trilhaFeita[6] == false)
+                                    {
+                                        pcb_j182.Visible = false;
+                                        pcb_j282.Visible = false;
+                                        pcb_j382.Visible = false;
+                                        pcb_j482.Visible = false;
+
+                                        pcb_j183.Visible = false;
+                                        pcb_j283.Visible = false;
+                                        pcb_j383.Visible = false;
+                                        pcb_j483.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -2670,43 +2369,35 @@ namespace TARS
                                     {
                                         pcb_j185.BackColor = Color.Red;
                                         pcb_j185.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j183.Visible = false;
-                                            pcb_j184.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j285.BackColor = Color.Blue;
                                         pcb_j285.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j283.Visible = false;
-                                            pcb_j284.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j385.BackColor = Color.Green;
                                         pcb_j385.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j383.Visible = false;
-                                            pcb_j384.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j485.BackColor = Color.Yellow;
                                         pcb_j485.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j483.Visible = false;
-                                            pcb_j484.Visible = false;
-                                        }
                                     }
                                     pcb_A85.Visible = false;
+                                    if (trilhaFeita[6] == false)
+                                    {
+                                        pcb_j183.Visible = false;
+                                        pcb_j283.Visible = false;
+                                        pcb_j383.Visible = false;
+                                        pcb_j483.Visible = false;
+
+                                        pcb_j184.Visible = false;
+                                        pcb_j284.Visible = false;
+                                        pcb_j384.Visible = false;
+                                        pcb_j484.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -2722,43 +2413,35 @@ namespace TARS
                                     {
                                         pcb_j186.BackColor = Color.Red;
                                         pcb_j186.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j184.Visible = false;
-                                            pcb_j185.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j286.BackColor = Color.Blue;
                                         pcb_j286.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j284.Visible = false;
-                                            pcb_j285.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j386.BackColor = Color.Green;
                                         pcb_j386.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j384.Visible = false;
-                                            pcb_j385.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j486.BackColor = Color.Yellow;
                                         pcb_j486.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j484.Visible = false;
-                                            pcb_j485.Visible = false;
-                                        }
                                     }
                                     pcb_A86.Visible = false;
+                                    if (trilhaFeita[6] == false)
+                                    {
+                                        pcb_j184.Visible = false;
+                                        pcb_j284.Visible = false;
+                                        pcb_j384.Visible = false;
+                                        pcb_j484.Visible = false;
+
+                                        pcb_j185.Visible = false;
+                                        pcb_j285.Visible = false;
+                                        pcb_j385.Visible = false;
+                                        pcb_j485.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -2774,43 +2457,35 @@ namespace TARS
                                     {
                                         pcb_j187.BackColor = Color.Red;
                                         pcb_j187.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j185.Visible = false;
-                                            pcb_j186.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j287.BackColor = Color.Blue;
                                         pcb_j287.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j285.Visible = false;
-                                            pcb_j286.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j387.BackColor = Color.Green;
                                         pcb_j387.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j385.Visible = false;
-                                            pcb_j386.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j487.BackColor = Color.Yellow;
                                         pcb_j487.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j485.Visible = false;
-                                            pcb_j486.Visible = false;
-                                        }
                                     }
                                     pcb_A87.Visible = false;
+                                    if (trilhaFeita[6] == false)
+                                    {
+                                        pcb_j185.Visible = false;
+                                        pcb_j285.Visible = false;
+                                        pcb_j385.Visible = false;
+                                        pcb_j485.Visible = false;
+
+                                        pcb_j186.Visible = false;
+                                        pcb_j286.Visible = false;
+                                        pcb_j386.Visible = false;
+                                        pcb_j486.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -2826,43 +2501,36 @@ namespace TARS
                                     {
                                         pcb_j188.BackColor = Color.Red;
                                         pcb_j188.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j186.Visible = false;
-                                            pcb_j187.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j288.BackColor = Color.Blue;
                                         pcb_j288.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j286.Visible = false;
-                                            pcb_j287.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j388.BackColor = Color.Green;
                                         pcb_j388.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j386.Visible = false;
-                                            pcb_j387.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j488.BackColor = Color.Yellow;
                                         pcb_j488.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j486.Visible = false;
-                                            pcb_j487.Visible = false;
-                                        }
                                     }
                                     pcb_A88.Visible = false;
+                                    if (trilhaFeita[6] == false)
+                                    {
+                                        pcb_j186.Visible = false;
+                                        pcb_j286.Visible = false;
+                                        pcb_j386.Visible = false;
+                                        pcb_j486.Visible = false;
+
+                                        pcb_j187.Visible = false;
+                                        pcb_j287.Visible = false;
+                                        pcb_j387.Visible = false;
+                                        pcb_j487.Visible = false;
+                                    }
+
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -2878,43 +2546,35 @@ namespace TARS
                                     {
                                         pcb_j189.BackColor = Color.Red;
                                         pcb_j189.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j187.Visible = false;
-                                            pcb_j188.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j289.BackColor = Color.Blue;
                                         pcb_j289.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j287.Visible = false;
-                                            pcb_j288.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j389.BackColor = Color.Green;
                                         pcb_j389.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j387.Visible = false;
-                                            pcb_j388.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j489.BackColor = Color.Yellow;
                                         pcb_j489.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j487.Visible = false;
-                                            pcb_j488.Visible = false;
-                                        }
                                     }
                                     pcb_A89.Visible = false;
+                                    if (trilhaFeita[6] == false)
+                                    {
+                                        pcb_j187.Visible = false;
+                                        pcb_j287.Visible = false;
+                                        pcb_j387.Visible = false;
+                                        pcb_j487.Visible = false;
+
+                                        pcb_j188.Visible = false;
+                                        pcb_j288.Visible = false;
+                                        pcb_j388.Visible = false;
+                                        pcb_j488.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "10")
@@ -2930,43 +2590,35 @@ namespace TARS
                                     {
                                         pcb_j1810.BackColor = Color.Red;
                                         pcb_j1810.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j188.Visible = false;
-                                            pcb_j189.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2810.BackColor = Color.Blue;
                                         pcb_j2810.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j288.Visible = false;
-                                            pcb_j289.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3810.BackColor = Color.Green;
                                         pcb_j3810.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j388.Visible = false;
-                                            pcb_j389.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4810.BackColor = Color.Yellow;
                                         pcb_j4810.Visible = true;
-                                        if (trilhaFeita[6] == false)
-                                        {
-                                            pcb_j488.Visible = false;
-                                            pcb_j489.Visible = false;
-                                        }
                                     }
                                     pcb_A810.Visible = false;
+                                    if (trilhaFeita[6] == false)
+                                    {
+                                        pcb_j188.Visible = false;
+                                        pcb_j288.Visible = false;
+                                        pcb_j388.Visible = false;
+                                        pcb_j488.Visible = false;
+
+                                        pcb_j189.Visible = false;
+                                        pcb_j289.Visible = false;
+                                        pcb_j389.Visible = false;
+                                        pcb_j489.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "11")
@@ -3056,39 +2708,30 @@ namespace TARS
                                     {
                                         pcb_j192.BackColor = Color.Red;
                                         pcb_j192.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j191.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j292.BackColor = Color.Blue;
                                         pcb_j292.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j291.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j392.BackColor = Color.Green;
                                         pcb_j392.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j391.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j492.BackColor = Color.Yellow;
                                         pcb_j491.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j491.Visible = false;
-                                        }
                                     }
                                     pcb_A92.Visible = false;
+                                    if (trilhaFeita[7] == false)
+                                    {
+                                        pcb_j191.Visible = false;
+                                        pcb_j291.Visible = false;
+                                        pcb_j391.Visible = false;
+                                        pcb_j491.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -3104,43 +2747,35 @@ namespace TARS
                                     {
                                         pcb_j193.BackColor = Color.Red;
                                         pcb_j193.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j191.Visible = false;
-                                            pcb_j192.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j293.BackColor = Color.Blue;
                                         pcb_j293.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j291.Visible = false;
-                                            pcb_j292.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j393.BackColor = Color.Green;
                                         pcb_j393.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j391.Visible = false;
-                                            pcb_j392.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j493.BackColor = Color.Yellow;
                                         pcb_j493.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j491.Visible = false;
-                                            pcb_j492.Visible = false;
-                                        }
                                     }
                                     pcb_A93.Visible = false;
+                                    if (trilhaFeita[7] == false)
+                                    {
+                                        pcb_j191.Visible = false;
+                                        pcb_j291.Visible = false;
+                                        pcb_j391.Visible = false;
+                                        pcb_j491.Visible = false;
+
+                                        pcb_j192.Visible = false;
+                                        pcb_j292.Visible = false;
+                                        pcb_j392.Visible = false;
+                                        pcb_j492.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -3156,43 +2791,35 @@ namespace TARS
                                     {
                                         pcb_j194.BackColor = Color.Red;
                                         pcb_j194.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j192.Visible = false;
-                                            pcb_j193.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j294.BackColor = Color.Blue;
                                         pcb_j294.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j292.Visible = false;
-                                            pcb_j293.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j394.BackColor = Color.Green;
                                         pcb_j394.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j392.Visible = false;
-                                            pcb_j393.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j494.BackColor = Color.Yellow;
                                         pcb_j494.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j492.Visible = false;
-                                            pcb_j493.Visible = false;
-                                        }
                                     }
                                     pcb_A94.Visible = false;
+                                    if (trilhaFeita[7] == false)
+                                    {
+                                        pcb_j192.Visible = false;
+                                        pcb_j292.Visible = false;
+                                        pcb_j392.Visible = false;
+                                        pcb_j492.Visible = false;
+
+                                        pcb_j193.Visible = false;
+                                        pcb_j293.Visible = false;
+                                        pcb_j393.Visible = false;
+                                        pcb_j493.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -3208,43 +2835,35 @@ namespace TARS
                                     {
                                         pcb_j195.BackColor = Color.Red;
                                         pcb_j195.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j193.Visible = false;
-                                            pcb_j194.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j295.BackColor = Color.Blue;
                                         pcb_j295.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j293.Visible = false;
-                                            pcb_j294.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j395.BackColor = Color.Green;
                                         pcb_j395.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j393.Visible = false;
-                                            pcb_j394.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j495.BackColor = Color.Yellow;
                                         pcb_j495.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j493.Visible = false;
-                                            pcb_j494.Visible = false;
-                                        }
                                     }
                                     pcb_A95.Visible = false;
+                                    if (trilhaFeita[7] == false)
+                                    {
+                                        pcb_j193.Visible = false;
+                                        pcb_j293.Visible = false;
+                                        pcb_j393.Visible = false;
+                                        pcb_j493.Visible = false;
+
+                                        pcb_j194.Visible = false;
+                                        pcb_j294.Visible = false;
+                                        pcb_j394.Visible = false;
+                                        pcb_j494.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -3253,11 +2872,6 @@ namespace TARS
                                 {
                                     pcb_A96.BackColor = Color.Black;
                                     pcb_A96.Visible = true;
-                                    if (trilhaFeita[7] == false)
-                                    {
-                                        pcb_j194.Visible = false;
-                                        pcb_j195.Visible = false;
-                                    }
                                 }
                                 else
                                 {
@@ -3265,31 +2879,16 @@ namespace TARS
                                     {
                                         pcb_j196.BackColor = Color.Red;
                                         pcb_j196.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j294.Visible = false;
-                                            pcb_j295.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j296.BackColor = Color.Blue;
                                         pcb_j296.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j394.Visible = false;
-                                            pcb_j395.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j396.BackColor = Color.Green;
                                         pcb_j396.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j494.Visible = false;
-                                            pcb_j495.Visible = false;
-                                        }
                                     }
                                     else
                                     {
@@ -3297,6 +2896,18 @@ namespace TARS
                                         pcb_j496.Visible = true;
                                     }
                                     pcb_A96.Visible = false;
+                                    if (trilhaFeita[7] == false)
+                                    {
+                                        pcb_j194.Visible = false;
+                                        pcb_j294.Visible = false;
+                                        pcb_j394.Visible = false;
+                                        pcb_j494.Visible = false;
+
+                                        pcb_j195.Visible = false;
+                                        pcb_j295.Visible = false;
+                                        pcb_j395.Visible = false;
+                                        pcb_j495.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -3312,43 +2923,35 @@ namespace TARS
                                     {
                                         pcb_j197.BackColor = Color.Red;
                                         pcb_j197.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j195.Visible = false;
-                                            pcb_j196.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j297.BackColor = Color.Blue;
                                         pcb_j297.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j295.Visible = false;
-                                            pcb_j296.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j397.BackColor = Color.Green;
                                         pcb_j397.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j395.Visible = false;
-                                            pcb_j396.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j497.BackColor = Color.Yellow;
                                         pcb_j497.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j495.Visible = false;
-                                            pcb_j496.Visible = false;
-                                        }
                                     }
                                     pcb_A97.Visible = false;
+                                    if (trilhaFeita[7] == false)
+                                    {
+                                        pcb_j195.Visible = false;
+                                        pcb_j295.Visible = false;
+                                        pcb_j395.Visible = false;
+                                        pcb_j495.Visible = false;
+
+                                        pcb_j196.Visible = false;
+                                        pcb_j296.Visible = false;
+                                        pcb_j396.Visible = false;
+                                        pcb_j496.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -3364,43 +2967,35 @@ namespace TARS
                                     {
                                         pcb_j198.BackColor = Color.Red;
                                         pcb_j198.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j196.Visible = false;
-                                            pcb_j197.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j298.BackColor = Color.Blue;
                                         pcb_j298.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j296.Visible = false;
-                                            pcb_j297.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j398.BackColor = Color.Green;
                                         pcb_j398.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j396.Visible = false;
-                                            pcb_j397.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j498.BackColor = Color.Yellow;
                                         pcb_j498.Visible = true;
-                                        if (trilhaFeita[7] == false)
-                                        {
-                                            pcb_j496.Visible = false;
-                                            pcb_j497.Visible = false;
-                                        }
                                     }
                                     pcb_A98.Visible = false;
+                                    if (trilhaFeita[7] == false)
+                                    {
+                                        pcb_j196.Visible = false;
+                                        pcb_j296.Visible = false;
+                                        pcb_j396.Visible = false;
+                                        pcb_j496.Visible = false;
+
+                                        pcb_j197.Visible = false;
+                                        pcb_j297.Visible = false;
+                                        pcb_j397.Visible = false;
+                                        pcb_j497.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -3488,39 +3083,30 @@ namespace TARS
                                     {
                                         pcb_j1102.BackColor = Color.Red;
                                         pcb_j1102.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j1101.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2102.BackColor = Color.Blue;
                                         pcb_j2102.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j2101.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3102.BackColor = Color.Green;
                                         pcb_j3102.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j3101.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4102.BackColor = Color.Yellow;
                                         pcb_j4102.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j4101.Visible = false;
-                                        }
                                     }
                                     pcb_A102.Visible = false;
+                                    if (trilhaFeita[8] == false)
+                                    {
+                                        pcb_j1101.Visible = false;
+                                        pcb_j2101.Visible = false;
+                                        pcb_j3101.Visible = false;
+                                        pcb_j4101.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -3536,43 +3122,35 @@ namespace TARS
                                     {
                                         pcb_j1103.BackColor = Color.Red;
                                         pcb_j1103.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j1101.Visible = false;
-                                            pcb_j1102.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2103.BackColor = Color.Blue;
                                         pcb_j2103.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j2101.Visible = false;
-                                            pcb_j2102.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3103.BackColor = Color.Green;
                                         pcb_j3103.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j3101.Visible = false;
-                                            pcb_j3102.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4103.BackColor = Color.Yellow;
                                         pcb_j4103.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j4101.Visible = false;
-                                            pcb_j4102.Visible = false;
-                                        }
                                     }
                                     pcb_A103.Visible = false;
+                                    if (trilhaFeita[8] == false)
+                                    {
+                                        pcb_j1101.Visible = false;
+                                        pcb_j2101.Visible = false;
+                                        pcb_j3101.Visible = false;
+                                        pcb_j4101.Visible = false;
+
+                                        pcb_j1102.Visible = false;
+                                        pcb_j2102.Visible = false;
+                                        pcb_j3102.Visible = false;
+                                        pcb_j4102.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -3588,43 +3166,35 @@ namespace TARS
                                     {
                                         pcb_j1104.BackColor = Color.Red;
                                         pcb_j1104.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j1102.Visible = false;
-                                            pcb_j1103.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2104.BackColor = Color.Blue;
                                         pcb_j2104.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j2102.Visible = false;
-                                            pcb_j2103.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3104.BackColor = Color.Green;
                                         pcb_j3104.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j3102.Visible = false;
-                                            pcb_j3103.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4104.BackColor = Color.Yellow;
                                         pcb_j4104.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j4102.Visible = false;
-                                            pcb_j4103.Visible = false;
-                                        }
                                     }
                                     pcb_A104.Visible = false;
+                                    if (trilhaFeita[8] == false)
+                                    {
+                                        pcb_j1102.Visible = false;
+                                        pcb_j2102.Visible = false;
+                                        pcb_j3102.Visible = false;
+                                        pcb_j4102.Visible = false;
+
+                                        pcb_j1103.Visible = false;
+                                        pcb_j2103.Visible = false;
+                                        pcb_j3103.Visible = false;
+                                        pcb_j4103.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -3640,43 +3210,35 @@ namespace TARS
                                     {
                                         pcb_j1105.BackColor = Color.Red;
                                         pcb_j1105.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j1103.Visible = false;
-                                            pcb_j1104.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2105.BackColor = Color.Blue;
                                         pcb_j2105.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j2103.Visible = false;
-                                            pcb_j2104.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3105.BackColor = Color.Green;
                                         pcb_j3105.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j3103.Visible = false;
-                                            pcb_j3104.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4105.BackColor = Color.Yellow;
                                         pcb_j4105.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j4103.Visible = false;
-                                            pcb_j4104.Visible = false;
-                                        }
                                     }
                                     pcb_A105.Visible = false;
+                                    if (trilhaFeita[8] == false)
+                                    {
+                                        pcb_j1103.Visible = false;
+                                        pcb_j2103.Visible = false;
+                                        pcb_j3103.Visible = false;
+                                        pcb_j4103.Visible = false;
+
+                                        pcb_j1104.Visible = false;
+                                        pcb_j2104.Visible = false;
+                                        pcb_j3104.Visible = false;
+                                        pcb_j4104.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -3685,11 +3247,6 @@ namespace TARS
                                 {
                                     pcb_A106.BackColor = Color.Black;
                                     pcb_A106.Visible = true;
-                                    if (trilhaFeita[8] == false)
-                                    {
-                                        pcb_j1104.Visible = false;
-                                        pcb_j1105.Visible = false;
-                                    }
                                 }
                                 else
                                 {
@@ -3697,43 +3254,35 @@ namespace TARS
                                     {
                                         pcb_j1106.BackColor = Color.Red;
                                         pcb_j1106.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j1104.Visible = false;
-                                            pcb_j1105.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2106.BackColor = Color.Blue;
                                         pcb_j2106.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j2104.Visible = false;
-                                            pcb_j2105.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3106.BackColor = Color.Green;
                                         pcb_j3106.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j3104.Visible = false;
-                                            pcb_j3105.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4106.BackColor = Color.Yellow;
                                         pcb_j4106.Visible = true;
-                                        if (trilhaFeita[8] == false)
-                                        {
-                                            pcb_j4104.Visible = false;
-                                            pcb_j4105.Visible = false;
-                                        }
                                     }
                                     pcb_A106.Visible = false;
+                                    if (trilhaFeita[8] == false)
+                                    {
+                                        pcb_j1104.Visible = false;
+                                        pcb_j2104.Visible = false;
+                                        pcb_j3104.Visible = false;
+                                        pcb_j4104.Visible = false;
+
+                                        pcb_j1105.Visible = false;
+                                        pcb_j2105.Visible = false;
+                                        pcb_j3105.Visible = false;
+                                        pcb_j4105.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -3822,39 +3371,30 @@ namespace TARS
                                     {
                                         pcb_j1112.BackColor = Color.Red;
                                         pcb_j1112.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j1111.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2112.BackColor = Color.Blue;
                                         pcb_j2112.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j2111.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3112.BackColor = Color.Green;
                                         pcb_j3112.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j3111.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4112.BackColor = Color.Yellow;
                                         pcb_j4112.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j4111.Visible = false;
-                                        }
                                     }
                                     pcb_A112.Visible = false;
+                                    if (trilhaFeita[9] == false)
+                                    {
+                                        pcb_j1111.Visible = false;
+                                        pcb_j2111.Visible = false;
+                                        pcb_j3111.Visible = false;
+                                        pcb_j4111.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -3870,44 +3410,35 @@ namespace TARS
                                     {
                                         pcb_j1113.BackColor = Color.Red;
                                         pcb_j1113.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j1111.Visible = false;
-                                            pcb_j1112.Visible = false;
-                                        }
-
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2113.BackColor = Color.Blue;
                                         pcb_j2113.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j2111.Visible = false;
-                                            pcb_j2112.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3113.BackColor = Color.Green;
                                         pcb_j3113.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j3111.Visible = false;
-                                            pcb_j3112.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4113.BackColor = Color.Yellow;
                                         pcb_j4113.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j4111.Visible = false;
-                                            pcb_j4112.Visible = false;
-                                        }
                                     }
                                     pcb_A113.Visible = false;
+                                    if (trilhaFeita[9] == false)
+                                    {
+                                        pcb_j1111.Visible = false;
+                                        pcb_j2111.Visible = false;
+                                        pcb_j3111.Visible = false;
+                                        pcb_j4111.Visible = false;
+
+                                        pcb_j1112.Visible = false;
+                                        pcb_j2112.Visible = false;
+                                        pcb_j3112.Visible = false;
+                                        pcb_j4112.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -3923,43 +3454,35 @@ namespace TARS
                                     {
                                         pcb_j1114.BackColor = Color.Red;
                                         pcb_j1114.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j1112.Visible = false;
-                                            pcb_j1113.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2114.BackColor = Color.Blue;
                                         pcb_j2114.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j2112.Visible = false;
-                                            pcb_j2113.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3114.BackColor = Color.Green;
                                         pcb_j3114.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j3112.Visible = false;
-                                            pcb_j3113.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4114.BackColor = Color.Yellow;
                                         pcb_j4114.Visible = true;
-                                        if (trilhaFeita[9] == false)
-                                        {
-                                            pcb_j4112.Visible = false;
-                                            pcb_j4113.Visible = false;
-                                        }
                                     }
                                     pcb_A114.Visible = false;
+                                    if (trilhaFeita[9] == false)
+                                    {
+                                        pcb_j1112.Visible = false;
+                                        pcb_j2112.Visible = false;
+                                        pcb_j3112.Visible = false;
+                                        pcb_j4112.Visible = false;
+
+                                        pcb_j1113.Visible = false;
+                                        pcb_j2113.Visible = false;
+                                        pcb_j3113.Visible = false;
+                                        pcb_j4113.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -4047,39 +3570,30 @@ namespace TARS
                                     {
                                         pcb_j1122.BackColor = Color.Red;
                                         pcb_j1122.Visible = true;
-                                        if (trilhaFeita[10] == false)
-                                        {
-                                            pcb_j1121.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[1])
                                     {
                                         pcb_j2122.BackColor = Color.Blue;
                                         pcb_j2122.Visible = true;
-                                        if (trilhaFeita[10] == false)
-                                        {
-                                            pcb_j2121.Visible = false;
-                                        }
                                     }
                                     else if (newRow[2].ToString() == jogadores[2])
                                     {
                                         pcb_j3122.BackColor = Color.Green;
                                         pcb_j3122.Visible = true;
-                                        if (trilhaFeita[10] == false)
-                                        {
-                                            pcb_j3121.Visible = false;
-                                        }
                                     }
                                     else
                                     {
                                         pcb_j4122.BackColor = Color.Yellow;
                                         pcb_j4122.Visible = true;
-                                        if (trilhaFeita[10] == false)
-                                        {
-                                            pcb_j4121.Visible = false;
-                                        }
                                     }
                                     pcb_A122.Visible = false;
+                                    if (trilhaFeita[10] == false)
+                                    {
+                                        pcb_j1121.Visible = false;
+                                        pcb_j2121.Visible = false;
+                                        pcb_j3121.Visible = false;
+                                        pcb_j4121.Visible = false;
+                                    }
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -4125,39 +3639,31 @@ namespace TARS
         //Função Main das jogadas do BOT
         public void MovimentosBOT()
         {
-            try
+            string trilhasEscolhidas = "";
+            dadoescolha = "";
+
+            string resultado = Dado.FormarDuplasSomaDados(valordado, trilhaFeita);
+            string [] divisao = resultado.Split('e');
+            //vai retornar a ordem dos dados e as trilhas
+            trilhasEscolhidas += Dado.converteHexadecimal(divisao[1]);
+            trilhasEscolhidas += Dado.converteHexadecimal(divisao[2]);
+
+            dadoescolha += divisao[0];
+            
+
+            string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, trilhasEscolhidas);
+            if (movimento.Contains("ERRO"))
             {
-                string trilhasEscolhidas = "";
-                dadoescolha = "";
-
-                string resultado = Dado.FormarDuplasSomaDados(valordado);
-                string[] divisao = resultado.Split('e');
-                //vai retornar a ordem dos dados e as trilhas
-                trilhasEscolhidas += Dado.converteHexadecimal(divisao[1]);
-                trilhasEscolhidas += Dado.converteHexadecimal(divisao[2]);
-
-                dadoescolha += divisao[0];
-
-
-                string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, trilhasEscolhidas);
-                if (movimento.Contains("ERRO"))
-                {
-                    MessageBox.Show(movimento);
-                    
-                }
-                else
-                {
-                    string retornotab = Jogo.ExibirTabuleiro(IdPartida);
-                    dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
-                    desenharTabuleiro(idJogadores);
-                    rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-                }
-                movimentosfeitos++;
+                MessageBox.Show(movimento);
             }
-            catch(Exception ex)
+            else
             {
-                MessageBox.Show("Ocorreu um erro " + ex.Message);
+                string retornotab = Jogo.ExibirTabuleiro(IdPartida);
+                dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
+                desenharTabuleiro(idJogadores);
+                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
             }
+            movimentosfeitos++;
         }
 
         private void btn_iniciarpartida_Click(object sender, EventArgs e) 
@@ -4172,15 +3678,15 @@ namespace TARS
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-
             string statuspartida = Jogo.ExibirHistorico(IdPartida);
             if (statuspartida.Contains("iniciou") || statuspartida.Contains("Iniciou"))
             {
                 lbl_statuspart.ForeColor = System.Drawing.Color.Green;
+                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
 
                 string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
                 dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro);
+                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
                 desenharTabuleiro(idJogadores);
                 
                 //Mudar este código de lugar(Verificar onde coloca-lo)
@@ -4222,14 +3728,14 @@ namespace TARS
                             rolarDados();
                             MovimentosBOT();
                         }
+                       
+
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show("Ocorreu um erro " + ex.Message);
                     }
-
                 }
-                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
             }
         }
 
@@ -4240,5 +3746,6 @@ namespace TARS
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
         }
+
     }
 }
