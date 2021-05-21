@@ -32,7 +32,7 @@ namespace TARS
         string[] corJogdores = new string[4];
 
         // O bot jogará 1 vezes no maximo e logo depois irá parar
-        int movimentosfeitos;
+        int movimentosfeitos = 0;
 
         public bool[] trilhaFeita = new bool[11];
 
@@ -120,6 +120,8 @@ namespace TARS
             if (dados.Contains("ERRO"))
             {
                 MessageBox.Show(dados);
+                lbl_erro.Visible = true;
+                lbl_erro.Text = dados;
             }
             else
             {
@@ -4130,7 +4132,7 @@ namespace TARS
                 string trilhasEscolhidas = "";
                 dadoescolha = "";
 
-                string resultado = Dado.FormarDuplasSomaDados(valordado);
+                string resultado = Dado.FormarDuplasSomaDados(valordado,trilhaFeita);
                 string[] divisao = resultado.Split('e');
                 //vai retornar a ordem dos dados e as trilhas
                 trilhasEscolhidas += Dado.converteHexadecimal(divisao[1]);
@@ -4143,6 +4145,8 @@ namespace TARS
                 if (movimento.Contains("ERRO"))
                 {
                     MessageBox.Show(movimento);
+                    lbl_erro.Visible = true;
+                    lbl_erro.Text = movimento;
                     
                 }
                 else
@@ -4157,6 +4161,8 @@ namespace TARS
             catch(Exception ex)
             {
                 MessageBox.Show("Ocorreu um erro " + ex.Message);
+                lbl_erro.Visible = true;
+                lbl_erro.Text = ex.Message;
             }
         }
 
@@ -4177,6 +4183,10 @@ namespace TARS
             string statuspartida = Jogo.ExibirHistorico(IdPartida);
             if (statuspartida.Contains("iniciou") || statuspartida.Contains("Iniciou"))
             {
+                if (statuspartida.Contains("venceu"))
+                {
+                    MessageBox.Show("Partida Acabada!");
+                }
                 lbl_statuspart.ForeColor = System.Drawing.Color.Green;
 
                 string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
@@ -4214,7 +4224,7 @@ namespace TARS
                         }
                         else if(movimentosfeitos == 2)
                         {
-                            rolarDados(); 
+                            //rolarDados(); 
 
                         }
                         else
@@ -4226,6 +4236,8 @@ namespace TARS
                     catch (Exception ex)
                     {
                         MessageBox.Show("Ocorreu um erro " + ex.Message);
+                        lbl_erro.Visible = true;
+                        lbl_erro.Text = ex.Message;
                     }
 
                 }

@@ -461,6 +461,7 @@ namespace TARS
             this.pcb_j3113 = new System.Windows.Forms.Panel();
             this.pcb_j2113 = new System.Windows.Forms.Panel();
             this.pcb_j1113 = new System.Windows.Forms.Panel();
+            this.lbl_erro = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_dado3)).BeginInit();
@@ -4096,6 +4097,19 @@ namespace TARS
             this.pcb_j1113.TabIndex = 543;
             this.pcb_j1113.Visible = false;
             // 
+            // lbl_erro
+            // 
+            this.lbl_erro.AutoSize = true;
+            this.lbl_erro.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_erro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_erro.ForeColor = System.Drawing.Color.Red;
+            this.lbl_erro.Location = new System.Drawing.Point(178, 553);
+            this.lbl_erro.Name = "lbl_erro";
+            this.lbl_erro.Size = new System.Drawing.Size(88, 29);
+            this.lbl_erro.TabIndex = 612;
+            this.lbl_erro.Text = " ERRO";
+            this.lbl_erro.Visible = false;
+            // 
             // Tabuleiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4104,6 +4118,7 @@ namespace TARS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1163, 679);
+            this.Controls.Add(this.lbl_erro);
             this.Controls.Add(this.pcb_j286);
             this.Controls.Add(this.pcb_j4113);
             this.Controls.Add(this.pcb_j4111);
@@ -5062,5 +5077,6 @@ namespace TARS
         private System.Windows.Forms.Panel pcb_j2113;
         private System.Windows.Forms.Panel pcb_j1113;
         private System.Windows.Forms.Panel pcb_j286;
+        private System.Windows.Forms.Label lbl_erro;
     }
 }
