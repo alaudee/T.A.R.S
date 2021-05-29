@@ -4103,7 +4103,7 @@ namespace TARS
             this.lbl_erro.BackColor = System.Drawing.Color.Transparent;
             this.lbl_erro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_erro.ForeColor = System.Drawing.Color.Red;
-            this.lbl_erro.Location = new System.Drawing.Point(178, 553);
+            this.lbl_erro.Location = new System.Drawing.Point(12, 553);
             this.lbl_erro.Name = "lbl_erro";
             this.lbl_erro.Size = new System.Drawing.Size(88, 29);
             this.lbl_erro.TabIndex = 612;

@@ -6,8 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CantStopServer;
-
-namespace TARS
+using System.Collections;
+namespace TARS 
 {
     public class Dado
     {
@@ -17,8 +17,8 @@ namespace TARS
 
         public static string[] dupladodado = new string[6];
         public static string dadoescolhido = "";
-
         
+
         //Coloca a imagem do respectivo valor do dado 
         public void PopularImagens(char valordado)
         {
@@ -39,7 +39,7 @@ namespace TARS
 
         //Gera todas as combinações possiveis da rolagem de dados
 
-        public static string FormarDuplasSomaDados(char[] valordado, bool[] trilhaFormada)
+        public static string FormarDuplasSomaDados(char[] valordado, bool[] trilhaFormada, ArrayList trilhasalpinistas)
         {
             int[] trilha = new int[6];
             dadoescolhido = "";
@@ -62,7 +62,7 @@ namespace TARS
             trilha[5] = (int)Char.GetNumericValue(valordado[2]) + (int)Char.GetNumericValue(valordado[3]);// dado 3 e 4
             dupladodado[5] = "34";
 
-            preferencia(trilha, trilhaFormada);
+            preferencia(trilha, trilhaFormada,trilhasalpinistas);
 
             /*Jogo.VerificarTrilhas(idpartida)
               trilha[0]  jogadorid[1]
@@ -76,10 +76,21 @@ namespace TARS
                 if (bora == true)//pode jogar
                 {
                     dadoescolhido += "e" + trilha[0] + "e" + trilha[5];
+                    if(trilha[0] == trilha[5])
+                    {
+                        trilhasalpinistas.Add(trilha[0]);
+                    }
+                    else
+                    {
+                        trilhasalpinistas.Add(trilha[0]);
+                        trilhasalpinistas.Add(trilha[5]);
+                    }
                 }
                 else
                 {
                     dadoescolhido += "e" + trilha[0] + "e" + 0;
+                    trilhasalpinistas.Add(trilha[0]);
+
                 }
             }
             else if(dadoescolhido == "13")
@@ -89,10 +100,20 @@ namespace TARS
                 if (bora == true)//pode jogar
                 {
                     dadoescolhido += "e" + trilha[1] + "e" + trilha[4];
+                    if (trilha[1] == trilha[4])
+                    {
+                        trilhasalpinistas.Add(trilha[1]);
+                    }
+                    else
+                    {
+                        trilhasalpinistas.Add(trilha[1]);
+                        trilhasalpinistas.Add(trilha[4]);
+                    }
                 }
                 else
                 {
                     dadoescolhido += "e" + trilha[1] + "e" + 0;
+                    trilhasalpinistas.Add(trilha[1]);
                 }
                
             }
@@ -103,10 +124,20 @@ namespace TARS
                 if (bora == true)//pode jogar
                 {
                     dadoescolhido += "e" + trilha[2] + "e" + trilha[3];
+                    if (trilha[2] == trilha[3])
+                    {
+                        trilhasalpinistas.Add(trilha[2]);
+                    }
+                    else
+                    {
+                        trilhasalpinistas.Add(trilha[2]);
+                        trilhasalpinistas.Add(trilha[3]);
+                    }
                 }
                 else
                 {
                     dadoescolhido += "e" + trilha[2] + "e" + 0;
+                    trilhasalpinistas.Add(trilha[2]);
                 }
                
             }
@@ -117,10 +148,20 @@ namespace TARS
                 if (bora == true)//pode jogar
                 {
                     dadoescolhido += "e" + trilha[3] + "e" + trilha[2];
+                    if (trilha[2] == trilha[3])
+                    {
+                        trilhasalpinistas.Add(trilha[2]);
+                    }
+                    else
+                    {
+                        trilhasalpinistas.Add(trilha[2]);
+                        trilhasalpinistas.Add(trilha[3]);
+                    }
                 }
                 else
                 {
                     dadoescolhido += "e" + trilha[3] + "e" + 0;
+                    trilhasalpinistas.Add(trilha[3]);
                 }
                 
             }
@@ -131,10 +172,20 @@ namespace TARS
                 if (bora == true)//pode jogar
                 {
                     dadoescolhido += "e" + trilha[4] + "e" + trilha[1];
+                    if (trilha[4] == trilha[1])
+                    {
+                        trilhasalpinistas.Add(trilha[4]);
+                    }
+                    else
+                    {
+                        trilhasalpinistas.Add(trilha[4]);
+                        trilhasalpinistas.Add(trilha[1]);
+                    }
                 }
                 else
                 {
                     dadoescolhido += "e" + trilha[4] + "e" + 0;
+                    trilhasalpinistas.Add(trilha[4]);
                 }
                
             }
@@ -145,10 +196,20 @@ namespace TARS
                 if (bora == true)//pode jogar
                 {
                     dadoescolhido += "e" + trilha[5] + "e" + trilha[0];
+                    if (trilha[5] == trilha[0])
+                    {
+                        trilhasalpinistas.Add(trilha[5]);
+                    }
+                    else
+                    {
+                        trilhasalpinistas.Add(trilha[5]);
+                        trilhasalpinistas.Add(trilha[0]);
+                    }
                 }
                 else
                 {
                     dadoescolhido += "e" + trilha[5] + "e" + 0;
+                    trilhasalpinistas.Add(trilha[5]);
                 }
             }
 
@@ -174,8 +235,20 @@ namespace TARS
             return caso;
         }
 
-        public static void preferencia(int[] trilhas, bool[] trilhaCompleta)
+        public static void preferencia(int[] trilhas, bool[] trilhaCompleta, ArrayList trilhasalpinistas)
         {
+            for (int i = 0; i < trilhas.Length; i++)
+            {
+                for (int j = 0; j < trilhasalpinistas.Count; j++)
+                {
+                    if (trilhas[i] == (int)trilhasalpinistas[j])
+                    {
+                        dadoescolhido += dupladodado[i];
+                        return;
+                    }
+                }
+            }
+
             for (int i = 0; i < trilhas.Length; i++)
             {
                 if (trilhaCompleta[5] == false)
@@ -185,6 +258,7 @@ namespace TARS
                         dadoescolhido += dupladodado[i];
                         return;
                     }
+                    
                 }
                 
             }

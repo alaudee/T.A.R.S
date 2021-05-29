@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CantStopServer;
+using System.Collections;
 
 namespace TARS
 {
@@ -36,6 +37,8 @@ namespace TARS
 
         public bool[] trilhaFeita = new bool[11];
 
+        ArrayList trilhasalpinistas = new ArrayList();
+
         //DataTable que guarda toda a informação do tabuleiro
         DataTable dtb_tabuleiro;
         public Tabuleiro(string infojogador, int idpartida) 
@@ -55,7 +58,6 @@ namespace TARS
             lbl_idjogador.Text = "Id: "+ JogadorAtivo.Id;
             lbl_senhajogador.Text = "Senha: " + JogadorAtivo.Senha;
             lbl_corjogador.Text = "Cor: " + JogadorAtivo.corjogador;
-
 
             //Procura qual é a cor do jogador para mostrar no panel
             for(int i = 0; i < 1; i++)
@@ -119,7 +121,6 @@ namespace TARS
             string dados = Jogo.RolarDados(JogadorAtivo.Id, JogadorAtivo.Senha);
             if (dados.Contains("ERRO"))
             {
-                MessageBox.Show(dados);
                 lbl_erro.Visible = true;
                 lbl_erro.Text = dados;
             }
@@ -4132,7 +4133,7 @@ namespace TARS
                 string trilhasEscolhidas = "";
                 dadoescolha = "";
 
-                string resultado = Dado.FormarDuplasSomaDados(valordado,trilhaFeita);
+                string resultado = Dado.FormarDuplasSomaDados(valordado,trilhaFeita, trilhasalpinistas);
                 string[] divisao = resultado.Split('e');
                 //vai retornar a ordem dos dados e as trilhas
                 trilhasEscolhidas += Dado.converteHexadecimal(divisao[1]);
@@ -4144,7 +4145,6 @@ namespace TARS
                 string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, trilhasEscolhidas);
                 if (movimento.Contains("ERRO"))
                 {
-                    MessageBox.Show(movimento);
                     lbl_erro.Visible = true;
                     lbl_erro.Text = movimento;
                     
@@ -4213,25 +4213,37 @@ namespace TARS
                     
                     try
                     {
-                        if (movimentosfeitos == 1)
-                        {
-                            string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
-                            if (parar.Contains("ERRO"))
-                            {
-                                MessageBox.Show(parar);
-                            }
-                            movimentosfeitos = 0;
-                        }
-                        else if(movimentosfeitos == 2)
-                        {
-                            //rolarDados(); 
+                        rolarDados();
+                        MovimentosBOT();
+                        rolarDados();
+                        MovimentosBOT();
 
-                        }
-                        else
+                        string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
+                        if (parar.Contains("ERRO"))
                         {
-                            rolarDados();
-                            MovimentosBOT();
+                            lbl_erro.Visible = true;
+                            lbl_erro.Text = parar;
                         }
+                        trilhasalpinistas.Clear();
+                        //if (movimentosfeitos == 1)
+                        //{
+                        //    string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
+                        //    if (parar.Contains("ERRO"))
+                        //    {
+                        //        MessageBox.Show(parar);
+                        //    }
+                        //    movimentosfeitos = 0;
+                        //    trilhasalpinistas.Clear();
+                        //}
+                        //else if(movimentosfeitos == 2)
+                        //{
+                        //    //rolarDados(); 
+                        //}
+                        //else
+                        //{
+                        //    rolarDados();
+                        //    MovimentosBOT();
+                        //}
                     }
                     catch (Exception ex)
                     {
@@ -4248,7 +4260,7 @@ namespace TARS
         private void Tabuleiro_Load(object sender, EventArgs e)
         {
             Timer timer = new Timer();
-            timer.Interval = (5 * 1000); // 5 secs
+            timer.Interval = (3 * 1000); // 3 secs
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
         }

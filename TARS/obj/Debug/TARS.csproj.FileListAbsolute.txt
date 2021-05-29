@@ -17,7 +17,6 @@ C:\Users\Simulador\Desktop\T.A.R.S\TARS\bin\Debug\TARS.pdb
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\bin\Debug\CantStopServer.dll
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\bin\Debug\CantStopServer.xml
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.csprojAssemblyReference.cache
-C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Lobby.resources
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.Properties.Resources.resources
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.csproj.GenerateResource.cache
 C:\Users\Simulador\Desktop\T.A.R.S\TARS\obj\Debug\TARS.csproj.CoreCompileInputs.cache
