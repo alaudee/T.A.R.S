@@ -4169,7 +4169,6 @@ namespace TARS
         private void btn_iniciarpartida_Click(object sender, EventArgs e) 
         {
             string retorno = Jogo.IniciarPartida(JogadorAtivo.Id, JogadorAtivo.Senha);
-            MessageBox.Show("Iniciada a partida");
             lbl_statuspart.Text = "Partida iniciada";
             lbl_statuspart.ForeColor = System.Drawing.Color.Green;    
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
@@ -4183,9 +4182,10 @@ namespace TARS
             string statuspartida = Jogo.ExibirHistorico(IdPartida);
             if (statuspartida.Contains("iniciou") || statuspartida.Contains("Iniciou"))
             {
-                if (statuspartida.Contains("venceu"))
+                if (statuspartida.Contains("vencedor!"))
                 {
                     MessageBox.Show("Partida Acabada!");
+                    Application.Exit();
                 }
                 lbl_statuspart.ForeColor = System.Drawing.Color.Green;
 
@@ -4215,8 +4215,10 @@ namespace TARS
                     {
                         rolarDados();
                         MovimentosBOT();
+
                         rolarDados();
                         MovimentosBOT();
+
 
                         string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
                         if (parar.Contains("ERRO"))
@@ -4225,25 +4227,7 @@ namespace TARS
                             lbl_erro.Text = parar;
                         }
                         trilhasalpinistas.Clear();
-                        //if (movimentosfeitos == 1)
-                        //{
-                        //    string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
-                        //    if (parar.Contains("ERRO"))
-                        //    {
-                        //        MessageBox.Show(parar);
-                        //    }
-                        //    movimentosfeitos = 0;
-                        //    trilhasalpinistas.Clear();
-                        //}
-                        //else if(movimentosfeitos == 2)
-                        //{
-                        //    //rolarDados(); 
-                        //}
-                        //else
-                        //{
-                        //    rolarDados();
-                        //    MovimentosBOT();
-                        //}
+
                     }
                     catch (Exception ex)
                     {
