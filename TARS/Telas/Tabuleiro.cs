@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CantStopServer;
-using System.Collections;
 
 namespace TARS
 {
@@ -157,12 +156,12 @@ namespace TARS
                     ListaDados.Add(d);
                 }
 
-                pcb_dado1.Image = ListaDados[0].FaceDado;
-                pcb_dado2.Image = ListaDados[1].FaceDado;
-                pcb_dado3.Image = ListaDados[2].FaceDado;
-                pcb_dado4.Image = ListaDados[3].FaceDado;
+                //pcb_dado1.Image = ListaDados[0].FaceDado;
+                //pcb_dado2.Image = ListaDados[1].FaceDado;
+                //pcb_dado3.Image = ListaDados[2].FaceDado;
+                //pcb_dado4.Image = ListaDados[3].FaceDado;
 
-                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+                //rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
             }
         }
 
@@ -4127,7 +4126,7 @@ namespace TARS
 
         //Função Main das jogadas do BOT
         public void MovimentosBOT()
-        {
+       {
             try
             {
                 string trilhasEscolhidas = "";
@@ -4147,16 +4146,7 @@ namespace TARS
                 {
                     lbl_erro.Visible = true;
                     lbl_erro.Text = movimento;
-                    
                 }
-                else
-                {
-                    string retornotab = Jogo.ExibirTabuleiro(IdPartida);
-                    dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
-                    desenharTabuleiro(idJogadores);
-                    rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-                }
-                movimentosfeitos++;
             }
             catch(Exception ex)
             {
@@ -4177,9 +4167,9 @@ namespace TARS
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
-
             string statuspartida = Jogo.ExibirHistorico(IdPartida);
+            rtxt_historicoP.Text = statuspartida;
+
             if (statuspartida.Contains("iniciou") || statuspartida.Contains("Iniciou"))
             {
                 if (statuspartida.Contains("vencedor!"))
@@ -4222,6 +4212,11 @@ namespace TARS
                         rolarDados();
                         MovimentosBOT();
 
+                        string retornotab = Jogo.ExibirTabuleiro(IdPartida);
+                        dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
+                        desenharTabuleiro(idJogadores);
+                        rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+
                         string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
                         if (parar.Contains("ERRO"))
                         {
@@ -4246,7 +4241,7 @@ namespace TARS
         private void Tabuleiro_Load(object sender, EventArgs e)
         {
             Timer timer = new Timer();
-            timer.Interval = (3 * 1000); // 3 secs
+            timer.Interval = (5 * 1000); // 5 secs
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
         }
