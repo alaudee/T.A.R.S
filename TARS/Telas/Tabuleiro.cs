@@ -4219,6 +4219,8 @@ namespace TARS
                         rolarDados();
                         MovimentosBOT();
 
+                        rolarDados();
+                        MovimentosBOT();
 
                         string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
                         if (parar.Contains("ERRO"))
