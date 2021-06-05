@@ -176,10 +176,11 @@ namespace TARS
             pcb_A122.Visible = false;
             pcb_A123.Visible = false;
         }
-
+        
         //Função que verifica qual jogador está jogando agora
         public void jogadorCor()
         {
+
             for (int i = 0; i < corJogdores.Length; i++)
             {
 
@@ -4220,8 +4221,9 @@ namespace TARS
             }
         }
 
+        
         //Função Main das jogadas do BOT
-        public void MovimentosBOT()
+        public bool MovimentosBOT()
        {
             try
             {
@@ -4236,19 +4238,17 @@ namespace TARS
 
                 dadoescolha += divisao[0];
 
-
                 string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, trilhasEscolhidas);
                 if (movimento.Contains("ERRO"))
                 {
                     lbl_erro.Visible = true;
                     lbl_erro.Text = movimento;
                 }
+                return false;
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Ocorreu um erro " + ex.Message);
-                lbl_erro.Visible = true;
-                lbl_erro.Text = ex.Message;
+                return true;
             }
         }
 
@@ -4313,33 +4313,22 @@ namespace TARS
                     
                     try
                     {
-                        //for (int i = 0; i < 3; i++)
-                        //{
-                        //    rolarDados();
-                        //    MovimentosBOT();
-                        //    AtualizarTabuleiro();
-                        //    Thread.Sleep(500);
-                        //}
-                        rolarDados();
-                        MovimentosBOT();
-                        AtualizarTabuleiro();
-                        Thread.Sleep(500);
-
-                        rolarDados();
-                        MovimentosBOT();
-                        AtualizarTabuleiro();
-                        Thread.Sleep(500);
-
-                        rolarDados();
-                        MovimentosBOT();
-                        AtualizarTabuleiro();
-                        Thread.Sleep(500);
-
-                        string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
-                        if (parar.Contains("ERRO"))
+                        bool Caiu =false;
+                        for (int i = 0; i < 3 && !Caiu; i++)
                         {
-                            lbl_erro.Visible = true;
-                            lbl_erro.Text = parar;
+                            rolarDados();
+                            Caiu = MovimentosBOT();
+                            AtualizarTabuleiro();
+                            Thread.Sleep(500);
+                        }
+                        if (!Caiu)
+                        {
+                            string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
+                            if (parar.Contains("ERRO"))
+                            {
+                                lbl_erro.Visible = true;
+                                lbl_erro.Text = parar;
+                            }
                         }
                         trilhasalpinistas.Clear();
 

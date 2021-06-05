@@ -36,8 +36,6 @@ namespace TARS
             else
                 this.FaceDado = TARS.Properties.Resources.dado6;
         }
-
-
         //Gera todas as combinações possiveis da rolagem de dados
 
         public static string FormarDuplasSomaDados(char[] valordado, bool[] trilhaFormada, ArrayList trilhasalpinistas)
@@ -613,7 +611,7 @@ namespace TARS
                             }
                             else if (trilhasalpinistas.Count < 2)//significa que tem dois alpinistas em trilha diferente, então posso colocar mais um
                             {
-                                dadoescolhido += "e" + trilha[2] + "e" + trilha[3];
+                                dadoescolhido += "e" + trilha[3] + "e" + trilha[2];
                                 trilhasalpinistas.Add(trilha[3]);
                                 trilhasalpinistas.Add(trilha[2]);
                             }
@@ -652,7 +650,7 @@ namespace TARS
                             {
                                 if (trilhasalpinistas.Count == 2)
                                 {
-                                    dadoescolhido += "e" + trilha[2] + "e" + trilha[3];
+                                    dadoescolhido += "e" + trilha[3] + "e" + trilha[2];
                                     return dadoescolhido;
                                 }
                                 if (trilha[2] == (int)trilhasalpinistas[i])
@@ -669,7 +667,7 @@ namespace TARS
                         }
                         else
                         {
-                            dadoescolhido += "e" + trilha[2] + "e" + trilha[3];
+                            dadoescolhido += "e" + trilha[3] + "e" + trilha[2];
                         }
 
                     }
