@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CantStopServer;
+using System.Threading;
+using Timer = System.Windows.Forms.Timer;
 
 namespace TARS
 {
@@ -18,6 +20,7 @@ namespace TARS
         public  string Infojogador { get; set; }
         public int IdPartida { get; set; }
 
+        bool iniciadaPartida = false;
 
         //Os valores dos dados rolados
         char[] valordado = new char[4];
@@ -31,9 +34,6 @@ namespace TARS
         string[] idJogadores = new string[4];
         string[] corJogdores = new string[4];
 
-        // O bot jogará 1 vezes no maximo e logo depois irá parar
-        int movimentosfeitos = 0;
-
         public bool[] trilhaFeita = new bool[11];
 
         ArrayList trilhasalpinistas = new ArrayList();
@@ -46,7 +46,6 @@ namespace TARS
             JogadorAtivo = new Jogador();
             this.Infojogador = infojogador;
             this.IdPartida = idpartida;
-
             rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
             string[] linha = Infojogador.Split(',');
             JogadorAtivo.Id = Convert.ToInt32(linha[0]);
@@ -79,6 +78,103 @@ namespace TARS
                 }
             }
 
+        }
+
+        public void LimparAlpinistas()
+        {
+            pcb_A21.Visible = false;
+            pcb_A22.Visible = false;
+            pcb_A23.Visible = false;
+
+            pcb_A31.Visible = false;
+            pcb_A32.Visible = false;
+            pcb_A33.Visible = false;
+            pcb_A34.Visible = false;
+            pcb_A35.Visible = false;
+
+            pcb_A41.Visible = false;
+            pcb_A42.Visible = false;
+            pcb_A43.Visible = false;
+            pcb_A44.Visible = false;
+            pcb_A45.Visible = false;
+            pcb_A46.Visible = false;
+            pcb_A47.Visible = false;
+
+            pcb_A51.Visible = false;
+            pcb_A52.Visible = false;
+            pcb_A53.Visible = false;
+            pcb_A54.Visible = false;
+            pcb_A55.Visible = false;
+            pcb_A56.Visible = false;
+            pcb_A57.Visible = false;
+            pcb_A58.Visible = false;
+            pcb_A59.Visible = false;
+
+            pcb_A61.Visible = false;
+            pcb_A62.Visible = false;
+            pcb_A63.Visible = false;
+            pcb_A64.Visible = false;
+            pcb_A65.Visible = false;
+            pcb_A66.Visible = false;
+            pcb_A67.Visible = false;
+            pcb_A68.Visible = false;
+            pcb_A69.Visible = false;
+            pcb_A610.Visible = false;
+            pcb_A611.Visible = false;
+
+            pcb_A71.Visible = false;
+            pcb_A72.Visible = false;
+            pcb_A73.Visible = false;
+            pcb_A74.Visible = false;
+            pcb_A75.Visible = false;
+            pcb_A76.Visible = false;
+            pcb_A77.Visible = false;
+            pcb_A78.Visible = false;
+            pcb_A79.Visible = false;
+            pcb_A710.Visible = false;
+            pcb_A711.Visible = false;
+            pcb_A712.Visible = false;
+            pcb_A713.Visible = false;
+
+            pcb_A81.Visible = false;
+            pcb_A82.Visible = false;
+            pcb_A83.Visible = false;
+            pcb_A84.Visible = false;
+            pcb_A85.Visible = false;
+            pcb_A86.Visible = false;
+            pcb_A87.Visible = false;
+            pcb_A88.Visible = false;
+            pcb_A89.Visible = false;
+            pcb_A810.Visible = false;
+            pcb_A811.Visible = false;
+
+            pcb_A91.Visible = false;
+            pcb_A92.Visible = false;
+            pcb_A93.Visible = false;
+            pcb_A94.Visible = false;
+            pcb_A95.Visible = false;
+            pcb_A96.Visible = false;
+            pcb_A97.Visible = false;
+            pcb_A98.Visible = false;
+            pcb_A99.Visible = false;
+
+            pcb_A101.Visible = false;
+            pcb_A102.Visible = false;
+            pcb_A103.Visible = false;
+            pcb_A104.Visible = false;
+            pcb_A105.Visible = false;
+            pcb_A106.Visible = false;
+            pcb_A107.Visible = false;
+
+            pcb_A111.Visible = false;
+            pcb_A112.Visible = false;
+            pcb_A113.Visible = false;
+            pcb_A114.Visible = false;
+            pcb_A115.Visible = false;
+
+            pcb_A121.Visible = false;
+            pcb_A122.Visible = false;
+            pcb_A123.Visible = false;
         }
 
         //Função que verifica qual jogador está jogando agora
@@ -214,7 +310,7 @@ namespace TARS
                                         pcb_j421.BackColor = Color.Yellow;
                                         pcb_j421.Visible = true;
                                     }
-                                    pcb_A21.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "2")
@@ -263,7 +359,7 @@ namespace TARS
                                             pcb_j421.Visible = false;
                                         }
                                     }
-                                    pcb_A22.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
 
@@ -296,7 +392,7 @@ namespace TARS
                                         pcb_j423.BackColor = Color.Yellow;
                                         pcb_j423.Visible = true;
                                     }
-                                    pcb_A23.Visible = false;
+                                    LimparAlpinistas();
                                     trilhaFeita[0] = true;
                                 }
                             }
@@ -336,7 +432,7 @@ namespace TARS
                                         pcb_j431.BackColor = Color.Yellow;
                                         pcb_j431.Visible = true;
                                     }
-                                    pcb_A31.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "2")
@@ -384,7 +480,7 @@ namespace TARS
                                             pcb_j431.Visible = false;
                                         }
                                     }
-                                    pcb_A32.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -436,7 +532,7 @@ namespace TARS
                                             pcb_j432.Visible = false;
                                         }
                                     }
-                                    pcb_A33.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -488,7 +584,7 @@ namespace TARS
                                             pcb_j433.Visible = false;
                                         }
                                     }
-                                    pcb_A34.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -520,7 +616,7 @@ namespace TARS
                                         pcb_j435.BackColor = Color.Yellow;
                                         pcb_j435.Visible = true;
                                     }
-                                    pcb_A35.Visible = false;
+                                    LimparAlpinistas();
                                     trilhaFeita[1] = true;
                                 }
                             }
@@ -560,7 +656,7 @@ namespace TARS
                                         pcb_j441.BackColor = Color.Yellow;
                                         pcb_j441.Visible = true;
                                     }
-                                    pcb_A41.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "2")
@@ -608,7 +704,7 @@ namespace TARS
                                             pcb_j441.Visible = false;
                                         }
                                     }
-                                    pcb_A42.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -661,7 +757,7 @@ namespace TARS
                                             pcb_j442.Visible = false;
                                         }
                                     }
-                                    pcb_A43.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -714,7 +810,7 @@ namespace TARS
                                             pcb_j443.Visible = false;
                                         }
                                     }
-                                    pcb_A44.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -767,7 +863,7 @@ namespace TARS
                                             pcb_j444.Visible = false;
                                         }
                                     }
-                                    pcb_A45.Visible = false;
+                                    LimparAlpinistas();
 
                                 }
                             }
@@ -821,7 +917,7 @@ namespace TARS
                                             pcb_j445.Visible = false;
                                         }
                                     }
-                                    pcb_A46.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -854,7 +950,7 @@ namespace TARS
                                         pcb_j447.BackColor = Color.Yellow;
                                         pcb_j447.Visible = true;
                                     }
-                                    pcb_A47.Visible = false;
+                                    LimparAlpinistas();
                                     trilhaFeita[2] = true;
                                 }
                             }
@@ -894,7 +990,7 @@ namespace TARS
                                         pcb_j451.BackColor = Color.Yellow;
                                         pcb_j451.Visible = true;
                                     }
-                                    pcb_A51.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "2")
@@ -942,7 +1038,7 @@ namespace TARS
                                             pcb_j451.Visible = false;
                                         }
                                     }
-                                    pcb_A52.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -994,7 +1090,7 @@ namespace TARS
                                             pcb_j452.Visible = false;
                                         }
                                     }
-                                    pcb_A53.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -1046,7 +1142,7 @@ namespace TARS
                                             pcb_j453.Visible = false;
                                         }
                                     }
-                                    pcb_A54.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -1098,7 +1194,7 @@ namespace TARS
                                             pcb_j454.Visible = false;
                                         }
                                     }
-                                    pcb_A55.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -1150,7 +1246,7 @@ namespace TARS
                                             pcb_j455.Visible = false;
                                         }
                                     }
-                                    pcb_A56.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -1202,7 +1298,7 @@ namespace TARS
                                             pcb_j456.Visible = false;
                                         }
                                     }
-                                    pcb_A57.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -1254,7 +1350,7 @@ namespace TARS
                                             pcb_j457.Visible = false;
                                         }
                                     }
-                                    pcb_A58.Visible = false;                 
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -1286,7 +1382,7 @@ namespace TARS
                                         pcb_j459.BackColor = Color.Yellow;
                                         pcb_j459.Visible = true;
                                     }
-                                    pcb_A59.Visible = false;
+                                    LimparAlpinistas();
                                     trilhaFeita[3] = true;
                                 }
                             }
@@ -1326,7 +1422,7 @@ namespace TARS
                                         pcb_j461.BackColor = Color.Yellow;
                                         pcb_j461.Visible = true;
                                     }
-                                    pcb_A61.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "2")
@@ -1374,7 +1470,7 @@ namespace TARS
                                             pcb_j461.Visible = false;
                                         }
                                     }
-                                    pcb_A62.Visible = false;
+                                    LimparAlpinistas();
 
                                 }
                             }
@@ -1427,7 +1523,7 @@ namespace TARS
                                             pcb_j462.Visible = false;
                                         }
                                     }
-                                    pcb_A63.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -1479,7 +1575,7 @@ namespace TARS
                                             pcb_j463.Visible = false;
                                         }
                                     }
-                                    pcb_A64.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -1531,7 +1627,7 @@ namespace TARS
                                             pcb_j464.Visible = false;
                                         }
                                     }
-                                    pcb_A65.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -1583,7 +1679,7 @@ namespace TARS
                                             pcb_j465.Visible = false;
                                         }
                                     }
-                                    pcb_A66.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -1635,7 +1731,7 @@ namespace TARS
                                             pcb_j466.Visible = false;
                                         }
                                     }
-                                    pcb_A67.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -1687,7 +1783,7 @@ namespace TARS
                                             pcb_j467.Visible = false;
                                         }
                                     }
-                                    pcb_A68.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -1739,7 +1835,7 @@ namespace TARS
                                             pcb_j468.Visible = false;
                                         }
                                     }
-                                    pcb_A69.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "10")
@@ -1791,7 +1887,7 @@ namespace TARS
                                             pcb_j469.Visible = false;
                                         }
                                     }
-                                    pcb_A610.Visible = false;     
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "11")
@@ -1823,7 +1919,7 @@ namespace TARS
                                         pcb_j4611.BackColor = Color.Yellow;
                                         pcb_j4611.Visible = true;
                                     }
-                                    pcb_A611.Visible = false;
+                                    LimparAlpinistas();
                                     trilhaFeita[4] = true;
                                 }
                             }
@@ -1863,7 +1959,7 @@ namespace TARS
                                         pcb_j471.BackColor = Color.Yellow;
                                         pcb_j471.Visible = true;
                                     }
-                                    pcb_A71.Visible = false;
+                                    LimparAlpinistas();
                                 }
 
                             }
@@ -1912,7 +2008,7 @@ namespace TARS
                                             pcb_j471.Visible = false;
                                         }
                                     }
-                                    pcb_A72.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -1964,7 +2060,7 @@ namespace TARS
                                             pcb_j472.Visible = false;
                                         }
                                     }
-                                    pcb_A73.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -2016,7 +2112,7 @@ namespace TARS
                                             pcb_j473.Visible = false;
                                         }
                                     }
-                                    pcb_A74.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -2068,7 +2164,7 @@ namespace TARS
                                             pcb_j474.Visible = false;
                                         }
                                     }
-                                    pcb_A75.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -2120,7 +2216,7 @@ namespace TARS
                                             pcb_j475.Visible = false;
                                         }
                                     }
-                                    pcb_A76.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -2172,7 +2268,7 @@ namespace TARS
                                             pcb_j476.Visible = false;
                                         }
                                     }
-                                    pcb_A77.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -2224,7 +2320,7 @@ namespace TARS
                                             pcb_j477.Visible = false;
                                         }
                                     }
-                                    pcb_A78.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -2276,7 +2372,7 @@ namespace TARS
                                             pcb_j478.Visible = false;
                                         }
                                     }
-                                    pcb_A79.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "10")
@@ -2328,7 +2424,7 @@ namespace TARS
                                             pcb_j479.Visible = false;
                                         }
                                     }
-                                    pcb_A710.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "11")
@@ -2380,7 +2476,7 @@ namespace TARS
                                             pcb_j4710.Visible = false;
                                         }
                                     }
-                                    pcb_A711.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "12")
@@ -2432,7 +2528,7 @@ namespace TARS
                                             pcb_j4711.Visible = false;
                                         }
                                     }
-                                    pcb_A712.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else
@@ -2464,7 +2560,7 @@ namespace TARS
                                         pcb_j4713.BackColor = Color.Yellow;
                                         pcb_j4713.Visible = true;
                                     }
-                                    pcb_A713.Visible = false;
+                                    LimparAlpinistas();
                                     trilhaFeita[5] = true;
                                 }
                             }
@@ -2504,7 +2600,7 @@ namespace TARS
                                         pcb_j481.BackColor = Color.Yellow;
                                         pcb_j481.Visible = true;
                                     }
-                                    pcb_A81.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "2")
@@ -2552,7 +2648,7 @@ namespace TARS
                                             pcb_j481.Visible = false;
                                         }
                                     }
-                                    pcb_A82.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -2604,7 +2700,7 @@ namespace TARS
                                             pcb_j482.Visible = false;
                                         }
                                     }
-                                    pcb_A83.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -2656,7 +2752,7 @@ namespace TARS
                                             pcb_j483.Visible = false;
                                         }
                                     }
-                                    pcb_A84.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -2708,7 +2804,7 @@ namespace TARS
                                             pcb_j484.Visible = false;
                                         }
                                     }
-                                    pcb_A85.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -2760,7 +2856,7 @@ namespace TARS
                                             pcb_j485.Visible = false;
                                         }
                                     }
-                                    pcb_A86.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -2812,7 +2908,7 @@ namespace TARS
                                             pcb_j486.Visible = false;
                                         }
                                     }
-                                    pcb_A87.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -2864,7 +2960,7 @@ namespace TARS
                                             pcb_j487.Visible = false;
                                         }
                                     }
-                                    pcb_A88.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -2916,7 +3012,7 @@ namespace TARS
                                             pcb_j488.Visible = false;
                                         }
                                     }
-                                    pcb_A89.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "10")
@@ -2968,7 +3064,7 @@ namespace TARS
                                             pcb_j489.Visible = false;
                                         }
                                     }
-                                    pcb_A810.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "11")
@@ -3000,7 +3096,7 @@ namespace TARS
                                         pcb_j4811.BackColor = Color.Yellow;
                                         pcb_j4811.Visible = true;
                                     }
-                                    pcb_A811.Visible = false;
+                                    LimparAlpinistas();
                                     trilhaFeita[6] = true;
                                     
                                 }
@@ -3041,7 +3137,7 @@ namespace TARS
                                         pcb_j491.BackColor = Color.Yellow;
                                         pcb_j491.Visible = true;
                                     }
-                                    pcb_A91.Visible = false;
+                                    LimparAlpinistas();
 
                                 }
                             }
@@ -3090,7 +3186,7 @@ namespace TARS
                                             pcb_j491.Visible = false;
                                         }
                                     }
-                                    pcb_A92.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -3142,7 +3238,7 @@ namespace TARS
                                             pcb_j492.Visible = false;
                                         }
                                     }
-                                    pcb_A93.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -3194,7 +3290,7 @@ namespace TARS
                                             pcb_j493.Visible = false;
                                         }
                                     }
-                                    pcb_A94.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -3246,7 +3342,7 @@ namespace TARS
                                             pcb_j494.Visible = false;
                                         }
                                     }
-                                    pcb_A95.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -3298,7 +3394,7 @@ namespace TARS
                                         pcb_j496.BackColor = Color.Yellow;
                                         pcb_j496.Visible = true;
                                     }
-                                    pcb_A96.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -3350,7 +3446,7 @@ namespace TARS
                                             pcb_j496.Visible = false;
                                         }
                                     }
-                                    pcb_A97.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "8")
@@ -3402,7 +3498,7 @@ namespace TARS
                                             pcb_j497.Visible = false;
                                         }
                                     }
-                                    pcb_A98.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "9")
@@ -3434,7 +3530,7 @@ namespace TARS
                                         pcb_j499.BackColor = Color.Yellow;
                                         pcb_j499.Visible = true;
                                     }
-                                    pcb_A99.Visible = false;
+                                    LimparAlpinistas();
                                     trilhaFeita[7] = true;
                                 }
                             }
@@ -3474,7 +3570,7 @@ namespace TARS
                                         pcb_j4101.BackColor = Color.Yellow;
                                         pcb_j4101.Visible = true;
                                     }
-                                    pcb_A101.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "2")
@@ -3522,7 +3618,7 @@ namespace TARS
                                             pcb_j4101.Visible = false;
                                         }
                                     }
-                                    pcb_A102.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -3574,7 +3670,7 @@ namespace TARS
                                             pcb_j4102.Visible = false;
                                         }
                                     }
-                                    pcb_A103.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -3626,7 +3722,7 @@ namespace TARS
                                             pcb_j4103.Visible = false;
                                         }
                                     }
-                                    pcb_A104.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -3678,7 +3774,7 @@ namespace TARS
                                             pcb_j4104.Visible = false;
                                         }
                                     }
-                                    pcb_A105.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "6")
@@ -3735,7 +3831,7 @@ namespace TARS
                                             pcb_j4105.Visible = false;
                                         }
                                     }
-                                    pcb_A106.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "7")
@@ -3767,7 +3863,7 @@ namespace TARS
                                         pcb_j4107.BackColor = Color.Yellow;
                                         pcb_j4107.Visible = true;
                                     }
-                                    pcb_A107.Visible = false;
+                                    LimparAlpinistas();
                                     trilhaFeita[8] = true;
                                 }
                             }
@@ -3808,7 +3904,7 @@ namespace TARS
                                         pcb_j4111.BackColor = Color.Yellow;
                                         pcb_j4111.Visible = true;
                                     }
-                                    pcb_A111.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "2")
@@ -3856,7 +3952,7 @@ namespace TARS
                                             pcb_j4111.Visible = false;
                                         }
                                     }
-                                    pcb_A112.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -3909,7 +4005,7 @@ namespace TARS
                                             pcb_j4112.Visible = false;
                                         }
                                     }
-                                    pcb_A113.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
@@ -3961,7 +4057,7 @@ namespace TARS
                                             pcb_j4113.Visible = false;
                                         }
                                     }
-                                    pcb_A114.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "5")
@@ -3993,7 +4089,7 @@ namespace TARS
                                         pcb_j4115.BackColor = Color.Yellow;
                                         pcb_j4115.Visible = true;
                                     }
-                                    pcb_A115.Visible = false;
+                                    LimparAlpinistas();
                                     trilhaFeita[9] = true;
                                 }
                             }
@@ -4033,7 +4129,7 @@ namespace TARS
                                         pcb_j4121.BackColor = Color.Yellow;
                                         pcb_j4121.Visible = true;
                                     }
-                                    pcb_A121.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "2")
@@ -4081,7 +4177,7 @@ namespace TARS
                                             pcb_j4121.Visible = false;
                                         }
                                     }
-                                    pcb_A122.Visible = false;
+                                    LimparAlpinistas();
                                 }
                             }
                             else if (newRow[1].ToString() == "3")
@@ -4113,7 +4209,7 @@ namespace TARS
                                         pcb_j4123.BackColor = Color.Yellow;
                                         pcb_j4123.Visible = true;
                                     }
-                                    pcb_A123.Visible = false;
+                                    LimparAlpinistas();
                                     trilhaFeita[10] = true;
                                 }
                             }
@@ -4156,6 +4252,14 @@ namespace TARS
             }
         }
 
+        public void AtualizarTabuleiro()
+        {
+            string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
+            dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro);
+            desenharTabuleiro(idJogadores);
+            rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+        }
+
         private void btn_iniciarpartida_Click(object sender, EventArgs e) 
         {
             string retorno = Jogo.IniciarPartida(JogadorAtivo.Id, JogadorAtivo.Senha);
@@ -4165,6 +4269,9 @@ namespace TARS
             btn_iniciarpartida.Enabled = false;
         }
 
+        // Timer usado para o jogo todo
+        Timer timer = new Timer();
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             string statuspartida = Jogo.ExibirHistorico(IdPartida);
@@ -4172,17 +4279,20 @@ namespace TARS
 
             if (statuspartida.Contains("iniciou") || statuspartida.Contains("Iniciou"))
             {
+                iniciadaPartida = true;
+            }
+
+            if (iniciadaPartida == true)
+            {
                 if (statuspartida.Contains("vencedor!"))
                 {
-                    MessageBox.Show("Partida Acabada!");
-                    Application.Exit();
+                    timer.Stop();
+                    MessageBox.Show("Partida Encerrada!");
                 }
                 lbl_statuspart.ForeColor = System.Drawing.Color.Green;
 
-                string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
-                dtb_tabuleiro = TabuleiroP.LimparExibirTabuleiro(tabuleiro);
-                desenharTabuleiro(idJogadores);
-                
+                AtualizarTabuleiro();
+
                 //Mudar este código de lugar(Verificar onde coloca-lo)
                 string retorno = Jogo.ListarJogadores(IdPartida);
                 retorno = retorno.Replace("\r", " ");
@@ -4203,19 +4313,27 @@ namespace TARS
                     
                     try
                     {
+                        //for (int i = 0; i < 3; i++)
+                        //{
+                        //    rolarDados();
+                        //    MovimentosBOT();
+                        //    AtualizarTabuleiro();
+                        //    Thread.Sleep(500);
+                        //}
                         rolarDados();
                         MovimentosBOT();
+                        AtualizarTabuleiro();
+                        Thread.Sleep(500);
 
                         rolarDados();
                         MovimentosBOT();
+                        AtualizarTabuleiro();
+                        Thread.Sleep(500);
 
                         rolarDados();
                         MovimentosBOT();
-
-                        string retornotab = Jogo.ExibirTabuleiro(IdPartida);
-                        dtb_tabuleiro = TabuleiroP.AdicionarMovimentos(retornotab, dtb_tabuleiro);
-                        desenharTabuleiro(idJogadores);
-                        rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+                        AtualizarTabuleiro();
+                        Thread.Sleep(500);
 
                         string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
                         if (parar.Contains("ERRO"))
@@ -4234,13 +4352,12 @@ namespace TARS
                     }
 
                 }
-                rtxt_historicoP.Text = Jogo.ExibirHistorico(IdPartida);
+                AtualizarTabuleiro();
             }
         }
 
         private void Tabuleiro_Load(object sender, EventArgs e)
         {
-            Timer timer = new Timer();
             timer.Interval = (5 * 1000); // 5 secs
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
