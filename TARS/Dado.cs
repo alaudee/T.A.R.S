@@ -17,8 +17,6 @@ namespace TARS
 
         public static string[] dupladodado = new string[6];
         public static string dadoescolhido = "";
-        public static int cont = 1;
-
 
         //Coloca a imagem do respectivo valor do dado 
         public void PopularImagens(char valordado)
@@ -38,7 +36,7 @@ namespace TARS
         }
         //Gera todas as combinações possiveis da rolagem de dados
 
-        public static string FormarDuplasSomaDados(char[] valordado, bool[] trilhaFormada, ArrayList trilhasalpinistas)
+        public static string FormarDuplasSomaDados(char[] valordado, bool[] trilhaFormada, ArrayList trilhasalpinistas,int cont)
         {
             int[] trilha = new int[6];
             dadoescolhido = "";
@@ -89,11 +87,9 @@ namespace TARS
                             trilhasalpinistas.Add(trilha[0]);
                             trilhasalpinistas.Add(trilha[5]);
                         }
-                        cont++;
                     }
                     else if (cont == 2)
                     {
-                        cont++;
                         bool contem = false;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
@@ -164,12 +160,10 @@ namespace TARS
                                 dadoescolhido += "e" + trilha[0] + "e" + 0;
                                 trilhasalpinistas.Add(trilha[0]);
                             }
-
                         }
                     }
                     else
                     {
-                        cont = 1;
                         int verifica = 0;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
@@ -239,11 +233,9 @@ namespace TARS
                             trilhasalpinistas.Add(trilha[1]);
                             trilhasalpinistas.Add(trilha[4]);
                         }
-                        cont++;
                     }
                     else if (cont == 2)
                     {
-                        cont++;
                         bool contem = false;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
@@ -320,7 +312,6 @@ namespace TARS
                     }
                     else// cont == 3
                     {
-                        cont = 1;
                         int verifica = 0;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
@@ -392,11 +383,9 @@ namespace TARS
                             trilhasalpinistas.Add(trilha[2]);
                             trilhasalpinistas.Add(trilha[3]);
                         }
-                        cont++;
                     }
                     else if (cont == 2)
                     {
-                        cont++;
                         bool contem = false;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
@@ -475,7 +464,6 @@ namespace TARS
                     }
                     else
                     {
-                        cont = 1;
                         int verifica = 0;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
@@ -544,11 +532,9 @@ namespace TARS
                             trilhasalpinistas.Add(trilha[2]);
                             trilhasalpinistas.Add(trilha[3]);
                         }
-                        cont++;
                     }
                     else if (cont == 2)
                     {
-                        cont++;
                         bool contem = false;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
@@ -626,7 +612,6 @@ namespace TARS
                     }
                     else
                     {
-                        cont = 1;
                         int verifica = 0;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
@@ -697,11 +682,9 @@ namespace TARS
                             trilhasalpinistas.Add(trilha[4]);
                             trilhasalpinistas.Add(trilha[1]);
                         }
-                        cont++;
                     }
                     else if (cont == 2)
                     {
-                        cont++;
                         bool contem = false;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
@@ -777,7 +760,6 @@ namespace TARS
                     }
                     else
                     {
-                        cont = 1;
                         int verifica = 0;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
@@ -852,7 +834,6 @@ namespace TARS
                     }
                     else if (cont == 2)
                     {
-                        cont++;
                         bool contem = false;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
@@ -929,7 +910,6 @@ namespace TARS
                     else
                     {
                         int verifica = 0;
-                        cont = 1;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
                             if (trilha[5] == (int)trilhasalpinistas[i])
