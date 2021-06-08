@@ -36,7 +36,7 @@ namespace TARS
         }
         //Gera todas as combinações possiveis da rolagem de dados
 
-        public static string FormarDuplasSomaDados(char[] valordado, bool[] trilhaFormada, ArrayList trilhasalpinistas,int cont)
+        public static string FormarDuplasSomaDados(char[] valordado, bool[] trilhaFormada, ArrayList trilhasalpinistas, int cont, bool[] trilhaPrefeita)
         {
             int[] trilha = new int[6];
             dadoescolhido = "";
@@ -114,6 +114,16 @@ namespace TARS
                                         }
                                         trilhasalpinistas.Add(trilha[0]);
                                     }
+                                    else if (trilha[5] == trilha[0])
+                                    {
+                                        if (trilhaPrefeita[trilha[5] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[5] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
+                                    }
+
+
                                 }
                                 contem = true;
                                 return dadoescolhido;
@@ -137,6 +147,14 @@ namespace TARS
                                             }
                                         }
                                         trilhasalpinistas.Add(trilha[5]);
+                                    }
+                                    else if (trilha[5] == trilha[0])
+                                    {
+                                        if (trilhaPrefeita[trilha[5] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[5] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
                                     }
                                 }
                                 contem = true;
@@ -252,12 +270,20 @@ namespace TARS
                                     {
                                         for (int j = 0; j < trilhasalpinistas.Count; j++)
                                         {
-                                            if(trilha[1] == (int)trilhasalpinistas[j])
+                                            if (trilha[1] == (int)trilhasalpinistas[j])
                                             {
                                                 return dadoescolhido;
                                             }
                                         }
                                         trilhasalpinistas.Add(trilha[1]);
+                                    }
+                                    else if (trilha[4] == trilha[1])
+                                    {
+                                        if (trilhaPrefeita[trilha[4] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[4] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
                                     }
                                 }
 
@@ -284,6 +310,15 @@ namespace TARS
                                         }
                                         trilhasalpinistas.Add(trilha[4]);
                                     }
+                                    else if (trilha[4] == trilha[1])
+                                    {
+                                        if (trilhaPrefeita[trilha[4] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[4] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
+                                    }
+
                                 }
                                 contem = true;
                                 return dadoescolhido;
@@ -409,6 +444,14 @@ namespace TARS
                                         }
                                         trilhasalpinistas.Add(trilha[2]);
                                     }
+                                    else if (trilha[3] == trilha[2])
+                                    {
+                                        if (trilhaPrefeita[trilha[3] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[3] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
+                                    }
                                 }
                                 contem = true;
 
@@ -433,6 +476,14 @@ namespace TARS
                                             }
                                         }
                                         trilhasalpinistas.Add(trilha[3]);
+                                    }
+                                    else if (trilha[3] == trilha[2])
+                                    {
+                                        if (trilhaPrefeita[trilha[3] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[3] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
                                     }
                                 }
                                 contem = true;
@@ -558,6 +609,14 @@ namespace TARS
                                         }
                                         trilhasalpinistas.Add(trilha[3]);
                                     }
+                                    else if (trilha[3] == trilha[2])
+                                    {
+                                        if (trilhaPrefeita[trilha[3] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[3] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
+                                    }
                                 }
                                 contem = true;
                                 return dadoescolhido;
@@ -581,6 +640,14 @@ namespace TARS
                                             }
                                         }
                                         trilhasalpinistas.Add(trilha[2]);
+                                    }
+                                    else if (trilha[3] == trilha[2])
+                                    {
+                                        if (trilhaPrefeita[trilha[3] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[3] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
                                     }
                                 }
                                 contem = true;
@@ -708,6 +775,14 @@ namespace TARS
                                         }
                                         trilhasalpinistas.Add(trilha[4]);
                                     }
+                                    else if (trilha[1] == trilha[4])
+                                    {
+                                        if (trilhaPrefeita[trilha[1] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[1] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
+                                    }
                                 }
                                 contem = true;
                                 return dadoescolhido;
@@ -731,6 +806,14 @@ namespace TARS
                                             }
                                         }
                                         trilhasalpinistas.Add(trilha[1]);
+                                    }
+                                    else if (trilha[1] == trilha[4])
+                                    {
+                                        if (trilhaPrefeita[trilha[1] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[1] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
                                     }
                                 }
                                 contem = true;
@@ -857,6 +940,14 @@ namespace TARS
                                         }
                                         trilhasalpinistas.Add(trilha[5]);
                                     }
+                                    else if (trilha[5] == trilha[0])
+                                    {
+                                        if (trilhaPrefeita[trilha[5] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[5] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
+                                    }
                                 }
                                 contem = true;
                                 return dadoescolhido;
@@ -880,6 +971,14 @@ namespace TARS
                                             }
                                         }
                                         trilhasalpinistas.Add(trilha[0]);
+                                    }
+                                    else if (trilha[5] == trilha[0])
+                                    {
+                                        if (trilhaPrefeita[trilha[5] - 2] == true)
+                                        {
+                                            dadoescolhido += "e" + trilha[5] + "e" + 0;
+                                            return dadoescolhido;
+                                        }
                                     }
                                 }
                                 contem = true;
@@ -994,30 +1093,6 @@ namespace TARS
                         if (trilhaCompleta[(int)trilhasalpinistas[i] - 2] == false)//pode dar erro pq fica negativo isso
                         {
                             dadoescolhido += dupladodado[j];
-                            //if(j == 0)//verifica qual das trilhas tem o alpinista e forma os dados(dado escolhido)
-                            //{
-                            //    dadoescolhido += 12;
-                            //}
-                            //else if (j == 1)
-                            //{
-                            //    dadoescolhido += 13;
-                            //}
-                            //else if (j == 2)
-                            //{
-                            //    dadoescolhido += 14;
-                            //}
-                            //else if (j == 3)
-                            //{
-                            //    dadoescolhido += 23;
-                            //}
-                            //else if (j == 4)
-                            //{
-                            //    dadoescolhido += 24;
-                            //}
-                            //else if (j == 5)
-                            //{
-                            //    dadoescolhido += 34;
-                            //}
                             return;
                         }
                     }

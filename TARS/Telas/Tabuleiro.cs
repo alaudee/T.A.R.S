@@ -772,7 +772,6 @@ namespace TARS
 
                 for (int i = 0; i < 1; i++)
                 {
-
                     if (newRow[0].ToString() == "2")
                     {
                         for (int j = 0; j < 1 ; j++)
@@ -889,8 +888,12 @@ namespace TARS
                                         pcb_j423.BackColor = Color.Yellow;
                                         pcb_j423.Visible = true;
                                     }
-                                    LimparTabuleiro();
-                                    trilhaFeita[0] = true;
+                                    if (!trilhaFeita[0])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[0] = true;
+                                    }
+
                                 }
                             }
                         }
@@ -1119,8 +1122,11 @@ namespace TARS
                                         pcb_j435.BackColor = Color.Yellow;
                                         pcb_j435.Visible = true;
                                     }
-                                    LimparTabuleiro();
-                                    trilhaFeita[1] = true;
+                                    if (!trilhaFeita[1])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[1] = true;
+                                    }
                                 }
                             }
                         }
@@ -1466,8 +1472,11 @@ namespace TARS
                                         pcb_j447.BackColor = Color.Yellow;
                                         pcb_j447.Visible = true;
                                     }
-                                    LimparTabuleiro();
-                                    trilhaFeita[2] = true;
+                                    if (!trilhaFeita[2])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[2] = true;
+                                    }
                                 }
                             }
                         }
@@ -1522,7 +1531,7 @@ namespace TARS
                                     {
                                         pcb_j152.BackColor = Color.Red;
                                         pcb_j152.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j151.Visible = false;
                                         }
@@ -1531,7 +1540,7 @@ namespace TARS
                                     {
                                         pcb_j252.BackColor = Color.Blue;
                                         pcb_j252.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j251.Visible = false;
                                         }
@@ -1540,7 +1549,7 @@ namespace TARS
                                     {
                                         pcb_j352.BackColor = Color.Green;
                                         pcb_j352.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j351.Visible = false;
                                         }
@@ -1549,7 +1558,7 @@ namespace TARS
                                     {
                                         pcb_j452.BackColor = Color.Yellow;
                                         pcb_j452.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j451.Visible = false;
                                         }
@@ -1570,7 +1579,7 @@ namespace TARS
                                     {
                                         pcb_j153.BackColor = Color.Red;
                                         pcb_j153.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j151.Visible = false;
                                             pcb_j152.Visible = false;
@@ -1580,7 +1589,7 @@ namespace TARS
                                     {
                                         pcb_j253.BackColor = Color.Blue;
                                         pcb_j253.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j251.Visible = false;
                                             pcb_j252.Visible = false;
@@ -1590,7 +1599,7 @@ namespace TARS
                                     {
                                         pcb_j353.BackColor = Color.Green;
                                         pcb_j353.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j351.Visible = false;
                                             pcb_j352.Visible = false;
@@ -1600,7 +1609,7 @@ namespace TARS
                                     {
                                         pcb_j453.BackColor = Color.Yellow;
                                         pcb_j453.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j451.Visible = false;
                                             pcb_j452.Visible = false;
@@ -1622,7 +1631,7 @@ namespace TARS
                                     {
                                         pcb_j154.BackColor = Color.Red;
                                         pcb_j154.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j151.Visible = false;
                                             pcb_j152.Visible = false;
@@ -1633,7 +1642,7 @@ namespace TARS
                                     {
                                         pcb_j254.BackColor = Color.Blue;
                                         pcb_j254.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j251.Visible = false;
                                             pcb_j252.Visible = false;
@@ -1644,7 +1653,7 @@ namespace TARS
                                     {
                                         pcb_j354.BackColor = Color.Green;
                                         pcb_j354.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j351.Visible = false;
                                             pcb_j352.Visible = false;
@@ -1655,7 +1664,7 @@ namespace TARS
                                     {
                                         pcb_j454.BackColor = Color.Yellow;
                                         pcb_j454.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j451.Visible = false;
                                             pcb_j452.Visible = false;
@@ -1678,7 +1687,7 @@ namespace TARS
                                     {
                                         pcb_j155.BackColor = Color.Red;
                                         pcb_j155.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j152.Visible = false;
                                             pcb_j153.Visible = false;
@@ -1689,7 +1698,7 @@ namespace TARS
                                     {
                                         pcb_j255.BackColor = Color.Blue;
                                         pcb_j255.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j252.Visible = false;
                                             pcb_j253.Visible = false;
@@ -1700,7 +1709,7 @@ namespace TARS
                                     {
                                         pcb_j355.BackColor = Color.Green;
                                         pcb_j355.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j352.Visible = false;
                                             pcb_j353.Visible = false;
@@ -1734,7 +1743,7 @@ namespace TARS
                                     {
                                         pcb_j156.BackColor = Color.Red;
                                         pcb_j156.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j153.Visible = false;
                                             pcb_j154.Visible = false;
@@ -1745,7 +1754,7 @@ namespace TARS
                                     {
                                         pcb_j256.BackColor = Color.Blue;
                                         pcb_j256.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j253.Visible = false;
                                             pcb_j254.Visible = false;
@@ -1756,7 +1765,7 @@ namespace TARS
                                     {
                                         pcb_j356.BackColor = Color.Green;
                                         pcb_j356.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j353.Visible = false;
                                             pcb_j354.Visible = false;
@@ -1767,7 +1776,7 @@ namespace TARS
                                     {
                                         pcb_j456.BackColor = Color.Yellow;
                                         pcb_j456.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j453.Visible = false;
                                             pcb_j454.Visible = false;
@@ -1790,7 +1799,7 @@ namespace TARS
                                     {
                                         pcb_j157.BackColor = Color.Red;
                                         pcb_j157.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j154.Visible = false;
                                             pcb_j155.Visible = false;
@@ -1801,7 +1810,7 @@ namespace TARS
                                     {
                                         pcb_j257.BackColor = Color.Blue;
                                         pcb_j257.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j254.Visible = false;
                                             pcb_j255.Visible = false;
@@ -1812,7 +1821,7 @@ namespace TARS
                                     {
                                         pcb_j357.BackColor = Color.Green;
                                         pcb_j357.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j354.Visible = false;
                                             pcb_j355.Visible = false;
@@ -1823,7 +1832,7 @@ namespace TARS
                                     {
                                         pcb_j457.BackColor = Color.Yellow;
                                         pcb_j457.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j454.Visible = false;
                                             pcb_j455.Visible = false;
@@ -1846,7 +1855,7 @@ namespace TARS
                                     {
                                         pcb_j158.BackColor = Color.Red;
                                         pcb_j158.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j155.Visible = false;
                                             pcb_j156.Visible = false;
@@ -1857,7 +1866,7 @@ namespace TARS
                                     {
                                         pcb_j258.BackColor = Color.Blue;
                                         pcb_j258.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j255.Visible = false;
                                             pcb_j256.Visible = false;
@@ -1868,7 +1877,7 @@ namespace TARS
                                     {
                                         pcb_j358.BackColor = Color.Green;
                                         pcb_j358.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j355.Visible = false;
                                             pcb_j356.Visible = false;
@@ -1879,7 +1888,7 @@ namespace TARS
                                     {
                                         pcb_j458.BackColor = Color.Yellow;
                                         pcb_j458.Visible = true;
-                                        if (trilhaFeita[2] == false)
+                                        if (trilhaFeita[3] == false)
                                         {
                                             pcb_j455.Visible = false;
                                             pcb_j456.Visible = false;
@@ -1919,8 +1928,11 @@ namespace TARS
                                         pcb_j459.BackColor = Color.Yellow;
                                         pcb_j459.Visible = true;
                                     }
-                                    LimparTabuleiro();
-                                    trilhaFeita[3] = true;
+                                    if (!trilhaFeita[3])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[3] = true;
+                                    }
                                 }
                             }
                         }
@@ -2485,8 +2497,11 @@ namespace TARS
                                         pcb_j4611.BackColor = Color.Yellow;
                                         pcb_j4611.Visible = true;
                                     }
-                                    LimparTabuleiro();
-                                    trilhaFeita[4] = true;
+                                    if (!trilhaFeita[4])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[4] = true;
+                                    }
                                 }
                             }
                         }
@@ -3162,8 +3177,11 @@ namespace TARS
                                         pcb_j4713.BackColor = Color.Yellow;
                                         pcb_j4713.Visible = true;
                                     }
-                                    LimparTabuleiro();
-                                    trilhaFeita[5] = true;
+                                    if (!trilhaFeita[5])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[5] = true;
+                                    }
                                 }
                             }
                         }
@@ -3727,9 +3745,12 @@ namespace TARS
                                         pcb_j4811.BackColor = Color.Yellow;
                                         pcb_j4811.Visible = true;
                                     }
-                                    LimparTabuleiro();
-                                    trilhaFeita[6] = true;
-                                    
+                                    if (!trilhaFeita[6])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[6] = true;
+                                    }
+
                                 }
                             }
                         }
@@ -4182,8 +4203,11 @@ namespace TARS
                                         pcb_j499.BackColor = Color.Yellow;
                                         pcb_j499.Visible = true;
                                     }
-                                    LimparTabuleiro();
-                                    trilhaFeita[7] = true;
+                                    if (!trilhaFeita[7])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[7] = true;
+                                    }
                                 }
                             }
                         }
@@ -4523,8 +4547,11 @@ namespace TARS
                                         pcb_j4107.BackColor = Color.Yellow;
                                         pcb_j4107.Visible = true;
                                     }
-                                    LimparTabuleiro();
-                                    trilhaFeita[8] = true;
+                                    if (!trilhaFeita[8])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[8] = true;
+                                    }
                                 }
                             }
                         }
@@ -4754,8 +4781,11 @@ namespace TARS
                                         pcb_j4115.BackColor = Color.Yellow;
                                         pcb_j4115.Visible = true;
                                     }
-                                    LimparTabuleiro();
-                                    trilhaFeita[9] = true;
+                                    if (!trilhaFeita[9])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[9] = true;
+                                    }
                                 }
                             }
                         }
@@ -4875,8 +4905,11 @@ namespace TARS
                                         pcb_j4123.BackColor = Color.Yellow;
                                         pcb_j4123.Visible = true;
                                     }
-                                    LimparTabuleiro();
-                                    trilhaFeita[10] = true;
+                                    if (!trilhaFeita[10])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[10] = true;
+                                    }
                                 }
                             }
                         }
@@ -4893,7 +4926,7 @@ namespace TARS
                 string trilhasEscolhidas = "";
                 dadoescolha = "";
 
-                string resultado = Dado.FormarDuplasSomaDados(valordado,trilhaFeita, trilhasalpinistas,contadorjogadas);
+                string resultado = Dado.FormarDuplasSomaDados(valordado,trilhaFeita, trilhasalpinistas,contadorjogadas,trilhaPreFeita);
                 contadorjogadas++;
                 string[] divisao = resultado.Split('e');
                 //vai retornar a ordem dos dados e as trilhas
@@ -4984,6 +5017,7 @@ namespace TARS
                         {
                             rolarDados();
                             Caiu = MovimentosBOT();
+                            Thread.Sleep(900);
                         }
                         if (!Caiu)
                         {
