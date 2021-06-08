@@ -180,7 +180,7 @@ namespace TARS
                             }
                         }
                     }
-                    else
+                    else //75 trilha = 11 e 8
                     {
                         int verifica = 0;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
@@ -201,13 +201,18 @@ namespace TARS
 
                         if (verifica != 2)
                         {
+                            if(verifica == 0)
+                            {
+                                dadoescolhido += "e" + trilha[0] + "e" + 0;
+                                return dadoescolhido;
+                            }
+                            if (trilhasalpinistas.Count == 2)
+                            {
+                                dadoescolhido += "e" + trilha[0] + "e" + trilha[5];
+                                return dadoescolhido;
+                            }
                             for (int i = 0; i < trilhasalpinistas.Count; i++)
                             {
-                                if (trilhasalpinistas.Count == 2)
-                                {
-                                    dadoescolhido += "e" + trilha[0] + "e" + trilha[5];
-                                    return dadoescolhido;
-                                }
                                 if (trilha[5] == (int)trilhasalpinistas[i])
                                 {
                                     dadoescolhido += "e" + trilha[5] + "e" + 0;
@@ -219,9 +224,16 @@ namespace TARS
                                     return dadoescolhido;
                                 }
                             }
+
                         }
                         else
                         {
+
+                            if (trilhaFormada[trilha[5] - 2])
+                            {
+                                dadoescolhido += "e" + trilha[0] + "e" + 0;
+                                return dadoescolhido;
+                            }
                             dadoescolhido += "e" + trilha[0] + "e" + trilha[5];
                         }
                     }
@@ -230,7 +242,19 @@ namespace TARS
                 else
                 {
                     dadoescolhido += "e" + trilha[0] + "e" + 0;
-                    trilhasalpinistas.Add(trilha[0]);
+                    bool ultimo = false;               
+                    for(int i = 0; i < trilhasalpinistas.Count; i++)
+                    {
+                        if(trilha[0] == (int)trilhasalpinistas[i])
+                        {
+                            ultimo = true;
+                        }
+                    }
+                    if (!ultimo)
+                    {
+                        trilhasalpinistas.Add(trilha[0]);
+                    }
+                   
                 }
             }
             else if (dadoescolhido == "13")
@@ -366,13 +390,18 @@ namespace TARS
 
                         if (verifica != 2)
                         {
-                            for (int i = 0; i < trilhasalpinistas.Count; i++)
+                            if (verifica == 0)
                             {
-                                if (trilhasalpinistas.Count == 2)
-                                {
-                                    dadoescolhido += "e" + trilha[1] + "e" + trilha[4];
-                                    return dadoescolhido;
-                                }
+                                dadoescolhido += "e" + trilha[1] + "e" + 0;
+                                return dadoescolhido;
+                            }
+                            if (trilhasalpinistas.Count == 2)
+                            {
+                                dadoescolhido += "e" + trilha[1] + "e" + trilha[4];
+                                return dadoescolhido;
+                            }
+                            for (int i = 0; i < trilhasalpinistas.Count; i++)
+                            { 
                                 if (trilha[1] == (int)trilhasalpinistas[i])
                                 {
                                     dadoescolhido += "e" + trilha[1] + "e" + 0;
@@ -387,6 +416,12 @@ namespace TARS
                         }
                         else
                         {
+
+                            if (trilhaFormada[trilha[4] - 2])
+                            {
+                                dadoescolhido += "e" + trilha[1] + "e" + 0;
+                                return dadoescolhido;
+                            }
                             dadoescolhido += "e" + trilha[1] + "e" + trilha[4];
                         }
 
@@ -396,7 +431,18 @@ namespace TARS
                 else
                 {
                     dadoescolhido += "e" + trilha[1] + "e" + 0;
-                    trilhasalpinistas.Add(trilha[1]);
+                    bool ultimo = false;
+                    for (int i = 0; i < trilhasalpinistas.Count; i++)
+                    {
+                        if (trilha[1] == (int)trilhasalpinistas[i])
+                        {
+                            ultimo = true;
+                        }
+                    }
+                    if (!ultimo)
+                    {
+                        trilhasalpinistas.Add(trilha[1]);
+                    }
                 }
 
             }
@@ -534,13 +580,18 @@ namespace TARS
 
                         if (verifica != 2)
                         {
+                            if (verifica == 0)
+                            {
+                                dadoescolhido += "e" + trilha[2] + "e" + 0;
+                                return dadoescolhido;
+                            }
+                            if (trilhasalpinistas.Count == 2)
+                            {
+                                dadoescolhido += "e" + trilha[2] + "e" + trilha[3];
+                                return dadoescolhido;
+                            }
                             for (int i = 0; i < trilhasalpinistas.Count; i++)//aqui
                             {
-                                if (trilhasalpinistas.Count == 2)
-                                {
-                                    dadoescolhido += "e" + trilha[2] + "e" + trilha[3];
-                                    return dadoescolhido;
-                                }
                                 if (trilha[2] == (int)trilhasalpinistas[i])
                                 {
                                     dadoescolhido += "e" + trilha[2] + "e" + 0;
@@ -555,6 +606,12 @@ namespace TARS
                         }
                         else
                         {
+
+                            if (trilhaFormada[trilha[3] - 2])
+                            {
+                                dadoescolhido += "e" + trilha[2] + "e" + 0;
+                                return dadoescolhido;
+                            }
                             dadoescolhido += "e" + trilha[2] + "e" + trilha[3];
                         }
                     }
@@ -562,7 +619,18 @@ namespace TARS
                 else
                 {
                     dadoescolhido += "e" + trilha[2] + "e" + 0;
-                    trilhasalpinistas.Add(trilha[2]);
+                    bool ultimo = false;
+                    for (int i = 0; i < trilhasalpinistas.Count; i++)
+                    {
+                        if (trilha[2] == (int)trilhasalpinistas[i])
+                        {
+                            ultimo = true;
+                        }
+                    }
+                    if (!ultimo)
+                    {
+                        trilhasalpinistas.Add(trilha[2]);
+                    }
                 }
             }
             else if (dadoescolhido == "23")
@@ -677,7 +745,7 @@ namespace TARS
                         }
 
                     }
-                    else
+                    else//75 trilha = 11 e 8
                     {
                         int verifica = 0;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
@@ -698,13 +766,18 @@ namespace TARS
 
                         if (verifica != 2)
                         {
+                            if (verifica == 0)
+                            {
+                                dadoescolhido += "e" + trilha[3] + "e" + 0;
+                                return dadoescolhido;
+                            }
+                            if (trilhasalpinistas.Count == 2)
+                            {
+                                dadoescolhido += "e" + trilha[3] + "e" + trilha[2];
+                                return dadoescolhido;
+                            }
                             for (int i = 0; i < trilhasalpinistas.Count; i++)
                             {
-                                if (trilhasalpinistas.Count == 2)
-                                {
-                                    dadoescolhido += "e" + trilha[3] + "e" + trilha[2];
-                                    return dadoescolhido;
-                                }
                                 if (trilha[2] == (int)trilhasalpinistas[i])
                                 {
                                     dadoescolhido += "e" + trilha[2] + "e" + 0;
@@ -719,6 +792,12 @@ namespace TARS
                         }
                         else
                         {
+
+                            if (trilhaFormada[trilha[2] - 2])
+                            {
+                                dadoescolhido += "e" + trilha[3] + "e" + 0;
+                                return dadoescolhido;
+                            }
                             dadoescolhido += "e" + trilha[3] + "e" + trilha[2];
                         }
 
@@ -728,7 +807,18 @@ namespace TARS
                 else
                 {
                     dadoescolhido += "e" + trilha[3] + "e" + 0;
-                    trilhasalpinistas.Add(trilha[3]);
+                    bool ultimo = false;
+                    for (int i = 0; i < trilhasalpinistas.Count; i++)
+                    {
+                        if (trilha[3] == (int)trilhasalpinistas[i])
+                        {
+                            ultimo = true;
+                        }
+                    }
+                    if (!ultimo)
+                    {
+                        trilhasalpinistas.Add(trilha[3]);
+                    }
                 }
             }
             else if (dadoescolhido == "24")
@@ -862,13 +952,18 @@ namespace TARS
 
                         if (verifica != 2)
                         {
+                            if (verifica == 0)
+                            {
+                                dadoescolhido += "e" + trilha[4] + "e" + 0;
+                                return dadoescolhido;
+                            }
+                            if (trilhasalpinistas.Count == 2)
+                            {
+                                dadoescolhido += "e" + trilha[4] + "e" + trilha[1];
+                                return dadoescolhido;
+                            }
                             for (int i = 0; i < trilhasalpinistas.Count; i++)
                             {
-                                if (trilhasalpinistas.Count == 2)
-                                {
-                                    dadoescolhido += "e" + trilha[4] + "e" + trilha[1];
-                                    return dadoescolhido;
-                                }
                                 if (trilha[4] == (int)trilhasalpinistas[i])
                                 {
                                     dadoescolhido += "e" + trilha[4] + "e" + 0;
@@ -883,6 +978,12 @@ namespace TARS
                         }
                         else
                         {
+
+                            if (trilhaFormada[trilha[1] - 2])
+                            {
+                                dadoescolhido += "e" + trilha[4] + "e" + 0;
+                                return dadoescolhido;
+                            }
                             dadoescolhido += "e" + trilha[4] + "e" + trilha[1];
                         }
 
@@ -891,7 +992,18 @@ namespace TARS
                 else
                 {
                     dadoescolhido += "e" + trilha[4] + "e" + 0;
-                    trilhasalpinistas.Add(trilha[4]);
+                    bool ultimo = false;
+                    for (int i = 0; i < trilhasalpinistas.Count; i++)
+                    {
+                        if (trilha[4] == (int)trilhasalpinistas[i])
+                        {
+                            ultimo = true;
+                        }
+                    }
+                    if (!ultimo)
+                    {
+                        trilhasalpinistas.Add(trilha[4]);
+                    }
                 }
 
 
@@ -1027,12 +1139,17 @@ namespace TARS
 
                         if (verifica != 2)
                         {
+                            if (verifica == 0)
+                            {
+                                dadoescolhido += "e" + trilha[5] + "e" + 0;
+                                return dadoescolhido;
+                            }
                             if (trilhasalpinistas.Count == 2)
                             {
                                 dadoescolhido += "e" + trilha[5] + "e" + trilha[0];
                                 return dadoescolhido;
                             }
-                            for (int i = 0; i < trilhasalpinistas.Count; i++)
+                            for (int i = 0; i < trilhasalpinistas.Count; i++)//tem um for no lugar errado
                             {
                                 if (trilha[5] == (int)trilhasalpinistas[i])
                                 {
@@ -1048,6 +1165,11 @@ namespace TARS
                         }
                         else
                         {
+                            if(trilhaFormada[trilha[0] - 2])
+                            {
+                                dadoescolhido += "e" + trilha[5] + "e" + 0;
+                                return dadoescolhido;
+                            }
                             dadoescolhido += "e" + trilha[5] + "e" + trilha[0];
                         }
 
@@ -1056,7 +1178,18 @@ namespace TARS
                 else
                 {
                     dadoescolhido += "e" + trilha[5] + "e" + 0;
-                    trilhasalpinistas.Add(trilha[5]);
+                    bool ultimo = false;
+                    for (int i = 0; i < trilhasalpinistas.Count; i++)
+                    {
+                        if (trilha[5] == (int)trilhasalpinistas[i])
+                        {
+                            ultimo = true;
+                        }
+                    }
+                    if (!ultimo)
+                    {
+                        trilhasalpinistas.Add(trilha[5]);
+                    }
                 }
             }
             return dadoescolhido;
@@ -1130,6 +1263,26 @@ namespace TARS
                         return;
                     }
                 }
+                //if (trilhaCompleta[4] == false)
+                //{
+                //    if (trilhas[i] == 6)
+                //    {
+                //        dadoescolhido += dupladodado[i];
+                //        return;
+                //    }
+                //}
+                //if (trilhaCompleta[6] == false)
+                //{
+                //    if (trilhas[i] == 8)
+                //    {
+                //        dadoescolhido += dupladodado[i];
+                //        return;
+                //    }
+                //}
+
+            }
+            for (int i = 0; i < trilhas.Length; i++)
+            {
                 if (trilhaCompleta[4] == false)
                 {
                     if (trilhas[i] == 6)
@@ -1146,10 +1299,9 @@ namespace TARS
                         return;
                     }
                 }
-
             }
 
-            for (int i = 0; i < trilhas.Length; i++)
+                for (int i = 0; i < trilhas.Length; i++)
             {
                 if (trilhaCompleta[1] == false)
                 {

@@ -39,6 +39,7 @@ namespace TARS
         public bool[] trilhaPreFeita = new bool[11];
 
         public int contadorjogadas = 1;
+        public bool Parar = false;
 
         ArrayList trilhasalpinistas = new ArrayList();
 
@@ -865,6 +866,12 @@ namespace TARS
                                 {
                                     pcb_A23.BackColor = Color.Black;
                                     pcb_A23.Visible = true;
+                                    if (!trilhaFeita[0])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[0] = true;
+                                        Parar = true;
+                                    }
                                 }
                                 else
                                 {
@@ -892,6 +899,7 @@ namespace TARS
                                     {
                                         LimparTabuleiro();
                                         trilhaFeita[0] = true;
+                                        Parar = true;
                                     }
 
                                 }
@@ -1099,6 +1107,12 @@ namespace TARS
                                 {
                                     pcb_A35.BackColor = Color.Black;
                                     pcb_A35.Visible = true;
+                                    if (!trilhaFeita[1])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[1] = true;
+                                        Parar = true;
+                                    }
                                 }
                                 else
                                 {
@@ -1126,6 +1140,7 @@ namespace TARS
                                     {
                                         LimparTabuleiro();
                                         trilhaFeita[1] = true;
+                                        Parar = true;
                                     }
                                 }
                             }
@@ -1449,6 +1464,12 @@ namespace TARS
                                 {
                                     pcb_A47.BackColor = Color.Black;
                                     pcb_A47.Visible = true;
+                                    if (!trilhaFeita[2])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[2] = true;
+                                        Parar = true;
+                                    }
                                 }
                                 else
                                 {
@@ -1476,6 +1497,7 @@ namespace TARS
                                     {
                                         LimparTabuleiro();
                                         trilhaFeita[2] = true;
+                                        Parar = true;
                                     }
                                 }
                             }
@@ -1905,6 +1927,12 @@ namespace TARS
                                 {
                                     pcb_A59.BackColor = Color.Black;
                                     pcb_A59.Visible = true;
+                                    if (!trilhaFeita[3])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[2] = true;
+                                        Parar = true;
+                                    }
                                 }
                                 else
                                 {
@@ -1932,6 +1960,7 @@ namespace TARS
                                     {
                                         LimparTabuleiro();
                                         trilhaFeita[3] = true;
+                                        Parar = true;
                                     }
                                 }
                             }
@@ -2474,6 +2503,12 @@ namespace TARS
                                 { 
                                     pcb_A611.BackColor = Color.Black;
                                     pcb_A611.Visible = true;
+                                    if (!trilhaFeita[4])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[4] = true;
+                                        Parar = true;
+                                    }
                                 }
                                 else
                                 {
@@ -2501,6 +2536,7 @@ namespace TARS
                                     {
                                         LimparTabuleiro();
                                         trilhaFeita[4] = true;
+                                        Parar = true;
                                     }
                                 }
                             }
@@ -3154,6 +3190,12 @@ namespace TARS
                                 {
                                     pcb_A713.BackColor = Color.Black;
                                     pcb_A713.Visible = true;
+                                    if (!trilhaFeita[5])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[5] = true;
+                                        Parar = true;
+                                    }
                                 }
                                 else
                                 {
@@ -3181,6 +3223,7 @@ namespace TARS
                                     {
                                         LimparTabuleiro();
                                         trilhaFeita[5] = true;
+                                        Parar = true;
                                     }
                                 }
                             }
@@ -3722,6 +3765,12 @@ namespace TARS
                                 {
                                     pcb_A811.BackColor = Color.Black;
                                     pcb_A811.Visible = true;
+                                    if (!trilhaFeita[6])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[6] = true;
+                                        Parar = true;
+                                    }
                                 }
                                 else
                                 {
@@ -3749,6 +3798,7 @@ namespace TARS
                                     {
                                         LimparTabuleiro();
                                         trilhaFeita[6] = true;
+                                        Parar = true;
                                     }
 
                                 }
@@ -4180,6 +4230,12 @@ namespace TARS
                                 {
                                     pcb_A99.BackColor = Color.Black;
                                     pcb_A99.Visible = true;
+                                    if (!trilhaFeita[7])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[7] = true;
+                                        Parar = true;
+                                    }
                                 }
                                 else
                                 {
@@ -4207,6 +4263,7 @@ namespace TARS
                                     {
                                         LimparTabuleiro();
                                         trilhaFeita[7] = true;
+                                        Parar = true;
                                     }
                                 }
                             }
@@ -4524,6 +4581,12 @@ namespace TARS
                                 {
                                     pcb_A107.BackColor = Color.Black;
                                     pcb_A107.Visible = true;
+                                    if (!trilhaFeita[8])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[8] = true;
+                                        Parar = true;
+                                    }
                                 }
                                 else
                                 {
@@ -4551,6 +4614,7 @@ namespace TARS
                                     {
                                         LimparTabuleiro();
                                         trilhaFeita[8] = true;
+                                        Parar = true;
                                     }
                                 }
                             }
@@ -4758,6 +4822,12 @@ namespace TARS
                                 {
                                     pcb_A115.BackColor = Color.Black;
                                     pcb_A115.Visible = true;
+                                    if (!trilhaFeita[9])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[9] = true;
+                                        Parar = true;
+                                    }
                                 }
                                 else
                                 {
@@ -4785,6 +4855,7 @@ namespace TARS
                                     {
                                         LimparTabuleiro();
                                         trilhaFeita[9] = true;
+                                        Parar = true;
                                     }
                                 }
                             }
@@ -4882,6 +4953,12 @@ namespace TARS
                                 {
                                     pcb_A123.BackColor = Color.Black;
                                     pcb_A123.Visible = true;
+                                    if (!trilhaFeita[10])
+                                    {
+                                        LimparTabuleiro();
+                                        trilhaFeita[10] = true;
+                                        Parar = true;
+                                    }
                                 }
                                 else
                                 {
@@ -4909,6 +4986,7 @@ namespace TARS
                                     {
                                         LimparTabuleiro();
                                         trilhaFeita[10] = true;
+                                        Parar = true;
                                     }
                                 }
                             }
@@ -5006,6 +5084,7 @@ namespace TARS
                 string[] linha = teste.Split(',');
                 string jogadorvez = linha[1];
                 int comparar = Convert.ToInt32(jogadorvez);
+                
 
                 if (comparar == JogadorAtivo.Id)
                 {
@@ -5013,7 +5092,8 @@ namespace TARS
                     try
                     {
                         bool Caiu = false;
-                        for (int i = 0; i < 3 && !Caiu; i++)
+                        Parar = false;
+                        for (int i = 0; i < 3 && !Caiu && !Parar; i++)
                         {
                             rolarDados();
                             Caiu = MovimentosBOT();
@@ -5028,6 +5108,16 @@ namespace TARS
                                 lbl_erro.Text = parar;
                             }
                         }
+                        else if (!Parar)
+                        {
+                            string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
+                            if (parar.Contains("ERRO"))
+                            {
+                                lbl_erro.Visible = true;
+                                lbl_erro.Text = parar;
+                            }
+                        }
+
                         trilhasalpinistas.Clear();
                         contadorjogadas = 1;
 
