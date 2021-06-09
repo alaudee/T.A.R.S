@@ -5048,7 +5048,16 @@ namespace TARS
                             Caiu = MovimentosBOT();
                             AtualizarTabuleiro();
                         }
-                        if (Caiu == false || Parar == true)// se cair == true, nao entra, porém se Parar == true, entra
+                        if (Caiu == false)// se cair == true, nao entra, porém se Parar == true, entra
+                        {
+                            string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
+                            if (parar.Contains("ERRO"))
+                            {
+                                lbl_erro.Visible = true;
+                                lbl_erro.Text = parar;
+                            }
+                        }
+                        if (Parar == true)
                         {
                             string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
                             if (parar.Contains("ERRO"))
@@ -5073,7 +5082,7 @@ namespace TARS
 
         private void Tabuleiro_Load(object sender, EventArgs e)
         {
-            timer.Interval = (5 * 1000); // 5 secs
+            timer.Interval = (4 * 1000); // 5 secs
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
         }

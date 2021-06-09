@@ -80,7 +80,13 @@ namespace TARS
                         dadoescolhido += "e" + trilha[0] + "e" + trilha[5];
                         if (trilha[0] == trilha[5])
                         {
-                            trilhasalpinistas.Add(trilha[0]);//talvez precise adicionar a outra trilha pra mostrar que é a 2 rodada
+                            trilhasalpinistas.Add(trilha[0]);
+                            if (trilhaPrefeita[trilha[5] - 2] == true)
+                            {
+                                dadoescolhido += "e" + trilha[5] + "e" + 0;
+                                return dadoescolhido;
+                            }
+                          
                         }
                         else
                         {
@@ -270,6 +276,11 @@ namespace TARS
                         if (trilha[1] == trilha[4])
                         {
                             trilhasalpinistas.Add(trilha[1]);
+                            if (trilhaPrefeita[trilha[4] - 2] == true)
+                            {
+                                dadoescolhido += "e" + trilha[4] + "e" + 0;
+                                return dadoescolhido;
+                            }
                         }
                         else
                         {
@@ -460,6 +471,11 @@ namespace TARS
                         if (trilha[2] == trilha[3])
                         {
                             trilhasalpinistas.Add(trilha[2]);
+                            if (trilhaPrefeita[trilha[3] - 2] == true)
+                            {
+                                dadoescolhido += "e" + trilha[3] + "e" + 0;
+                                return dadoescolhido;
+                            }
                         }
                         else
                         {
@@ -648,6 +664,11 @@ namespace TARS
                         if (trilha[2] == trilha[3])
                         {
                             trilhasalpinistas.Add(trilha[2]);
+                            if (trilhaPrefeita[trilha[3] - 2] == true)
+                            {
+                                dadoescolhido += "e" + trilha[3] + "e" + 0;
+                                return dadoescolhido;
+                            }
                         }
                         else
                         {
@@ -837,6 +858,11 @@ namespace TARS
                         if (trilha[4] == trilha[1])
                         {
                             trilhasalpinistas.Add(trilha[4]);
+                            if (trilhaPrefeita[trilha[1] - 2] == true)
+                            {
+                                dadoescolhido += "e" + trilha[1] + "e" + 0;
+                                return dadoescolhido;
+                            }
                         }
                         else
                         {
@@ -1025,6 +1051,11 @@ namespace TARS
                         if (trilha[5] == trilha[0])
                         {
                             trilhasalpinistas.Add(trilha[5]);
+                            if (trilhaPrefeita[trilha[5] - 2] == true)
+                            {
+                                dadoescolhido += "e" + trilha[5] + "e" + 0;
+                                return dadoescolhido;
+                            }
                         }
                         else
                         {
