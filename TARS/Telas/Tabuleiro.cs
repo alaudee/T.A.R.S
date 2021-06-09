@@ -764,7 +764,10 @@ namespace TARS
         //Função que desenha os panels na tela com os valores da DataTable
         public void desenharTabuleiro(string [] jogadores)
         {
-            jogadorCor();
+            if(iniciadaPartida == true)
+            {
+                jogadorCor();
+            }
 
             foreach (DataRow row in dtb_tabuleiro.Rows)
             {
@@ -4959,6 +4962,11 @@ namespace TARS
                 string movimento = Jogo.Mover(JogadorAtivo.Id, JogadorAtivo.Senha, dadoescolha, trilhasEscolhidas);
                 if (movimento.Contains("ERRO"))
                 {
+                    if (movimento.Contains("Primeiro deve-se rolar os dados"))
+                    {
+                        LimparTabuleiro();
+                        return true;
+                    }
                     lbl_erro.Visible = true;
                     lbl_erro.Text = movimento;
                 }
@@ -4966,6 +4974,7 @@ namespace TARS
             }
             catch(Exception ex)
             {
+                MessageBox.Show("Ocorreu um erro: "+ex.Message);
                 return true;
             }
         }
@@ -4978,6 +4987,8 @@ namespace TARS
             {
                 timer.Stop();
                 MessageBox.Show("Partida Encerrada!");
+                iniciadaPartida = false;
+                desenharTabuleiro(idJogadores);
                 return;
             }
             string tabuleiro = Jogo.ExibirTabuleiro(IdPartida);
@@ -5037,16 +5048,7 @@ namespace TARS
                             Caiu = MovimentosBOT();
                             AtualizarTabuleiro();
                         }
-                        if (!Caiu)
-                        {
-                            string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
-                            if (parar.Contains("ERRO"))
-                            {
-                                lbl_erro.Visible = true;
-                                lbl_erro.Text = parar;
-                            }
-                        }
-                        else if (!Parar)
+                        if (Caiu == false || Parar == true)// se cair == true, nao entra, porém se Parar == true, entra
                         {
                             string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
                             if (parar.Contains("ERRO"))
