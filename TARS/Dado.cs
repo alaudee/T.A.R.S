@@ -293,7 +293,7 @@ namespace TARS
                         bool contem = false;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
                         {
-                            if (trilha[4] == (int)trilhasalpinistas[i])//AQui
+                            if (trilha[4] == (int)trilhasalpinistas[i])
                             {
                                 if (trilhaFormada[trilha[1] - 2] == true)
                                 {
@@ -769,7 +769,7 @@ namespace TARS
                         }
 
                     }
-                    else//75 trilha = 11 e 8
+                    else
                     {
                         int verifica = 0;
                         for (int i = 0; i < trilhasalpinistas.Count; i++)
@@ -1186,7 +1186,7 @@ namespace TARS
                                 trilhasalpinistas.Add(trilha[0]);
                                 return dadoescolhido;
                             }
-                            for (int i = 0; i < trilhasalpinistas.Count; i++)//tem um for no lugar errado
+                            for (int i = 0; i < trilhasalpinistas.Count; i++)
                             {
                                 if (trilha[5] == (int)trilhasalpinistas[i])
                                 {
@@ -1253,14 +1253,14 @@ namespace TARS
 
         public static void preferencia(int[] trilhas, bool[] trilhaCompleta, ArrayList trilhasalpinistas)
         {
-            //aqui
+            
             for (int i = 0; i < trilhasalpinistas.Count; i++)
             {
                 for (int j = 0; j < trilhas.Length; j++)
                 {
-                    if (trilhas[j] == (int)trilhasalpinistas[i])//ta certo aqui
+                    if (trilhas[j] == (int)trilhasalpinistas[i])
                     {
-                        if (trilhaCompleta[(int)trilhasalpinistas[i] - 2] == false)//pode dar erro pq fica negativo isso
+                        if (trilhaCompleta[(int)trilhasalpinistas[i] - 2] == false)
                         {
                             dadoescolhido += dupladodado[j];
                             return;

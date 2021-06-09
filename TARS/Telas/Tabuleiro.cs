@@ -781,7 +781,6 @@ namespace TARS
                 {
                     if (newRow[0].ToString() == "2")
                     {
-                        LimparAlpinistas(2);
                         for (int j = 0; j < 1 ; j++)
                         {
                             if (newRow[1].ToString() == "1")
@@ -818,6 +817,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
+                                LimparAlpinistas(2);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A22.BackColor = Color.Black;
@@ -868,6 +868,7 @@ namespace TARS
 
                             else if (newRow[1].ToString() == "3")
                             {
+                                LimparAlpinistas(2);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A23.BackColor = Color.Black;
@@ -915,7 +916,6 @@ namespace TARS
 
                     if (newRow[0].ToString() == "3")
                     {
-                        LimparAlpinistas(3);
                         for (int j = 0; j < 1; j++)
                         {
                             if (newRow[1].ToString() == "1")
@@ -951,6 +951,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
+                                LimparAlpinistas(3);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A32.BackColor = Color.Black;
@@ -998,6 +999,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
+                                LimparAlpinistas(3);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A33.BackColor = Color.Black;
@@ -1049,6 +1051,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
+                                LimparAlpinistas(3);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A34.BackColor = Color.Black;
@@ -1105,6 +1108,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
+                                LimparAlpinistas(3);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A35.BackColor = Color.Black;
@@ -1151,7 +1155,7 @@ namespace TARS
 
                     if (newRow[0].ToString() == "4")
                     {
-                        LimparAlpinistas(4);
+                        
                         for (int j = 0; j < 1; j++)
                         {
                             if (newRow[1].ToString() == "1")
@@ -1187,6 +1191,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
+                                LimparAlpinistas(4);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A42.BackColor = Color.Black;
@@ -1234,7 +1239,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
-
+                                LimparAlpinistas(4);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A43.BackColor = Color.Black;
@@ -1286,7 +1291,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
-
+                                LimparAlpinistas(4);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A44.BackColor = Color.Black;
@@ -1342,7 +1347,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
-
+                                LimparAlpinistas(4);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A45.BackColor = Color.Black;
@@ -1398,6 +1403,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
+                                LimparAlpinistas(4);
 
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
@@ -1455,7 +1461,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
-
+                                LimparAlpinistas(4);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A47.BackColor = Color.Black;
@@ -1502,7 +1508,7 @@ namespace TARS
 
                     if (newRow[0].ToString() == "5")
                     {
-                        LimparAlpinistas(5);
+                        
                         for (int j = 0; j < 1; j++)
                         {
                             if (newRow[1].ToString() == "1")
@@ -1538,6 +1544,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
+                                LimparAlpinistas(5);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A52.BackColor = Color.Black;
@@ -1585,6 +1592,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
+                                LimparAlpinistas(5);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A53.BackColor = Color.Black;
@@ -1636,6 +1644,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
+                                LimparAlpinistas(5);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A54.BackColor = Color.Black;
@@ -1691,6 +1700,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
+                                LimparAlpinistas(5);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A55.BackColor = Color.Black;
@@ -1747,6 +1757,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
+                                LimparAlpinistas(5);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A56.BackColor = Color.Black;
@@ -1802,6 +1813,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
+                                LimparAlpinistas(5);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A57.BackColor = Color.Black;
@@ -1857,6 +1869,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "8")
                             {
+                                LimparAlpinistas(5);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A58.BackColor = Color.Black;
@@ -1913,6 +1926,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "9")
                             {
+                                LimparAlpinistas(5);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A59.BackColor = Color.Black;
@@ -1959,7 +1973,7 @@ namespace TARS
 
                     if (newRow[0].ToString() == "6")
                     {
-                        LimparAlpinistas(6);
+                        
                         for (int j = 0; j < 1; j++)
                         {
                             if (newRow[1].ToString() == "1")
@@ -1995,6 +2009,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
+                                LimparAlpinistas(6);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A62.BackColor = Color.Black;
@@ -2043,6 +2058,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
+                                LimparAlpinistas(6);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A63.BackColor = Color.Black;
@@ -2094,6 +2110,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
+                                LimparAlpinistas(6);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A64.BackColor = Color.Black;
@@ -2149,6 +2166,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
+                                LimparAlpinistas(6);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A65.BackColor = Color.Black;
@@ -2204,6 +2222,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
+                                LimparAlpinistas(6);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A66.BackColor = Color.Black;
@@ -2259,6 +2278,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
+                                LimparAlpinistas(6);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A67.BackColor = Color.Black;
@@ -2314,6 +2334,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "8")
                             {
+                                LimparAlpinistas(6);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A68.BackColor = Color.Black;
@@ -2369,6 +2390,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "9")
                             {
+                                LimparAlpinistas(6);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A69.BackColor = Color.Black;
@@ -2424,6 +2446,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "10")
                             {
+                                LimparAlpinistas(6);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A610.BackColor = Color.Black;
@@ -2480,6 +2503,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "11")
                             {
+                                LimparAlpinistas(6);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 { 
                                     pcb_A611.BackColor = Color.Black;
@@ -2525,7 +2549,7 @@ namespace TARS
                     }
                     if (newRow[0].ToString() == "7")
                     {
-                        LimparAlpinistas(7);
+                        
                         for (int j = 0; j < 1; j++)
                         {
                             if (newRow[1].ToString() == "1")
@@ -2562,6 +2586,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A72.BackColor = Color.Black;
@@ -2609,6 +2634,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A73.BackColor = Color.Black;
@@ -2660,6 +2686,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A74.BackColor = Color.Black;
@@ -2715,6 +2742,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A75.BackColor = Color.Black;
@@ -2770,6 +2798,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A76.BackColor = Color.Black;
@@ -2825,6 +2854,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A77.BackColor = Color.Black;
@@ -2880,6 +2910,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "8")
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A78.BackColor = Color.Black;
@@ -2935,6 +2966,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "9")
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A79.BackColor = Color.Black;
@@ -2990,6 +3022,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "10")
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A710.BackColor = Color.Black;
@@ -3045,6 +3078,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "11")
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A711.BackColor = Color.Black;
@@ -3100,6 +3134,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "12")
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A712.BackColor = Color.Black;
@@ -3156,6 +3191,7 @@ namespace TARS
                             }
                             else
                             {
+                                LimparAlpinistas(7);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A713.BackColor = Color.Black;
@@ -3202,7 +3238,7 @@ namespace TARS
 
                     if (newRow[0].ToString() == "8")
                     {
-                        LimparAlpinistas(8);
+                        
                         for (int j = 0; j < 1; j++)
                         {
                             if (newRow[1].ToString() == "1")
@@ -3238,6 +3274,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
+                                LimparAlpinistas(8);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A82.BackColor = Color.Black;
@@ -3285,6 +3322,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
+                                LimparAlpinistas(8);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A83.BackColor = Color.Black;
@@ -3336,6 +3374,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
+                                LimparAlpinistas(8);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A84.BackColor = Color.Black;
@@ -3391,6 +3430,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
+                                LimparAlpinistas(8);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A85.BackColor = Color.Black;
@@ -3446,6 +3486,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
+                                LimparAlpinistas(8);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A86.BackColor = Color.Black;
@@ -3501,6 +3542,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
+                                LimparAlpinistas(8);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A87.BackColor = Color.Black;
@@ -3556,6 +3598,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "8")
                             {
+                                LimparAlpinistas(8);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A88.BackColor = Color.Black;
@@ -3611,6 +3654,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "9")
                             {
+                                LimparAlpinistas(8);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A89.BackColor = Color.Black;
@@ -3666,6 +3710,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "10")
                             {
+                                LimparAlpinistas(8);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A810.BackColor = Color.Black;
@@ -3722,6 +3767,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "11")
                             {
+                                LimparAlpinistas(8);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ") 
                                 {
                                     pcb_A811.BackColor = Color.Black;
@@ -3769,7 +3815,7 @@ namespace TARS
 
                     if (newRow[0].ToString() == "9")
                     {
-                        LimparAlpinistas(9);
+                        
                         for (int j = 0; j < 1; j++)
                         {
                             if (newRow[1].ToString() == "1")
@@ -3806,6 +3852,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
+                                LimparAlpinistas(9);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A92.BackColor = Color.Black;
@@ -3853,6 +3900,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
+                                LimparAlpinistas(9);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A93.BackColor = Color.Black;
@@ -3903,7 +3951,8 @@ namespace TARS
                                 }
                             }
                             else if (newRow[1].ToString() == "4")
-                            { 
+                            {
+                                LimparAlpinistas(9);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A94.BackColor = Color.Black;
@@ -3959,6 +4008,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
+                                LimparAlpinistas(9);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A95.BackColor = Color.Black;
@@ -4014,6 +4064,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
+                                LimparAlpinistas(9);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ") 
                                 {
                                     pcb_A96.BackColor = Color.Black;
@@ -4069,6 +4120,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
+                                LimparAlpinistas(9);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A97.BackColor = Color.Black;
@@ -4124,6 +4176,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "8")
                             {
+                                LimparAlpinistas(9);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A98.BackColor = Color.Black;
@@ -4180,6 +4233,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "9")
                             {
+                                LimparAlpinistas(9);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A99.BackColor = Color.Black;
@@ -4226,7 +4280,7 @@ namespace TARS
 
                     if (newRow[0].ToString() == "10")
                     {
-                        LimparAlpinistas(10);
+                        
                         for (int j = 0; j < 1; j++)
                         {
                             if (newRow[1].ToString() == "1")
@@ -4262,6 +4316,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
+                                LimparAlpinistas(10);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A102.BackColor = Color.Black;
@@ -4309,6 +4364,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
+                                LimparAlpinistas(10);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A103.BackColor = Color.Black;
@@ -4360,6 +4416,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
+                                LimparAlpinistas(10);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A104.BackColor = Color.Black;
@@ -4415,6 +4472,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
+                                LimparAlpinistas(10);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A105.BackColor = Color.Black;
@@ -4470,6 +4528,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "6")
                             {
+                                LimparAlpinistas(10);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A106.BackColor = Color.Black;
@@ -4526,6 +4585,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "7")
                             {
+                                LimparAlpinistas(10);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A107.BackColor = Color.Black;
@@ -4572,7 +4632,7 @@ namespace TARS
 
                     if (newRow[0].ToString() == "11")
                     {
-                        LimparAlpinistas(11);
+                        
                         for (int j = 0; j < 1; j++)
                         {
                             if (newRow[1].ToString() == "1")
@@ -4609,6 +4669,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
+                                LimparAlpinistas(11);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A112.BackColor = Color.Black;
@@ -4656,6 +4717,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
+                                LimparAlpinistas(11);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A113.BackColor = Color.Black;
@@ -4708,6 +4770,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "4")
                             {
+                                LimparAlpinistas(11);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A114.BackColor = Color.Black;
@@ -4764,6 +4827,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "5")
                             {
+                                LimparAlpinistas(11);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A115.BackColor = Color.Black;
@@ -4810,7 +4874,7 @@ namespace TARS
 
                     if (newRow[0].ToString() == "12")
                     {
-                        LimparAlpinistas(12);
+                        
                         for (int j = 0; j < 1; j++)
                         {
                             if (newRow[1].ToString() == "1")
@@ -4846,6 +4910,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "2")
                             {
+                                LimparAlpinistas(12);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A122.BackColor = Color.Black;
@@ -4894,6 +4959,7 @@ namespace TARS
                             }
                             else if (newRow[1].ToString() == "3")
                             {
+                                LimparAlpinistas(12);
                                 if (newRow[3].ToString() == "A" || newRow[3].ToString() == "A ")
                                 {
                                     pcb_A123.BackColor = Color.Black;
@@ -5020,7 +5086,6 @@ namespace TARS
             else
             {
                 AtualizarTabuleiro();
-                //Mudar este código de lugar(Verificar onde coloca-lo)
                 string retorno = Jogo.ListarJogadores(IdPartida);
                 retorno = retorno.Replace("\r", " ");
                 string[] linhar = retorno.Split('\n');
@@ -5037,19 +5102,41 @@ namespace TARS
 
                 if (comparar == JogadorAtivo.Id)
                 {
-                    
                     try
                     {
-                        bool Caiu = false;
-                        Parar = false;
-                        for (int i = 0; i < 3 && !Caiu && !Parar; i++)
+                        if(contadorjogadas <= 3)
                         {
+                            bool Caiu = false;
+                            Parar = false;
                             rolarDados();
                             Caiu = MovimentosBOT();
                             AtualizarTabuleiro();
+                            if(Caiu == true)
+                            {
+                                trilhasalpinistas.Clear();
+                                contadorjogadas = 1;
+                                Parar = false;
+                                LimparAlpinistas(13);
+                            }
+
+                            if (Parar == true)
+                            {
+                                Parar = false;
+                                trilhasalpinistas.Clear();
+                                contadorjogadas = 1;
+                                string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
+                                if (parar.Contains("ERRO"))
+                                {
+                                    lbl_erro.Visible = true;
+                                    lbl_erro.Text = parar;
+                                }
+                            }
                         }
-                        if (Caiu == false)// se cair == true, nao entra, porém se Parar == true, entra
+                        else
                         {
+                            LimparAlpinistas(13);
+                            trilhasalpinistas.Clear();
+                            contadorjogadas = 1;
                             string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
                             if (parar.Contains("ERRO"))
                             {
@@ -5057,18 +5144,6 @@ namespace TARS
                                 lbl_erro.Text = parar;
                             }
                         }
-                        if (Parar == true)
-                        {
-                            string parar = Jogo.Parar(JogadorAtivo.Id, JogadorAtivo.Senha);
-                            if (parar.Contains("ERRO"))
-                            {
-                                lbl_erro.Visible = true;
-                                lbl_erro.Text = parar;
-                            }
-                        }
-                        trilhasalpinistas.Clear();
-                        contadorjogadas = 1;
-                        AtualizarTabuleiro();
                     }
                     catch (Exception ex)
                     {
@@ -5078,11 +5153,13 @@ namespace TARS
                     }
                 }
             }
+            
         }
 
         private void Tabuleiro_Load(object sender, EventArgs e)
         {
-            timer.Interval = (4 * 1000); // 5 secs
+
+            timer.Interval = (3 * 1000);
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
         }
