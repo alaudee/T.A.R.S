@@ -1396,7 +1396,7 @@ namespace TARS
             this.rtxt_historicoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxt_historicoP.Location = new System.Drawing.Point(12, 261);
             this.rtxt_historicoP.Name = "rtxt_historicoP";
-            this.rtxt_historicoP.Size = new System.Drawing.Size(398, 223);
+            this.rtxt_historicoP.Size = new System.Drawing.Size(398, 349);
             this.rtxt_historicoP.TabIndex = 182;
             this.rtxt_historicoP.Text = "";
             // 
@@ -4103,7 +4103,7 @@ namespace TARS
             this.lbl_erro.BackColor = System.Drawing.Color.Transparent;
             this.lbl_erro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_erro.ForeColor = System.Drawing.Color.Red;
-            this.lbl_erro.Location = new System.Drawing.Point(12, 553);
+            this.lbl_erro.Location = new System.Drawing.Point(7, 627);
             this.lbl_erro.Name = "lbl_erro";
             this.lbl_erro.Size = new System.Drawing.Size(88, 29);
             this.lbl_erro.TabIndex = 612;
